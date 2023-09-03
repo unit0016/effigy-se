@@ -1,3 +1,5 @@
+#define FIRE_PRIOTITY_LIQUIDS 30
+
 ///liquid defines
 #define SSLIQUIDS_RUN_TYPE_TURFS 1
 #define SSLIQUIDS_RUN_TYPE_GROUPS 2
