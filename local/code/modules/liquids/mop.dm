@@ -11,14 +11,8 @@
 
 	return ..()
 
-/**
- * Proc to remove liquids from a turf using a mop.
- *
- * Arguments:
- * * tile - On which tile we're trying to absorb liquids
- * * user - Who tries to absorb liquids with this?
- * * liquids - Liquids we're trying to absorb.
- */
+/obj/item/mop/attack_secondary(mob/living/victim, mob/living/user, params)
+
 /obj/item/mop/proc/attack_on_liquids_turf(obj/item/mop/the_mop, turf/T, mob/user, obj/effect/abstract/liquid_turf/liquids)
 	if(!user.Adjacent(T))
 		return FALSE

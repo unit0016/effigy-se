@@ -45,6 +45,14 @@
 
 ///Checks whether or not we should clean.
 /obj/item/mop/proc/should_clean(datum/cleaning_source, atom/atom_to_clean, mob/living/cleaner)
+	/// EFFIGY EDIT ADD - LIQUIDS ///
+	var/turf/turf_to_clean = atom_to_clean
+
+	// Disable normal cleaning if there are liquids.
+	if(isturf(atom_to_clean) && turf_to_clean.liquids)
+		to_chat(cleaner, span_warning("It would be quite difficult to clean this with a pool of liquids on top!"))
+		return FALSE
+	/// EFFIGY EDIT END ///
 	if(clean_blacklist[atom_to_clean.type])
 		return DO_NOT_CLEAN
 	if(reagents.total_volume < 0.1)
