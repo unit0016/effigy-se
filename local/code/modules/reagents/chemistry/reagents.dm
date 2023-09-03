@@ -4,3 +4,6 @@
 	var/expanded_chemical_flags = NONE
 	///What can process this? REAGENT_ORGANIC, REAGENT_SYNTHETIC, or REAGENT_ORGANIC | REAGENT_SYNTHETIC?. We'll assume by default that it affects organics.
 	var/process_flags = REAGENT_ORGANIC
+
+/datum/reagent/proc/evaporate(turf/exposed_turf, reac_volume)
+	return

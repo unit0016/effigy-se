@@ -2743,6 +2743,7 @@
 	taste_description = "tiny legs scuttling down the back of your throat"
 	metabolization_rate = 5 * REAGENTS_METABOLISM //1u per second
 	ph = 4.6 // Ants contain Formic Acid
+	evaporation_rate = 10 /// EFFIGY EDIT ADD - Liquids - Feck off with antduping
 	/// How much damage the ants are going to be doing (rises with each tick the ants are in someone's body)
 	var/ant_damage = 0
 	/// Tells the debuff how many ants we are being covered with.
@@ -2800,12 +2801,14 @@
 		return
 	expose_turf(my_turf, reac_volume)
 
-/datum/reagent/ants/expose_turf(turf/exposed_turf, reac_volume)
+/datum/reagent/ants/evaporate(turf/exposed_turf, reac_volume) // EFFIGY EDIT - Liquids - expose_turf -> evaporate
 	. = ..()
 	if(!istype(exposed_turf) || isspaceturf(exposed_turf)) // Is the turf valid
 		return
+	/* /// EFFIGY EDIT REMOVAL - Liquids
 	if((reac_volume <= 10)) // Makes sure people don't duplicate ants.
 		return
+	*/ /// EFFIGY EDIT END - Liquids
 
 	var/obj/effect/decal/cleanable/ants/pests = exposed_turf.spawn_unique_cleanable(/obj/effect/decal/cleanable/ants)
 	if(!pests)
