@@ -128,7 +128,7 @@ GLOBAL_VAR_INIT(liquid_debug_colors, FALSE)
 	var/list/created_reagent_list = list()
 	for(var/datum/reagent/reagent in otherg.reagents.reagent_list)
 		created_reagent_list |= reagent.type
-		created_reagent_list[reagent.type] = reagent
+		created_reagent_list[reagent.type] = reagent.volume
 
 	add_reagents(reagent_list = created_reagent_list, chem_temp = otherg.group_temperature)
 	cached_edge_turfs |= otherg.cached_edge_turfs
@@ -222,7 +222,7 @@ GLOBAL_VAR_INIT(liquid_debug_colors, FALSE)
 		if(!amount)
 			continue
 		remove_specific(src, amount * 0.2, reagent_type)
-		passed_list[reagent_type] = amount
+		passed_list[pulled_reagent.type] = amount
 
 	turf_reagents.add_reagent_list(passed_list)
 	turf_reagents.chem_temp = group_temperature
@@ -715,7 +715,7 @@ GLOBAL_VAR_INIT(liquid_debug_colors, FALSE)
 		if(!amount)
 			continue
 		remove_specific(src, amount * 0.2, reagent_type)
-		passed_list[reagent_type] = amount
+		passed_list[pulled_reagent.type] = amount
 
 	exposed_reagents.add_reagent_list(passed_list)
 	exposed_reagents.chem_temp = group_temperature
@@ -732,7 +732,7 @@ GLOBAL_VAR_INIT(liquid_debug_colors, FALSE)
 		var/amount = pulled_reagent.volume / members.len
 		if(!amount)
 			continue
-		passed_list[reagent_type] = amount
+		passed_list[pulled_reagent.type] = amount
 
 	exposed_reagents.add_reagent_list(passed_list)
 	exposed_reagents.chem_temp = group_temperature
