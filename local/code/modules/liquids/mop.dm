@@ -1,6 +1,6 @@
 /obj/item/mop/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/liquids_interaction, on_interaction_callback = PROC_REF(attack_on_liquids_turf))
+	AddElement(/datum/element/liquids_interaction, on_interaction_callback = CALLBACK(src, PROC_REF(attack_on_liquids_turf)))
 
 /obj/item/mop/should_clean(datum/cleaning_source, atom/atom_to_clean, mob/living/cleaner)
 	var/turf/turf_to_clean = atom_to_clean
