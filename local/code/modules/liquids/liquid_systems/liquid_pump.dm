@@ -2,7 +2,7 @@
 /obj/structure/liquid_pump
 	name = "portable liquid pump"
 	desc = "An industrial grade pump, capable of either siphoning or spewing liquids. Needs to be anchored first to work. Has a limited capacity internal storage."
-	icon = 'local/code/modules/liquids/assets/obj/structures/liquid_pump.dmi'
+	icon = 'monkestation/icons/obj/structures/liquid_pump.dmi'
 	icon_state = "liquid_pump"
 	density = TRUE
 	max_integrity = 500
@@ -34,7 +34,7 @@
 	toggle_working()
 
 /obj/structure/liquid_pump/AltClick(mob/living/user)
-	if(!user.can_perform_action(src, NEED_DEXTERITY))
+	if(!user.can_perform_action())
 		return
 	to_chat(user, span_notice("You flick [src]'s spewing mode [spewing_mode ? "off" : "on"]."))
 	spewing_mode = !spewing_mode
@@ -64,7 +64,7 @@
 		var/free_space = reagents.maximum_volume - reagents.total_volume
 		if(!free_space)
 			return
-		var/target_siphon_amt = (T.liquids.total_reagents * pump_speed_percentage) + pump_speed_flat
+		var/target_siphon_amt = (T.liquids.liquid_group.total_reagent_volume * pump_speed_percentage) + pump_speed_flat
 		if(target_siphon_amt > free_space)
 			target_siphon_amt = free_space
 		var/datum/reagents/tempr = T.liquids.take_reagents_flat(target_siphon_amt)
@@ -90,7 +90,7 @@
 	turned_on = !turned_on
 	update_icon()
 
-/obj/structure/liquid_pump/Initialize(mapload)
+/obj/structure/liquid_pump/Initialize()
 	. = ..()
 	create_reagents(max_volume)
 

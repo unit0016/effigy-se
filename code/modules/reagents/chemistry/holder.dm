@@ -1313,7 +1313,7 @@
  * - Volume_modifier: What is the reagent volume multiplied by when exposed? Note that this is called on the volume of EVERY reagent in the base body, so factor in your Maximum_Volume if necessary!
  * - Show_message: Whether to display anything to mobs when they are exposed.
  */
-/datum/reagents/proc/expose(atom/A, methods = TOUCH, volume_modifier = 1, show_message = 1)
+/datum/reagents/proc/expose(atom/A, methods = TOUCH, volume_modifier = 1, show_message = 1, liquid = FALSE) /// EFFIGY EDIT - Liquids - Appended ", liquid = FALSE"
 	if(isnull(A))
 		return null
 
@@ -1324,7 +1324,7 @@
 	for(var/datum/reagent/reagent as anything in reagent_list)
 		reagents[reagent] = reagent.volume * volume_modifier
 
-	return A.expose_reagents(reagents, src, methods, volume_modifier, show_message)
+	return A.expose_reagents(reagents, src, methods, volume_modifier, show_message, liquid) /// EFFIGY EDIT - LIQUIDS - Appended ", liquid"
 
 // Same as [/datum/reagents/proc/expose] but only for multiple reagents (through a list)
 /datum/reagents/proc/expose_multiple(list/r_to_expose, atom/A, methods = TOUCH, volume_modifier = 1, show_message = 1)

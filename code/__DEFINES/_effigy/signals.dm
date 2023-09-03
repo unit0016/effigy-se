@@ -29,10 +29,15 @@
 #define COMSIG_MOB_LOSS_STAMINA "mob_loss_stamina"
 /// /mob/living/proc/adjustOrganLoss (slot, amount)
 #define COMSIG_MOB_LOSS_ORGAN "mob_loss_organ"
-///from base of /turf/handle_fall(): (mob/faller)
-#define COMSIG_TURF_MOB_FALL "turf_mob_fall"
-///from base of /obj/effect/abstract/liquid_turf/Initialize() (/obj/effect/abstract/liquid_turf/liquids)
+///called on liquid creation
 #define COMSIG_TURF_LIQUIDS_CREATION "turf_liquids_creation"
+
+#define COMSIG_TURF_MOB_FALL "turf_mob_fall"
+
+///this is called whenever a turf is destroyed
+#define COMSIG_TURF_DESTROY "turf_destroy"
+///this is called whenever a turfs air is updated
+#define COMSIG_TURF_UPDATE_AIR "turf_air_change"
 /// Engineering Override Access manual toggle
 #define COMSIG_GLOB_FORCE_ENG_OVERRIDE "force_engineering_override"
 /// From mob/living/*/set_combat_mode(): (new_state)

@@ -53,14 +53,9 @@
 	return ..()
 
 /mob/living/proc/ZImpactDamage(turf/T, levels)
+	SEND_SIGNAL(T, COMSIG_TURF_MOB_FALL, src) // EFFIGY EDIT ADD - LIQUIDS
 	if(SEND_SIGNAL(src, COMSIG_LIVING_Z_IMPACT, levels, T) & NO_Z_IMPACT_DAMAGE)
 		return
-
-	// EFFIGY EDIT ADD START
-	if(T.liquids && T.liquids.liquid_state >= LIQUID_STATE_WAIST)
-		Knockdown(20)
-		return
-	// EFFIGY EDIT ADD END
 	visible_message(span_danger("[src] crashes into [T] with a sickening noise!"), \
 					span_userdanger("You crash into [T] with a sickening noise!"))
 	adjustBruteLoss((levels * 5) ** 1.5)

@@ -54,7 +54,7 @@
 	. = ..()
 
 	create_reagents(max_reagent_volume)
-	AddComponent(/datum/component/liquids_interaction, TYPE_PROC_REF(/obj/item/towel, attack_on_liquids_turf))
+	// SHOG TODO - UHHHHHHHH AddComponent(/datum/component/liquids_interaction, TYPE_PROC_REF(/obj/item/towel, attack_on_liquids_turf))
 	AddComponent(/datum/component/surgery_initiator) // Since you can do it with bedsheets, why not with towels too?
 
 	register_context()
@@ -222,7 +222,7 @@
 		to_chat(user, span_warning("[target] is full!"))
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
-	transfer_towel_reagents_to(target_bucket, reagents.total_volume, user, loss_factor = SQUEEZING_DISPERSAL_RATIO, make_used = TRUE) // If it didn't have enough space, oh well, you lost like 3/4th of what was in the towel anyway, there's just even more loss that way. Doesn't really matter.
+	// SHOG TODO - UHHHHHH transfer_towel_reagents_to(target_bucket, reagents.total_volume, user, loss_factor = SQUEEZING_DISPERSAL_RATIO, make_used = TRUE) // If it didn't have enough space, oh well, you lost like 3/4th of what was in the towel anyway, there's just even more loss that way. Doesn't really matter.
 
 	to_chat(user, span_notice("You wring the liquid out of [src], transferring some of it to [target]."))
 
