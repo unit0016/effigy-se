@@ -32,7 +32,11 @@
 	if(istype(weapon, /obj/item/reagent_containers))
 		update_appearance(UPDATE_OVERLAYS)
 		return FALSE // skip attack animation when refilling cart
-
+	/// EFFIGY EDIT ADD - LIQUIDS ///
+	if(istype(weapon, /obj/item/mop))
+		reagents.trans_to(src, weapon.reagents.maximum_volume, transfered_by = user)
+		balloon_alert(user, "wring mop")
+	/// EFFIGY EDIT END - LIQUIDS ///
 	return ..()
 
 /obj/structure/mop_bucket/attackby_secondary(obj/item/weapon, mob/user, params)
