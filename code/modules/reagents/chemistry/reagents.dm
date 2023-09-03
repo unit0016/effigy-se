@@ -119,6 +119,8 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	var/opacity = 175
 	///The rate of evaporation in units per call
 	var/evaporation_rate = 0.5
+	/// do we have a turf exposure (used to prevent liquids doing un-needed processes)
+	var/turf_exposure = FALSE
 	/// EFFIGY EDIT END - LIQUIDS ///
 
 /datum/reagent/New()

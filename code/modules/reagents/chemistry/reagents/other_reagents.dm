@@ -8,6 +8,10 @@
 	penetrates_skin = NONE
 	ph = 7.4
 	default_container = /obj/item/reagent_containers/blood
+	/// EFFIGY EDIT ADD - LIQUIDS ///
+	opacity = 230
+	turf_exposure = TRUE
+	/// EFFIGY EDIT END ///
 
 /datum/glass_style/shot_glass/blood
 	required_drink_type = /datum/reagent/blood
@@ -183,6 +187,7 @@
 	var/cooling_temperature = 2
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_CLEANS
 	default_container = /obj/item/reagent_containers/cup/glass/waterbottle
+	turf_exposure = TRUE // EFFIGY EDIT ADD - Liquids
 
 /datum/glass_style/shot_glass/water
 	required_drink_type = /datum/reagent/water
@@ -290,6 +295,7 @@
 	ph = 7.5 //God is alkaline
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_CLEANS
 	default_container = /obj/item/reagent_containers/cup/glass/bottle/holywater
+	turf_exposure = TRUE // EFFIGY EDIT ADD - Liquids
 
 /datum/glass_style/drinking_glass/holywater
 	required_drink_type = /datum/reagent/water/holywater
@@ -378,6 +384,7 @@
 	var/cooling_temperature = 2
 	ph = 6.2
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	turf_exposure = TRUE // EFFIGY EDIT ADD - Liquids
 
 /datum/glass_style/shot_glass/hydrogen_peroxide
 	required_drink_type = /datum/reagent/hydrogen_peroxide
@@ -465,6 +472,7 @@
 	taste_description = "cherry" // by popular demand
 	var/lube_kind = TURF_WET_LUBE ///What kind of slipperiness gets added to turfs
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	turf_exposure = TRUE // EFFIGY EDIT ADD - Liquids
 
 /datum/reagent/lube/expose_turf(turf/open/exposed_turf, reac_volume)
 	. = ..()
@@ -1222,6 +1230,7 @@
 	var/clean_types = CLEAN_WASH
 	ph = 5.5
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_CLEANS
+	turf_exposure = TRUE // EFFIGY EDIT ADD - Liquids
 
 /datum/reagent/space_cleaner/expose_obj(obj/exposed_obj, reac_volume)
 	. = ..()
@@ -1744,6 +1753,7 @@
 	taste_description = "carpet" // Your tounge feels furry.
 	var/carpet_type = /turf/open/floor/carpet
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	turf_exposure = TRUE // EFFIGY EDIT ADD - Liquids
 
 /datum/reagent/carpet/expose_turf(turf/exposed_turf, reac_volume)
 	if(isopenturf(exposed_turf) && exposed_turf.turf_flags & IS_SOLID && !istype(exposed_turf, /turf/open/floor/carpet))
@@ -2200,6 +2210,7 @@
 	taste_description = "dryness"
 	ph = 10.7
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	turf_exposure = TRUE // EFFIGY EDIT ADD - Liquids
 
 /datum/reagent/drying_agent/expose_turf(turf/open/exposed_turf, reac_volume)
 	. = ..()
@@ -2585,6 +2596,7 @@
 	color = "#b000aa"
 	taste_mult = 0 // oderless and tasteless
 	chemical_flags = REAGENT_NO_RANDOM_RECIPE
+	turf_exposure = TRUE // EFFIGY EDIT ADD - Liquids
 	/// The material flags used to apply the transmuted materials
 	var/applied_material_flags = MATERIAL_EFFECTS | MATERIAL_ADD_PREFIX | MATERIAL_COLOR
 	/// The amount of materials to apply to the transmuted objects if they don't contain materials

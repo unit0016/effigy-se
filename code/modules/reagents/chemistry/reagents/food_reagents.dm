@@ -335,6 +335,7 @@
 	///40 joules per unit.
 	specific_heat = 40
 	default_container = /obj/item/reagent_containers/cup/bottle/frostoil
+	turf_exposure = TRUE // EFFIGY EDIT ADD - LIQUIDS
 
 /datum/reagent/consumable/frostoil/on_mob_life(mob/living/carbon/M, seconds_per_tick, times_fired)
 	var/cooling = 0
@@ -532,6 +533,7 @@
 	taste_description = "slime"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/condiment/cooking_oil
+	turf_exposure = TRUE // EFFIGY EDIT ADD - LIQUIDS
 
 /datum/reagent/consumable/cornoil/expose_turf(turf/open/exposed_turf, reac_volume)
 	. = ..()
@@ -1046,6 +1048,7 @@
 	color = "#DBCF5C"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/condiment/quality_oil
+	turf_exposure = TRUE // EFFIGY EDIT ADD - LIQUIDS
 
 /datum/reagent/consumable/cornmeal
 	name = "Cornmeal"
