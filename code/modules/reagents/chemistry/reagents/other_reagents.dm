@@ -179,10 +179,10 @@
 	description = "An ubiquitous chemical substance that is composed of hydrogen and oxygen."
 	color = "#AAAAAA77" // rgb: 170, 170, 170, 77 (alpha)
 	taste_description = "water"
+	evaporation_rate = 4 // EFFIGY EDIT ADD
 	var/cooling_temperature = 2
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_CLEANS
 	default_container = /obj/item/reagent_containers/cup/glass/waterbottle
-	evaporates = TRUE // EFFIGY EDIT ADD
 
 /datum/glass_style/shot_glass/water
 	required_drink_type = /datum/reagent/water

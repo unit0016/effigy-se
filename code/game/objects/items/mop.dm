@@ -16,7 +16,7 @@
 	resistance_flags = FLAMMABLE
 	var/mopcount = 0
 	///Maximum volume of reagents it can hold.
-	var/max_reagent_volume = 50 // EFFIGY EDIT CHANGE
+	var/max_reagent_volume = 45 // EFFIGY EDIT CHANGE
 	var/mopspeed = 1.5 SECONDS
 	force_string = "robust... against germs"
 	var/insertable = TRUE
