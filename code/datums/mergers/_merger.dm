@@ -152,6 +152,19 @@
 		found_turfs[location][MERGE_TURF_PACKET_ATOMS] += thing
 		found_something = TRUE
 
+	/// EFFIGY EDIT ADD - LIQUIDS ///
+	if(merged_typecache[location.type])
+		if(location.mergers && location.mergers[id] != src)
+			var/datum/merger/existing = location.mergers[id]
+			qdel(src)
+			existing.Refresh()
+			return FALSE
+		if(!found_turfs[location])
+			found_turfs[location] = list(us_to_them, list())
+		found_turfs[location][MERGE_TURF_PACKET_ATOMS] += location
+		found_something = TRUE
+	/// EFFIGY EDIT END - LIQUIDS ///
+
 	return found_something
 
 #undef MERGERS_DEBUG

@@ -6048,6 +6048,8 @@
 #include "local\code\modules\liquids\liquid_systems\liquid_pump.dm"
 #include "local\code\modules\liquids\liquid_systems\liquid_status_effect.dm"
 #include "local\code\modules\liquids\liquid_systems\liquid_turf.dm"
+#include "local\code\modules\liquids\pools\_pool.dm"
+#include "local\code\modules\liquids\pools\pool_liquid_group.dm"
 #include "local\code\modules\loadouts\donator\donator_loadouts.dm"
 #include "local\code\modules\logging\log_category_effigy.dm"
 #include "local\code\modules\mapping\access_helpers.dm"
