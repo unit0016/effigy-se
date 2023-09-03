@@ -34,7 +34,10 @@ GLOBAL_LIST_EMPTY(default_lighting_underlays_by_z)
 	// Really this should be a global var or something, but lets not think about that yes?
 	for(var/turf/open/space/space_tile in RANGE_TURFS(1, affected_turf))
 		space_tile.enable_starlight()
-
+	/// EFFIGY EDIT ADD - LIQUIDS ///
+	for(var/turf/open/floor/plating/ocean/space_tile in RANGE_TURFS(1, affected_turf))
+		space_tile.enable_starlight()
+	/// EFFIGY EDIT END - LIQUIDS ///
 	needs_update = TRUE
 	SSlighting.objects_queue += src
 

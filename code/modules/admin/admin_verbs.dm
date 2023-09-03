@@ -140,6 +140,7 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/change_title_screen_html, // EFFIGY EDIT ADD - SPLASH
 	/client/proc/remove_liquid, // EFFIGY EDIT ADD - LIQUIDS
 	/client/proc/spawn_liquid, // EFFIGY EDIT ADD - LIQUIDS
+	/client/proc/change_ocean, // EFFIGY EDIT ADD - LIQUIDS
 	))
 GLOBAL_PROTECT(admin_verbs_fun)
 GLOBAL_LIST_INIT(admin_verbs_spawn, list(/datum/admins/proc/spawn_atom, /datum/admins/proc/podspawn_atom, /datum/admins/proc/spawn_cargo, /datum/admins/proc/spawn_objasmob, /client/proc/respawn_character, /datum/admins/proc/beaker_panel))
