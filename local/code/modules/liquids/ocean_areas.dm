@@ -1,22 +1,35 @@
-
+GLOBAL_LIST_INIT(initalized_ocean_areas, list())
 /area/ocean
 	name = "Ocean"
-	icon_state = "space"
+
+	icon = 'monkestation/icons/obj/effects/liquid.dmi'
+	base_icon_state = "ocean"
+	icon_state = "ocean"
+	alpha = 120
+
 	requires_power = TRUE
 	always_unpowered = TRUE
 	static_lighting = FALSE
 
 	base_lighting_alpha = 255
 	base_lighting_color = COLOR_CARP_LIGHT_BLUE
+
 	power_light = FALSE
 	power_equip = FALSE
 	power_environ = FALSE
+
 	outdoors = TRUE
 	ambience_index = AMBIENCE_SPACE
+
 	flags_1 = CAN_BE_DIRTY_1
 	sound_environment = SOUND_AREA_SPACE
-	static_lighting = 1
 
+/area/ocean/Initialize(mapload)
+	. = ..()
+	GLOB.initalized_ocean_areas += src
+
+/area/ocean/dark
+	base_lighting_alpha = 0
 /area/ruin/ocean
 	has_gravity = TRUE
 
@@ -45,9 +58,6 @@
 	. = ..()
 	ChangeTurf(replacement_turf, null, CHANGETURF_IGNORE_AIR)
 
-/turf/open/openspace/ocean/Initialize()
-	. = ..()
-
 /turf/open/floor/plating/ocean
 	plane = FLOOR_PLANE
 	layer = TURF_LAYER
@@ -63,13 +73,24 @@
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	planetary_atmos = TRUE
-	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
+	initial_gas_mix = OSHAN_DEFAULT_ATMOS
 	light_power = 0.75
+
 	var/static/obj/effect/abstract/ocean_overlay/static_overlay
 	var/static/list/ocean_reagents = list(/datum/reagent/water = 100)
 	var/ocean_temp = T20C
 	var/list/ocean_turfs = list()
 	var/list/open_turfs = list()
+	var/has_starlight = TRUE
+
+	///are we captured, this is easier than having to run checks on turfs for vents
+	var/captured = FALSE
+
+	var/rand_variants = 0
+	var/rand_chance = 30
+
+/turf/open/floor/plating/ocean/dark
+	has_starlight = FALSE
 
 /turf/open/floor/plating/ocean/Initialize()
 	. = ..()
@@ -77,10 +98,17 @@
 	RegisterSignal(src, COMSIG_TURF_MOB_FALL, PROC_REF(mob_fall))
 	if(!static_overlay)
 		static_overlay = new(null, ocean_reagents)
-	light_color = static_overlay.color
+
 	vis_contents += static_overlay
+	light_color = static_overlay.color
 	SSliquids.unvalidated_oceans |= src
 	SSliquids.ocean_turfs |= src
+
+	if(rand_variants && prob(rand_chance))
+		var/random = rand(1,rand_variants)
+		icon_state = "[base_icon_state][random]"
+		base_icon_state = "[base_icon_state][random]"
+
 
 /turf/open/floor/plating/ocean/Destroy()
 	. = ..()
@@ -90,10 +118,11 @@
 	for(var/turf/open/floor/plating/ocean/listed_ocean as anything in ocean_turfs)
 		listed_ocean.rebuild_adjacent()
 
-
 /// Updates starlight. Called when we're unsure of a turf's starlight state
 /// Returns TRUE if we succeed, FALSE otherwise
 /turf/open/floor/plating/ocean/proc/update_starlight()
+	if(!has_starlight)
+		return
 	for(var/t in RANGE_TURFS(1,src)) //RANGE_TURFS is in code\__HELPERS\game.dm
 		// I've got a lot of cordons near spaceturfs, be good kids
 		if(istype(t, /turf/open/floor/plating/ocean) || istype(t, /turf/cordon))
@@ -106,6 +135,8 @@
 
 /// Turns on the stars, if they aren't already
 /turf/open/floor/plating/ocean/proc/enable_starlight()
+	if(!has_starlight)
+		return
 	if(!light_range)
 		set_light(2)
 
@@ -119,19 +150,16 @@
 			ocean_turfs |= directional_turf
 		else
 			if(isclosedturf(directional_turf))
-				RegisterSignal(directional_turf, COMSIG_TURF_DESTROY, PROC_REF(add_turf_direction))
+				RegisterSignal(directional_turf, COMSIG_TURF_DESTROY, PROC_REF(add_turf_direction), TRUE)
 				continue
 			else if(!(directional_turf in atmos_adjacent_turfs))
-				RegisterSignal(directional_turf, COMSIG_TURF_UPDATE_AIR, PROC_REF(add_turf_direction_non_closed))
+				RegisterSignal(directional_turf, COMSIG_TURF_UPDATE_AIR, PROC_REF(add_turf_direction_non_closed), TRUE)
 				continue
 			else
 				open_turfs.Add(direction)
 
 	if(open_turfs.len)
 		SSliquids.active_ocean_turfs |= src
-	if(ocean_turfs.len)
-		for(var/turf/open/floor/plating/ocean/listed_ocean as anything in ocean_turfs)
-			listed_ocean.rebuild_adjacent()
 	SSliquids.unvalidated_oceans -= src
 
 /turf/open/floor/plating/ocean/proc/process_turf()
@@ -167,6 +195,19 @@
 	else if(src in SSliquids.active_ocean_turfs)
 		SSliquids.active_ocean_turfs -= src
 
+/turf/open/floor/plating/ocean/attackby(obj/item/C, mob/user, params)
+	. = ..()
+	if(istype(C, /obj/item/dousing_rod))
+		var/obj/item/dousing_rod/attacking_rod = C
+		attacking_rod.deploy(src)
+
+	if(istype(C, /obj/item/vent_package))
+		if(captured)
+			return
+		if(!do_after(user, 2 SECONDS, src))
+			return
+		var/obj/item/vent_package/attacking = C
+		attacking.deploy(src)
 /obj/effect/abstract/ocean_overlay
 	icon = 'monkestation/icons/obj/effects/liquid.dmi'
 	icon_state = "ocean"
@@ -327,3 +368,142 @@ GLOBAL_LIST_INIT(the_lever, list())
 
 /datum/component/shuttle_cling/water
 	hyperspace_type = /turf/open/floor/plating/ocean/false_movement
+
+
+
+/turf/closed/mineral/random/ocean
+	baseturfs = /turf/open/floor/plating/ocean/dark/rock/heavy
+	turf_type = /turf/open/floor/plating/ocean/dark/rock/heavy
+	color = "#58606b"
+
+/turf/closed/mineral/random/high_chance/ocean
+	baseturfs = /turf/open/floor/plating/ocean/dark/rock/heavy
+	turf_type = /turf/open/floor/plating/ocean/dark/rock/heavy
+	color = "#58606b"
+
+/turf/closed/mineral/random/low_chance/ocean
+	baseturfs = /turf/open/floor/plating/ocean/dark/rock/heavy
+	turf_type = /turf/open/floor/plating/ocean/dark/rock/heavy
+	color = "#58606b"
+
+/turf/closed/mineral/random/stationside/ocean
+	baseturfs = /turf/open/floor/plating/ocean/dark/rock/heavy
+	turf_type = /turf/open/floor/plating/ocean/dark/rock/heavy
+	color = "#58606b"
+
+
+
+/turf/open/floor/plating/ocean/dark/ironsand
+	baseturfs = /turf/open/floor/plating/ocean/dark/ironsand
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "ironsand1"
+	base_icon_state = "ironsand"
+	rand_variants = 15
+	rand_chance = 100
+
+/turf/open/floor/plating/ocean/dark/rock
+	name = "rock"
+	baseturfs = /turf/open/floor/plating/ocean/dark/rock
+	icon = 'monkestation/icons/turf/seafloor.dmi'
+	icon_state = "seafloor"
+	base_icon_state = "seafloor"
+	rand_variants = 0
+
+/turf/open/floor/plating/ocean/dark/rock/warm
+	ocean_temp = T20C + 30
+
+/turf/open/floor/plating/ocean/dark/rock/warm/fissure
+	name = "fissure"
+	icon = 'monkestation/icons/turf/fissure.dmi'
+	icon_state = "fissure-0"
+	base_icon_state = "fissure"
+	smoothing_flags = SMOOTH_BITMASK
+	smoothing_groups = SMOOTH_GROUP_FISSURE
+	canSmoothWith = SMOOTH_GROUP_FISSURE
+	light_range = 3
+	light_color = LIGHT_COLOR_LAVA
+
+/turf/open/floor/plating/ocean/dark/rock/medium
+	icon_state = "seafloor_med"
+	base_icon_state = "seafloor_med"
+	baseturfs = /turf/open/floor/plating/ocean/dark/rock/medium
+
+/turf/open/floor/plating/ocean/dark/rock/heavy
+	icon_state = "seafloor_heavy"
+	base_icon_state = "seafloor_heavy"
+	baseturfs = /turf/open/floor/plating/ocean/dark/rock/heavy
+
+/area/ocean/generated
+	base_lighting_alpha = 0
+	//map_generator = /datum/map_generator/ocean_generator
+	map_generator = /datum/map_generator/cave_generator/trench
+
+
+/area/ocean/generated_above
+	map_generator = /datum/map_generator/ocean_generator
+
+/turf/open/floor/plating/ocean/pit
+	name = "pit"
+
+	icon = 'goon/icons/turf/outdoors.dmi'
+	icon_state = "pit"
+	baseturfs = /turf/open/floor/plating/ocean/pit
+
+/turf/open/floor/plating/ocean/pit/wall
+	icon_state = "pit_wall"
+
+/turf/open/floor/plating/ocean/pit/Entered(atom/movable/arrived, atom/old_loc, list/atom/old_locs)
+	. = ..()
+	var/turf/turf = locate(src.x, src.y, SSmapping.levels_by_trait(ZTRAIT_MINING)[1])
+	arrived.forceMove(turf)
+
+
+
+/turf/closed/mineral/random/ocean/above
+	baseturfs = /turf/open/floor/plating/ocean/rock
+	turf_type = /turf/open/floor/plating/ocean/rock
+	color = "#58606b"
+
+/turf/closed/mineral/random/high_chance/ocean/above
+	baseturfs = /turf/open/floor/plating/ocean/rock
+	turf_type = /turf/open/floor/plating/ocean/rock
+	color = "#58606b"
+
+/turf/closed/mineral/random/low_chance/ocean/above
+	baseturfs = /turf/open/floor/plating/ocean/rock
+	turf_type = /turf/open/floor/plating/ocean/rock
+	color = "#58606b"
+
+/turf/closed/mineral/random/stationside/ocean/above
+	baseturfs = /turf/open/floor/plating/ocean/rock
+	turf_type = /turf/open/floor/plating/ocean/rock
+	color = "#58606b"
+
+/turf/open/floor/plating/ocean/ironsand
+	baseturfs = /turf/open/floor/plating/ocean/dark/ironsand
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "ironsand1"
+	base_icon_state = "ironsand"
+	rand_variants = 15
+	rand_chance = 100
+
+/turf/open/floor/plating/ocean/rock
+	name = "rock"
+	baseturfs = /turf/open/floor/plating/ocean/dark/rock
+	icon = 'monkestation/icons/turf/seafloor.dmi'
+	icon_state = "seafloor"
+	base_icon_state = "seafloor"
+	rand_variants = 0
+
+/turf/open/floor/plating/ocean/rock/warm
+	ocean_temp = T20C + 30
+
+/turf/open/floor/plating/ocean/rock/medium
+	icon_state = "seafloor_med"
+	base_icon_state = "seafloor_med"
+	baseturfs = /turf/open/floor/plating/ocean/rock/medium
+
+/turf/open/floor/plating/ocean/rock/heavy
+	icon_state = "seafloor_heavy"
+	base_icon_state = "seafloor_heavy"
+	baseturfs = /turf/open/floor/plating/ocean/rock/heavy
