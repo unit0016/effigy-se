@@ -29,6 +29,7 @@
 		/obj/effect/wisp,
 		/obj/effect/ebeam,
 		/obj/effect/fishing_lure,
+		/obj/effect/abstract/liquid_turf, /// EFFIGY EDIT ADD - LIQUIDS
 	))
 
 /datum/component/chasm/Initialize(turf/target, mapload)
