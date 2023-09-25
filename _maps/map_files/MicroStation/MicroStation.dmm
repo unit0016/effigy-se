@@ -1,4 +1,21 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ag" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating,
+/area/station/cargo/drone_bay)
+"ar" = (
+/obj/effect/turf_decal/bot_white/left,
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/iron/dark,
+/area/station/cargo/warehouse)
+"ax" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "QMLoad2"
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "aB" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/effect/turf_decal/trimline/brown/filled/line{
@@ -39,6 +56,8 @@
 /area/space)
 "bw" = (
 /obj/machinery/door/airlock/mining,
+/obj/effect/mapping_helpers/airlock/access/all/supply/mining,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/iron/textured_large,
 /area/station/cargo/miningoffice)
 "bA" = (
@@ -55,6 +74,22 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"bO" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"cd" = (
+/obj/effect/turf_decal/siding/wideplating_new/end{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/smooth_corner,
+/area/station/cargo/drone_bay)
+"cg" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "cn" = (
 /obj/structure/closet/secure_closet/miner,
 /obj/effect/turf_decal/tile/brown/half/contrasted,
@@ -80,7 +115,10 @@
 /area/station/bitrunning/den)
 "cZ" = (
 /obj/structure/table,
-/turf/open/floor/iron,
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/turf/open/floor/iron/diagonal,
 /area/station/cargo/office)
 "dD" = (
 /obj/machinery/door/firedoor,
@@ -91,6 +129,9 @@
 	},
 /turf/open/floor/plating,
 /area/space)
+"dH" = (
+/turf/open/floor/plating/elevatorshaft,
+/area/station/cargo/drone_bay)
 "dS" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 8
@@ -122,11 +163,49 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"fb" = (
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
+"fz" = (
+/obj/machinery/suit_storage_unit/industrial/loader,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"fO" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "QMLoad"
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"gk" = (
+/obj/effect/turf_decal/siding/brown{
+	dir = 8
+	},
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
+"gm" = (
+/obj/effect/turf_decal/loading_area/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "gF" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/bot_purple/left,
 /turf/open/floor/iron/small,
 /area/station/cargo/miningoffice)
+"hd" = (
+/obj/effect/turf_decal/siding/brown{
+	dir = 10
+	},
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
 "hf" = (
 /obj/structure/table,
 /obj/item/storage/box/bodybags{
@@ -140,8 +219,47 @@
 /area/space)
 "hv" = (
 /obj/machinery/computer/order_console/bitrunning,
-/turf/open/floor/iron,
+/obj/effect/turf_decal/siding/brown{
+	dir = 9
+	},
+/turf/open/floor/iron/diagonal,
 /area/station/cargo/office)
+"hP" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"hX" = (
+/obj/structure/window/spawner/directional/north,
+/obj/effect/turf_decal/siding/dark_red{
+	dir = 1
+	},
+/obj/structure/rack,
+/obj/item/circuitboard/machine/exoscanner{
+	pixel_y = 3
+	},
+/obj/item/circuitboard/machine/exoscanner,
+/obj/item/circuitboard/machine/exoscanner{
+	pixel_y = -3
+	},
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
+"ii" = (
+/obj/item/clothing/shoes/wheelys/rollerskates{
+	pixel_y = 5
+	},
+/obj/item/clothing/shoes/wheelys/rollerskates,
+/obj/structure/rack,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"iF" = (
+/obj/machinery/conveyor/inverted{
+	dir = 9;
+	id = "QMLoad2"
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "iH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -174,10 +292,30 @@
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/station/bitrunning/den)
+"jR" = (
+/obj/structure/plasticflaps,
+/obj/machinery/conveyor{
+	id = "QMLoad2"
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"jZ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "kI" = (
 /obj/effect/turf_decal/trimline/brown/warning,
 /turf/open/floor/iron,
 /area/space)
+"kQ" = (
+/turf/open/floor/iron/textured_large,
+/area/station/cargo/warehouse)
+"ln" = (
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/textured_large,
+/area/station/cargo/warehouse)
 "lE" = (
 /obj/effect/turf_decal/trimline/purple/corner,
 /turf/open/floor/iron,
@@ -191,12 +329,29 @@
 /obj/effect/turf_decal/siding/brown,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
+"lX" = (
+/obj/structure/table,
+/obj/item/exodrone{
+	pixel_y = 8
+	},
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
 "mk" = (
 /obj/machinery/door/airlock/mining,
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/iron/textured_large,
 /area/station/cargo/office)
+"mp" = (
+/obj/machinery/door/poddoor{
+	id = "QMLoaddoor2";
+	name = "Supply Dock Loading Door"
+	},
+/obj/machinery/conveyor{
+	id = "QMLoad2"
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "mB" = (
 /obj/effect/turf_decal/trimline/brown/line{
 	dir = 1
@@ -211,11 +366,30 @@
 	dir = 8
 	},
 /area/station/bitrunning/den)
+"mL" = (
+/obj/structure/window/spawner/directional/north,
+/obj/effect/turf_decal/siding/dark_red{
+	dir = 1
+	},
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
 "na" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/emergency,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
+"ns" = (
+/obj/structure/table,
+/obj/item/reagent_containers/cup/glass/mug/britcup{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/obj/item/phone{
+	pixel_x = 6;
+	pixel_y = 1
+	},
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
 "oc" = (
 /obj/structure/fans/tiny/shield,
 /obj/effect/turf_decal/stripes/line,
@@ -233,6 +407,27 @@
 /obj/machinery/smartfridge/chemistry/preloaded,
 /turf/open/floor/plating,
 /area/space)
+"oY" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/reagent_dispensers/watertank,
+/turf/open/floor/iron/dark,
+/area/station/cargo/warehouse)
+"pc" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"pd" = (
+/obj/machinery/exodrone_launcher,
+/turf/open/floor/plating/elevatorshaft,
+/area/station/cargo/drone_bay)
+"pg" = (
+/obj/effect/turf_decal/siding/brown,
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
+"py" = (
+/obj/effect/turf_decal/bot/right,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "qr" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
@@ -246,6 +441,11 @@
 "qx" = (
 /turf/open/space/basic,
 /area/space)
+"qC" = (
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/effect/landmark/blobstart,
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
 "ra" = (
 /obj/machinery/netpod,
 /turf/open/floor/catwalk_floor/iron_dark,
@@ -264,11 +464,71 @@
 /obj/machinery/computer/cargo{
 	dir = 8
 	},
-/turf/open/floor/iron,
+/obj/effect/turf_decal/siding/brown{
+	dir = 6
+	},
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
+"sq" = (
+/obj/machinery/computer/exoscanner_control{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/drone_bay)
+"sK" = (
+/obj/structure/table,
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/brown/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
+"sY" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "QMLoad"
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"tJ" = (
+/obj/effect/turf_decal/tile/brown/diagonal_centre,
+/obj/effect/turf_decal/siding/brown{
+	dir = 4
+	},
+/turf/open/floor/iron/diagonal,
 /area/station/cargo/office)
 "ua" = (
 /turf/closed/wall,
 /area/station/cargo/office)
+"uc" = (
+/obj/effect/turf_decal/bot_white,
+/obj/effect/spawner/random/structure/crate,
+/turf/open/floor/iron/dark,
+/area/station/cargo/warehouse)
+"ul" = (
+/obj/structure/table,
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
 "uA" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/line{
@@ -279,6 +539,13 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/space)
+"uD" = (
+/obj/effect/turf_decal/bot/left,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"uG" = (
+/turf/closed/wall,
+/area/station/cargo/storage)
 "uL" = (
 /obj/structure/table,
 /obj/item/reagent_containers/cup/beaker{
@@ -309,9 +576,88 @@
 /obj/effect/turf_decal/bot_blue,
 /turf/open/floor/iron/white,
 /area/space)
+"vr" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"vB" = (
+/obj/effect/turf_decal/bot_white/right,
+/obj/effect/spawner/random/structure/crate,
+/turf/open/floor/iron/dark,
+/area/station/cargo/warehouse)
+"vC" = (
+/obj/structure/table,
+/obj/item/storage/medkit/regular{
+	pixel_x = -9;
+	pixel_y = 10
+	},
+/obj/item/pen/red{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/item/pen/fountain{
+	pixel_x = 6
+	},
+/obj/item/pen/blue{
+	pixel_x = -5;
+	pixel_y = -3
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"vM" = (
+/obj/machinery/vending/wardrobe/cargo_wardrobe,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"vN" = (
+/obj/effect/turf_decal/bot_white/left,
+/turf/open/floor/iron/dark,
+/area/station/cargo/warehouse)
+"wL" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "QMLoad2"
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"wN" = (
+/obj/machinery/conveyor/inverted{
+	dir = 10;
+	id = "QMLoad"
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"xq" = (
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
+"ys" = (
+/obj/effect/turf_decal/loading_area/white{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/station/cargo/warehouse)
 "yv" = (
 /turf/open/floor/iron/stairs/right,
 /area/space)
+"yE" = (
+/obj/effect/turf_decal/siding/wideplating_new/end{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/smooth_corner{
+	dir = 1
+	},
+/area/station/cargo/drone_bay)
+"yV" = (
+/obj/effect/turf_decal/bot/left,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "zj" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -336,6 +682,16 @@
 "AD" = (
 /turf/open/floor/iron/stairs/left,
 /area/space)
+"AN" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/closet/crate/freezer,
+/turf/open/floor/iron/dark,
+/area/station/cargo/warehouse)
+"AR" = (
+/obj/effect/turf_decal/bot,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "Bm" = (
 /turf/open/floor/iron,
 /area/space)
@@ -352,6 +708,13 @@
 "BO" = (
 /turf/open/floor/plating,
 /area/space)
+"Cb" = (
+/obj/machinery/light/small/directional/east,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "CJ" = (
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
 	dir = 8
@@ -364,6 +727,46 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"Do" = (
+/obj/effect/turf_decal/bot_white/right,
+/obj/structure/closet/crate/internals,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron/dark,
+/area/station/cargo/warehouse)
+"Dp" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "QMLoad2"
+	},
+/obj/effect/turf_decal/stripes/corner,
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"Dw" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/conveyor_switch/oneway{
+	id = "QMLoad2";
+	name = "Unloading Conveyor";
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"DH" = (
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"DW" = (
+/obj/machinery/computer/exodrone_control_console{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/station/cargo/drone_bay)
 "Eo" = (
 /obj/structure/table,
 /obj/item/stack/medical/mesh,
@@ -371,12 +774,46 @@
 /obj/item/stack/medical/suture,
 /turf/open/floor/iron/white,
 /area/space)
+"Et" = (
+/obj/machinery/door/airlock/mining,
+/obj/effect/mapping_helpers/airlock/access/any/supply/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/open/floor/iron/textured_large,
+/area/station/cargo/drone_bay)
+"EA" = (
+/obj/machinery/exodrone_launcher,
+/obj/item/exodrone,
+/turf/open/floor/plating/elevatorshaft,
+/area/station/cargo/drone_bay)
+"EF" = (
+/obj/effect/turf_decal/siding/dark_red{
+	dir = 1
+	},
+/obj/machinery/door/window/left/directional/north{
+	name = "Cargo Desk";
+	req_access = list("cargo")
+	},
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
+"EZ" = (
+/obj/machinery/mech_bay_recharge_port,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"Fj" = (
+/turf/open/floor/catwalk_floor/iron,
+/area/station/cargo/office)
 "Fu" = (
 /obj/effect/turf_decal/tile/blue/anticorner/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/space)
+"FT" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "FW" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/machinery/computer/cargo/request{
@@ -396,6 +833,17 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"Ga" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/conveyor_switch/oneway{
+	dir = 4;
+	id = "QMLoad";
+	name = "Loading Conveyor"
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "Gm" = (
 /obj/effect/turf_decal/bot_purple/right,
 /obj/effect/turf_decal/stripes/line{
@@ -410,6 +858,13 @@
 "Gr" = (
 /turf/closed/wall,
 /area/station/cargo/miningoffice)
+"Gx" = (
+/obj/effect/turf_decal/siding/brown,
+/obj/effect/turf_decal/siding/brown/corner{
+	dir = 4
+	},
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
 "GL" = (
 /obj/structure/table,
 /obj/effect/spawner/random/entertainment/cigarette_pack{
@@ -447,6 +902,27 @@
 /obj/item/stack/ore/silver,
 /turf/open/floor/iron/small,
 /area/station/cargo/miningoffice)
+"Iu" = (
+/obj/effect/turf_decal/loading_area/red,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"Iv" = (
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"IQ" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/smooth_corner{
+	dir = 1
+	},
+/area/station/cargo/drone_bay)
 "IX" = (
 /obj/machinery/computer/security/mining,
 /obj/effect/turf_decal/tile/brown/half/contrasted,
@@ -467,6 +943,29 @@
 "Jn" = (
 /turf/open/floor/iron/white/textured_large,
 /area/space)
+"JW" = (
+/obj/machinery/computer/cargo,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"Km" = (
+/obj/structure/fans/tiny/shield,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/red/line,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/station/cargo/drone_bay)
+"KV" = (
+/obj/effect/turf_decal/siding/brown,
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
 "Ln" = (
 /obj/effect/turf_decal/trimline/blue/corner{
 	dir = 8
@@ -478,7 +977,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/left/directional/north{
 	name = "Cargo Desk";
-	req_access = list("shipping")
+	req_access = list("cargo")
 	},
 /obj/machinery/door/window/right/directional/south,
 /turf/open/floor/plating,
@@ -488,6 +987,17 @@
 /obj/effect/turf_decal/bot_purple/right,
 /turf/open/floor/iron/small,
 /area/station/cargo/miningoffice)
+"Mk" = (
+/obj/vehicle/sealed/mecha/ripley/cargo,
+/turf/open/floor/iron/recharge_floor,
+/area/station/cargo/storage)
+"Mq" = (
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/brown,
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
 "MF" = (
 /obj/machinery/medical_kiosk,
 /turf/open/floor/iron/white,
@@ -496,29 +1006,129 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/textured_large,
 /area/space)
+"No" = (
+/obj/machinery/light/small/directional/west,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "NB" = (
 /obj/machinery/rnd/production/techfab/department/cargo,
-/turf/open/floor/iron,
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/turf/open/floor/iron/diagonal,
 /area/station/cargo/office)
+"NP" = (
+/obj/structure/table,
+/obj/effect/turf_decal/siding/brown{
+	dir = 5
+	},
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
+"NS" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"NV" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "OQ" = (
 /obj/machinery/modular_computer/preset/cargochat/cargo{
 	dir = 4
 	},
-/turf/open/floor/iron,
+/obj/effect/turf_decal/siding/brown,
+/obj/effect/turf_decal/siding/brown/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/diagonal,
 /area/station/cargo/office)
+"OW" = (
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"PJ" = (
+/obj/structure/table,
+/obj/item/stock_parts/scanning_module{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = -5
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = 5
+	},
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
+"PL" = (
+/obj/docking_port/stationary{
+	dwidth = 5;
+	height = 7;
+	name = "Cargo Bay";
+	shuttle_id = "cargo_home";
+	width = 12
+	},
+/turf/open/space/basic,
+/area/space)
 "PN" = (
 /obj/machinery/door/airlock/medical/glass,
 /obj/effect/mapping_helpers/airlock/access/all/medical/general,
 /obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/iron/white/textured_large,
 /area/space)
-"PQ" = (
-/obj/machinery/door/airlock/mining,
-/turf/open/floor/iron/textured_large,
-/area/station/cargo/office)
-"QJ" = (
+"PO" = (
+/obj/structure/table,
+/obj/item/clothing/gloves/cargo_gauntlet{
+	pixel_y = -3
+	},
+/obj/item/clothing/gloves/cargo_gauntlet,
+/obj/item/clothing/gloves/cargo_gauntlet{
+	pixel_y = 3
+	},
 /turf/open/floor/iron,
+/area/station/cargo/storage)
+"PQ" = (
+/turf/closed/wall,
+/area/station/cargo/drone_bay)
+"QJ" = (
+/obj/effect/turf_decal/tile/brown/diagonal_centre,
+/turf/open/floor/iron/diagonal,
 /area/station/cargo/office)
+"QO" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+"QW" = (
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/siding/wideplating_new/corner,
+/turf/open/floor/iron/textured_large,
+/area/station/cargo/warehouse)
 "RI" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/line{
@@ -529,11 +1139,62 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/space)
+"RK" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/smooth_corner,
+/area/station/cargo/drone_bay)
+"RY" = (
+/obj/machinery/door/poddoor{
+	id = "QMLoaddoor";
+	name = "Supply Dock Loading Door"
+	},
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "QMLoad"
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"Sf" = (
+/obj/structure/plasticflaps,
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "QMLoad"
+	},
+/turf/open/floor/plating,
+/area/station/cargo/storage)
+"Sn" = (
+/turf/closed/wall,
+/area/station/cargo/warehouse)
+"Tr" = (
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "QMLoad"
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plating,
+/area/station/cargo/storage)
 "TK" = (
 /obj/structure/closet/wardrobe/miner,
 /obj/effect/turf_decal/bot_purple/right,
 /turf/open/floor/iron/small,
 /area/station/cargo/miningoffice)
+"Ui" = (
+/obj/effect/turf_decal/siding/brown{
+	dir = 4
+	},
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
+"Ul" = (
+/obj/structure/chair/office{
+	dir = 8
+	},
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
 "Vl" = (
 /obj/effect/turf_decal/bot/left,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
@@ -542,6 +1203,21 @@
 /obj/effect/landmark/bitrunning/station_reward_spawn,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/bitrunning/den)
+"VO" = (
+/obj/effect/turf_decal/tile/brown/diagonal_centre,
+/obj/effect/turf_decal/siding/brown{
+	dir = 8
+	},
+/turf/open/floor/iron/diagonal,
+/area/station/cargo/office)
+"VS" = (
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
+"VW" = (
+/obj/item/banner/cargo/mundane,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "Wa" = (
 /turf/closed/wall,
 /area/space)
@@ -563,6 +1239,11 @@
 /obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plating,
 /area/space)
+"Xv" = (
+/obj/structure/rack,
+/obj/item/fuel_pellet,
+/turf/open/floor/iron/small,
+/area/station/cargo/drone_bay)
 "Xw" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/mineral/ore_redemption,
@@ -587,13 +1268,22 @@
 "Yw" = (
 /turf/open/floor/plating/elevatorshaft,
 /area/space)
+"YD" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/cargo/warehouse)
 "YT" = (
 /obj/machinery/autolathe,
-/turf/open/floor/iron,
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/brown/corner,
+/turf/open/floor/iron/diagonal,
 /area/station/cargo/office)
 "YY" = (
 /obj/structure/chair/office,
-/turf/open/floor/iron,
+/obj/effect/turf_decal/siding/brown,
+/turf/open/floor/iron/diagonal,
 /area/station/cargo/office)
 "Zg" = (
 /obj/machinery/door/airlock/external{
@@ -27193,13 +27883,13 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+uG
+uG
+uG
+uG
+uG
+uG
+uG
 jq
 Jj
 rN
@@ -27450,13 +28140,13 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+pc
+Tr
+gm
+Iv
+Iv
+Iv
+EZ
 jq
 jt
 rN
@@ -27707,13 +28397,13 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+pc
+fO
+Ga
+Iv
+Iv
+Iv
+Mk
 jq
 jq
 aH
@@ -27962,19 +28652,19 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+uG
+pc
+uG
+sY
+bO
+AR
+py
+Iv
+DH
 ua
 hv
-QJ
-QJ
+gk
+hd
 ua
 dS
 zQ
@@ -28219,19 +28909,19 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+RY
+Sf
+RY
+wN
+bO
+py
+AR
+Iv
+fz
 zj
 NB
 QJ
-QJ
+pg
 Xw
 Bm
 Bm
@@ -28475,20 +29165,20 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+PL
+NS
+Cb
+NV
+QO
+hP
+Iv
+Iv
+Iv
+Iv
 ua
 YT
-QJ
-QJ
+tJ
+Gx
 ua
 Bm
 Bm
@@ -28733,19 +29423,19 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-PQ
-QJ
-QJ
-QJ
+uG
+uG
+uG
+JW
+Iv
+AR
+cg
+Iv
+Iv
+mk
+Mq
+Fj
+KV
 mk
 Bm
 Bm
@@ -28990,18 +29680,18 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+OW
+No
+vr
+jZ
+FT
+Iv
+Iv
+Iv
+VW
 ua
-cZ
-QJ
+sK
+VO
 OQ
 ua
 Bm
@@ -29247,15 +29937,15 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+mp
+jR
+mp
+iF
+bO
+cg
+uD
+Iv
+ii
 zj
 cZ
 QJ
@@ -29504,18 +30194,18 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+uG
+pc
+uG
+wL
+bO
+yV
+cg
+Iv
+PO
 ua
-cZ
-QJ
+NP
+Ui
 rZ
 ua
 FW
@@ -29763,13 +30453,13 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+pc
+Dp
+Dw
+Iv
+Iv
+Iv
+vC
 Gr
 Gr
 bw
@@ -30020,13 +30710,13 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+pc
+ax
+Iu
+Iv
+Iv
+Iv
+vM
 Gr
 cn
 iX
@@ -30276,14 +30966,14 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+PQ
+PQ
+PQ
+PQ
+ln
+QW
+Sn
+Sn
 Gr
 cn
 iX
@@ -30532,15 +31222,15 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+PQ
+PQ
+sq
+DW
+PQ
+xq
+VS
+Do
+AN
 Gr
 cn
 iX
@@ -30784,20 +31474,20 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+ul
+Ul
+fb
+Et
+xq
+VS
+uc
+vB
 Gr
 IX
 iX
@@ -31041,20 +31731,20 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+Km
+dH
+EA
+dH
+hX
+Xv
+PJ
+cd
+fb
+ag
+xq
+qC
+ys
+uc
 Gr
 lK
 iX
@@ -31298,20 +31988,20 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+Km
+dH
+dH
+dH
+EF
+yE
+RK
+IQ
+fb
+Et
+xq
+VS
+uc
+vN
 Gr
 Gr
 Zg
@@ -31555,20 +32245,20 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+Km
+dH
+pd
+dH
+mL
+fb
+fb
+lX
+ns
+PQ
+xq
+VS
+ar
+oY
 Gr
 XZ
 XZ
@@ -31812,20 +32502,20 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+PQ
+kQ
+Sn
+YD
+YD
 Gr
 Gr
 Bx
