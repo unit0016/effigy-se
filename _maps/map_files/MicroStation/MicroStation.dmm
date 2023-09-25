@@ -15,6 +15,9 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"aE" = (
+/turf/open/floor/iron/small,
+/area/station/cargo/miningoffice)
 "aH" = (
 /obj/machinery/door/airlock/mining,
 /obj/effect/turf_decal/stripes/line{
@@ -34,6 +37,10 @@
 /obj/machinery/door/airlock/external,
 /turf/open/floor/iron/textured_large,
 /area/space)
+"bw" = (
+/obj/machinery/door/airlock/mining,
+/turf/open/floor/iron/textured_large,
+/area/station/cargo/miningoffice)
 "bA" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/stairs/north,
@@ -48,6 +55,15 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"cn" = (
+/obj/structure/closet/secure_closet/miner,
+/obj/effect/turf_decal/tile/brown/half/contrasted,
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/brown,
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "cv" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
@@ -62,6 +78,10 @@
 /obj/effect/landmark/bitrunning/station_reward_spawn,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/bitrunning/den)
+"cZ" = (
+/obj/structure/table,
+/turf/open/floor/iron,
+/area/station/cargo/office)
 "dD" = (
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
@@ -90,12 +110,23 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"ea" = (
+/obj/docking_port/stationary/mining_home{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
 "eQ" = (
 /obj/effect/turf_decal/trimline/purple/corner{
 	dir = 4
 	},
 /turf/open/floor/iron,
 /area/space)
+"gF" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/effect/turf_decal/bot_purple/left,
+/turf/open/floor/iron/small,
+/area/station/cargo/miningoffice)
 "hf" = (
 /obj/structure/table,
 /obj/item/storage/box/bodybags{
@@ -107,6 +138,22 @@
 /obj/item/stack/medical/suture,
 /turf/open/floor/iron/white,
 /area/space)
+"hv" = (
+/obj/machinery/computer/order_console/bitrunning,
+/turf/open/floor/iron,
+/area/station/cargo/office)
+"iH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/purple/line{
+	dir = 1
+	},
+/turf/open/floor/iron/small,
+/area/station/cargo/miningoffice)
+"iX" = (
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "jh" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular{
@@ -135,6 +182,15 @@
 /obj/effect/turf_decal/trimline/purple/corner,
 /turf/open/floor/iron,
 /area/space)
+"lK" = (
+/obj/machinery/computer/shuttle/mining,
+/obj/effect/turf_decal/tile/brown/half/contrasted,
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/brown,
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "mk" = (
 /obj/machinery/door/airlock/mining,
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
@@ -155,6 +211,11 @@
 	dir = 8
 	},
 /area/station/bitrunning/den)
+"na" = (
+/obj/structure/table,
+/obj/item/storage/toolbox/emergency,
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "oc" = (
 /obj/structure/fans/tiny/shield,
 /obj/effect/turf_decal/stripes/line,
@@ -278,6 +339,16 @@
 "Bm" = (
 /turf/open/floor/iron,
 /area/space)
+"Bx" = (
+/obj/machinery/door/airlock/external{
+	name = "Mining Dock Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/supply/mining,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/station/cargo/miningoffice)
 "BO" = (
 /turf/open/floor/plating,
 /area/space)
@@ -325,6 +396,30 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"Gm" = (
+/obj/effect/turf_decal/bot_purple/right,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/purple/line{
+	dir = 1
+	},
+/obj/machinery/computer/order_console/mining,
+/turf/open/floor/iron/small,
+/area/station/cargo/miningoffice)
+"Gr" = (
+/turf/closed/wall,
+/area/station/cargo/miningoffice)
+"GL" = (
+/obj/structure/table,
+/obj/effect/spawner/random/entertainment/cigarette_pack{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/effect/spawner/random/entertainment/deck,
+/obj/effect/spawner/random/entertainment/dice,
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "Hv" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -340,6 +435,27 @@
 	dir = 8
 	},
 /area/station/bitrunning/den)
+"HZ" = (
+/obj/effect/turf_decal/bot_purple/left,
+/obj/structure/rack,
+/obj/item/shovel{
+	pixel_x = -5
+	},
+/obj/item/pickaxe{
+	pixel_x = 5
+	},
+/obj/item/stack/ore/silver,
+/turf/open/floor/iron/small,
+/area/station/cargo/miningoffice)
+"IX" = (
+/obj/machinery/computer/security/mining,
+/obj/effect/turf_decal/tile/brown/half/contrasted,
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/brown,
+/turf/open/floor/iron,
+/area/station/cargo/miningoffice)
 "Jj" = (
 /obj/machinery/computer/quantum_console,
 /obj/effect/turf_decal/bot/right,
@@ -367,6 +483,11 @@
 /obj/machinery/door/window/right/directional/south,
 /turf/open/floor/plating,
 /area/station/cargo/office)
+"LJ" = (
+/obj/structure/closet/emcloset,
+/obj/effect/turf_decal/bot_purple/right,
+/turf/open/floor/iron/small,
+/area/station/cargo/miningoffice)
 "MF" = (
 /obj/machinery/medical_kiosk,
 /turf/open/floor/iron/white,
@@ -375,6 +496,10 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/textured_large,
 /area/space)
+"NB" = (
+/obj/machinery/rnd/production/techfab/department/cargo,
+/turf/open/floor/iron,
+/area/station/cargo/office)
 "OQ" = (
 /obj/machinery/modular_computer/preset/cargochat/cargo{
 	dir = 4
@@ -404,6 +529,11 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/space)
+"TK" = (
+/obj/structure/closet/wardrobe/miner,
+/obj/effect/turf_decal/bot_purple/right,
+/turf/open/floor/iron/small,
+/area/station/cargo/miningoffice)
 "Vl" = (
 /obj/effect/turf_decal/bot/left,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
@@ -451,13 +581,30 @@
 	dir = 8
 	},
 /area/station/bitrunning/den)
+"XZ" = (
+/turf/open/floor/plating,
+/area/station/cargo/miningoffice)
 "Yw" = (
 /turf/open/floor/plating/elevatorshaft,
 /area/space)
+"YT" = (
+/obj/machinery/autolathe,
+/turf/open/floor/iron,
+/area/station/cargo/office)
 "YY" = (
 /obj/structure/chair/office,
 /turf/open/floor/iron,
 /area/station/cargo/office)
+"Zg" = (
+/obj/machinery/door/airlock/external{
+	name = "Mining Dock Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/supply/mining,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/cargo/miningoffice)
 
 (1,1,1) = {"
 qx
@@ -27825,7 +27972,7 @@ qx
 qx
 qx
 ua
-QJ
+hv
 QJ
 QJ
 ua
@@ -28082,7 +28229,7 @@ qx
 qx
 qx
 zj
-QJ
+NB
 QJ
 QJ
 Xw
@@ -28339,7 +28486,7 @@ qx
 qx
 qx
 ua
-QJ
+YT
 QJ
 QJ
 ua
@@ -28853,7 +29000,7 @@ qx
 qx
 qx
 ua
-QJ
+cZ
 QJ
 OQ
 ua
@@ -29110,7 +29257,7 @@ qx
 qx
 qx
 zj
-QJ
+cZ
 QJ
 YY
 Lu
@@ -29367,7 +29514,7 @@ qx
 qx
 qx
 ua
-QJ
+cZ
 QJ
 rZ
 ua
@@ -29623,11 +29770,11 @@ qx
 qx
 qx
 qx
-ua
-ua
-PQ
-ua
-ua
+Gr
+Gr
+bw
+Gr
+Gr
 Yw
 Yw
 Nb
@@ -29880,11 +30027,11 @@ qx
 qx
 qx
 qx
-Wa
-Bm
-Bm
-Bm
-Wa
+Gr
+cn
+iX
+GL
+Gr
 Yw
 Yw
 Nb
@@ -30137,14 +30284,14 @@ qx
 qx
 qx
 qx
-Wa
-Bm
-Bm
-Bm
-Wa
-Wa
-Wa
-Wa
+Gr
+cn
+iX
+na
+Gr
+Gr
+Gr
+Gr
 Wa
 RI
 RI
@@ -30394,14 +30541,14 @@ qx
 qx
 qx
 qx
-Wa
-Bm
-Bm
-Bm
-Bm
-Bm
-Bm
-Wa
+Gr
+cn
+iX
+iX
+Gm
+LJ
+TK
+Gr
 rY
 rY
 rY
@@ -30651,14 +30798,14 @@ qx
 qx
 qx
 qx
-Wa
-Bm
-Bm
-Bm
-Bm
-Bm
-Bm
-Wa
+Gr
+IX
+iX
+iX
+iH
+aE
+aE
+Gr
 rY
 rY
 rY
@@ -30908,14 +31055,14 @@ qx
 qx
 qx
 qx
-Wa
-Bm
-Bm
-Bm
-Bm
-Bm
-Bm
-Wa
+Gr
+lK
+iX
+iX
+iH
+HZ
+gF
+Gr
 rY
 rY
 rY
@@ -31165,14 +31312,14 @@ qx
 qx
 qx
 qx
-Wa
-Wa
-Wa
-Wa
-BO
-Wa
-Wa
-Wa
+Gr
+Gr
+Zg
+Gr
+Gr
+Gr
+Gr
+Gr
 Wa
 Wa
 Wa
@@ -31422,13 +31569,13 @@ qx
 qx
 qx
 qx
+Gr
+XZ
+XZ
+XZ
+Gr
 qx
 qx
-Wa
-BO
-BO
-BO
-Wa
 qx
 qx
 qx
@@ -31679,13 +31826,13 @@ qx
 qx
 qx
 qx
+Gr
+Gr
+Bx
+Gr
+Gr
 qx
 qx
-Wa
-Wa
-BO
-Wa
-Wa
 qx
 qx
 qx
@@ -31938,7 +32085,7 @@ qx
 qx
 qx
 qx
-qx
+ea
 qx
 qx
 qx
