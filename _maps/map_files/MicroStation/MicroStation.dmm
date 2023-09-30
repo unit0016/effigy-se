@@ -30,6 +30,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
+/obj/item/kirbyplants/random,
 /turf/open/floor/iron,
 /area/space)
 "aC" = (
@@ -64,6 +65,12 @@
 	},
 /obj/machinery/door/airlock/external,
 /turf/open/floor/iron/textured_large,
+/area/space)
+"aV" = (
+/obj/machinery/modular_computer/preset/civilian{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
 /area/space)
 "bw" = (
 /obj/machinery/door/airlock/mining,
@@ -124,6 +131,16 @@
 /obj/effect/landmark/bitrunning/station_reward_spawn,
 /turf/open/floor/iron/dark/textured_large,
 /area/station/bitrunning/den)
+"cH" = (
+/obj/machinery/mecha_part_fabricator,
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 5
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/space)
 "cZ" = (
 /obj/structure/table,
 /obj/effect/turf_decal/siding/brown{
@@ -602,6 +619,10 @@
 "nU" = (
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
+/obj/machinery/door/window/left/directional/south{
+	name = "Robotics Desk";
+	req_access = list("robotics")
+	},
 /turf/open/floor/plating,
 /area/space)
 "oc" = (
@@ -983,6 +1004,12 @@
 /obj/effect/turf_decal/bot_white/left,
 /turf/open/floor/iron/dark,
 /area/station/cargo/warehouse)
+"vR" = (
+/obj/structure/chair/office/light{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "wm" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/siding/white{
@@ -1174,6 +1201,9 @@
 	},
 /turf/open/floor/plating,
 /area/station/cargo/storage)
+"Cc" = (
+/turf/open/floor/iron/dark,
+/area/space)
 "Cm" = (
 /obj/effect/turf_decal/trimline/brown/filled/corner,
 /turf/open/floor/iron/dark,
@@ -1205,6 +1235,15 @@
 	dir = 1
 	},
 /area/station/science/genetics)
+"Dl" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/red/line,
+/obj/item/storage/belt/utility/full,
+/obj/item/circuitboard/mecha/ripley/main,
+/obj/item/circuitboard/mecha/ripley/peripherals,
+/turf/open/floor/mineral/plastitanium,
+/area/space)
 "Do" = (
 /obj/effect/turf_decal/bot_white/right,
 /obj/structure/closet/crate/internals,
@@ -1466,6 +1505,10 @@
 /obj/item/stack/ore/silver,
 /turf/open/floor/iron/small,
 /area/station/cargo/miningoffice)
+"Ia" = (
+/obj/machinery/rnd/production/circuit_imprinter/department/science,
+/turf/open/floor/iron/dark,
+/area/space)
 "Ih" = (
 /obj/structure/table/wood,
 /obj/item/coin/gold{
@@ -1555,6 +1598,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/qm)
+"Ke" = (
+/obj/machinery/mecha_part_fabricator,
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/red/line,
+/turf/open/floor/mineral/plastitanium,
+/area/space)
 "Km" = (
 /obj/structure/fans/tiny/shield,
 /obj/effect/turf_decal/stripes/line,
@@ -1605,6 +1654,9 @@
 /turf/open/floor/iron/white/smooth_corner{
 	dir = 4
 	},
+/area/space)
+"Li" = (
+/turf/open/floor/iron/dark/textured_large,
 /area/space)
 "Ln" = (
 /obj/effect/turf_decal/trimline/blue/corner{
@@ -1856,6 +1908,10 @@
 /obj/effect/turf_decal/siding/wideplating_new/corner,
 /turf/open/floor/iron/textured_large,
 /area/station/cargo/warehouse)
+"Rb" = (
+/obj/structure/fireaxecabinet/mechremoval/directional/west,
+/turf/open/floor/iron/dark,
+/area/space)
 "Rj" = (
 /obj/structure/flora/bush/sparsegrass,
 /mob/living/carbon/human/species/monkey,
@@ -31136,7 +31192,7 @@ Wa
 Wa
 Wa
 Wa
-qx
+Wa
 qx
 qx
 qx
@@ -31390,10 +31446,10 @@ Bm
 Bm
 Bm
 Wa
-qx
-qx
-qx
-qx
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -31647,10 +31703,10 @@ Bm
 Bm
 Bm
 Wa
-qx
-qx
-qx
-qx
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -31904,10 +31960,10 @@ vp
 vp
 vp
 vp
-qx
-qx
-qx
-qx
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -32157,14 +32213,14 @@ rY
 rY
 rY
 vp
-BO
-BO
-BO
-qx
-qx
-qx
-qx
-qx
+Rb
+Cc
+Cc
+Cc
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -32414,15 +32470,15 @@ rY
 rY
 rY
 nU
-BO
-BO
-BO
-qx
-qx
-qx
-qx
-qx
-qx
+vR
+Cc
+Cc
+Cc
+Cc
+Cc
+Cc
+Wa
+Wa
 qx
 qx
 qx
@@ -32671,16 +32727,16 @@ rY
 rY
 rY
 vp
-BO
-BO
-BO
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+aV
+Ia
+Cc
+Cc
+Cc
+Cc
+Cc
+Cc
+Wa
+Wa
 qx
 qx
 qx
@@ -32931,13 +32987,13 @@ EN
 BC
 BC
 BC
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+cH
+Cc
+Cc
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -33188,13 +33244,13 @@ wm
 oo
 Fr
 BC
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+Dl
+Cc
+Cc
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -33445,13 +33501,13 @@ KG
 Tq
 Ux
 BC
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+Ke
+Cc
+Cc
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -33703,12 +33759,12 @@ Jn
 Lx
 BC
 BC
-qx
-qx
-qx
-qx
-qx
-qx
+Cc
+Cc
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -33960,12 +34016,12 @@ pa
 UO
 sn
 BC
-qx
-qx
-qx
-qx
-qx
-qx
+Cc
+Cc
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -34217,12 +34273,12 @@ JP
 Rj
 eB
 BC
-qx
-qx
-qx
-qx
-qx
-qx
+Cc
+Cc
+Cc
+Cc
+Cc
+Wa
 qx
 qx
 qx
@@ -34474,12 +34530,12 @@ BC
 BC
 BC
 BC
-qx
-qx
-qx
-qx
-qx
-qx
+Wa
+Li
+Wa
+Wa
+Wa
+Wa
 qx
 qx
 qx
@@ -34730,10 +34786,10 @@ rY
 rY
 rY
 rY
-qx
-qx
-qx
-qx
+rY
+rY
+rY
+rY
 qx
 qx
 qx
@@ -34987,10 +35043,10 @@ rY
 rY
 rY
 rY
-qx
-qx
-qx
-qx
+rY
+rY
+rY
+rY
 qx
 qx
 qx
@@ -35244,10 +35300,10 @@ rY
 rY
 rY
 rY
-qx
-qx
-qx
-qx
+rY
+rY
+rY
+rY
 qx
 qx
 qx
