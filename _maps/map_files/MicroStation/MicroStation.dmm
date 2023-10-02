@@ -71,7 +71,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/science/robotics/lab)
 "bw" = (
 /obj/machinery/door/airlock/mining,
 /obj/effect/mapping_helpers/airlock/access/all/supply/mining,
@@ -140,7 +140,7 @@
 	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/station/science/robotics/lab)
 "cZ" = (
 /obj/structure/table,
 /obj/effect/turf_decal/siding/brown{
@@ -172,6 +172,9 @@
 "dH" = (
 /turf/open/floor/plating/elevatorshaft,
 /area/station/cargo/drone_bay)
+"dO" = (
+/turf/closed/wall/r_wall,
+/area/station/science/robotics/mechbay)
 "dS" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 8
@@ -239,6 +242,12 @@
 /obj/machinery/suit_storage_unit/industrial/loader,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
+"fD" = (
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/science/robotics/mechbay)
 "fO" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -264,6 +273,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
+"gy" = (
+/obj/machinery/mechpad,
+/turf/open/floor/iron,
+/area/station/science/robotics/mechbay)
 "gF" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/bot_purple/left,
@@ -624,7 +637,7 @@
 	req_access = list("robotics")
 	},
 /turf/open/floor/plating,
-/area/space)
+/area/station/science/robotics/lab)
 "oc" = (
 /obj/structure/fans/tiny/shield,
 /obj/effect/turf_decal/stripes/line,
@@ -762,6 +775,12 @@
 /obj/machinery/netpod,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/bitrunning/den)
+"rv" = (
+/obj/machinery/mech_bay_recharge_port{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/science/robotics/mechbay)
 "rz" = (
 /obj/effect/turf_decal/trimline/purple/warning{
 	dir = 9
@@ -808,6 +827,9 @@
 "sa" = (
 /turf/open/floor/glass/plasma,
 /area/space)
+"sm" = (
+/turf/open/floor/iron,
+/area/station/science/robotics/mechbay)
 "sn" = (
 /obj/structure/flora/bush/flowers_pp,
 /obj/structure/flora/bush/sparsegrass,
@@ -912,6 +934,12 @@
 "uG" = (
 /turf/closed/wall,
 /area/station/cargo/storage)
+"uJ" = (
+/obj/structure/railing/corner/end/flip{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/station/science/robotics/mechbay)
 "uL" = (
 /obj/structure/table,
 /obj/item/reagent_containers/cup/beaker{
@@ -1009,7 +1037,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/science/robotics/lab)
 "wm" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/siding/white{
@@ -1105,6 +1133,10 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/station/cargo/office)
+"zm" = (
+/obj/structure/railing,
+/turf/open/floor/iron/dark,
+/area/station/science/robotics/mechbay)
 "zB" = (
 /obj/machinery/dna_infuser,
 /obj/effect/turf_decal/siding/white{
@@ -1132,6 +1164,11 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"zY" = (
+/obj/machinery/recharge_station,
+/obj/effect/turf_decal/bot_red,
+/turf/open/floor/iron/dark,
+/area/station/science/robotics/mechbay)
 "An" = (
 /obj/machinery/door/airlock/maintenance_hatch,
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
@@ -1203,7 +1240,7 @@
 /area/station/cargo/storage)
 "Cc" = (
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/science/robotics/lab)
 "Cm" = (
 /obj/effect/turf_decal/trimline/brown/filled/corner,
 /turf/open/floor/iron/dark,
@@ -1243,7 +1280,7 @@
 /obj/item/circuitboard/mecha/ripley/main,
 /obj/item/circuitboard/mecha/ripley/peripherals,
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/station/science/robotics/lab)
 "Do" = (
 /obj/effect/turf_decal/bot_white/right,
 /obj/structure/closet/crate/internals,
@@ -1508,7 +1545,7 @@
 "Ia" = (
 /obj/machinery/rnd/production/circuit_imprinter/department/science,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/science/robotics/lab)
 "Ih" = (
 /obj/structure/table/wood,
 /obj/item/coin/gold{
@@ -1557,6 +1594,9 @@
 /obj/effect/turf_decal/siding/brown,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
+"Jb" = (
+/turf/open/floor/iron/recharge_floor,
+/area/station/science/robotics/mechbay)
 "Jj" = (
 /obj/machinery/computer/quantum_console,
 /obj/effect/turf_decal/bot/right,
@@ -1603,7 +1643,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/red/line,
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/station/science/robotics/lab)
 "Km" = (
 /obj/structure/fans/tiny/shield,
 /obj/effect/turf_decal/stripes/line,
@@ -1656,8 +1696,11 @@
 	},
 /area/space)
 "Li" = (
+/obj/machinery/door/airlock/research,
+/obj/effect/mapping_helpers/airlock/access/all/science/robotics,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/iron/dark/textured_large,
-/area/space)
+/area/station/science/robotics/lab)
 "Ln" = (
 /obj/effect/turf_decal/trimline/blue/corner{
 	dir = 8
@@ -1682,6 +1725,9 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
+"LA" = (
+/turf/closed/wall,
+/area/station/science/robotics/mechbay)
 "LJ" = (
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/bot_purple/right,
@@ -1693,6 +1739,9 @@
 /obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/iron/white/textured_large,
 /area/station/science/genetics)
+"LV" = (
+/turf/open/floor/iron/dark,
+/area/station/science/robotics/mechbay)
 "Mj" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/rnd/production/protolathe/department/science,
@@ -1824,6 +1873,9 @@
 /obj/structure/table/wood,
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/qm)
+"OV" = (
+/turf/closed/wall/r_wall,
+/area/station/science/robotics/lab)
 "OW" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
@@ -1893,6 +1945,15 @@
 "PQ" = (
 /turf/closed/wall,
 /area/station/cargo/drone_bay)
+"Qi" = (
+/turf/closed/wall,
+/area/station/science/robotics/lab)
+"QD" = (
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/science/robotics/mechbay)
 "QJ" = (
 /obj/effect/turf_decal/tile/brown/diagonal_centre,
 /turf/open/floor/iron/diagonal,
@@ -1911,7 +1972,7 @@
 "Rb" = (
 /obj/structure/fireaxecabinet/mechremoval/directional/west,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/science/robotics/lab)
 "Rj" = (
 /obj/structure/flora/bush/sparsegrass,
 /mob/living/carbon/human/species/monkey,
@@ -2035,6 +2096,12 @@
 /obj/effect/turf_decal/bot_purple/right,
 /turf/open/floor/iron/small,
 /area/station/cargo/miningoffice)
+"TY" = (
+/obj/machinery/door/airlock/research,
+/obj/effect/mapping_helpers/airlock/access/all/science/robotics,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/open/floor/iron/dark/textured_large,
+/area/station/science/robotics/mechbay)
 "Ui" = (
 /obj/effect/turf_decal/siding/brown{
 	dir = 4
@@ -2058,6 +2125,16 @@
 "UA" = (
 /turf/open/floor/iron/white/smooth_half,
 /area/station/science/genetics)
+"UF" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "mechbay";
+	name = "Mech Bay Shutters"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/station/science/robotics/mechbay)
 "UO" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/lavendergrass,
@@ -2181,6 +2258,12 @@
 	dir = 8
 	},
 /area/station/bitrunning/den)
+"XC" = (
+/obj/machinery/computer/mechpad{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/science/robotics/mechbay)
 "XZ" = (
 /turf/open/floor/plating,
 /area/station/cargo/miningoffice)
@@ -31188,14 +31271,14 @@ rC
 Wa
 qr
 Wa
-Wa
-Wa
-Wa
-Wa
-Wa
-qx
-qx
-qx
+dO
+dO
+dO
+dO
+dO
+dO
+dO
+dO
 qx
 qx
 qx
@@ -31445,15 +31528,15 @@ Bm
 Bm
 Bm
 Bm
-Wa
-Cc
-Cc
-Cc
-Wa
-qx
-qx
-qx
-qx
+UF
+zm
+zY
+zY
+fD
+Jb
+rv
+LA
+LA
 qx
 qx
 qx
@@ -31702,15 +31785,15 @@ Bm
 Bm
 Bm
 Bm
-Wa
-Cc
-Cc
-Cc
-Wa
-qx
-qx
-qx
-qx
+UF
+uJ
+LV
+LV
+sm
+sm
+sm
+XC
+LA
 qx
 qx
 qx
@@ -31955,19 +32038,19 @@ Wa
 RI
 RI
 Wa
-vp
-vp
-vp
-vp
-vp
-Cc
-Cc
-Cc
-Wa
-qx
-qx
-qx
-qx
+OV
+OV
+OV
+OV
+dO
+LA
+LV
+LV
+sm
+sm
+sm
+gy
+LA
 qx
 qx
 qx
@@ -32212,19 +32295,19 @@ rY
 rY
 rY
 rY
-vp
+OV
 Rb
 Cc
 Cc
 Cc
-Cc
-Cc
-Cc
-Wa
-qx
-qx
-qx
-qx
+LA
+LA
+LV
+QD
+Jb
+rv
+LA
+LA
 qx
 qx
 qx
@@ -32475,12 +32558,12 @@ Cc
 Cc
 Cc
 Cc
-Cc
-Cc
-Wa
-Wa
-qx
-qx
+LA
+TY
+LA
+LA
+LA
+LA
 qx
 qx
 qx
@@ -32726,7 +32809,7 @@ rY
 rY
 rY
 rY
-vp
+OV
 aV
 Ia
 Cc
@@ -32735,8 +32818,8 @@ Cc
 Cc
 Cc
 Cc
-Wa
-Wa
+Cc
+Qi
 qx
 qx
 qx
@@ -32983,17 +33066,17 @@ es
 EN
 fk
 rP
-EN
-BC
-BC
-BC
+OV
+Qi
+Qi
+Qi
 cH
 Cc
 Cc
 Cc
 Cc
 Cc
-Wa
+Qi
 qx
 qx
 qx
@@ -33243,14 +33326,14 @@ zB
 wm
 oo
 Fr
-BC
+Qi
 Dl
 Cc
 Cc
 Cc
 Cc
 Cc
-Wa
+Qi
 qx
 qx
 qx
@@ -33500,14 +33583,14 @@ KG
 KG
 Tq
 Ux
-BC
+Qi
 Ke
 Cc
 Cc
 Cc
 Cc
 Cc
-Wa
+Qi
 qx
 qx
 qx
@@ -33757,14 +33840,14 @@ ok
 MY
 Jn
 Lx
-BC
-BC
+Qi
+Qi
 Cc
 Cc
 Cc
 Cc
 Cc
-Wa
+Qi
 qx
 qx
 qx
@@ -34015,13 +34098,13 @@ KG
 pa
 UO
 sn
-BC
+Qi
 Cc
 Cc
 Cc
 Cc
 Cc
-Wa
+Qi
 qx
 qx
 qx
@@ -34272,13 +34355,13 @@ UA
 JP
 Rj
 eB
-BC
+Qi
 Cc
 Cc
 Cc
 Cc
 Cc
-Wa
+Qi
 qx
 qx
 qx
@@ -34529,13 +34612,13 @@ LS
 BC
 BC
 BC
-BC
-Wa
+Qi
+Qi
 Li
-Wa
-Wa
-Wa
-Wa
+Qi
+Qi
+Qi
+Qi
 qx
 qx
 qx
