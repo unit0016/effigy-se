@@ -840,6 +840,19 @@
 	},
 /turf/open/floor/plating,
 /area/space)
+"oe" = (
+/obj/machinery/computer/department_orders/science{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/purple{
+	dir = 9
+	},
+/obj/effect/turf_decal/trimline/purple/corner,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/white/diagonal,
+/area/station/science/research)
 "oi" = (
 /obj/effect/turf_decal/trimline/purple/warning{
 	dir = 6
@@ -932,6 +945,13 @@
 /obj/effect/turf_decal/bot/right,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
+"pY" = (
+/obj/structure/table,
+/obj/item/crowbar,
+/obj/item/wrench,
+/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/turf/open/floor/iron/white/diagonal,
+/area/station/science/research)
 "qd" = (
 /obj/effect/turf_decal/siding/wideplating_new/terracotta{
 	dir = 9
@@ -1062,6 +1082,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/science/server)
+"sj" = (
+/obj/machinery/photocopier,
+/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/turf/open/floor/iron/white/diagonal,
+/area/station/science/research)
 "sm" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -1751,6 +1776,15 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/drone_bay)
+"DZ" = (
+/obj/structure/table,
+/obj/machinery/fax{
+	fax_name = "Research Division";
+	name = "Research Division Fax Machine"
+	},
+/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/turf/open/floor/iron/white/diagonal,
+/area/station/science/research)
 "Eo" = (
 /obj/structure/table,
 /obj/item/stack/medical/mesh,
@@ -1973,6 +2007,18 @@
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/qm)
 "GS" = (
+/obj/machinery/modular_computer/preset/cargochat/science{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/purple/warning{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 8
+	},
 /turf/open/floor/iron/white/diagonal,
 /area/station/science/research)
 "Hv" = (
@@ -2086,6 +2132,13 @@
 	dir = 1
 	},
 /area/station/cargo/drone_bay)
+"IV" = (
+/obj/effect/turf_decal/siding/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/purple/warning,
+/turf/open/floor/iron/white/diagonal,
+/area/station/science/research)
 "IX" = (
 /obj/machinery/computer/security/mining,
 /obj/effect/turf_decal/tile/brown/half/contrasted,
@@ -2324,6 +2377,18 @@
 /obj/vehicle/sealed/mecha/ripley/cargo,
 /turf/open/floor/iron/recharge_floor,
 /area/station/cargo/storage)
+"Ml" = (
+/obj/item/experi_scanner{
+	pixel_x = 4
+	},
+/obj/item/experi_scanner,
+/obj/item/experi_scanner{
+	pixel_x = -4
+	},
+/obj/structure/rack,
+/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/turf/open/floor/iron/white/diagonal,
+/area/station/science/research)
 "Mq" = (
 /obj/effect/turf_decal/siding/brown{
 	dir = 1
@@ -2687,6 +2752,10 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/station/science/robotics/lab)
+"Rc" = (
+/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/turf/open/floor/iron/white/diagonal,
+/area/station/science/research)
 "Rj" = (
 /obj/structure/flora/bush/sparsegrass,
 /mob/living/carbon/human/species/monkey,
@@ -2714,6 +2783,13 @@
 /obj/item/papercutter,
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/qm)
+"Rq" = (
+/obj/structure/table,
+/obj/item/stack/package_wrap,
+/obj/item/hand_labeler,
+/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/turf/open/floor/iron/white/diagonal,
+/area/station/science/research)
 "RF" = (
 /obj/machinery/door/airlock/security/glass,
 /turf/open/floor/iron/dark/textured_large,
@@ -36535,7 +36611,7 @@ vf
 Ka
 Ka
 Ka
-GS
+oe
 GS
 sQ
 sQ
@@ -36792,8 +36868,8 @@ jr
 Ka
 Ka
 Ka
-GS
-GS
+IV
+Rc
 sQ
 JJ
 JJ
@@ -37049,8 +37125,8 @@ jr
 Ka
 Ka
 Ka
-GS
-GS
+IV
+Rc
 sQ
 JJ
 NZ
@@ -37306,8 +37382,8 @@ jr
 Ka
 Ka
 Ka
-GS
-GS
+IV
+Ml
 sQ
 JJ
 NZ
@@ -37563,8 +37639,8 @@ jr
 Ka
 Ka
 Ka
-GS
-GS
+IV
+pY
 qd
 mc
 fj
@@ -37820,8 +37896,8 @@ jr
 Ka
 Ka
 Ka
-GS
-GS
+IV
+Rq
 gg
 QE
 HJ
@@ -38077,8 +38153,8 @@ jr
 Ka
 Ka
 Ka
-GS
-GS
+IV
+DZ
 EV
 FC
 Tf
@@ -38334,8 +38410,8 @@ jr
 Ka
 Ka
 Ka
-GS
-GS
+IV
+sj
 sQ
 NJ
 NJ
@@ -38587,13 +38663,13 @@ qx
 qx
 qx
 qx
-qx
-qx
-qx
-qx
-qx
-qx
-qx
+vp
+vp
+vp
+vp
+vp
+vp
+vp
 qx
 qx
 qx
