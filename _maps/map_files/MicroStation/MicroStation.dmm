@@ -1538,7 +1538,7 @@
 /area/station/science/robotics/mechbay)
 "Al" = (
 /obj/structure/table/wood,
-/obj/machinery/microwave,
+/obj/machinery/microwave/engineering/cell_included,
 /turf/open/floor/wood/parquet,
 /area/station/science/breakroom)
 "An" = (
