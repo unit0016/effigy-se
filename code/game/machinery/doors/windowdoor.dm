@@ -186,8 +186,8 @@
 		return TRUE
 
 //used in the AStar algorithm to determinate if the turf the door is on is passable
-/obj/machinery/door/window/CanAStarPass(obj/item/card/id/ID, to_dir, atom/movable/caller, no_id = FALSE)
-	return !density || (dir != to_dir) || (check_access(ID) && hasPower() && !no_id)
+/obj/machinery/door/window/CanAStarPass(to_dir, datum/can_pass_info/pass_info)
+	return !density || (dir != to_dir) || (check_access_list(pass_info.access) && hasPower() && !pass_info.no_id)
 
 /obj/machinery/door/window/proc/on_exit(datum/source, atom/movable/leaving, direction)
 	SIGNAL_HANDLER
@@ -218,9 +218,10 @@
 		operating = TRUE
 
 	do_animate("opening")
+	sleep(0.4 SECONDS) // EffigyEdit Change - Airlocks
 	playsound(src, 'sound/machines/windowdoor.ogg', 100, TRUE)
 	icon_state ="[base_state]open"
-	sleep(1 SECONDS)
+	sleep(0.6 SECONDS) // EffigyEdit Change - Airlocks
 	set_density(FALSE)
 	air_update_turf(TRUE, FALSE)
 	update_freelook_sight()
@@ -261,13 +262,14 @@
 
 	operating = TRUE
 	do_animate("closing")
+	sleep(0.7 SECONDS) // EffigyEdit Change - Airlocks
 	playsound(src, 'sound/machines/windowdoor.ogg', 100, TRUE)
 	icon_state = base_state
 
 	set_density(TRUE)
 	air_update_turf(TRUE, TRUE)
 	update_freelook_sight()
-	sleep(1 SECONDS)
+	sleep(0.3 SECONDS) // EffigyEdit Change - Airlocks
 
 	operating = FALSE
 	return TRUE

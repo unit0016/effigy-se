@@ -75,11 +75,11 @@
 		if(mod.wearer)
 			balloon_alert(mod.wearer, "not active!")
 		return
-	// EFFIGY EDIT ADD START
+	// EffigyEdit Add -
 	if((mod.wearer.wear_suit != mod.chestplate) && !(allow_flags & MODULE_ALLOW_INACTIVE))
 		balloon_alert(mod.wearer, "chestplate retracted!")
 		return
-	// EFFIGY EDIT ADD END
+	// EffigyEdit Add End
 	if(module_type != MODULE_USABLE)
 		if(active)
 			on_deactivation()
@@ -104,13 +104,13 @@
 	if(!mod.active || mod.activating || !mod.get_charge())
 		balloon_alert(mod.wearer, "unpowered!")
 		return FALSE
-	// EFFIGY EDIT ADD START - No using modules when not all parts are deployed.
+	// EffigyEdit Add - - No using modules when not all parts are deployed.
 	if(!(allow_flags & MODULE_ALLOW_INACTIVE))
 		for(var/obj/item/part as anything in mod.mod_parts)
 			if(part.loc == mod)
 				balloon_alert(mod.wearer, "deploy all parts first!")
 				return FALSE
-	// EFFIGY EDIT ADD END
+	// EffigyEdit Add End
 	if(!(allow_flags & MODULE_ALLOW_PHASEOUT) && istype(mod.wearer.loc, /obj/effect/dummy/phased_mob))
 		//specifically a to_chat because the user is phased out.
 		to_chat(mod.wearer, span_warning("You cannot activate this right now."))
@@ -301,14 +301,14 @@
 		used_overlay = overlay_state_inactive
 	else
 		return
-	/* EFFIGY EDIT CHANGE START - Making MODsuits mutant-compatible - ORIGINAL:
+	/* EffigyEdit Change START - Making MODsuits mutant-compatible - ORIGINAL:
 	var/mutable_appearance/module_icon = mutable_appearance(overlay_icon_file, used_overlay, layer = standing.layer + 0.1)
 	if(!use_mod_colors)
 		module_icon.appearance_flags |= RESET_COLOR
 	. += module_icon
 	*/
 	return handle_module_icon(standing, used_overlay)
-	// EFFIGY EDIT CHANGE END
+	// EffigyEdit Change END
 
 /// Updates the signal used by active modules to be activated
 /obj/item/mod/module/proc/update_signal(value)
@@ -352,6 +352,8 @@
 	var/list/accepted_anomalies = list(/obj/item/assembly/signaler/anomaly)
 	/// If this one starts with a core in.
 	var/prebuilt = FALSE
+	/// If the core is removable once socketed.
+	var/core_removable = TRUE
 
 /obj/item/mod/module/anomaly_locked/Initialize(mapload)
 	. = ..()
@@ -370,13 +372,15 @@
 	if(!length(accepted_anomalies))
 		return
 	if(core)
-		. += span_notice("There is a [core.name] installed in it. You could remove it with a <b>screwdriver</b>...")
+		. += span_notice("There is a [core.name] installed in it. [core_removable ? "You could remove it with a <b>screwdriver</b>..." : "Unfortunately, due to a design quirk, it's unremovable."]")
 	else
 		var/list/core_list = list()
 		for(var/path in accepted_anomalies)
 			var/atom/core_path = path
 			core_list += initial(core_path.name)
 		. += span_notice("You need to insert \a [english_list(core_list, and_text = " or ")] for this module to function.")
+		if(!core_removable)
+			. += span_notice("Due to some design quirk, once a core is inserted, it won't be removable.")
 
 /obj/item/mod/module/anomaly_locked/on_select()
 	if(!core)
@@ -412,6 +416,9 @@
 	. = ..()
 	if(!core)
 		balloon_alert(user, "no core!")
+		return
+	if(!core_removable)
+		balloon_alert(user, "can't remove core!")
 		return
 	balloon_alert(user, "removing core...")
 	if(!do_after(user, 3 SECONDS, target = src))

@@ -1,4 +1,4 @@
-#define DOOR_CLOSE_WAIT 60 ///Default wait until doors autoclose
+// #define DOOR_CLOSE_WAIT 60 ///Default wait until doors autoclose // EffigyEdit Change - Moved to code/__DEFINES/_effigy/airlock.dm
 /obj/machinery/door
 	name = "door"
 	desc = "It opens and closes."
@@ -55,7 +55,7 @@
 	/// Current elevator status for processing
 	var/elevator_status
 	/// What specific lift ID do we link with?
-	var/elevator_linked_id
+	var/transport_linked_id
 
 /datum/armor/machinery_door
 	melee = 30
@@ -78,7 +78,7 @@
 	air_update_turf(TRUE, TRUE)
 	register_context()
 	if(elevator_mode)
-		if(elevator_linked_id)
+		if(transport_linked_id)
 			elevator_status = LIFT_PLATFORM_LOCKED
 			GLOB.elevator_doors += src
 		else
@@ -501,12 +501,13 @@
 			if(isalien(future_pancake))  //For xenos
 				future_pancake.adjustBruteLoss(DOOR_CRUSH_DAMAGE * 1.5) //Xenos go into crit after aproximately the same amount of crushes as humans.
 				future_pancake.emote("roar")
+			else if(ismonkey(future_pancake)) //For monkeys
+				future_pancake.emote("screech")
+				future_pancake.adjustBruteLoss(DOOR_CRUSH_DAMAGE)
+				future_pancake.Paralyze(100)
 			else if(ishuman(future_pancake)) //For humans
 				future_pancake.adjustBruteLoss(DOOR_CRUSH_DAMAGE)
 				future_pancake.emote("scream")
-				future_pancake.Paralyze(100)
-			else if(ismonkey(future_pancake)) //For monkeys
-				future_pancake.adjustBruteLoss(DOOR_CRUSH_DAMAGE)
 				future_pancake.Paralyze(100)
 			else //for simple_animals & borgs
 				future_pancake.adjustBruteLoss(DOOR_CRUSH_DAMAGE)
@@ -594,4 +595,4 @@
 		return ..()
 	return ..(0)
 
-#undef DOOR_CLOSE_WAIT
+//#undef DOOR_CLOSE_WAIT // EffigyEdit Change - Moved to code/__DEFINES/_effigy/airlock.dm

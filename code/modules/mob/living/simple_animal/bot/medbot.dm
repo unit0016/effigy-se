@@ -493,10 +493,10 @@
 		return
 
 	if(patient && path.len == 0 && (get_dist(src,patient) > 1))
-		path = get_path_to(src, patient, max_distance=30, id=access_card)
+		path = get_path_to(src, patient, max_distance=30, access=access_card.GetAccess())
 		mode = BOT_MOVING
 		if(!path.len) //try to get closer if you can't reach the patient directly
-			path = get_path_to(src, patient, max_distance=30, mintargetdist=1, id=access_card)
+			path = get_path_to(src, patient, max_distance=30, mintargetdist=1, access=access_card.GetAccess())
 			if(!path.len) //Do not chase a patient we cannot reach.
 				soft_reset()
 
@@ -544,10 +544,10 @@
 			var/obj/item/clothing/CH = H.head
 			if (CS.clothing_flags & CH.clothing_flags & THICKMATERIAL)
 				return FALSE // Skip over them if they have no exposed flesh.
-		// EFFIGY EDIT ADD START
+		// EffigyEdit Add -
 		if(H.mob_biotypes & MOB_ROBOTIC)
 			return FALSE
-		// EFFIGY EDIT ADD END
+		// EffigyEdit Add End
 
 	if(medical_mode_flags & MEDBOT_DECLARE_CRIT && C.health <= 0) //Critical condition! Call for help!
 		declare(C)
@@ -650,7 +650,7 @@
 			C.visible_message(span_danger("[src] is trying to tend the wounds of [patient]!"), \
 				span_userdanger("[src] is trying to tend your wounds!"))
 
-			if(do_after(src, 8 SECONDS, patient)) //Slightly faster than default tend wounds, but does less HPS // EFFIGY EDIT CHANGE (was 2 sec)
+			if(do_after(src, 8 SECONDS, patient)) //Slightly faster than default tend wounds, but does less HPS // EffigyEdit Change (was 2 sec)
 				if((get_dist(src, patient) <= 1) && (bot_mode_flags & BOT_MODE_ON) && assess_patient(patient))
 					var/healies = heal_amount
 					var/obj/item/storage/medkit/medkit = medkit_type
@@ -658,10 +658,10 @@
 						healies *= 1.1
 					if(bot_cover_flags & BOT_COVER_EMAGGED)
 						patient.reagents.add_reagent(/datum/reagent/toxin/chloralhydrate, 5)
-						patient.apply_damage_type((healies*1),treatment_method)
+						patient.apply_damage((healies * 1), treatment_method, spread_damage = TRUE)
 						log_combat(src, patient, "pretended to tend wounds on", "internal tools", "([uppertext(treatment_method)]) (EMAGGED)")
 					else
-						patient.apply_damage_type((healies*-1),treatment_method) //don't need to check treatment_method since we know by this point that they were actually damaged.
+						patient.heal_damage_type((healies * 1), treatment_method) //don't need to check treatment_method since we know by this point that they were actually damaged.
 						log_combat(src, patient, "tended the wounds of", "internal tools", "([uppertext(treatment_method)])")
 					C.visible_message(span_notice("[src] tends the wounds of [patient]!"), \
 						"<span class='infoplain'>[span_green("[src] tends your wounds!")]</span>")
