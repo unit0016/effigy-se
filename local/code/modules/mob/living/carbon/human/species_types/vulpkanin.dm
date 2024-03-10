@@ -3,7 +3,6 @@
 	id = SPECIES_VULP
 	inherent_traits = list(
 		TRAIT_MUTANT_COLORS,
-		TRAIT_CAN_USE_FLIGHT_POTION,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutant_bodyparts = list(
@@ -25,7 +24,16 @@
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/mutant,
 	)
 
-/datum/species/vulpkanin/randomize_features(mob/living/carbon/human/human_mob)
+/datum/species/vulpkanin/get_default_mutant_bodyparts()
+	return list(
+		"tail" = list("Fox", TRUE),
+		"snout" = list("Mammal, Long", TRUE),
+		"ears" = list("Fox", TRUE),
+		"legs" = list("Normal Legs", FALSE),
+	)
+
+/datum/species/vulpkanin/randomize_features()
+	var/list/features = ..()
 	var/main_color
 	var/second_color
 	var/random = rand(1,5)
@@ -46,9 +54,9 @@
 		if(5)
 			main_color = "#999999"
 			second_color = "#EEEEEE"
-	human_mob.dna.features["mcolor"] = main_color
-	human_mob.dna.features["mcolor2"] = second_color
-	human_mob.dna.features["mcolor3"] = second_color
+	features["mcolor"] = main_color
+	features["mcolor2"] = second_color
+	features["mcolor3"] = second_color
 
 /datum/species/vulpkanin/get_random_body_markings(list/passed_features)
 	var/name = pick("Fox", "Floof", "Floofer")

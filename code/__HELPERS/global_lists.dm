@@ -17,9 +17,9 @@
 	// EffigyEdit Remove START Customization
 	/*
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/body_markings, GLOB.body_markings_list)
-	init_sprite_accessory_subtypes(/datum/sprite_accessory/tails, GLOB.tails_list, add_blank = TRUE)
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/human, GLOB.tails_list_human, add_blank = TRUE)
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/lizard, GLOB.tails_list_lizard, add_blank = TRUE)
+	init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/monkey, GLOB.tails_list_monkey, add_blank = TRUE)
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/snouts, GLOB.snouts_list)
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/horns,GLOB.horns_list)
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/ears, GLOB.ears_list)
@@ -51,6 +51,14 @@
 		var/datum/laugh_type/L = new spath()
 		GLOB.laugh_types[L.name] = spath
 	sort_list(GLOB.laugh_types, GLOBAL_PROC_REF(cmp_typepaths_asc))
+	// EffigyEdit Add End
+
+	// EffigyEdit Add - Vocal Bloopers
+	for(var/blooper_path in subtypesof(/datum/blooper))
+		var/datum/blooper/bloop = new blooper_path()
+		GLOB.blooper_list[bloop.id] = blooper_path
+		if(bloop.allow_random)
+			GLOB.blooper_random_list[bloop.id] = blooper_path
 	// EffigyEdit Add End
 
 /// Inits GLOB.species_list. Not using GLOBAL_LIST_INIT b/c it depends on GLOB.string_lists
@@ -242,7 +250,7 @@
 // Wall mounted machinery which are visually on the wall.
 GLOBAL_LIST_INIT(WALLITEMS_INTERIOR, typecacheof(list(
 	/obj/item/radio/intercom,
-	/obj/item/storage/secure/safe,
+	/obj/structure/secure_safe,
 	/obj/machinery/airalarm,
 	/obj/machinery/bluespace_vendor,
 	/obj/machinery/button,

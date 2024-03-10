@@ -226,7 +226,7 @@
 /obj/effect/abstract/liquid_turf/proc/make_state_layer(state, has_top)
 	PRIVATE_PROC(TRUE)
 
-	. = list(make_liquid_overlay("stage[state]_bottom", ABOVE_MOB_LAYER, GAME_PLANE_UPPER))
+	. = list(make_liquid_overlay("stage[state]_bottom", ABOVE_MOB_LAYER, GAME_PLANE))
 
 	if(!has_top)
 		return
@@ -235,6 +235,8 @@
 
 /obj/effect/abstract/liquid_turf/proc/set_new_liquid_state(new_state)
 	liquid_state = new_state
+	if(!isnull(my_turf))
+		my_turf.liquids_change(new_state)
 	update_icon(UPDATE_OVERLAYS)
 
 /obj/effect/abstract/liquid_turf/update_overlays()

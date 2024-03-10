@@ -30,7 +30,6 @@
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	inherent_factions = list(FACTION_SLIME)
 	species_language_holder = /datum/language_holder/jelly
-	ass_image = 'icons/ass/assslime.png'
 
 	bodypart_overrides = list(
 		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/jelly,
@@ -604,7 +603,7 @@
 
 	else
 		var/obj/item/slime_extract/to_integrate = human_owner.get_active_held_item()
-		if(!istype(to_integrate) || to_integrate.Uses <= 0)
+		if(!istype(to_integrate) || to_integrate.extract_uses <= 0)
 			human_owner.balloon_alert(human_owner, "need an unused slime extract!")
 			return
 		if(!human_owner.temporarilyRemoveItemFromInventory(to_integrate))

@@ -22,7 +22,7 @@
 	attack_sound = 'sound/hallucinations/growl1.ogg'
 	death_message = "wails, disintegrating into a pile of ectoplasm!"
 	gold_core_spawnable = NO_SPAWN //too spooky for science
-	light_system = MOVABLE_LIGHT
+	light_system = OVERLAY_LIGHT
 	light_range = 1 // same glowing as visible player ghosts
 	light_power = 2
 	ai_controller = /datum/ai_controller/basic_controller/ghost
@@ -94,7 +94,7 @@
 
 /datum/ai_controller/basic_controller/ghost
 	blackboard = list(
-		BB_TARGETTING_DATUM = new /datum/targetting_datum/basic,
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
 	)
 
 	ai_movement = /datum/ai_movement/basic_avoidance

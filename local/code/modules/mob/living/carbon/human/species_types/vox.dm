@@ -6,7 +6,6 @@
 	can_augment = FALSE
 	inherent_traits = list(
 		TRAIT_MUTANT_COLORS,
-		TRAIT_CAN_USE_FLIGHT_POTION,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutanttongue = /obj/item/organ/internal/tongue/vox
@@ -48,6 +47,14 @@
 		LOADOUT_ITEM_EARS = VOX_EARS_ICON
 	)
 
+/datum/species/vox/get_default_mutant_bodyparts()
+	return list(
+		"tail" = list("Vox Tail", FALSE),
+		"legs" = list(DIGITIGRADE_LEGS,FALSE),
+		"snout" = list("Vox Snout", FALSE),
+		"spines" = list("Vox Bands", TRUE),
+	)
+
 /datum/species/vox/pre_equip_species_outfit(datum/job/job, mob/living/carbon/human/equipping, visuals_only)
 	. = ..()
 	if(job?.vox_outfit)
@@ -67,9 +74,10 @@
 	return randname
 
 /datum/species/vox/randomize_features(mob/living/carbon/human/human_mob)
-	human_mob.dna.features["mcolor"] = pick("#77DD88", "#77DDAA", "#77CCDD", "#77DDCC")
-	human_mob.dna.features["mcolor2"] = pick("#EEDD88", "#EECC88")
-	human_mob.dna.features["mcolor3"] = pick("#222222", "#44EEFF", "#44FFBB", "#8844FF", "#332233")
+	var/list/features = ..()
+	features["mcolor"] = pick("#77DD88", "#77DDAA", "#77CCDD", "#77DDCC")
+	features["mcolor2"] = pick("#EEDD88", "#EECC88")
+	features["mcolor3"] = pick("#222222", "#44EEFF", "#44FFBB", "#8844FF", "#332233")
 
 /datum/species/vox/get_random_body_markings(list/passed_features)
 	var/name = pick(list("Vox", "Vox Hive", "Vox Nightling", "Vox Heart", "Vox Tiger"))

@@ -190,14 +190,14 @@
 	change attack_robot() above to the proper function
 */
 /mob/living/silicon/robot/UnarmedAttack(atom/A, proximity_flag, list/modifiers)
-	if(HAS_TRAIT(src, TRAIT_HANDS_BLOCKED))
+	if(!can_unarmed_attack())
 		return
 	A.attack_robot(src)
 
 /mob/living/silicon/robot/RangedAttack(atom/A)
 	A.attack_robot(src)
 
-// EffigyEdit Remove START Customization - overrides/code/_onclick/cyborg.dm
+// EffigyEdit Remove - Customization - overrides/code/_onclick/cyborg.dm
 /*
 /atom/proc/attack_robot(mob/user)
 	if (SEND_SIGNAL(src, COMSIG_ATOM_ATTACK_ROBOT, user) & COMPONENT_CANCEL_ATTACK_CHAIN)
@@ -206,7 +206,7 @@
 	attack_ai(user)
 	return
 */
-// EffigyEdit Remove END Customization
+// EffigyEdit Remove End
 
 /**
  * What happens when the cyborg without active module holds right-click on an item. Returns a SECONDARY_ATTACK_* value.

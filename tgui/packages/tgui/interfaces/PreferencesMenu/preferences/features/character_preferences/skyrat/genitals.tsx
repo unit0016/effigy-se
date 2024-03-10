@@ -1,4 +1,14 @@
-import { FeatureDropdownInput, Feature, FeatureNumberInput, CheckboxInput, FeatureTriColorInput, FeatureTriBoolInput, FeatureNumeric, FeatureToggle, FeatureChoiced } from '../../base';
+import {
+  CheckboxInput,
+  Feature,
+  FeatureChoiced,
+  FeatureDropdownInput,
+  FeatureNumeric,
+  FeatureSliderInput,
+  FeatureToggle,
+  FeatureTriBoolInput,
+  FeatureTriColorInput,
+} from '../../base';
 
 export const feature_penis: Feature<string> = {
   name: 'Penis',
@@ -6,17 +16,17 @@ export const feature_penis: Feature<string> = {
 };
 
 export const penis_skin_tone: FeatureToggle = {
-  name: 'Penis uses Skin Tone',
+  name: 'Penis Uses Skin Tone',
   component: CheckboxInput,
 };
 
 export const penis_skin_color: FeatureToggle = {
-  name: 'Penis uses Skin Color',
+  name: 'Penis Uses Skin Colour',
   component: CheckboxInput,
 };
 
 export const penis_color: Feature<string[]> = {
-  name: 'Penis Color',
+  name: 'Penis Colour',
   component: FeatureTriColorInput,
 };
 
@@ -32,12 +42,12 @@ export const penis_sheath: Feature<string> = {
 
 export const penis_length: FeatureNumeric = {
   name: 'Penis Length',
-  component: FeatureNumberInput,
+  component: FeatureSliderInput,
 };
 
 export const penis_girth: FeatureNumeric = {
   name: 'Penis Girth',
-  component: FeatureNumberInput,
+  component: FeatureSliderInput,
 };
 
 export const penis_taur_mode_toggle: FeatureToggle = {
@@ -51,17 +61,17 @@ export const feature_testicles: Feature<string> = {
 };
 
 export const testicles_skin_tone: FeatureToggle = {
-  name: 'Testicles uses Skin Tone',
+  name: 'Testicles Use Skin Tone',
   component: CheckboxInput,
 };
 
 export const testicles_skin_color: FeatureToggle = {
-  name: 'Testicles uses Skin Color',
+  name: 'Testicles Use Skin Colour',
   component: CheckboxInput,
 };
 
 export const testicles_color: Feature<string[]> = {
-  name: 'Testicles Color',
+  name: 'Testicle Colour',
   component: FeatureTriColorInput,
 };
 
@@ -71,8 +81,8 @@ export const testicles_emissive: Feature<boolean[]> = {
 };
 
 export const balls_size: FeatureNumeric = {
-  name: 'Testicles Size',
-  component: FeatureNumberInput,
+  name: 'Testicle Size',
+  component: FeatureSliderInput,
 };
 
 export const feature_vagina: Feature<string> = {
@@ -81,17 +91,17 @@ export const feature_vagina: Feature<string> = {
 };
 
 export const vagina_skin_tone: FeatureToggle = {
-  name: 'Vagina uses Skin Tone',
+  name: 'Vagina Uses Skin Tone',
   component: CheckboxInput,
 };
 
 export const vagina_skin_color: FeatureToggle = {
-  name: 'Vagina uses Skin Color',
+  name: 'Vagina Uses Skin Color',
   component: CheckboxInput,
 };
 
 export const vagina_color: Feature<string[]> = {
-  name: 'Vagina Color',
+  name: 'Vagina Colour',
   component: FeatureTriColorInput,
 };
 
@@ -111,17 +121,17 @@ export const feature_breasts: Feature<string> = {
 };
 
 export const breasts_skin_tone: FeatureToggle = {
-  name: 'Breast use Skin Tone',
+  name: 'Breasts Use Skin Tone',
   component: CheckboxInput,
 };
 
 export const breasts_skin_color: FeatureToggle = {
-  name: 'Breast use Skin Color',
+  name: 'Breasts Use Skin Color',
   component: CheckboxInput,
 };
 
 export const breasts_color: Feature<string[]> = {
-  name: 'Breast Color',
+  name: 'Breast Colour',
   component: FeatureTriColorInput,
 };
 
@@ -147,7 +157,7 @@ export const feature_anus: Feature<string> = {
 
 export const body_size: FeatureNumeric = {
   name: 'Body Size',
-  component: FeatureNumberInput,
+  component: FeatureSliderInput,
 };
 
 export const erp_status_pref: FeatureChoiced = {
@@ -155,17 +165,7 @@ export const erp_status_pref: FeatureChoiced = {
   component: FeatureDropdownInput,
 };
 
-export const erp_status_pref_nc: FeatureChoiced = {
-  name: 'ERP Non-Con Status',
-  component: FeatureDropdownInput,
-};
-
-export const erp_status_pref_v: FeatureChoiced = {
-  name: 'ERP Vore Status',
-  component: FeatureDropdownInput,
-};
-
 export const erp_status_pref_mechanics: FeatureChoiced = {
-  name: 'ERP Mechanical Status',
+  name: 'ERP Status (Mechanical)',
   component: FeatureDropdownInput,
 };

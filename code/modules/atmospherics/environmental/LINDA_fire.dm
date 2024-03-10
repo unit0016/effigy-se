@@ -21,7 +21,7 @@
  * is handled by the hotspot itself, specifically perform_exposure().
  */
 /turf/open/hotspot_expose(exposed_temperature, exposed_volume, soh)
-	// EffigyEdit Add -
+	// EffigyEdit Add - Liquids
 	if(liquids && !liquids.fire_state && liquids.check_fire(TRUE))
 		SSliquids.processing_fire[src] = TRUE
 	// EffigyEdit Add End
@@ -78,7 +78,7 @@
 	layer = GASFIRE_LAYER
 	plane = ABOVE_GAME_PLANE
 	blend_mode = BLEND_ADD
-	light_system = MOVABLE_LIGHT
+	light_system = OVERLAY_LIGHT
 	light_range = LIGHT_RANGE_FIRE
 	light_power = 1
 	light_color = LIGHT_COLOR_FIRE

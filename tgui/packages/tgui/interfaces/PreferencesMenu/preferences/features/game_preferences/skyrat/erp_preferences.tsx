@@ -1,14 +1,19 @@
-import { CheckboxInput, FeatureDropdownInput, FeatureChoiced, FeatureToggle } from '../../base';
+import {
+  CheckboxInput,
+  FeatureChoiced,
+  FeatureDropdownInput,
+  FeatureToggle,
+} from '../../base';
 
 export const master_erp_pref: FeatureToggle = {
-  name: 'Show/Hide Erotic Roleplay Preferences',
+  name: 'Show/Hide ERP Preferences',
   category: 'ERP',
   description: 'This shows/hides ERP preferences.',
   component: CheckboxInput,
 };
 
 export const erp_pref: FeatureToggle = {
-  name: 'Erotic Roleplay Interaction',
+  name: 'Erotic roleplay interaction',
   category: 'ERP',
   description: 'This informs players of if you wish to engage in ERP.',
   component: CheckboxInput,
@@ -123,7 +128,7 @@ export const erp_sexuality_pref: FeatureChoiced = {
 };
 
 export const genitalia_removal_pref: FeatureToggle = {
-  name: 'ERP Genitalia Removal',
+  name: 'ERP genitalia removal',
   category: 'ERP',
   description:
     'If checked, allows drugs to remove existing genitalia on your character.',
@@ -131,7 +136,7 @@ export const genitalia_removal_pref: FeatureToggle = {
 };
 
 export const new_genitalia_growth_pref: FeatureToggle = {
-  name: 'ERP New Genitalia Growth',
+  name: 'ERP new genitalia growth',
   category: 'ERP',
   description:
     'If checked, allows drugs to grow new genitalia on your character.',

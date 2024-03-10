@@ -49,12 +49,12 @@
 		else
 			show_eyeless = FALSE
 	else
-		if(!hair_hidden && !brain)
+		if(!hair_hidden && !(locate(/obj/item/organ/internal/brain) in src))
 			show_debrained = TRUE
 		else
 			show_debrained = FALSE
 
-		if(!eyes)
+		if(!(locate(/obj/item/organ/internal/eyes) in src))
 			show_eyeless = TRUE
 		else
 			show_eyeless = FALSE
@@ -309,7 +309,7 @@
 		update_body_parts()
 
 /**
- * Set the Hair Gradient Color of a human.
+ * Set the hair gradient color of a human.
  * Update calls update_body_parts().
  **/
 /mob/living/proc/set_hair_gradient_color(new_color, update = TRUE)
@@ -395,7 +395,7 @@
 		update_body_parts()
 
 /**
- * Set the facial Hair Gradient Color of a human.
+ * Set the facial hair gradient color of a human.
  * Update calls update_body_parts().
  **/
 /mob/living/proc/set_facial_hair_gradient_color(new_color, update = TRUE)

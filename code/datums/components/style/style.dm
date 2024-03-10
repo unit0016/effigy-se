@@ -121,6 +121,7 @@
 			/obj/projectile/kinetic,\
 			/obj/projectile/bileworm_acid,\
 			/obj/projectile/herald,\
+			/obj/projectile/kiss,\
 			)\
 		)
 	)
@@ -143,7 +144,7 @@
 		qdel(projectile_parry.resolve())
 
 
-/datum/component/style/Destroy(force, silent)
+/datum/component/style/Destroy(force)
 	STOP_PROCESSING(SSdcs, src)
 	var/mob/mob_parent = parent
 	if(mob_parent.hud_used)

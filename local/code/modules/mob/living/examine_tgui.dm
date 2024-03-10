@@ -53,18 +53,15 @@
 	var/custom_species
 	var/custom_species_lore
 	var/obscured
+	var/obscure_on_examine = preferences.read_preference(/datum/preference/toggle/obscure_on_examine)
 	var/ooc_notes = ""
 	var/headshot = ""
 
 	//  Handle OOC notes first
 	if(preferences && preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		var/e_prefs = preferences.read_preference(/datum/preference/choiced/erp_status)
-		var/e_prefs_nc = preferences.read_preference(/datum/preference/choiced/erp_status_nc)
-		var/e_prefs_v = preferences.read_preference(/datum/preference/choiced/erp_status_v)
 		var/e_prefs_mechanical = preferences.read_preference(/datum/preference/choiced/erp_status_mechanics)
 		ooc_notes += "ERP: [e_prefs]\n"
-		ooc_notes += "Non-Con: [e_prefs_nc]\n"
-		ooc_notes += "Vore: [e_prefs_v]\n"
 		ooc_notes += "ERP Mechanics: [e_prefs_mechanical]\n"
 		ooc_notes += "\n"
 
@@ -79,7 +76,7 @@
 
 	if(ishuman(holder))
 		var/mob/living/carbon/human/holder_human = holder
-		obscured = (holder_human.wear_mask && (holder_human.wear_mask.flags_inv & HIDEFACE)) || (holder_human.head && (holder_human.head.flags_inv & HIDEFACE))
+		obscured = (holder_human.wear_mask && (holder_human.wear_mask.flags_inv & HIDEFACE)) && obscure_on_examine || (holder_human.head && (holder_human.head.flags_inv & HIDEFACE) && obscure_on_examine)
 		custom_species = obscured ? "Obscured" : holder_human.dna.features["custom_species"]
 		flavor_text = obscured ? "Obscured" :  holder_human.dna.features["flavor_text"]
 		custom_species_lore = obscured ? "Obscured" : holder_human.dna.features["custom_species_lore"]

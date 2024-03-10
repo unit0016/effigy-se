@@ -9,11 +9,11 @@
 /obj/machinery/light
 	icon = 'local/icons/obj/lighting.dmi'
 	overlay_icon = 'local/icons/obj/lighting_overlay.dmi'
-	brightness = 6
-	fire_brightness = 6
-	fire_colour = "#D47F9B"
-	bulb_colour = "#d4d4ff"
-	bulb_power = 1.4
+	brightness = 7
+	fire_brightness = 9
+	fire_colour = "#E85888"
+	bulb_colour = LIGHT_COLOR_DEFAULT
+	bulb_power = 1.2
 	nightshift_light_color = null // Let the dynamic night shift color code handle this.
 	bulb_low_power_colour = COLOR_STRONG_BLUE
 	bulb_low_power_brightness_mul = 0.75
@@ -24,9 +24,6 @@
 	power_consumption_rate = 5.62
 	var/maploaded = FALSE //So we don't have a lot of stress on startup.
 	var/turning_on = FALSE //More stress stuff.
-	var/constant_flickering = FALSE // Are we always flickering?
-	var/flicker_timer = null
-	var/roundstart_flicker = FALSE
 
 /obj/machinery/light/proc/turn_on(trigger, play_sound = TRUE)
 	if(QDELETED(src))
@@ -52,9 +49,10 @@
 			new_color = color
 		else // Adjust light values to be warmer. I doubt caching would speed this up by any worthwhile amount, as it's all very fast number and string operations.
 			// Convert to numbers for easier manipulation.
-			var/red = GETREDPART(bulb_colour)
-			var/green = GETGREENPART(bulb_colour)
-			var/blue = GETBLUEPART(bulb_colour)
+			var/list/color_parts = rgb2num(bulb_colour)
+			var/red = color_parts[1]
+			var/green = color_parts[2]
+			var/blue = color_parts[3]
 
 			red += round(red * NIGHTSHIFT_COLOR_MODIFIER)
 			green -= round(green * NIGHTSHIFT_COLOR_MODIFIER * 0.3)
@@ -72,79 +70,29 @@
 		else
 			use_power = ACTIVE_POWER_USE
 			set_light(new_brightness, new_power, new_color)
-		//if(play_sound)
-		//	playsound(src.loc, 'local/icons/obj/light_on.ogg', 65, 1)
 
-/obj/machinery/light/proc/start_flickering()
-	on = FALSE
-	update(FALSE, TRUE, FALSE)
-
-	constant_flickering = TRUE
-
-	flicker_timer = addtimer(CALLBACK(src, PROC_REF(flicker_on)), rand(5, 10))
-
-/obj/machinery/light/proc/stop_flickering()
-	constant_flickering = FALSE
-
-	if(flicker_timer)
-		deltimer(flicker_timer)
-		flicker_timer = null
-
-	set_on(has_power())
-
-/obj/machinery/light/proc/alter_flicker(enable = TRUE)
-	if(!constant_flickering)
-		return
-	if(has_power())
-		on = enable
-		update(FALSE, TRUE, FALSE)
-
-/obj/machinery/light/proc/flicker_on()
-	alter_flicker(TRUE)
-	flicker_timer = addtimer(CALLBACK(src, PROC_REF(flicker_off)), rand(5, 10))
-
-/obj/machinery/light/proc/flicker_off()
-	alter_flicker(FALSE)
-	flicker_timer = addtimer(CALLBACK(src, PROC_REF(flicker_on)), rand(5, 50))
-
-/obj/machinery/light/Initialize(mapload = TRUE)
-	. = ..()
-	if(on)
-		maploaded = TRUE
-
-	if(roundstart_flicker)
-		start_flickering()
-
-/obj/machinery/light/multitool_act(mob/living/user, obj/item/multitool)
-	if(!constant_flickering)
-		balloon_alert(user, "ballast is already working!")
-		return TOOL_ACT_TOOLTYPE_SUCCESS
-
-	balloon_alert(user, "repairing the ballast...")
-	if(do_after(user, 2 SECONDS, src))
-		stop_flickering()
-		balloon_alert(user, "ballast repaired!")
-		return TOOL_ACT_TOOLTYPE_SUCCESS
-	return ..()
-
-// Kneecapping light values every light at a time.
 /obj/machinery/light/dim
-	brightness = 3.5
-	nightshift_brightness = 3
-	bulb_colour = "#d4d4ff"
-	bulb_power = 1.15
+	bulb_colour = LIGHT_COLOR_DEFAULT
+	bulb_power = 0.8
+
+/obj/machinery/light/cold/dim
+	bulb_power = 0.8
+
+/obj/machinery/light/warm/dim
+	bulb_power = 0.8
 
 /obj/machinery/light/small
 	brightness = 3.5
 	nightshift_brightness = 3
-	bulb_colour = "#d4d4ff"
-	bulb_power = 1.3
+	bulb_colour = LIGHT_COLOR_DEFAULT
+	bulb_power = 1
+	fire_colour = "#E85888"
 
 /obj/machinery/light/cold
 	nightshift_light_color = null
 
 /obj/machinery/light/warm
-	bulb_colour = "#d4d4ff"
+	bulb_colour = LIGHT_COLOR_DEFAULT
 	nightshift_light_color = null
 
 

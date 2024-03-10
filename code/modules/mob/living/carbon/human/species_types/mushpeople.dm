@@ -18,6 +18,8 @@
 
 	no_equip_flags = ITEM_SLOT_MASK | ITEM_SLOT_OCLOTHING | ITEM_SLOT_GLOVES | ITEM_SLOT_FEET | ITEM_SLOT_ICLOTHING
 
+	heatmod = 1.5
+
 	mutanttongue = /obj/item/organ/internal/tongue/mush
 	mutanteyes = /obj/item/organ/internal/eyes/night_vision/mushroom
 	mutantlungs = null
@@ -40,17 +42,18 @@
 	. = ..()
 	if(ishuman(C))
 		var/mob/living/carbon/human/H = C
-		// EffigyEdit Change START
+		// EffigyEdit Change
 		if(!H.dna.mutant_bodyparts["caps"] || H.dna.mutant_bodyparts["caps"][MUTANT_INDEX_NAME] != "None")
 			H.dna.mutant_bodyparts["caps"] = list(MUTANT_INDEX_NAME = "Round", MUTANT_INDEX_COLOR_LIST = list(H.hair_color))
 			handle_mutant_bodyparts(H)
-		// EffigyEdit Change END
-		mush = new(null)
-		mush.teach(H)
+		// EffigyEdit Change End
+		mush = new()
+		mush.teach(C)
+		mush.allow_temp_override = FALSE
 
 /datum/species/mush/on_species_loss(mob/living/carbon/C)
 	. = ..()
-	mush.remove(C)
+	mush.fully_remove(C)
 	QDEL_NULL(mush)
 
 /datum/species/mush/handle_chemical(datum/reagent/chem, mob/living/carbon/human/affected, seconds_per_tick, times_fired)
@@ -63,3 +66,33 @@
 /datum/species/mush/handle_mutant_bodyparts(mob/living/carbon/human/H, forced_colour, force_update = FALSE) // EffigyEdit Add
 	forced_colour = FALSE
 	return ..()
+/// A mushpersons mushroom cap organ
+/obj/item/organ/external/mushroom_cap
+	name = "mushroom cap"
+	desc = "These are yummie, no cap."
+
+	use_mob_sprite_as_obj_sprite = TRUE
+
+	zone = BODY_ZONE_HEAD
+	slot = ORGAN_SLOT_EXTERNAL_POD_HAIR
+
+	preference = "feature_mushperson_cap"
+
+	// dna_block = DNA_MUSHROOM_CAPS_BLOCK
+	restyle_flags = EXTERNAL_RESTYLE_PLANT
+
+	bodypart_overlay = /datum/bodypart_overlay/mutant/mushroom_cap
+
+/// Bodypart overlay for the mushroom cap organ
+/datum/bodypart_overlay/mutant/mushroom_cap
+	layers = EXTERNAL_ADJACENT
+	feature_key = "caps"
+
+/datum/bodypart_overlay/mutant/mushroom_cap/get_global_feature_list()
+	return GLOB.sprite_accessories[ORGAN_SLOT_EXTERNAL_POD_HAIR]
+
+/datum/bodypart_overlay/mutant/mushroom_cap/can_draw_on_bodypart(mob/living/carbon/human/human)
+	if((human.head?.flags_inv & HIDEHAIR) || (human.wear_mask?.flags_inv & HIDEHAIR))
+		return FALSE
+
+	return TRUE

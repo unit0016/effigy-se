@@ -1,16 +1,13 @@
 /datum/species/synthetic
 	name = "Synthetic Humanoid"
 	id = SPECIES_SYNTH
-	say_mod = "beeps"
 	inherent_biotypes = MOB_ROBOTIC | MOB_HUMANOID
 	inherent_traits = list(
 		TRAIT_CAN_STRIP,
-		TRAIT_CAN_USE_FLIGHT_POTION,
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_RADIMMUNE,
 		TRAIT_NOBREATH,
 		TRAIT_TOXIMMUNE,
-		TRAIT_NOCLONELOSS,
 		TRAIT_GENELESS,
 		TRAIT_STABLEHEART,
 		TRAIT_LIMBATTACHMENT,
@@ -19,7 +16,6 @@
 		TRAIT_LITERATE,
 		TRAIT_NOCRITDAMAGE, // We do our own handling of crit damage.
 		TRAIT_ROBOTIC_DNA_ORGANS,
-		TRAIT_NO_TRANSFORMATION_STING,
 	)
 	mutant_bodyparts = list(
 		MUTANT_SYNTH_ANTENNA = "None",
@@ -68,7 +64,18 @@
 	var/datum/action/innate/monitor_change/screen
 	/// This is the screen that is given to the user after they get revived. On death, their screen is temporarily set to BSOD before it turns off, hence the need for this var.
 	var/saved_screen = "Blank"
-	wing_types = list(/obj/item/organ/external/wings/functional/robotic)
+
+/datum/species/synthetic/get_default_mutant_bodyparts()
+	return list(
+		"tail" = list("None", FALSE),
+		"ears" = list("None", FALSE),
+		"legs" = list("Normal Legs", FALSE),
+		"snout" = list("None", FALSE),
+		MUTANT_SYNTH_ANTENNA = list("None", FALSE),
+		MUTANT_SYNTH_SCREEN = list("None", FALSE),
+		MUTANT_SYNTH_CHASSIS = list("Default Chassis", FALSE),
+		MUTANT_SYNTH_HEAD = list("Default Head", FALSE),
+	)
 
 /datum/species/synthetic/spec_life(mob/living/carbon/human/human)
 	. = ..()

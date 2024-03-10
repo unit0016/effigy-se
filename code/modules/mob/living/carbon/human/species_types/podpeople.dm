@@ -29,8 +29,6 @@
 		BODY_ZONE_CHEST = /obj/item/bodypart/chest/pod,
 	)
 
-	ass_image = 'icons/ass/asspodperson.png'
-
 /datum/species/pod/on_species_gain(mob/living/carbon/new_podperson, datum/species/old_species, pref_load)
 	. = ..()
 	if(ishuman(new_podperson))
@@ -112,6 +110,3 @@
 	))
 
 	return to_add
-
-/datum/species/pod/randomize_features(mob/living/carbon/human_mob)
-	randomize_external_organs(human_mob)

@@ -18,6 +18,8 @@
 	/// A weakref of the last thing we hovered over
 	/// God I hate how dragging works
 	var/datum/weakref/last_hovored_ref
+	/// overlay for keybind maptext
+	var/mutable_appearance/keybind_maptext
 
 /atom/movable/screen/movable/action_button/Destroy()
 	if(our_hud)
@@ -48,6 +50,9 @@
 		return FALSE
 
 	var/list/modifiers = params2list(params)
+	if(LAZYACCESS(modifiers, ALT_CLICK))
+		begin_creating_bind(usr)
+		return TRUE
 	if(LAZYACCESS(modifiers, SHIFT_CLICK))
 		var/datum/hud/our_hud = usr.hud_used
 		our_hud.position_action(src, SCRN_OBJ_DEFAULT)
@@ -60,6 +65,14 @@
 		trigger_flags |= TRIGGER_SECONDARY_ACTION
 	linked_action.Trigger(trigger_flags = trigger_flags)
 	return TRUE
+
+/atom/movable/screen/movable/action_button/proc/begin_creating_bind(mob/user)
+	if(!isnull(linked_action.full_key))
+		linked_action.full_key = null
+		linked_action.update_button_status(src)
+		return
+	linked_action.full_key = tgui_input_keycombo(user, "Please bind a key for this action.")
+	linked_action.update_button_status(src)
 
 // Entered and Exited won't fire while you're dragging something, because you're still "holding" it
 // Very much byond logic, but I want nice behavior, so we fake it with drag
@@ -148,6 +161,15 @@
 	if(!user?.client)
 		return
 	user.client.prefs.action_buttons_screen_locs -= "[name]_[id]"
+
+/atom/movable/screen/movable/action_button/proc/update_keybind_maptext(key)
+	cut_overlay(keybind_maptext)
+	if(!key)
+		return
+	keybind_maptext = new
+	keybind_maptext.maptext = MAPTEXT("<span style='text-align: right'>[key]</span>")
+	keybind_maptext.transform = keybind_maptext.transform.Translate(-4, length(key) > 1 ? -6 : 2) //with modifiers, its placed lower so cooldown is visible
+	add_overlay(keybind_maptext)
 
 /**
  * This is a silly proc used in hud code code to determine what icon and icon state we should be using
@@ -241,8 +263,8 @@
 	action.HideFrom(src)
 
 /atom/movable/screen/button_palette
-	desc = "<b>Drag</b> buttons to move them<br><b>Shift-click</b> any button to reset it<br><b>Alt-click</b> this to reset all buttons"
-	icon = 'local/icons/hud/64x16_actions.dmi' // EffigyEdit Change
+	desc = "<b>Drag</b> buttons to move them<br><b>Shift-click</b> any button to reset it<br><b>Alt-click any button</b> to begin binding it to a key<br><b>Alt-click this</b> to reset all buttons"
+	icon = 'icons/hud/64x16_actions.dmi'
 	icon_state = "screen_gen_palette"
 	screen_loc = ui_action_palette
 	var/datum/hud/our_hud
@@ -368,7 +390,7 @@ GLOBAL_LIST_INIT(palette_removed_matrix, list(1.4,0,0,0, 0.7,0.4,0,0, 0.4,0,0.6,
 	closeToolTip(usr) //Our tooltips are now invalid, can't seem to update them in one frame, so here, just close them
 
 /atom/movable/screen/palette_scroll
-	icon = GENERAL_SCREEN_ICONS
+	icon = 'icons/hud/screen_gen.dmi'
 	screen_loc = ui_palette_scroll
 	/// How should we move the palette's actions?
 	/// Positive scrolls down the list, negative scrolls back
@@ -438,7 +460,7 @@ GLOBAL_LIST_INIT(palette_removed_matrix, list(1.4,0,0,0, 0.7,0.4,0,0, 0.4,0,0.6,
 /atom/movable/screen/action_landing
 	name = "Button Space"
 	desc = "<b>Drag and drop</b> a button into this spot<br>to add it to the group"
-	icon = GENERAL_SCREEN_ICONS
+	icon = 'icons/hud/screen_gen.dmi'
 	icon_state = "reserved"
 	// We want our whole 32x32 space to be clickable, so dropping's forgiving
 	mouse_opacity = MOUSE_OPACITY_OPAQUE

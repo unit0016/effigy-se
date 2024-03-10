@@ -56,7 +56,7 @@ GLOBAL_REAL(Master, /datum/controller/master)
 	var/map_loading = FALSE //!Are we loading in a new map?
 
 	var/current_runlevel //!for scheduling different subsystems for different stages of the round
-	var/sleep_offline_after_initializations = FALSE // EffigyEdit Change - controlled by subsystem
+	var/sleep_offline_after_initializations = TRUE
 
 	/// During initialization, will be the instanced subsytem that is currently initializing.
 	/// Outside of initialization, returns null.
@@ -279,6 +279,8 @@ GLOBAL_REAL(Master, /datum/controller/master)
 		world.sleep_offline = FALSE
 	initializations_finished_with_no_players_logged_in = initialized_tod < REALTIMEOFDAY - 10
 
+	SSticker.timeLeft = (CONFIG_GET(number/lobby_countdown) * 10) // EffigyEdit Add - Custom Lobby
+
 /**
  * Initialize a given subsystem and handle the results.
  *
@@ -345,18 +347,20 @@ GLOBAL_REAL(Master, /datum/controller/master)
 			return
 		else
 			// SS_INIT_NONE or an invalid value.
-			message_prefix = "[subsystem.name] Subsystem Error!" // EffigyEdit Change - Splash
+			message_prefix = "[subsystem.name] initialized with [result ? "response code [result]" : "no response code"]." // EffigyEdit Change - Splash
 			chat_warning = TRUE
 
 	var/message = "[message_prefix] Completed in [seconds] second[seconds == 1 ? "" : "s"]!"
-	// EffigyEdit Remove START (#2 Splash)
-	/*
+	/* EffigyEdit Remove - Splash
 	var/chat_message = chat_warning ? span_boldwarning(message) : span_boldannounce(message)
-	*/
-	// EffigyEdit Remove END (#2 Splash)
+	*/// EffigyEdit Remove End
 
 	if(result != SS_INIT_NO_MESSAGE)
-		add_startup_message(message_prefix, chat_warning) // EffigyEdit Add (#2 Splash)
+		// EffigyEdit Add - Splash
+		add_startup_message(message_prefix, chat_warning)
+		if(chat_warning)
+			to_chat(world, SPAN_BOX_ALERT(ORANGE, "[message_prefix]"))
+		// EffigyEdit Add End
 	log_world(message)
 
 /datum/controller/master/proc/SetRunLevel(new_runlevel)
@@ -690,9 +694,15 @@ GLOBAL_REAL(Master, /datum/controller/master)
 
 			queue_node.state = SS_RUNNING
 
+			if(queue_node.profiler_focused)
+				world.Profile(PROFILE_START)
+
 			tick_usage = TICK_USAGE
 			var/state = queue_node.ignite(queue_node_paused)
 			tick_usage = TICK_USAGE - tick_usage
+
+			if(queue_node.profiler_focused)
+				world.Profile(PROFILE_STOP)
 
 			if (state == SS_RUNNING)
 				state = SS_IDLE

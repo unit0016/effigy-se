@@ -8,11 +8,12 @@
 	inherent_traits = list(
 		TRAIT_GENELESS,
 		TRAIT_HARDLY_WOUNDED,
-		TRAIT_RADIMMUNE,
-		TRAIT_RESISTCOLD,
 		TRAIT_NOBLOOD,
 		TRAIT_NO_DNA_COPY,
-		TRAIT_NO_TRANSFORMATION_STING,
+		TRAIT_NO_PLASMA_TRANSFORM,
+		TRAIT_RADIMMUNE,
+		TRAIT_RESISTCOLD,
+		TRAIT_UNHUSKABLE,
 	)
 
 	inherent_biotypes = MOB_HUMANOID|MOB_MINERAL
@@ -48,8 +49,6 @@
 	bodytemp_heat_damage_limit = (BODYTEMP_HEAT_DAMAGE_LIMIT - 20) // about 40C
 	// This effects how fast body temp stabilizes, also if cold resit is lost on the mob
 	bodytemp_cold_damage_limit = (BODYTEMP_COLD_DAMAGE_LIMIT - 50) // about -50c
-
-	ass_image = 'icons/ass/assplasma.png'
 
 	outfit_override_registry = list(
 		/datum/outfit/syndicate = /datum/outfit/syndicate/plasmaman,
@@ -114,7 +113,7 @@
 	else
 		internal_fire = FALSE
 
-	H.update_fire()
+	H.update_appearance(UPDATE_OVERLAYS)
 
 /datum/species/plasmaman/handle_fire(mob/living/carbon/human/H, seconds_per_tick, no_protection = FALSE)
 	if(internal_fire)

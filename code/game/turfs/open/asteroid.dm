@@ -5,8 +5,8 @@
 	name = "asteroid sand"
 	desc = "It's coarse and rough and gets everywhere."
 	baseturfs = /turf/open/misc/asteroid
-	icon = EFFIGY_TURFS_ICON_FILE // EffigyEdit Change - Floors
-	damaged_dmi = EFFIGY_TURFS_ICON_FILE // EffigyEdit Change - Floors
+	icon = 'icons/turf/floors.dmi'
+	damaged_dmi = 'icons/turf/floors.dmi'
 	icon_state = "asteroid"
 	base_icon_state = "asteroid"
 
@@ -185,6 +185,10 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 /turf/open/misc/asteroid/basalt/lava_land_surface/no_ruins
 	turf_flags = NO_RUINS
 
+/// A turf that can't we can't build openspace chasms on or spawn ruins in.
+/turf/closed/mineral/volcanic/lava_land_surface/do_not_chasm
+	turf_flags = NO_RUINS
+
 /turf/open/misc/asteroid/lowpressure
 	initial_gas_mix = OPENTURF_LOW_PRESSURE
 	baseturfs = /turf/open/misc/asteroid/lowpressure
@@ -232,7 +236,8 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 
 /// Exact subtype as parent, just used in ruins to prevent other ruins/chasms from spawning on top of it.
 /turf/open/misc/asteroid/snow/icemoon/do_not_chasm
-	turf_flags = CAN_BE_DIRTY_1 | IS_SOLID | NO_RUST | NO_RUINS
+	flags_1 = CAN_BE_DIRTY_1
+	turf_flags = IS_SOLID | NO_RUST | NO_RUINS
 
 /turf/open/misc/asteroid/snow/icemoon/do_not_scrape
 	flags_1 = CAN_BE_DIRTY_1

@@ -22,7 +22,7 @@
 	mutantlungs = null
 
 	species_language_holder = /datum/language_holder/shadowpeople
-	examine_limb_id = SPECIES_SHADOW // EffigyEdit Add
+
 	bodypart_overrides = list(
 		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/shadow,
 		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/shadow,
@@ -88,6 +88,14 @@
 	)
 
 	return to_add
+
+/obj/item/organ/internal/eyes/shadow
+	name = "burning red eyes"
+	desc = "Even without their shadowy owner, looking at these eyes gives you a sense of dread."
+	icon = 'icons/obj/medical/organs/shadow_organs.dmi'
+	color_cutoffs = list(20, 10, 40)
+	pepperspray_protect = TRUE
+	flash_protect = FLASH_PROTECTION_SENSITIVE
 
 /// the key to some of their powers
 /obj/item/organ/internal/brain/shadow

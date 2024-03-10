@@ -40,7 +40,7 @@
 
 	var/result = input(usr, "Select reboot method", "World Reboot", options[1]) as null|anything in options
 	if(result)
-		SSblackbox.record_feedback("tally", "admin_verb", 1, "Reboot World") // If you are copy-pasting this, ensure the 4th parameter is unique to the new proc!
+		BLACKBOX_LOG_ADMIN_VERB("Reboot World")
 		var/init_by = "Initiated by [usr.client.holder.fakekey ? "Admin" : usr.key]."
 		switch(result)
 			if("Regular Restart")
@@ -78,7 +78,7 @@
 		return
 	if(confirm == "Yes")
 		SSticker.force_ending = FORCE_END_ROUND
-		SSblackbox.record_feedback("tally", "admin_verb", 1, "End Round") // If you are copy-pasting this, ensure the 4th parameter is unique to the new proc!
+		BLACKBOX_LOG_ADMIN_VERB("End Round")
 
 /datum/admins/proc/toggleooc()
 	set category = "Server"
@@ -105,18 +105,23 @@
 	set name = "Start Now"
 	if(SSticker.current_state == GAME_STATE_PREGAME || SSticker.current_state == GAME_STATE_STARTUP)
 		if(!SSticker.start_immediately)
-			var/localhost_addresses = list("127.0.0.1", "::1")
-			if(!(isnull(usr.client.address) || (usr.client.address in localhost_addresses)))
-				if(tgui_alert(usr, "Are you sure you want to start the round?","Start Now",list("Start Now","Cancel")) != "Start Now")
+			// EffigyEdit Change Start - Lobby Music
+			switch(tgui_alert(usr, "Are you sure you want to force the round start countdown?","Start Now",list("Start Now", "Debug", "Cancel")))
+				if("Start Now")
+					CONFIG_SET(flag/setup_bypass_player_check, TRUE)
+					SSticker.queue_game_start(94 SECONDS)
+				if("Debug")
+					SSticker.start_immediately = TRUE
+				else
 					return FALSE
-			SSticker.start_immediately = TRUE
+			// EffigyEdit Change End
 			log_admin("[usr.key] has started the game.")
 			var/msg = ""
 			if(SSticker.current_state == GAME_STATE_STARTUP)
 				msg = " (The server is still setting up, but the round will be \
 					started as soon as possible.)"
 			message_admins("<font color='blue'>[usr.key] has started the game.[msg]</font>")
-			SSblackbox.record_feedback("tally", "admin_verb", 1, "Start Now") // If you are copy-pasting this, ensure the 4th parameter is unique to the new proc!
+			BLACKBOX_LOG_ADMIN_VERB("Start Now")
 			return TRUE
 		SSticker.start_immediately = FALSE
 		SSticker.SetTimeLeft(1800)
@@ -234,7 +239,7 @@
 		return tgui_alert(usr, "Too late... The game has already started!")
 	newtime = newtime*10
 	CONFIG_SET(flag/setup_bypass_player_check, TRUE)
-	SSticker.SetTimeLeft(newtime)
+	SSticker.queue_game_start(newtime) // EffigyEdit Change - Game Lobby - Original: SSticker.SetTimeLeft(newtime)
 	SSticker.start_immediately = FALSE
 	if(newtime < 0)
 		to_chat(world, "<span class='infoplain'><b>The game start has been delayed.</b></span>", confidential = TRUE)
@@ -243,7 +248,7 @@
 		to_chat(world, "<span class='infoplain'><b>The game will start in [DisplayTimeText(newtime)].</b></span>", confidential = TRUE)
 		SEND_SOUND(world, sound('sound/ai/default/attention.ogg'))
 		log_admin("[key_name(usr)] set the pre-game delay to [DisplayTimeText(newtime)].")
-	SSblackbox.record_feedback("tally", "admin_verb", 1, "Delay Game Start") // If you are copy-pasting this, ensure the 4th parameter is unique to the new proc!
+	BLACKBOX_LOG_ADMIN_VERB("Delay Game Start")
 
 /datum/admins/proc/set_admin_notice()
 	set category = "Server"
@@ -264,7 +269,7 @@
 		message_admins("[key_name(usr)] set the admin notice.")
 		log_admin("[key_name(usr)] set the admin notice:\n[new_admin_notice]")
 		to_chat(world, span_adminnotice("<b>Admin Notice:</b>\n \t [new_admin_notice]"), confidential = TRUE)
-	SSblackbox.record_feedback("tally", "admin_verb", 1, "Set Admin Notice") // If you are copy-pasting this, ensure the 4th parameter is unique to the new proc!
+	BLACKBOX_LOG_ADMIN_VERB("Set Admin Notice")
 	GLOB.admin_notice = new_admin_notice
 	return
 

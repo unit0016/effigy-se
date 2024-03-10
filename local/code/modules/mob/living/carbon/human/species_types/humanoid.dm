@@ -3,22 +3,24 @@
 	id = SPECIES_HUMANOID
 	inherent_traits = list(
 		TRAIT_MUTANT_COLORS,
-		TRAIT_CAN_USE_FLIGHT_POTION,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	mutant_bodyparts = list(
-		"tail" = "None",
-		"snout" = "None",
-		"ears" = "None",
-		"legs" = "Normal Legs",
-		"wings" = "None",
-		"taur" = "None",
-		"horns" = "None",
-		"fluff" = "None",
-	)
+	mutant_bodyparts = list()
+	examine_limb_id = SPECIES_HUMAN
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	payday_modifier = 1
 	examine_limb_id = SPECIES_HUMAN
+
+/datum/species/humanoid/get_default_mutant_bodyparts()
+	return list(
+		"tail" = list("None", FALSE),
+		"snout" = list("None", FALSE),
+		"ears" = list("None", FALSE),
+		"legs" = list("Normal Legs", FALSE),
+		"wings" = list("None", FALSE),
+		"taur" = list("None", FALSE),
+		"horns" = list("None", FALSE),
+	)
 
 /datum/species/humanoid/get_species_description()
 	return "This is a template species for your own creations!"

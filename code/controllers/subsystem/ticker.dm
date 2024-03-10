@@ -19,10 +19,6 @@ SUBSYSTEM_DEF(ticker)
 	var/start_immediately = FALSE
 	/// Boolean to track and check if our subsystem setup is done.
 	var/setup_done = FALSE
-	/// Did we broadcast at players to hurry up?
-	var/delay_notified = FALSE
-
-	var/datum/game_mode/mode = null
 
 	var/login_music //music played in pregame lobby
 	var/round_end_sound //music/jingle played when the world reboots
@@ -60,7 +56,6 @@ SUBSYSTEM_DEF(ticker)
 	var/roundend_check_paused = FALSE
 
 	var/round_start_time = 0
-	var/round_start_real_time = 0 // EffigyEdit Add - STATPANEL
 	var/list/round_start_events
 	var/list/round_end_events
 	var/mode_result = "undefined"
@@ -128,6 +123,7 @@ SUBSYSTEM_DEF(ticker)
 	else
 		login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"
 
+	load_effigy_lobby_tracks() // EffigyEdit Add - Lobby Music
 
 	if(!GLOB.syndicate_code_phrase)
 		GLOB.syndicate_code_phrase = generate_code_phrase(return_list=TRUE)
@@ -145,7 +141,7 @@ SUBSYSTEM_DEF(ticker)
 
 		GLOB.syndicate_code_response_regex = codeword_match
 
-	start_at = world.time + (CONFIG_GET(number/lobby_countdown) * 10)
+	start_at = COUNTDOWN_GAME_INIT // EffigyEdit Change - Custom Lobby - Original: start_at = world.time + (CONFIG_GET(number/lobby_countdown) * 10)
 	if(CONFIG_GET(flag/randomize_shift_time))
 		gametime_offset = rand(0, 23) HOURS
 	else if(CONFIG_GET(flag/shift_time_realtime))
@@ -157,8 +153,8 @@ SUBSYSTEM_DEF(ticker)
 /datum/controller/subsystem/ticker/fire()
 	switch(current_state)
 		if(GAME_STATE_STARTUP)
-			if(Master.initializations_finished_with_no_players_logged_in)
-				start_at = world.time + (CONFIG_GET(number/lobby_countdown) * 10)
+			//if(Master.initializations_finished_with_no_players_logged_in)
+			//	start_at = world.time + (CONFIG_GET(number/lobby_countdown) * 10)
 			for(var/client/C in GLOB.clients)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
 			to_chat(world, span_notice("<b>Welcome to [station_name()]!</b>"))
@@ -172,7 +168,7 @@ SUBSYSTEM_DEF(ticker)
 		if(GAME_STATE_PREGAME)
 				//lobby stats for statpanels
 			if(isnull(timeLeft))
-				timeLeft = max(0,start_at - world.time)
+				timeLeft = COUNTDOWN_GAME_INIT // EffigyEdit Change - Custom Lobby - Original: max(0,start_at - world.time)
 			totalPlayers = LAZYLEN(GLOB.new_player_list)
 			totalPlayersReady = 0
 			total_admins_ready = 0
@@ -181,6 +177,9 @@ SUBSYSTEM_DEF(ticker)
 					++totalPlayersReady
 					if(player.client?.holder)
 						++total_admins_ready
+
+			if(timeLeft == COUNTDOWN_GAME_INIT)
+				return // server isn't finished init
 
 			if(start_immediately)
 				timeLeft = 0
@@ -191,24 +190,41 @@ SUBSYSTEM_DEF(ticker)
 				return // 'DELAYED' delayed by an admin
 			timeLeft -= wait
 
-			if(timeLeft <= 450 && !tipped) // EffigyEdit Change
+			// EffigyEdit Add - Lobby Music
+			if(timeLeft <= lobby_track_duration && lobby_track_duration > 0 && !lobby_track_fired)
+				if(timeLeft >= lobby_track_duration - 4 SECONDS)
+					play_lobby_track(lobby_track_id)
+				lobby_track_fired = TRUE
+			// EffigyEdit Add End
+
+			if(timeLeft <= 300 && !tipped)
 				send_tip_of_the_round(world, selected_tip)
 				tipped = TRUE
 
+			// EffigyEdit Add - Wait for players
 			if(timeLeft <= 0 && !CONFIG_GET(flag/setup_bypass_player_check) && !totalPlayersReady)
-				if(!delay_notified)
+				if(!launch_queued)
 					to_chat(world, "[SPAN_BOX_ALERT(ORANGE, "Game setup delayed! The game will start when players are ready.")]", confidential = TRUE)
 					SEND_SOUND(world, sound('sound/ai/default/attention.ogg'))
 					message_admins("Game setup delayed due to lack of players.")
 					log_game("Game setup delayed due to lack of players.")
-					delay_notified = TRUE
+					launch_queued = TRUE
 				return // 'SOON' waiting for players
+
+			if(timeLeft <= 94 SECONDS && timeLeft > 0 && !hr_announce_fired && totalPlayersReady > 0 && !CONFIG_GET(flag/setup_bypass_player_check))
+				queue_game_start_announcement()
+				hr_announce_fired = TRUE
+
+			if(timeLeft <= 0 && launch_queued && totalPlayersReady > 0)
+				SSticker.queue_game_start(94 SECONDS)
+				launch_queued = FALSE
+			// EffigyEdit Add End
 
 			if(timeLeft <= 0)
 				SEND_SIGNAL(src, COMSIG_TICKER_ENTER_SETTING_UP)
 				current_state = GAME_STATE_SETTING_UP
 				Master.SetRunLevel(RUNLEVEL_SETUP)
-				SSevents.reschedule() // EffigyEdit Change
+				SSevents.reschedule() // EffigyEdit Add - Wait for players
 				if(start_immediately)
 					fire()
 
@@ -222,10 +238,9 @@ SUBSYSTEM_DEF(ticker)
 				SEND_SIGNAL(src, COMSIG_TICKER_ERROR_SETTING_UP)
 
 		if(GAME_STATE_PLAYING)
-			mode.process(wait * 0.1)
 			check_queue()
 
-			if(!roundend_check_paused && (mode.check_finished() || force_ending))
+			if(!roundend_check_paused && (check_finished() || force_ending))
 				current_state = GAME_STATE_FINISHED
 				toggle_ooc(TRUE) // Turn it on
 				toggle_dooc(TRUE)
@@ -233,25 +248,34 @@ SUBSYSTEM_DEF(ticker)
 				check_maprotate()
 				Master.SetRunLevel(RUNLEVEL_POSTGAME)
 
+/// Checks if the round should be ending, called every ticker tick
+/datum/controller/subsystem/ticker/proc/check_finished()
+	if(!setup_done)
+		return FALSE
+	if(SSshuttle.emergency && (SSshuttle.emergency.mode == SHUTTLE_ENDGAME))
+		return TRUE
+	if(GLOB.station_was_nuked)
+		return TRUE
+	if(GLOB.revolutionary_win)
+		return TRUE
+	return FALSE
 
 /datum/controller/subsystem/ticker/proc/setup()
-	to_chat(world, SPAN_BOX_ALERT(BLUE, "Starting game..."))
+	to_chat(world, SPAN_BOX_ALERT(BLUE, "Starting game...")) // EffigyEdit Change - Custom CSS
 	var/init_start = world.timeofday
 
-	mode = new /datum/game_mode/dynamic
-
 	CHECK_TICK
-	//Configure mode and assign player to special mode stuff
-	var/can_continue = 0
-	can_continue = src.mode.pre_setup() //Choose antagonists
+	//Configure mode and assign player to antagonists
+	var/can_continue = FALSE
+	can_continue = SSdynamic.pre_setup() //Choose antagonists
 	CHECK_TICK
+	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_PRE_JOBS_ASSIGNED, src)
 	can_continue = can_continue && SSjob.DivideOccupations() //Distribute jobs
 	CHECK_TICK
 
 	if(!GLOB.Debug2)
 		if(!can_continue)
 			log_game("Game failed pre_setup")
-			QDEL_NULL(mode)
 			to_chat(world, "<B>Error setting up game.</B> Reverting to pre-game lobby.")
 			SSjob.ResetOccupations()
 			return FALSE
@@ -270,7 +294,7 @@ SUBSYSTEM_DEF(ticker)
 	if(!CONFIG_GET(flag/ooc_during_round))
 		toggle_ooc(FALSE) // Turn it off
 
-	SSnightshift.check_nightshift() // EffigyEdit Add (Reset the lights)
+	SSnightshift.check_nightshift() // EffigyEdit Add - Variable start time
 	CHECK_TICK
 	GLOB.start_landmarks_list = shuffle(GLOB.start_landmarks_list) //Shuffle the order of spawn points so they dont always predictably spawn bottom-up and right-to-left
 	create_characters() //Create player characters
@@ -287,8 +311,7 @@ SUBSYSTEM_DEF(ticker)
 	LAZYCLEARLIST(round_start_events)
 
 	round_start_time = world.time //otherwise round_start_time would be 0 for the signals
-	round_start_real_time = REALTIMEOFDAY // EffigyEdit Add - STATPANEL
-	SSautotransfer.new_shift(round_start_real_time)
+	round_start_real_time = REALTIMEOFDAY // EffigyEdit Add - Stat Panel
 	SEND_SIGNAL(src, COMSIG_TICKER_ROUND_STARTING, world.time)
 
 	log_world("Game start took [(world.timeofday - init_start)/10]s")
@@ -314,13 +337,14 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/PostSetup()
 	set waitfor = FALSE
-	mode.post_setup()
+	SSdynamic.post_setup()
 	GLOB.start_state = new /datum/station_state()
 	GLOB.start_state.count()
 
 	var/list/adm = get_admin_counts()
 	var/list/allmins = adm["present"]
 	send2adminchat("Server", "Round [GLOB.round_hex ? "#[GLOB.round_hex]" : ""] has started[allmins.len ? ".":" with no active admins online!"]") // EffigyEdit Change - Logging
+	SSautotransfer.new_shift(round_start_real_time) // EffigyEdit Add - Autotransfer
 	setup_done = TRUE
 
 	for(var/i in GLOB.start_landmarks_list)
@@ -338,7 +362,8 @@ SUBSYSTEM_DEF(ticker)
 
 		iter_human.increment_scar_slot()
 		iter_human.load_persistent_scars()
-		SSpersistence.load_modular_persistence(iter_human.get_organ_slot(ORGAN_SLOT_BRAIN)) // EffigyEdit AddITION - (#184 Modular Persistence - Ported From Skyrat)
+		SSpersistence.load_modular_persistence(iter_human.get_organ_slot(ORGAN_SLOT_BRAIN)) // EffigyEdit Add - Modular Persistence
+		iter_human.add_to_player_list() // EffigyEdit Add - Character Directory
 
 		if(!iter_human.hardcore_survival_score)
 			continue
@@ -558,7 +583,6 @@ SUBSYSTEM_DEF(ticker)
 /datum/controller/subsystem/ticker/Recover()
 	current_state = SSticker.current_state
 	force_ending = SSticker.force_ending
-	mode = SSticker.mode
 
 	login_music = SSticker.login_music
 	round_end_sound = SSticker.round_end_sound

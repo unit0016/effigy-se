@@ -5,7 +5,6 @@
 	family_heirlooms = list(/obj/item/toy/plush/rouny, /obj/item/toy/toy_xeno,)
 	inherent_traits = list(
 		TRAIT_MUTANT_COLORS,
-		TRAIT_CAN_USE_FLIGHT_POTION,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutanttongue = /obj/item/organ/internal/tongue/xeno
@@ -30,6 +29,15 @@
 
 	meat = /obj/item/food/meat/slab/xeno
 	skinned_type = /obj/item/stack/sheet/animalhide/xeno
+
+/datum/species/xeno/get_default_mutant_bodyparts()
+	return list(
+		"tail" = list("Xenomorph Tail", FALSE),
+		"xenodorsal" = list("Standard", TRUE),
+		"xenohead" = list("Standard", TRUE),
+		"legs" = list(DIGITIGRADE_LEGS,FALSE),
+		"taur" = list("None", FALSE),
+	)
 
 /datum/species/xeno/get_species_description()
 	return placeholder_description

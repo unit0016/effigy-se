@@ -1,7 +1,7 @@
 #define MAX_TIMER (30 MINUTES) // EffigyEdit Change
-#define PRESET_SHORT (5 MINUTES) // EffigyEdit Change
-#define PRESET_MEDIUM (10 MINUTES) // EffigyEdit Change
-#define PRESET_LONG (15 MINUTES) // EffigyEdit Change
+#define PRESET_SHORT (4 MINUTES) // EffigyEdit Change
+#define PRESET_MEDIUM (9 MINUTES) // EffigyEdit Change
+#define PRESET_LONG (14 MINUTES) // EffigyEdit Change
 
 /**
  * Brig Door control displays.
@@ -40,6 +40,10 @@
 
 	if(id != null)
 		for(var/obj/machinery/door/window/brigdoor/M in urange(20, src))
+			if (M.id == id)
+				doors += WEAKREF(M)
+
+		for(var/obj/machinery/door/airlock/security/M in urange(20, src))
 			if (M.id == id)
 				doors += WEAKREF(M)
 

@@ -2,7 +2,7 @@
 	name = "Processor Overload"
 	typepath = /datum/round_event/processor_overload
 	weight = 15
-	min_players = 0
+	min_players = 20
 	category = EVENT_CATEGORY_ENGINEERING
 	description = "Emps the telecomm processors, scrambling radio speech. Might blow up a few."
 
@@ -26,7 +26,7 @@
 	// whether it's, say, a tesla zapping tcomms, or some selective
 	// modification of the tcomms bus
 	if(prob(80) || fake)
-		priority_announce(alert)
+		priority_announce(alert, "Anomaly Alert")
 
 
 /datum/round_event/processor_overload/start()

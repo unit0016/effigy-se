@@ -3,7 +3,6 @@
 	id = SPECIES_UNATHI
 	inherent_traits = list(
 		TRAIT_MUTANT_COLORS,
-		TRAIT_CAN_USE_FLIGHT_POTION,
 		TRAIT_TACKLING_TAILED_DEFENDER,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
@@ -20,7 +19,6 @@
 	payday_modifier = 1
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	examine_limb_id = SPECIES_LIZARD
-	ass_image = 'icons/ass/asslizard.png'
 
 	bodypart_overrides = list(
 		BODY_ZONE_HEAD = /obj/item/bodypart/head/lizard,
@@ -31,7 +29,25 @@
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lizard,
 	)
 
-/datum/species/unathi/randomize_features(mob/living/carbon/human/human_mob)
+/datum/species/unathi/get_default_mutant_bodyparts()
+	return list(
+		"tail" = list("Smooth", TRUE),
+		"snout" = list("Sharp + Light", TRUE),
+		"spines" = list("None", FALSE),
+		"frills" = list("None", FALSE),
+		"horns" = list("Curled", TRUE),
+		"body_markings" = list("Smooth Belly", TRUE),
+		"legs" = list("Normal Legs", FALSE),
+	)
+
+/obj/item/organ/internal/tongue/unathi
+	liked_foodtypes = GORE | MEAT | SEAFOOD | NUTS
+	disliked_foodtypes = GRAIN | DAIRY | CLOTH | GROSS
+	toxic_foodtypes = TOXIC
+
+
+/datum/species/unathi/randomize_features()
+	var/list/features = ..()
 	var/main_color
 	var/second_color
 	var/random = rand(1,5)
@@ -52,9 +68,9 @@
 		if(5)
 			main_color = "#33BB11"
 			second_color = "#339911"
-	human_mob.dna.features["mcolor"] = main_color
-	human_mob.dna.features["mcolor2"] = second_color
-	human_mob.dna.features["mcolor3"] = second_color
+	features["mcolor"] = main_color
+	features["mcolor2"] = second_color
+	features["mcolor3"] = second_color
 
 /datum/species/unathi/get_species_description()
 	return placeholder_description

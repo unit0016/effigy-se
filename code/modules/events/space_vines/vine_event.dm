@@ -38,7 +38,7 @@
 		var/obj/structure/spacevine/vine = new()
 
 		for(var/area/station/hallway/area in GLOB.areas)
-			for(var/turf/open/floor in area.get_contained_turfs())
+			for(var/turf/open/floor in area.get_turfs_from_all_zlevels())
 				if(floor.Enter(vine))
 					turfs += floor
 
@@ -53,9 +53,9 @@
 		else
 			selected_mutations = override_mutations
 		if(isnull(potency))
-			potency = rand(20,40) // EffigyEdit Change
+			potency = rand(50,100)
 		if(isnull(production))
-			production = rand(2, 8) // EffigyEdit Change
+			production = rand(1, 4)
 
 		new /datum/spacevine_controller(floor, selected_mutations, potency, production, src) //spawn a controller at turf with randomized stats and a single random mutation
 
