@@ -2,6 +2,30 @@
 "a" = (
 /turf/template_noop,
 /area/template_noop)
+"c" = (
+/obj/effect/turf_decal/siding/magenta_red{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/iron/diagonal,
+/area/template_noop)
+"d" = (
+/obj/structure/chair/sofa/bench/right{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/magenta_red/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 1
+	},
+/turf/open/floor/iron/half,
+/area/template_noop)
 "e" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -42,12 +66,32 @@
 /obj/effect/turf_decal/bot_red,
 /turf/open/floor/plating,
 /area/template_noop)
+"i" = (
+/obj/effect/turf_decal/trimline/magenta_red/warning,
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner,
+/obj/effect/turf_decal/siding/thinplating_new,
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 1
+	},
+/turf/open/floor/iron/half,
+/area/template_noop)
 "j" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
 	},
 /obj/structure/table,
 /obj/item/wrench,
+/turf/open/floor/iron/smooth_large,
+/area/template_noop)
+"k" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/water_sensor,
+/obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/iron/smooth_large,
 /area/template_noop)
 "l" = (
@@ -64,6 +108,20 @@
 	dir = 4
 	},
 /turf/open/floor/pod,
+/area/template_noop)
+"m" = (
+/obj/effect/turf_decal/siding/magenta_red/corner{
+	dir = 4
+	},
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/floor/iron/diagonal,
+/area/template_noop)
+"n" = (
+/obj/effect/turf_decal/siding/magenta_red,
+/obj/structure/railing,
+/turf/open/floor/iron/diagonal,
 /area/template_noop)
 "o" = (
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -89,9 +147,37 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/template_noop)
+"q" = (
+/obj/structure/hedge,
+/obj/effect/turf_decal/trimline/magenta_red/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 1
+	},
+/turf/open/floor/iron/half,
+/area/template_noop)
 "r" = (
 /obj/structure/railing,
-/turf/open/floor/catwalk_floor,
+/obj/structure/closet/emcloset,
+/turf/open/floor/catwalk_floor/iron,
+/area/template_noop)
+"s" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/template_noop)
+"t" = (
+/obj/effect/turf_decal/trimline/magenta_red/warning,
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner,
+/obj/effect/turf_decal/siding/thinplating_new,
+/obj/effect/turf_decal/siding/thinplating_new/corner{
+	dir = 1
+	},
+/obj/structure/chair/sofa/bench/solo,
+/turf/open/floor/iron/half,
 /area/template_noop)
 "u" = (
 /obj/effect/turf_decal/stripes/line{
@@ -109,6 +195,10 @@
 /obj/effect/turf_decal/arrows/red,
 /turf/open/floor/pod,
 /area/template_noop)
+"v" = (
+/obj/effect/spawner/liquids_spawner,
+/turf/open/floor/iron/lowered,
+/area/template_noop)
 "w" = (
 /obj/effect/turf_decal/stripes/end{
 	dir = 1
@@ -122,8 +212,40 @@
 "x" = (
 /turf/open/floor/plating,
 /area/template_noop)
+"y" = (
+/obj/effect/turf_decal/siding/magenta_red/corner,
+/obj/structure/railing/corner,
+/turf/open/floor/iron/diagonal,
+/area/template_noop)
+"z" = (
+/obj/structure/chair/sofa/bench/left{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/magenta_red/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 1
+	},
+/turf/open/floor/iron/half,
+/area/template_noop)
+"A" = (
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/template_noop)
 "B" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
+/area/template_noop)
+"C" = (
+/obj/effect/turf_decal/siding/magenta_red/corner{
+	dir = 1
+	},
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/diagonal,
 /area/template_noop)
 "D" = (
 /obj/effect/turf_decal/stripes/line{
@@ -166,6 +288,7 @@
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 4
 	},
+/obj/machinery/light/floor,
 /turf/open/floor/iron/smooth_large,
 /area/template_noop)
 "H" = (
@@ -188,10 +311,15 @@
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/pod,
 /area/template_noop)
+"J" = (
+/turf/open/floor/catwalk_floor/iron,
+/area/template_noop)
 "K" = (
-/obj/structure/railing,
 /obj/structure/sign/poster/contraband/rip_badger/directional/north,
-/turf/open/floor/catwalk_floor,
+/obj/structure/railing/corner/end/flip{
+	dir = 8
+	},
+/turf/open/floor/catwalk_floor/iron,
 /area/template_noop)
 "L" = (
 /obj/effect/turf_decal/sand/plating,
@@ -201,6 +329,15 @@
 /obj/effect/turf_decal/stripes/asteroid/line,
 /obj/structure/fans/tiny/shield,
 /turf/open/floor/plating,
+/area/template_noop)
+"M" = (
+/obj/effect/turf_decal/trimline/magenta_red/warning,
+/obj/effect/turf_decal/siding/thinplating_new,
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner,
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 1
+	},
+/turf/open/floor/iron/half,
 /area/template_noop)
 "N" = (
 /turf/open/floor/plating/elevatorshaft,
@@ -215,12 +352,44 @@
 	},
 /turf/open/floor/plating/rust,
 /area/template_noop)
+"P" = (
+/obj/effect/turf_decal/siding/magenta_red{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/diagonal,
+/area/template_noop)
+"Q" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/obj/effect/turf_decal/trimline/magenta_red/warning{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 1
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/half,
+/area/template_noop)
 "R" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/oil/streak,
 /turf/open/floor/iron/smooth_large,
+/area/template_noop)
+"S" = (
+/obj/effect/turf_decal/siding/magenta_red/corner{
+	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/diagonal,
 /area/template_noop)
 "T" = (
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -264,10 +433,24 @@
 	},
 /turf/open/floor/plating,
 /area/template_noop)
+"X" = (
+/obj/effect/turf_decal/siding/magenta_red{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/diagonal,
+/area/template_noop)
+"Y" = (
+/obj/effect/turf_decal/trimline/magenta_red/warning,
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner,
+/obj/effect/turf_decal/siding/thinplating_new,
+/turf/open/floor/iron/half,
+/area/template_noop)
 "Z" = (
-/obj/structure/railing,
 /obj/machinery/light/directional/north,
-/turf/open/floor/catwalk_floor,
+/turf/open/floor/catwalk_floor/iron,
 /area/template_noop)
 
 (1,1,1) = {"
@@ -1174,7 +1357,7 @@ a
 a
 a
 B
-r
+J
 O
 x
 x
@@ -1277,16 +1460,16 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+B
+A
+M
+y
+c
+c
+c
+m
+Q
+B
 a
 a
 a
@@ -1329,16 +1512,16 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+B
+s
+i
+n
+v
+v
+v
+P
+z
+H
 a
 a
 a
@@ -1381,16 +1564,16 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+B
+B
+t
+n
+v
+v
+v
+P
+d
+H
 a
 a
 a
@@ -1434,15 +1617,15 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+B
+Y
+S
+X
+X
+X
+C
+q
+B
 a
 a
 a
@@ -1486,15 +1669,15 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+B
+B
+B
+k
+k
+k
+B
+B
+B
 a
 a
 a
