@@ -63,8 +63,21 @@ TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/magenta_red)
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/orange)
 
-/// Orange trimlines
+/// Orange Trimlines
 /obj/effect/turf_decal/trimline/orange
 	color = COLOR_DARK_ORANGE
 
 TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/orange)
+
+/// Dark Yellow Tiles
+/obj/effect/turf_decal/tile/dark_yellow
+	name = "dark yellow tile decal"
+	color = "#E09913"
+
+TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/dark_yellow)
+
+/// Dark Yellow Trimlines
+/obj/effect/turf_decal/trimline/dark_yellow
+	color = "#E09913"
+
+TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/dark_yellow)
