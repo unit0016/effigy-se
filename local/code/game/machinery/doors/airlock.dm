@@ -581,6 +581,23 @@
 	glass_type = /obj/machinery/door/airlock/syndicate/glass
 	airlock_type = /obj/machinery/door/airlock/syndicate
 
+/// SyndieSec
+/obj/machinery/door/airlock/syndicate/security
+	greyscale_colors = "#954604#4d4d4d"
+
+/obj/machinery/door/airlock/syndicate/security/glass
+	opacity = FALSE
+	glass = TRUE
+
+/obj/structure/door_assembly/door_assembly_syn_sec
+	name = "syndicate security airlock assembly"
+	icon = 'local/icons/obj/doors/airlocks/effigy/effigy.dmi'
+	greyscale_config = /obj/machinery/door/airlock/syndicate/security::greyscale_config
+	greyscale_colors = /obj/machinery/door/airlock/syndicate/security::greyscale_colors
+	base_name = "syndicate airlock"
+	glass_type = /obj/machinery/door/airlock/syndicate/security/glass
+	airlock_type = /obj/machinery/door/airlock/syndicate/security
+
 /// Central Command
 /obj/machinery/door/airlock/central_command
 	icon = 'local/icons/obj/doors/airlocks/effigy/effigy.dmi'
