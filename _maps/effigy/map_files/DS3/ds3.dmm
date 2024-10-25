@@ -55,8 +55,11 @@
 /turf/open/floor/plating,
 /area/station/command/meeting_room)
 "df" = (
-/obj/structure/sign/departments/maint/directional/south,
-/turf/open/floor/iron/dark,
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
 /area/space)
 "dC" = (
 /obj/effect/turf_decal/syndicateemblem/top/right{
@@ -139,10 +142,6 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/bridge)
-"iq" = (
-/obj/machinery/door/window/survival_pod/left/directional/north,
-/turf/open/floor/catwalk_floor,
-/area/space)
 "jU" = (
 /obj/structure/chair{
 	dir = 1
@@ -303,10 +302,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/station/command/meeting_room)
-"ra" = (
-/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
-/turf/open/floor/catwalk_floor,
-/area/space)
 "rn" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -314,10 +309,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/bridge)
-"rZ" = (
-/obj/machinery/status_display/syndie/directional/east,
-/turf/open/floor/iron/dark,
-/area/space)
 "sj" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -526,8 +517,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
 "Ac" = (
-/obj/machinery/status_display/random_message/syndicate/directional/west,
-/turf/open/floor/iron/dark,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/space)
 "BS" = (
 /obj/structure/sign/syndicate/directional/east,
@@ -805,9 +795,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron/dark/herringbone,
 /area/station/command/bridge)
-"UU" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/space)
 "Vj" = (
 /turf/cordon,
 /area/misc/cordon)
@@ -899,10 +886,6 @@
 /obj/effect/turf_decal/trimline/dark/filled/line,
 /turf/open/floor/cult,
 /area/station/command/meeting_room)
-"Zr" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/turf/open/floor/plating,
-/area/space)
 "ZD" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -30580,8 +30563,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ac
+Ac
 qC
 qC
 qC
@@ -30832,12 +30815,12 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-Ib
-Ib
-Ib
-Ib
+qC
+qC
+qC
+qC
+qC
+df
 Ib
 Ib
 Ib
@@ -31089,12 +31072,12 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-Ib
-Ib
-Ib
-rZ
+qC
+qC
+qC
+qC
+qC
+Ac
 Ib
 Ib
 BS
@@ -31346,10 +31329,10 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-UU
-Zr
+qC
+qC
+qC
+qC
 OR
 OR
 OR
@@ -31603,9 +31586,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-Zr
+qC
+qC
+qC
 qC
 OR
 Yy
@@ -31860,9 +31843,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-Zr
+qC
+qC
+qC
 qC
 OR
 oW
@@ -32117,9 +32100,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-UU
+qC
+qC
+qC
 OR
 OR
 pf
@@ -32374,9 +32357,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-ra
+qC
+qC
+qC
 OR
 xK
 Hg
@@ -32631,9 +32614,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-ra
+qC
+qC
+qC
 ks
 ss
 nt
@@ -32888,9 +32871,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-ra
+qC
+qC
+qC
 ks
 Cc
 tw
@@ -33145,9 +33128,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-ra
+qC
+qC
+qC
 ks
 vj
 Ux
@@ -33402,9 +33385,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-iq
+qC
+qC
+qC
 OR
 Mt
 uK
@@ -33659,9 +33642,9 @@ qC
 qC
 qC
 qC
-Ib
-df
-UU
+qC
+qC
+qC
 OR
 OR
 uU
@@ -33916,9 +33899,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-Zr
+qC
+qC
+qC
 qC
 OR
 uy
@@ -34173,9 +34156,9 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-Zr
+qC
+qC
+qC
 qC
 OR
 gy
@@ -34430,10 +34413,10 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-UU
-Zr
+qC
+qC
+qC
+qC
 OR
 OR
 OR
@@ -34687,11 +34670,11 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-Ib
-Ib
-Ib
+qC
+qC
+qC
+qC
+qC
 Ac
 Ib
 Ib
@@ -34944,12 +34927,12 @@ qC
 qC
 qC
 qC
-Ib
-Ib
-Ib
-Ib
-Ib
-Ib
+qC
+qC
+qC
+qC
+qC
+df
 Ib
 Ib
 Ib
@@ -35206,8 +35189,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ac
+Ac
 qC
 qC
 qC
