@@ -54,6 +54,10 @@
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /turf/open/floor/plating,
 /area/station/command/meeting_room)
+"df" = (
+/obj/structure/sign/departments/maint/directional/south,
+/turf/open/floor/iron/dark,
+/area/space)
 "dC" = (
 /obj/effect/turf_decal/syndicateemblem/top/right{
 	dir = 4
@@ -135,6 +139,10 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/bridge)
+"iq" = (
+/obj/machinery/door/window/survival_pod/left/directional/north,
+/turf/open/floor/catwalk_floor,
+/area/space)
 "jU" = (
 /obj/structure/chair{
 	dir = 1
@@ -168,6 +176,14 @@
 /obj/structure/table/dark,
 /obj/effect/landmark/slashco_item_spawn,
 /turf/open/floor/iron/dark/diagonal,
+/area/station/command/meeting_room)
+"lL" = (
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/trimline/dark/line,
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/turf/open/floor/cult,
 /area/station/command/meeting_room)
 "lU" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -216,6 +232,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/status_display/random_message/syndicate/directional/north,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/bridge)
 "pf" = (
@@ -272,6 +289,9 @@
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 8
 	},
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 4
+	},
 /turf/open/floor/cult,
 /area/station/command/meeting_room)
 "qG" = (
@@ -283,6 +303,10 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/station/command/meeting_room)
+"ra" = (
+/obj/structure/window/reinforced/survival_pod/spawner/directional/north,
+/turf/open/floor/catwalk_floor,
+/area/space)
 "rn" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -290,6 +314,10 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/bridge)
+"rZ" = (
+/obj/machinery/status_display/syndie/directional/east,
+/turf/open/floor/iron/dark,
+/area/space)
 "sj" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -379,6 +407,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
+/obj/machinery/status_display/syndie/directional/north,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/bridge)
 "uK" = (
@@ -496,6 +525,14 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
+"Ac" = (
+/obj/machinery/status_display/random_message/syndicate/directional/west,
+/turf/open/floor/iron/dark,
+/area/space)
+"BS" = (
+/obj/structure/sign/syndicate/directional/east,
+/turf/open/floor/iron/dark,
+/area/space)
 "Cc" = (
 /obj/machinery/computer/communications,
 /obj/effect/turf_decal/tile/dark_red/half/contrasted{
@@ -615,9 +652,15 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
+"Ib" = (
+/turf/open/floor/iron/dark,
+/area/space)
 "Jz" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/effect/turf_decal/trimline/dark/line,
+/obj/effect/turf_decal/siding/wideplating{
+	dir = 1
+	},
 /turf/open/floor/cult,
 /area/station/command/meeting_room)
 "Ka" = (
@@ -648,6 +691,15 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
+/area/station/command/meeting_room)
+"Nj" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark,
+/obj/structure/table/dark,
+/obj/effect/landmark/fuel_spawn,
+/turf/open/floor/iron/dark/diagonal,
 /area/station/command/meeting_room)
 "Nw" = (
 /obj/structure/cable,
@@ -697,6 +749,9 @@
 	},
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 4
+	},
+/obj/effect/turf_decal/siding/dark/corner{
+	dir = 1
 	},
 /turf/open/floor/cult,
 /area/station/command/meeting_room)
@@ -807,6 +862,10 @@
 	},
 /turf/open/floor/cult,
 /area/station/command/meeting_room)
+"XO" = (
+/obj/structure/sign/syndicate/directional/west,
+/turf/open/floor/iron/dark,
+/area/space)
 "Yh" = (
 /obj/effect/turf_decal/tile/dark_yellow/diagonal_edge,
 /obj/effect/turf_decal/siding/wideplating_new/dark,
@@ -30773,18 +30832,18 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -31030,19 +31089,19 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
+Ib
+rZ
+Ib
+Ib
+BS
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -31287,8 +31346,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+Ib
 UU
 Zr
 OR
@@ -31297,16 +31356,16 @@ OR
 aI
 OR
 OR
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -31544,8 +31603,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+Ib
 Zr
 qC
 OR
@@ -31555,15 +31614,15 @@ TD
 lU
 OR
 OR
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -31801,8 +31860,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+Ib
 Zr
 qC
 OR
@@ -32058,8 +32117,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+Ib
 UU
 OR
 OR
@@ -32315,9 +32374,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+ra
 OR
 xK
 Hg
@@ -32329,7 +32388,7 @@ qx
 FT
 xO
 bh
-Jz
+lL
 td
 Tv
 Tv
@@ -32572,9 +32631,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+ra
 ks
 ss
 nt
@@ -32592,7 +32651,7 @@ vc
 HU
 bb
 YO
-yI
+Nj
 EF
 qC
 qC
@@ -32829,9 +32888,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+ra
 ks
 Cc
 tw
@@ -33086,9 +33145,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+ra
 ks
 vj
 Ux
@@ -33343,9 +33402,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+iq
 OR
 Mt
 uK
@@ -33357,7 +33416,7 @@ qx
 dC
 HY
 bh
-Jz
+lL
 zc
 uo
 uo
@@ -33600,8 +33659,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+df
 UU
 OR
 OR
@@ -33857,8 +33916,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+Ib
 Zr
 qC
 OR
@@ -34114,8 +34173,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+Ib
 Zr
 qC
 OR
@@ -34125,15 +34184,15 @@ TD
 bC
 OR
 OR
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -34371,8 +34430,8 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+Ib
 UU
 Zr
 OR
@@ -34381,16 +34440,16 @@ OR
 aI
 OR
 OR
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -34628,19 +34687,19 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
+Ib
+Ac
+Ib
+Ib
+XO
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -34885,18 +34944,18 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
