@@ -4,6 +4,7 @@
 	start_with_chase = FALSE
 	ui_name = "AntagInfoImposter"
 	fluff = "You're the one amongst them."
+	jumpscare_volume = 50
 	var/datum/action/cooldown/spell/shapeshift/imposter/shapeshift_human
 	var/datum/action/cooldown/fuel_disguise/fuel_shapeshift
 	var/datum/action/cooldown/mob_cooldown/jumpscare/disguised_jumpscare
@@ -52,6 +53,12 @@
 /datum/action/cooldown/spell/shapeshift/imposter
 	name = "Break Disguise"
 	desc = "Break your hapless human-adjacent disguise and assume your true form - or vice versa."
+	background_icon = 'local/icons/mob/actions/backgrounds.dmi'
+	background_icon_state = "bg_slasher"
+	button_icon = 'local/icons/mob/actions/actions_slashers.dmi'
+	button_icon_state = "disguise"
+	overlay_icon = 'local/icons/mob/actions/backgrounds.dmi'
+	overlay_icon_state = "bg_slasher_border"
 	cooldown_time = 5 SECONDS
 	convert_damage = FALSE
 	die_with_shapeshifted_form = FALSE
@@ -99,8 +106,12 @@
 /datum/action/cooldown/fuel_disguise
 	name = "Fuel Disguise"
 	desc = "Assume the form of the precious generator fuel."
-	button_icon = 'icons/mob/actions/actions_spells.dmi'
-	button_icon_state = "transformslime"
+	background_icon = 'local/icons/mob/actions/backgrounds.dmi'
+	background_icon_state = "bg_slasher"
+	button_icon = 'local/icons/mob/actions/actions_slashers.dmi'
+	button_icon_state = "fuel_disguise"
+	overlay_icon = 'local/icons/mob/actions/backgrounds.dmi'
+	overlay_icon_state = "bg_slasher_border"
 	cooldown_time = 5 SECONDS
 	var/obj/item/chameleon/imposter/internal_projector
 
