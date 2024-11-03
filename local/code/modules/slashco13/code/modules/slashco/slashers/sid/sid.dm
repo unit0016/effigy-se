@@ -3,6 +3,7 @@
 	mob_type = /mob/living/basic/slasher/sid
 	ui_name = "AntagInfoSid"
 	fluff = "You yearn for the gift of cookies..."
+	slasher_category = SLASHER_CATEGORY_DEMON
 	jumpscare_sound = 'local/code/modules/slashco13/sound/slasher/sid/kill.ogg'
 	jumpscare_icon_state = "sid"
 

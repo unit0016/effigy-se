@@ -378,7 +378,21 @@ SUBSYSTEM_DEF(dynamic)
 						'local/code/modules/slashco13/sound/shuttle/intro7.ogg', \
 						'local/code/modules/slashco13/sound/shuttle/intro8.ogg', \
 					)
-		priority_announce("After years of totally reasonable corporate skirmishes, Nanotrasen has finally decided to bless us with a decisive blow against DS-3. Yes, that’s right: the end of the most tedious, over-budget conflict in recent memory is within sight. The brave fleetsmen are out there, ensuring our stock prices and quarterly bonuses remain untarnished, fighting for the 'greater good' of shareholder peace.\n\nCorporate has reassigned all personnel aboard this deployment to power technician duty. That's right - because nothing says \"valuable employee\" like spending your remaining oxygen reserves fixing generators. Look on the bright side: at least the explosions will keep you warm.\n\nFully power two generators and successfully evacuate via shuttle in order to complete your mission.\n\nLet’s do our part. After all, we’re all cogs in this glorious, unstoppable machine - whether we want to be or not. Good luck, power jockeys.", "Corporate Skirmish Update", announcement_sound, color_override = "purple")
+		/// SLASHCO 13 EDIT BEGIN ///
+		var/threat_assessment_text = "NULL" // You're probably testing is this shows up. Don't want to throw a hissyfit; but do alert about it.
+		for(var/datum/dynamic_ruleset/roundstart/slashers/found_ruleset in SSdynamic.executed_rules)
+			switch(found_ruleset.slasher_selection_mode)
+				if("Random") // These correspond to defines; but uhh. File ordering. Can't be assed
+					threat_assessment_text = "Entropic"
+				if("Unknown Class")
+					threat_assessment_text = "Categoric"
+				if("Unknown")
+					threat_assessment_text = "Unknown"
+		priority_announce("Assigned Team, designated \[ [GLOB.station_name] \]. \n\
+							You have arrived at: \[ [SSmapping.config.map_name] \]. \n\
+							Threat Assessment: \[ [threat_assessment_text] \]. \n\
+							Have a safe shift.", "Power Recovery Mission Assessment", announcement_sound, color_override = "purple")
+		/// SLASHCO 13 EDIT END ///
 
 #endif
 

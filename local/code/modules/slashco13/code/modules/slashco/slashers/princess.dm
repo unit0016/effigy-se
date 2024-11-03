@@ -7,6 +7,7 @@
 	jumpscare_sound = 'local/code/modules/slashco13/sound/slasher/princess/attack.ogg'
 	ui_name = "AntagInfoPrincess"
 	fluff = "You're a menace on four legs."
+	slasher_category = SLASHER_CATEGORY_DEMON
 	/// Our current aggression value. Increases by 1 each second.
 	var/aggression = 0
 	/// Our maximum aggression value. Clamps at 100; starts at 50.

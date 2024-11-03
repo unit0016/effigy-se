@@ -1,3 +1,7 @@
+#define SLASHER_CATEGORY_CRYPTID "Cryptid"
+#define SLASHER_CATEGORY_DEMON "Demon"
+#define SLASHER_CATEGORY_UMBRA "Umbra"
+
 /// Common Slasher Antag Handling Here ///
 /datum/antagonist/slasher
 	name = "Slasher"
@@ -10,6 +14,7 @@
 	var/slasher_outfit = /datum/outfit/job/power_recovery
 
 	var/fluff = "You're a piece of shitcode; Harry; get out of my sight."
+	var/slasher_category = SLASHER_CATEGORY_CRYPTID
 
 	var/datum/action/cooldown/spell/get_carpspawned_idiot/carpspawn_spell
 	var/datum/action/cooldown/spell/aoe/knock/slasher/knock_spell

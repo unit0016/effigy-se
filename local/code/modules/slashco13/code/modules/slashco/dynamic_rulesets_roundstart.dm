@@ -1,5 +1,9 @@
+#define SLASHER_SELECTION_RANDOM "Random"
+#define SLASHER_SELECTION_PICK_BY_CLASS "Unknown Class"
+#define SLASHER_SELECTION_PICK_ANY "Unknown"
+
 /datum/dynamic_ruleset/roundstart/slashers
-	name = "Slashers"
+	name = "Slashers - Random"
 	persistent = TRUE
 	antag_flag = ROLE_SLASHER
 	antag_datum = /datum/antagonist/slasher
@@ -16,6 +20,8 @@
 	var/maximum_slashers = 1
 	/// Have we spawned in the slashers yet?
 	var/spawned_slashers = FALSE
+	/// Our slasher selection mode. Used purely for flavor text.
+	var/slasher_selection_mode = SLASHER_SELECTION_RANDOM
 
 /datum/dynamic_ruleset/roundstart/slashers/rule_process()
 	if(first_run)
@@ -73,13 +79,10 @@
 /datum/dynamic_ruleset/roundstart/slashers/execute()
 	if(spawned_slashers)
 		return TRUE // We already spawned them in earlier than anticipated thanks to someone messing with a generator; we don't need to give them a second antag datum.
-	var/list/possible_slashers = subtypesof(antag_datum)
+	var/list/possible_slashers = subtypesof(antag_datum) // Done here so that selection types can avoid repeats
 	for(var/datum/mind/new_slasher in assigned)
-		var/our_slasher_type = pick_n_take(possible_slashers)
-		if(!our_slasher_type)
-			possible_slashers = subtypesof(antag_datum)
-			our_slasher_type = pick_n_take(possible_slashers)
-		var/datum/antagonist/slasher/new_antag_datum = new our_slasher_type
+		var/selected_slasher_type = handle_slasher_selection(possible_slashers, new_slasher)
+		var/datum/antagonist/slasher/new_antag_datum = new selected_slasher_type
 		new_slasher.add_antag_datum(new_antag_datum)
 		var/potential_spawn = find_space_spawn()
 		if(!potential_spawn)
@@ -93,6 +96,50 @@
 		to_chat(world, span_announce("Failed to set up game - no eligible Slashers! Check your antagonist preferences - server rebooting shortly..."))
 		GLOB.revolutionary_win = TRUE
 		return FALSE
+
+/// This ruleset's slasher selection. Override to change how slasher types are set!
+/datum/dynamic_ruleset/roundstart/slashers/proc/handle_slasher_selection(list/possible_slashers, datum/mind/new_slasher)
+	var/our_slasher_type = pick_n_take(possible_slashers)
+	if(!our_slasher_type)
+		possible_slashers = subtypesof(antag_datum)
+		our_slasher_type = pick_n_take(possible_slashers)
+	return our_slasher_type
+
+/// Pick Selection Ruleset
+/datum/dynamic_ruleset/roundstart/slashers/pick
+	name = "Slashers - Pick Any"
+	slasher_selection_mode = SLASHER_SELECTION_PICK_ANY
+
+/datum/dynamic_ruleset/roundstart/slashers/pick/handle_slasher_selection(list/possible_slashers, datum/mind/new_slasher)
+	var/list/pickable_slashers = cull_unpickable_slashers(possible_slashers)
+	if(!new_slasher.current.client) // They dc'd while setup was happening. fuck their choice
+		return ..()
+	var/list/assoc_list_formatted_slashers
+	for(var/datum/antagonist/slasher/to_assoc_list in pickable_slashers)
+		assoc_list_formatted_slashers[to_assoc_list.name] = to_assoc_list
+	var/picked_slasher = tgui_input_list(new_slasher.current, "Choose; quickly, before your prey gain too much ground.","Slasher Selection", sort_list(assoc_list_formatted_slashers))
+	if(isnull(picked_slasher))
+		return ..()
+	return picked_slasher
+
+/// Override this if you want to restrict pickable slashers.
+/datum/dynamic_ruleset/roundstart/slashers/pick/proc/cull_unpickable_slashers(list/possible_slashers)
+	var/to_return = possible_slashers
+	to_chat(world, "to return: [to_return]")
+	return to_return
+
+/// Pick Selection (By Class) Ruleset
+/datum/dynamic_ruleset/roundstart/slashers/pick/by_class
+	name = "Slashers - Pick By Class"
+	slasher_selection_mode = SLASHER_SELECTION_PICK_BY_CLASS
+
+/datum/dynamic_ruleset/roundstart/slashers/pick/by_class/cull_unpickable_slashers(list/possible_slashers)
+	var/desired_slasher_class = pick("Cryptid", "Demon", "Umbra")
+	var/list_to_edit = possible_slashers
+	for(var/datum/antagonist/slasher/found_slasher_type in list_to_edit)
+		if(found_slasher_type.slasher_category != desired_slasher_class)
+			list_to_edit -= found_slasher_type
+	return list_to_edit
 
 /// OFFERING VARIANTS HERE ///
 // Tl;dr, in the original, offerings were lobby-voted variants on Slashco's roundflow. Modifiers. These have been made admin-only until I figure out voting lol
@@ -112,3 +159,7 @@
 		survivor_amount = floor((population - (round(population, 7) * 0.143)))
 	var/slasher_scaled_number = (population - survivor_amount)
 	return slasher_scaled_number
+
+#undef SLASHER_SELECTION_RANDOM
+#undef SLASHER_SELECTION_PICK_BY_CLASS
+#undef SLASHER_SELECTION_PICK_ANY

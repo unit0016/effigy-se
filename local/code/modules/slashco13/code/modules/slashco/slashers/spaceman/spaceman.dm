@@ -10,6 +10,7 @@
 	jumpscare_icon_state = "spaceman"
 	ui_name = "AntagInfoSpaceman"
 	fluff = "You're a relic from an era gone by."
+	slasher_category = SLASHER_CATEGORY_UMBRA
 
 	chase_light_range = 14 // Pray he doesn't find you
 

@@ -35,11 +35,27 @@ SUBSYSTEM_DEF(slashco)
 	minimum_items = CONFIG_GET(number/minimum_items)
 	maximum_items = CONFIG_GET(number/maximum_items)
 	setup_game()
-	GLOB.dynamic_forced_rulesets[/datum/dynamic_ruleset/roundstart/slashers] = RULESET_FORCE_ENABLED
-	var/roundstart_rules = list()
-	var/datum/dynamic_ruleset/roundstart/slashers/slasherrule = new
-	roundstart_rules[slasherrule.name] = slasherrule
-	GLOB.dynamic_forced_roundstart_ruleset += roundstart_rules[slasherrule.name]
+	/// So because of how we're forcing this; I have to shitcode the ruleset. This blows. I know. Oopsiedaises.
+	var/picked_ruleset = rand(1,3)
+	switch(picked_ruleset)
+		if(1)
+			GLOB.dynamic_forced_rulesets[/datum/dynamic_ruleset/roundstart/slashers] = RULESET_FORCE_ENABLED
+			var/roundstart_rules = list()
+			var/datum/dynamic_ruleset/roundstart/slashers/slasherrule = new
+			roundstart_rules[slasherrule.name] = slasherrule
+			GLOB.dynamic_forced_roundstart_ruleset += roundstart_rules[slasherrule.name]
+		if(2)
+			GLOB.dynamic_forced_rulesets[/datum/dynamic_ruleset/roundstart/slashers/pick] = RULESET_FORCE_ENABLED
+			var/roundstart_rules = list()
+			var/datum/dynamic_ruleset/roundstart/slashers/pick/slasherrule = new
+			roundstart_rules[slasherrule.name] = slasherrule
+			GLOB.dynamic_forced_roundstart_ruleset += roundstart_rules[slasherrule.name]
+		if(3)
+			GLOB.dynamic_forced_rulesets[/datum/dynamic_ruleset/roundstart/slashers/pick/by_class] = RULESET_FORCE_ENABLED
+			var/roundstart_rules = list()
+			var/datum/dynamic_ruleset/roundstart/slashers/pick/by_class/slasherrule = new
+			roundstart_rules[slasherrule.name] = slasherrule
+			GLOB.dynamic_forced_roundstart_ruleset += roundstart_rules[slasherrule.name]
 	addtimer(CALLBACK(src, PROC_REF(find_valid_lobby_convo_targets)), 20 SECONDS)
 	return SS_INIT_SUCCESS
 

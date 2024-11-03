@@ -3,6 +3,7 @@
 	mob_type = /mob/living/basic/slasher/speedrunner
 	start_with_chase = FALSE // Speedrunner can't chase at all. Manhunt or something. idk
 	fluff = "You're out for a manhunt..."
+	slasher_category = SLASHER_CATEGORY_UMBRA
 	ui_name = "AntagInfoSpeedrunner"
 	jumpscare_icon_state = "speedrunner"
 	jumpscare_sound = 'local/code/modules/slashco13/sound/slasher/speedrunner/kill.ogg'
