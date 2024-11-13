@@ -7,3 +7,6 @@
 		/obj/item/boulder/gulag = 165,
 		/turf/closed/mineral/gibtonite = 2,
 	)
+
+/turf/closed/mineral/random/stationside/asteroid/porus/gas_giant
+	baseturfs = /turf/open/misc/asteroid/gas_giant
