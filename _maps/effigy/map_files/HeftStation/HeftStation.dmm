@@ -2,6 +2,10 @@
 "a" = (
 /turf/open/chasm/gas_giant,
 /area/space)
+"b" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/space)
 "c" = (
 /turf/open/floor/plating/elevatorshaft,
 /area/station/cargo/storage)
@@ -18,16 +22,47 @@
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/smooth_large,
 /area/station/cargo/storage)
+"f" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/siding/wideplating_new/dark/end{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/textured,
+/area/space)
 "g" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/middle,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
+"i" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L8"
+	},
+/turf/open/floor/iron,
+/area/space)
+"j" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L13"
+	},
+/turf/open/floor/iron,
+/area/space)
+"k" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L3"
+	},
+/turf/open/floor/iron,
+/area/space)
 "l" = (
 /obj/structure/marker_beacon/burgundy,
 /obj/effect/turf_decal/sand/plating,
 /obj/structure/sign/warning/docking/directional/north,
 /turf/open/floor/plating/gas_giant,
 /area/station/asteroid)
+"m" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L10"
+	},
+/turf/open/floor/iron,
+/area/space)
 "o" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
@@ -43,10 +78,40 @@
 "r" = (
 /turf/closed/wall,
 /area/space)
+"s" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L12"
+	},
+/turf/open/floor/iron,
+/area/space)
+"t" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L2"
+	},
+/turf/open/floor/iron,
+/area/space)
 "u" = (
 /obj/structure/lattice,
 /turf/open/chasm/gas_giant,
 /area/space/nearstation)
+"v" = (
+/obj/effect/turf_decal/tile/dark_blue/opposingcorners,
+/obj/effect/turf_decal/siding/wideplating_new/dark/end,
+/turf/open/floor/iron/dark/textured,
+/area/space)
+"w" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/machinery/door/airlock/command/glass,
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "bridge"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "x" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/effect/turf_decal/stripes/asteroid/line,
@@ -56,13 +121,44 @@
 /obj/structure/fans/tiny/shield,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
+"B" = (
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"C" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L7"
+	},
+/turf/open/floor/iron,
+/area/space)
 "E" = (
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating/gas_giant,
 /area/station/asteroid)
+"G" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L14"
+	},
+/turf/open/floor/iron,
+/area/space)
 "H" = (
 /turf/closed/wall,
 /area/station/cargo/storage)
+"I" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L1"
+	},
+/turf/open/floor/iron,
+/area/space)
+"J" = (
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/space)
 "K" = (
 /turf/open/misc/asteroid/gas_giant,
 /area/station/asteroid)
@@ -95,6 +191,24 @@
 "N" = (
 /turf/closed/mineral/random/stationside/asteroid/porus/gas_giant,
 /area/station/asteroid)
+"P" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L6"
+	},
+/turf/open/floor/iron,
+/area/space)
+"R" = (
+/obj/effect/spawner/structure/window/hollow/reinforced/middle{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/space)
+"T" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L4"
+	},
+/turf/open/floor/iron,
+/area/space)
 "U" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -117,6 +231,24 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/station/cargo/storage)
+"X" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L11"
+	},
+/turf/open/floor/iron,
+/area/space)
+"Y" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L9"
+	},
+/turf/open/floor/iron,
+/area/space)
+"Z" = (
+/obj/effect/turf_decal/plaque{
+	icon_state = "L5"
+	},
+/turf/open/floor/iron,
+/area/space)
 
 (1,1,1) = {"
 a
@@ -28500,14 +28632,14 @@ a
 a
 a
 a
+r
 a
 a
 a
-a
-a
-a
-a
-a
+r
+B
+B
+r
 a
 a
 a
@@ -28757,14 +28889,14 @@ a
 a
 a
 a
+r
+r
 a
 a
-a
-a
-a
-a
-a
-a
+b
+I
+t
+r
 a
 a
 a
@@ -29015,13 +29147,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+r
+R
+R
+r
+k
+T
+r
 a
 a
 a
@@ -29272,13 +29404,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+w
+f
+v
+w
+Z
+P
+r
 a
 a
 a
@@ -29529,13 +29661,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+b
+J
+J
+b
+C
+i
+r
 a
 a
 a
@@ -29786,13 +29918,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+w
+f
+v
+w
+Y
+m
+r
 a
 a
 a
@@ -30043,13 +30175,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+r
+R
+R
+r
+X
+s
+r
 a
 a
 a
@@ -30299,14 +30431,14 @@ a
 a
 a
 a
+r
+r
 a
 a
-a
-a
-a
-a
-a
-a
+b
+j
+G
+r
 a
 a
 a
@@ -30556,14 +30688,14 @@ a
 a
 a
 a
+r
 a
 a
 a
-a
-a
-a
-a
-a
+r
+B
+B
+r
 a
 a
 a
