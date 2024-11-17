@@ -1,10 +1,23 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aH" = (
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/hop)
+"bq" = (
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/station/command/bridge)
 "bx" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L1"
 	},
 /turf/open/floor/iron,
 /area/space)
+"bX" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/command/bridge)
+"cp" = (
+/turf/closed/wall/r_wall,
+/area/station/command/heads_quarters/hop)
 "cB" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/briefcase/secure{
@@ -20,14 +33,22 @@
 	pixel_x = -2
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
+"cC" = (
+/obj/structure/noticeboard/directional/north,
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/hop)
 "cX" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/iron/dark/diagonal,
-/area/space)
+/area/station/command/bridge)
+"cY" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/command/heads_quarters/hop)
 "cZ" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L14"
@@ -36,6 +57,19 @@
 /area/space)
 "db" = (
 /turf/closed/wall,
+/area/space)
+"dM" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/door/airlock/command/glass,
+/obj/effect/mapping_helpers/airlock/access/any/command/general,
+/obj/effect/mapping_helpers/airlock/unres,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "hopline";
+	name = "Queue Shutters"
+	},
+/turf/open/floor/iron/smooth_large,
 /area/space)
 "dO" = (
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -60,13 +94,30 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
+"fM" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/teleport/hub,
+/obj/machinery/door/poddoor/shutters/window{
+	id = "teleporterhubshutters";
+	name = "Teleporter Shutters"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/station/command/bridge)
 "fZ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
 /obj/item/stock_parts/power_store/cell/high,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
+"gF" = (
+/obj/structure/bed/dogbed/ian,
+/mob/living/basic/pet/dog/corgi/ian,
+/obj/effect/turf_decal/tile/dark_purple/diagonal_centre,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop)
 "hb" = (
 /obj/effect/turf_decal/sand,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -74,6 +125,11 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/station/cargo/storage)
+"hl" = (
+/obj/machinery/vending/cart,
+/obj/effect/turf_decal/tile/dark_purple/diagonal_centre,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop)
 "hp" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L13"
@@ -92,25 +148,104 @@
 /obj/machinery/computer/cargo/request,
 /obj/effect/turf_decal/tile/dark_purple/anticorner/contrasted,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "iX" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/space)
+"kD" = (
+/obj/machinery/computer/teleporter{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark_purple{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/bridge)
+"kF" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/door/window/brigdoor/left/directional/north{
+	name = "Access Desk";
+	req_access = list("hop")
+	},
+/obj/machinery/door/window/right/directional/south,
+/obj/machinery/door/poddoor/preopen{
+	id = "hopblast";
+	name = "HoP Blast Door"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/station/command/heads_quarters/hop)
+"mp" = (
+/obj/machinery/computer/accounting{
+	dir = 1
+	},
+/obj/machinery/button/door/directional/east{
+	id = "hopblast";
+	name = "Lockdown Blast Doors";
+	req_access = list("hop")
+	},
+/turf/open/floor/iron/dark/small,
+/area/station/command/heads_quarters/hop)
+"mB" = (
+/obj/machinery/bluespace_beacon,
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
+"mO" = (
+/obj/structure/table/wood,
+/obj/machinery/fax{
+	fax_name = "Head of Personnel's Office";
+	name = "Head of Personnel's Fax Machine";
+	pixel_y = 4
+	},
+/turf/open/floor/iron/dark/small,
+/area/station/command/heads_quarters/hop)
 "mR" = (
 /obj/machinery/modular_computer/preset/id,
 /obj/effect/turf_decal/tile/dark_purple/anticorner/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "ob" = (
 /obj/structure/table/reinforced,
 /obj/item/aicard{
 	pixel_y = 6
 	},
 /turf/open/floor/iron/dark,
+/area/station/command/bridge)
+"ot" = (
+/turf/closed/wall/r_wall,
+/area/station/command/bridge)
+"ox" = (
+/obj/machinery/ticket_machine/directional/north,
+/turf/open/chasm/gas_giant,
 /area/space)
+"pF" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
+"pQ" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/door/airlock/command,
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/landmark/navigate_destination/bridge,
+/turf/open/floor/iron/smooth_large,
+/area/station/command/bridge)
+"pX" = (
+/obj/structure/chair/office,
+/obj/effect/landmark/start/head_of_personnel,
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/hop)
 "qq" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -126,6 +261,22 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/cargo/storage)
+"qR" = (
+/turf/open/chasm/gas_giant,
+/area/station/command/heads_quarters/captain)
+"qT" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/command/heads_quarters/captain)
+"qU" = (
+/obj/structure/bed/double/pod{
+	dir = 1
+	},
+/obj/item/bedsheet/hop/double{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/hop)
 "qX" = (
 /obj/docking_port/stationary{
 	dwidth = 4;
@@ -146,7 +297,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "sc" = (
 /obj/machinery/computer/records/security{
 	dir = 1
@@ -158,7 +309,15 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
+"sp" = (
+/obj/structure/rack,
+/obj/item/hand_tele,
+/obj/effect/turf_decal/siding/dark_purple{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/bridge)
 "tn" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L4"
@@ -171,6 +330,21 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/station/cargo/storage)
+"uI" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/holopad,
+/obj/machinery/holopad,
+/obj/machinery/holopad,
+/obj/machinery/holopad,
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/hop)
+"vr" = (
+/obj/structure/bed/double/pod,
+/obj/item/bedsheet/captain/double,
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/captain)
 "vK" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
@@ -195,7 +369,16 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
+"wo" = (
+/obj/structure/chair/office{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/small,
+/area/station/command/heads_quarters/hop)
 "wH" = (
 /obj/structure/lattice,
 /turf/open/chasm/gas_giant,
@@ -211,14 +394,14 @@
 	pixel_y = 4
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "wY" = (
 /obj/effect/turf_decal/tile/dark_purple/half/contrasted{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "xz" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L5"
@@ -231,6 +414,20 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"xZ" = (
+/turf/closed/wall,
+/area/station/command/heads_quarters/captain)
+"yk" = (
+/turf/closed/wall,
+/area/station/command/heads_quarters/hop)
+"yn" = (
+/obj/structure/closet/secure_closet/personal/cabinet,
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/captain)
+"yD" = (
+/obj/effect/turf_decal/tile/dark_purple/diagonal_centre,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop)
 "yP" = (
 /obj/structure/marker_beacon/burgundy,
 /obj/effect/turf_decal/sand/plating,
@@ -255,14 +452,23 @@
 /obj/effect/turf_decal/tile/dark_red/half/contrasted{
 	dir = 1
 	},
+/obj/structure/fireaxecabinet/empty/directional/east,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "Ak" = (
 /obj/structure/marker_beacon/burgundy,
 /obj/effect/turf_decal/sand/plating,
 /obj/structure/sign/warning/docking/directional/north,
 /turf/open/floor/plating/gas_giant,
 /area/station/asteroid)
+"Ay" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "hopblast";
+	name = "HoP Blast Door"
+	},
+/turf/open/floor/plating,
+/area/station/command/heads_quarters/hop)
 "Bb" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -280,12 +486,50 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
 	},
+/obj/machinery/door/airlock/command,
+/obj/effect/mapping_helpers/airlock/access/all/command/captain,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/iron/smooth_large,
-/area/space)
+/area/station/command/heads_quarters/captain)
+"BB" = (
+/obj/machinery/vending/cigarette,
+/obj/effect/turf_decal/bot_purple/left,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/bridge)
 "CA" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/middle,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
+"CL" = (
+/obj/machinery/teleport/station,
+/obj/effect/turf_decal/bot_purple/right,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/bridge)
+"DD" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/machinery/door/airlock/command{
+	name = "Captain's Quarters"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/command/captain,
+/turf/open/floor/iron/smooth_large,
+/area/station/command/heads_quarters/captain)
+"EL" = (
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/hop)
+"Fd" = (
+/obj/effect/turf_decal/siding/dark_purple{
+	dir = 5
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/bridge)
+"FD" = (
+/obj/machinery/photocopier,
+/obj/effect/turf_decal/tile/dark_purple/diagonal_centre,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop)
 "FM" = (
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
@@ -296,6 +540,30 @@
 "GC" = (
 /turf/closed/wall/r_wall,
 /area/space)
+"GN" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "hopline";
+	name = "Queue Shutters"
+	},
+/turf/open/floor/plating,
+/area/space)
+"GR" = (
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/captain)
+"Ht" = (
+/obj/structure/closet/secure_closet/personal/cabinet,
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/hop)
+"Hy" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin/carbon,
+/obj/item/stamp/head/hop,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/small,
+/area/station/command/heads_quarters/hop)
 "HA" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/effect/turf_decal/stripes/asteroid/line,
@@ -320,6 +588,12 @@
 	pixel_y = 1
 	},
 /turf/open/floor/iron/dark,
+/area/station/command/bridge)
+"Il" = (
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/textured,
 /area/space)
 "Ip" = (
 /obj/machinery/computer/records/medical{
@@ -332,10 +606,33 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "Ir" = (
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/space)
+"JC" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/door/airlock/command/glass,
+/obj/effect/mapping_helpers/airlock/access/any/command/general,
+/obj/effect/mapping_helpers/airlock/unres{
+	dir = 1
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "hopline";
+	name = "Queue Shutters"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"JO" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/machinery/holopad,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/bridge)
 "Kh" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -348,7 +645,22 @@
 /obj/effect/mapping_helpers/airlock/autoname,
 /obj/effect/landmark/navigate_destination/hop,
 /turf/open/floor/iron/smooth_large,
-/area/space)
+/area/station/command/heads_quarters/hop)
+"Kt" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
+"KQ" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/door/airlock/command,
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/open/floor/iron/smooth_large,
+/area/station/command/bridge)
 "MJ" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L9"
@@ -359,7 +671,7 @@
 /obj/machinery/computer/communications,
 /obj/effect/turf_decal/tile/dark_purple/half/contrasted,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "Ou" = (
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating/gas_giant,
@@ -379,13 +691,32 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"Ph" = (
+/obj/effect/turf_decal/siding/dark_purple{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/bridge)
+"PB" = (
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 9
+	},
+/turf/open/floor/iron/dark/textured,
+/area/space)
+"PP" = (
+/obj/machinery/recharge_station,
+/obj/effect/turf_decal/siding/dark_purple{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/bridge)
 "Qh" = (
 /obj/structure/chair/comfy/shuttle/tactical{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "Rp" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L8"
@@ -398,30 +729,80 @@
 	},
 /turf/open/floor/iron,
 /area/space)
+"Tt" = (
+/obj/effect/turf_decal/siding/dark_purple{
+	dir = 9
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/bridge)
 "TA" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/marker_beacon/burgundy,
 /turf/open/chasm/gas_giant,
 /area/space/nearstation)
+"TN" = (
+/obj/machinery/modular_computer/preset/id{
+	dir = 8
+	},
+/obj/machinery/button/door/directional/east{
+	id = "hopline";
+	name = "Queue Shutters Control";
+	req_access = list("hop");
+	pixel_y = -6
+	},
+/obj/machinery/button/door/directional/east{
+	id = "hopblast";
+	name = "Lockdown Blast Doors";
+	req_access = list("hop");
+	pixel_y = 6
+	},
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/hop)
 "UU" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/middle{
 	dir = 4
 	},
 /turf/open/floor/plating,
 /area/space)
+"Vt" = (
+/turf/open/floor/iron/dark,
+/area/station/command/bridge)
 "Vy" = (
 /obj/effect/turf_decal/tile/dark_purple/half/contrasted{
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
+"WB" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "hopblast";
+	name = "HoP Blast Door"
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "hopblast";
+	name = "HoP Blast Door"
+	},
+/turf/open/floor/plating,
+/area/station/command/heads_quarters/hop)
 "Xm" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L3"
 	},
 /turf/open/floor/iron,
 /area/space)
+"Xv" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/machinery/door/airlock/command{
+	name = "Head Of Personnel's Quarters"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/command/hop,
+/turf/open/floor/iron/smooth_large,
+/area/station/command/heads_quarters/hop)
 "XL" = (
 /obj/structure/table/reinforced,
 /obj/structure/secure_safe/caps_spare,
@@ -429,7 +810,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "Yd" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L12"
@@ -442,20 +823,36 @@
 "Yk" = (
 /turf/closed/wall,
 /area/station/cargo/storage)
+"Yn" = (
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 5
+	},
+/turf/open/floor/iron/dark/textured,
+/area/space)
+"Yx" = (
+/turf/closed/wall/r_wall,
+/area/station/command/heads_quarters/captain)
 "YI" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/regular,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "YU" = (
 /turf/open/floor/plating/elevatorshaft,
 /area/station/cargo/storage)
+"YY" = (
+/obj/machinery/pdapainter,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/hop)
 "YZ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
 /obj/effect/turf_decal/siding/wideplating_new/corner,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/station/command/bridge)
 "Zs" = (
 /turf/closed/mineral/random/stationside/asteroid/porus/gas_giant,
 /area/station/asteroid)
@@ -28070,11 +28467,11 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
+cp
+cp
+cp
+cp
+cp
 Oy
 Oy
 Oy
@@ -28326,12 +28723,12 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
-Oy
+cp
+cp
+FD
+Hy
+mO
+Ay
 Oy
 Oy
 Oy
@@ -28582,13 +28979,13 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
-Oy
-Oy
+cp
+cp
+gF
+yD
+wo
+mp
+Ay
 Oy
 Oy
 Oy
@@ -28839,14 +29236,14 @@ Oy
 Oy
 Oy
 Oy
-GC
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
+cp
+hl
+yD
+yD
+cp
+cp
+cp
+ox
 Oy
 Oy
 Oy
@@ -29095,14 +29492,14 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
+cp
+cp
+yk
+uI
+YY
+Ay
+PB
+dM
 Oy
 Oy
 Oy
@@ -29351,15 +29748,15 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
+cp
+cp
+Ht
+yk
+cC
+pX
+kF
+Il
+GN
 Oy
 Oy
 Oy
@@ -29608,15 +30005,15 @@ Oy
 Oy
 Oy
 Oy
-GC
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
+cY
+qU
+aH
+Xv
+EL
+TN
+WB
+Yn
+JC
 Oy
 Oy
 Oy
@@ -29865,15 +30262,15 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-GC
-GC
+cp
+cp
+cp
+cp
 Kh
-GC
-Oy
-Oy
-Oy
+cp
+cp
+ot
+db
 Oy
 Oy
 Oy
@@ -30121,15 +30518,15 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
+ot
+ot
 YI
 ob
 ek
 cX
-Oy
-Oy
-Oy
+sp
+CL
+fM
 Oy
 Oy
 Oy
@@ -30378,15 +30775,15 @@ Oy
 Oy
 Oy
 Oy
-iX
+bX
 cB
 YZ
 rP
 Ip
 cX
-Oy
-Oy
-Oy
+Fd
+kD
+ot
 Oy
 Oy
 Oy
@@ -30635,15 +31032,15 @@ Oy
 Oy
 Oy
 Oy
-iX
+bX
 mR
 wY
-Ir
-Ir
+bq
+bq
 cX
-Oy
-Oy
-Oy
+Kt
+Kt
+pQ
 Oy
 Oy
 Oy
@@ -30892,15 +31289,15 @@ Oy
 Oy
 Oy
 Oy
-iX
+bX
 NL
 Qh
-Ir
-Ir
-cX
-Oy
-Oy
-Oy
+bq
+bq
+JO
+mB
+Vt
+bX
 Oy
 Oy
 Oy
@@ -31149,15 +31546,15 @@ Oy
 Oy
 Oy
 Oy
-iX
+bX
 ic
 Vy
-Ir
-Ir
+bq
+bq
 cX
-Oy
-Oy
-Oy
+pF
+pF
+KQ
 Oy
 Oy
 Oy
@@ -31406,15 +31803,15 @@ Oy
 Oy
 Oy
 Oy
-iX
+bX
 fZ
 XL
 wa
 sc
 cX
-Oy
-Oy
-Oy
+Tt
+Ph
+ot
 Oy
 Oy
 Oy
@@ -31663,15 +32060,15 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
+ot
+ot
 HD
 wM
 zv
 cX
-Oy
-Oy
-Oy
+PP
+BB
+bX
 Oy
 Oy
 Oy
@@ -31921,15 +32318,15 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-GC
-GC
+Yx
+Yx
+Yx
+Yx
 Bc
-GC
-Oy
-Oy
-Oy
+Yx
+Yx
+ot
+db
 Oy
 Oy
 Oy
@@ -32178,13 +32575,13 @@ Oy
 Oy
 Oy
 Oy
-GC
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
+qT
+vr
+GR
+DD
+qR
+qR
+Yx
 Oy
 Oy
 Oy
@@ -32435,13 +32832,13 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
-Oy
-Oy
+Yx
+Yx
+yn
+xZ
+qR
+qR
+Yx
 Oy
 Oy
 Oy
@@ -32693,12 +33090,12 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
-Oy
+Yx
+Yx
+xZ
+qR
+qR
+Yx
 Oy
 Oy
 Oy
@@ -32951,13 +33348,13 @@ Oy
 Oy
 Oy
 Oy
-GC
-Oy
-Oy
-Oy
-Oy
-Oy
-Oy
+Yx
+qR
+qR
+qR
+Yx
+Yx
+Yx
 Oy
 Oy
 Oy
@@ -33208,13 +33605,13 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
-Oy
-Oy
+Yx
+Yx
+qR
+qR
+qR
+qR
+Yx
 Oy
 Oy
 Oy
@@ -33466,12 +33863,12 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
-Oy
+Yx
+Yx
+qR
+qR
+qR
+Yx
 Oy
 Oy
 Oy
@@ -33724,11 +34121,11 @@ Oy
 Oy
 Oy
 Oy
-GC
-GC
-Oy
-Oy
-Oy
+Yx
+Yx
+Yx
+Yx
+Yx
 Oy
 Oy
 Oy
