@@ -15,6 +15,9 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/command/bridge)
+"cm" = (
+/turf/open/floor/iron/small,
+/area/station/hallway/secondary/service)
 "cp" = (
 /turf/closed/wall/r_wall,
 /area/station/command/heads_quarters/hop)
@@ -73,6 +76,7 @@
 	id = "hopline";
 	name = "Queue Shutters"
 	},
+/obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/smooth_large,
 /area/space)
 "dO" = (
@@ -114,6 +118,7 @@
 	id = "teleporterhubshutters";
 	name = "Teleporter Shutters"
 	},
+/obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/smooth_large,
 /area/station/command/bridge)
 "fZ" = (
@@ -245,6 +250,17 @@
 /obj/machinery/ticket_machine/directional/north,
 /turf/open/floor/iron,
 /area/space)
+"ps" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "pF" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -259,6 +275,7 @@
 /obj/effect/mapping_helpers/airlock/access/all/command/general,
 /obj/effect/mapping_helpers/airlock/autoname,
 /obj/effect/landmark/navigate_destination/bridge,
+/obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/smooth_large,
 /area/station/command/bridge)
 "pX" = (
@@ -348,6 +365,16 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"sd" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/machinery/door/airlock/service,
+/obj/effect/mapping_helpers/airlock/access/all/service/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/open/floor/iron/smooth_large,
+/area/station/hallway/secondary/service)
 "sp" = (
 /obj/structure/rack,
 /obj/item/hand_tele,
@@ -371,6 +398,16 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/station/cargo/storage)
+"uD" = (
+/obj/machinery/rnd/production/techfab/department/service,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/iron/herringbone,
+/area/station/hallway/secondary/service)
 "uI" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -491,6 +528,17 @@
 "yS" = (
 /turf/open/floor/iron/diagonal,
 /area/space)
+"yY" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/machinery/smartfridge/food,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "zc" = (
 /obj/machinery/modular_computer/preset/id{
 	dir = 8
@@ -561,6 +609,9 @@
 /obj/structure/cable,
 /turf/open/floor/iron/smooth_large,
 /area/station/command/heads_quarters/captain)
+"Bm" = (
+/turf/closed/wall,
+/area/station/hallway/secondary/service)
 "BB" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/turf_decal/bot_purple/left,
@@ -634,6 +685,18 @@
 /obj/structure/chair/sofa/bench/solo,
 /turf/open/floor/iron/diagonal,
 /area/space)
+"GJ" = (
+/obj/machinery/modular_computer/preset/cargochat/service{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/iron/herringbone,
+/area/station/hallway/secondary/service)
 "GN" = (
 /obj/effect/spawner/structure/window,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -684,6 +747,16 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"HS" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/machinery/door/airlock/service,
+/turf/open/floor/iron/smooth_large,
+/area/station/hallway/secondary/service)
 "Il" = (
 /obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
 	dir = 1
@@ -722,6 +795,7 @@
 	id = "hopline";
 	name = "Queue Shutters"
 	},
+/obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/smooth_large,
 /area/space)
 "JO" = (
@@ -760,8 +834,27 @@
 /obj/machinery/door/airlock/command,
 /obj/effect/mapping_helpers/airlock/access/all/command/general,
 /obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/smooth_large,
 /area/station/command/bridge)
+"KY" = (
+/obj/machinery/griddle,
+/turf/open/floor/iron/kitchen/herringbone,
+/area/space)
+"Ln" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating,
+/area/space)
+"LU" = (
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "MJ" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L5"
@@ -831,6 +924,19 @@
 /obj/structure/cable,
 /turf/open/floor/carpet/green,
 /area/station/command/heads_quarters/captain)
+"Rz" = (
+/turf/open/floor/iron/kitchen/herringbone,
+/area/space)
+"RS" = (
+/obj/machinery/modular_computer/preset/cargochat/service{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/green,
+/turf/open/floor/iron/herringbone,
+/area/station/hallway/secondary/service)
 "Sa" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L11"
@@ -872,6 +978,10 @@
 /obj/structure/cable,
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/captain)
+"Ta" = (
+/obj/machinery/oven/range,
+/turf/open/floor/iron/kitchen/herringbone,
+/area/space)
 "Tt" = (
 /obj/effect/turf_decal/siding/dark_purple{
 	dir = 9
@@ -923,6 +1033,20 @@
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"VJ" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/window/left/directional/east{
+	req_access = list("kitchen");
+	name = "Kitchen"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "WB" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L8"
@@ -28641,10 +28765,10 @@ cp
 cp
 Oy
 Oy
-Oy
-Oy
-Oy
-Oy
+Bm
+Bm
+Bm
+Bm
 Oy
 Oy
 Oy
@@ -28898,11 +29022,11 @@ mO
 Ay
 Pe
 Pe
-Oy
-Oy
-Oy
-Oy
-Oy
+Bm
+uD
+GJ
+Bm
+Bm
 Oy
 Oy
 Oy
@@ -29155,11 +29279,11 @@ mp
 Ay
 Pe
 Pe
-Oy
-Oy
-Oy
-Oy
-Oy
+sd
+cm
+cm
+RS
+Bm
 Oy
 Oy
 Oy
@@ -29412,11 +29536,11 @@ cp
 cp
 ox
 Pe
-Oy
-Oy
-Oy
-Oy
-Oy
+Bm
+Bm
+HS
+Bm
+Bm
 Oy
 Oy
 Oy
@@ -29669,11 +29793,11 @@ PB
 dM
 Pe
 Pe
-Oy
-Oy
-Oy
-Oy
-Oy
+db
+Ta
+Rz
+Rz
+Rz
 Oy
 Oy
 Oy
@@ -29926,11 +30050,11 @@ Il
 GN
 Pe
 Pe
-Oy
-Oy
-Oy
-Oy
-Oy
+Ln
+KY
+Rz
+Rz
+Rz
 Oy
 Oy
 Oy
@@ -30183,11 +30307,11 @@ Yn
 JC
 Pe
 Pe
-Oy
-Oy
-Oy
-Oy
-Oy
+db
+Ta
+Rz
+Rz
+Rz
 Oy
 Oy
 Oy
@@ -30441,10 +30565,10 @@ db
 Bb
 Bb
 db
-Oy
-Oy
-Oy
-Oy
+yY
+VJ
+ps
+ps
 Oy
 Oy
 Oy
@@ -30697,7 +30821,7 @@ fM
 yS
 FM
 qA
-Oy
+Ln
 Oy
 Oy
 Oy
@@ -30954,7 +31078,7 @@ ot
 GC
 Os
 Yq
-Oy
+db
 Oy
 Oy
 Oy
@@ -31211,7 +31335,7 @@ pQ
 Pe
 MJ
 xQ
-Oy
+LU
 Oy
 Oy
 Oy
@@ -31468,7 +31592,7 @@ bX
 xz
 xq
 WB
-Oy
+Ln
 Oy
 Oy
 Oy
@@ -31725,7 +31849,7 @@ KQ
 Pe
 Sm
 BQ
-Oy
+LU
 Oy
 Oy
 Oy
@@ -31982,7 +32106,7 @@ ot
 Su
 Sa
 cZ
-Oy
+db
 Oy
 Oy
 Oy
@@ -32239,7 +32363,7 @@ bX
 St
 Yd
 iX
-Oy
+Ln
 Oy
 Oy
 Oy
