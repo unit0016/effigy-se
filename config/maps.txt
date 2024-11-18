@@ -44,3 +44,7 @@ endmap
 map sigma_octantis
 	votable
 endmap
+
+map heftstation
+	votable
+endmap
