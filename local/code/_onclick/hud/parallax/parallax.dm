@@ -24,7 +24,7 @@
 
 /atom/movable/screen/parallax_layer/gas_giant_background/Initialize(mapload, datum/hud/hud_owner, template)
 	. = ..()
-	set_base_starlight("#FF0000")
+	set_base_starlight("#7a0000")
 
 /atom/movable/screen/parallax_layer/gas_giant
 	icon_state = "asteroids"
