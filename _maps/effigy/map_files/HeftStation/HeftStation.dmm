@@ -272,6 +272,16 @@
 /obj/structure/sign/poster/reference/holestation/directional/west,
 /turf/open/floor/wood/parquet,
 /area/station/command/heads_quarters/captain)
+"hF" = (
+/obj/effect/turf_decal/sand,
+/obj/effect/turf_decal/stripes/asteroid/corner{
+	dir = 1
+	},
+/obj/machinery/solarlight/camera_installed{
+	c_tag = "Head Of Personnel's Office - Exterior"
+	},
+/turf/open/floor/engine/hull/reinforced/gas_giant,
+/area/station/asteroid)
 "hG" = (
 /obj/effect/turf_decal/tile/dark/diagonal_edge,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -472,6 +482,13 @@
 /area/station/asteroid)
 "lN" = (
 /turf/closed/wall,
+/area/station/hallway/primary/fore)
+"lQ" = (
+/obj/effect/turf_decal/trimline/dark_purple/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/loading_area/purple,
+/turf/open/floor/iron/diagonal,
 /area/station/hallway/primary/fore)
 "lS" = (
 /obj/structure/chair/sofa/corp/corner,
@@ -1825,6 +1842,16 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/bridge)
+"Po" = (
+/obj/effect/turf_decal/sand,
+/obj/effect/turf_decal/stripes/asteroid/corner{
+	dir = 4
+	},
+/obj/machinery/solarlight/camera_installed{
+	c_tag = "Captain's Office - Exterior"
+	},
+/turf/open/floor/engine/hull/reinforced/gas_giant,
+/area/station/asteroid)
 "Py" = (
 /obj/structure/chair/sofa/left/brown{
 	dir = 4
@@ -30757,7 +30784,7 @@ Yh
 qr
 Yh
 mA
-pu
+hF
 cp
 hl
 Xf
@@ -31536,7 +31563,7 @@ TN
 Ay
 Yn
 JC
-RS
+lQ
 Gg
 Ln
 pt
@@ -34869,7 +34896,7 @@ Yh
 XV
 Yh
 Hk
-Ai
+Po
 Yx
 Ir
 eE
