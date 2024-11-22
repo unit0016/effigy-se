@@ -66,6 +66,9 @@
 /area/station/asteroid)
 "cm" = (
 /obj/machinery/airalarm/directional/east,
+/obj/effect/turf_decal/siding/dark_green{
+	dir = 5
+	},
 /turf/open/floor/iron/small,
 /area/station/hallway/secondary/service)
 "cp" = (
@@ -181,6 +184,10 @@
 /obj/structure/table/glass,
 /turf/open/floor/glass/reinforced,
 /area/station/service/bar/atrium)
+"dY" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating,
+/area/station/service/bar)
 "ek" = (
 /obj/machinery/computer/crew{
 	dir = 1
@@ -410,12 +417,21 @@
 /turf/open/floor/wood/tile,
 /area/station/service/bar/atrium)
 "jN" = (
-/turf/open/floor/iron/vaporwave,
-/area/station/hallway/primary/fore)
+/obj/structure/lattice/catwalk,
+/obj/structure/marker_beacon/purple,
+/turf/open/chasm/gas_giant,
+/area/space/nearstation)
 "jO" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/station/service/kitchen)
+"ki" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/siding/dark_green{
+	dir = 1
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/secondary/service)
 "kj" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -807,7 +823,6 @@
 	desc = "Used to separate out liquids - useful for purifying botanical extracts. Also dispenses condiments.";
 	name = "BrewMaster 2199"
 	},
-/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
@@ -1018,6 +1033,9 @@
 /area/station/cargo/storage)
 "uD" = (
 /obj/structure/cable,
+/obj/effect/turf_decal/siding/dark_green{
+	dir = 4
+	},
 /turf/open/floor/iron/small,
 /area/station/hallway/secondary/service)
 "uG" = (
@@ -1423,6 +1441,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood/tile,
 /area/station/service/bar)
 "zS" = (
@@ -2011,6 +2030,14 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/station/service/bar/atrium)
+"LK" = (
+/obj/structure/lattice,
+/obj/item/toy/plush/beeplushie{
+	desc = "Improperbee placed.";
+	name = "Improperbee"
+	},
+/turf/open/chasm/gas_giant,
+/area/space/nearstation)
 "LU" = (
 /obj/effect/turf_decal/siding/wideplating_new,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -2139,6 +2166,10 @@
 "Oy" = (
 /turf/open/chasm/gas_giant,
 /area/space)
+"OC" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/station/hallway/primary/fore)
 "OI" = (
 /obj/structure/cable,
 /turf/open/floor/wood/parquet,
@@ -2296,7 +2327,6 @@
 /turf/open/floor/iron/kitchen/herringbone,
 /area/station/service/kitchen)
 "QY" = (
-/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -2477,6 +2507,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
+/obj/machinery/light/directional/north,
 /turf/open/floor/wood/large,
 /area/station/service/bar)
 "TA" = (
@@ -29959,7 +29990,7 @@ TB
 Wz
 Oi
 DZ
-uD
+ki
 To
 KM
 ml
@@ -30994,7 +31025,7 @@ Ta
 gj
 PZ
 jv
-KM
+jO
 Oy
 Oy
 Oy
@@ -35612,7 +35643,7 @@ UU
 EY
 RS
 zS
-kU
+dY
 QY
 Zu
 ce
@@ -35620,7 +35651,7 @@ ce
 ce
 Xj
 qo
-kU
+dY
 Oy
 Oy
 Oy
@@ -36384,9 +36415,9 @@ NI
 Wz
 Pw
 lN
-jN
-jN
-jN
+LK
+Oy
+Oy
 kU
 KH
 pB
@@ -36640,10 +36671,10 @@ IK
 CN
 Wz
 Pw
-lN
+OC
+wH
 jN
-jN
-jN
+wH
 kU
 Kq
 pB
@@ -36897,10 +36928,10 @@ Pv
 Dm
 Wz
 Pw
-lN
-jN
-jN
-jN
+OC
+wH
+Oy
+Oy
 kU
 vx
 Kx
@@ -37155,8 +37186,8 @@ lN
 nc
 eB
 lN
-lN
-lN
+OC
+OC
 lN
 kU
 kU
