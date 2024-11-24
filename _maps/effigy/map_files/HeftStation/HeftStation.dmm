@@ -197,11 +197,11 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new,
 /obj/machinery/door/firedoor/heavy,
-/obj/structure/table/reinforced,
 /obj/machinery/door/window/left/directional/north{
 	name = "Research Lab Desk";
 	req_access = list("science")
 	},
+/obj/machinery/rnd/destructive_analyzer,
 /turf/open/floor/iron/smooth_large,
 /area/space)
 "ek" = (
@@ -627,7 +627,9 @@
 /turf/open/floor/iron/kitchen/herringbone,
 /area/station/service/kitchen)
 "mn" = (
-/obj/machinery/rnd/destructive_analyzer,
+/obj/structure/chair/office{
+	dir = 4
+	},
 /turf/open/floor/iron/white,
 /area/space)
 "mp" = (
@@ -1709,6 +1711,11 @@
 /obj/structure/table,
 /turf/open/floor/iron/kitchen,
 /area/station/service/kitchen)
+"Di" = (
+/obj/structure/table/glass/plasmaglass,
+/obj/machinery/cell_charger,
+/turf/open/floor/iron/white,
+/area/space)
 "Dm" = (
 /obj/structure/closet/emcloset,
 /obj/effect/turf_decal/trimline/dark_blue/end{
@@ -29264,7 +29271,7 @@ Oy
 Oy
 Um
 Um
-Um
+mn
 ec
 Oy
 Oy
@@ -29520,8 +29527,8 @@ Oy
 Oy
 Oy
 Um
+Um
 LA
-mn
 aK
 ht
 KW
@@ -29778,7 +29785,7 @@ Oy
 Oy
 Um
 Um
-wB
+Di
 HL
 tT
 eS
