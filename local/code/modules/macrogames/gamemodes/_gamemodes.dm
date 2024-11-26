@@ -14,10 +14,11 @@
 
 	/// JOB STUFF ///
 	/// Should we prevent latejoining?
-	var/prevent_latejoins = TRUE // SHOG TODO
+	var/prevent_latejoins = TRUE
 
 	/// TITLE STUFF ///
 	/// The Splash HTML we want to use for this gamemode, if any. NULL Uses codebase default. COME AS A .TXT. THIS IS AN ATTACK VECTOR. VET WHO HAS CONFIG ACCESS.
+	/// though apparently it's only used as a fucking. CSS framework??????? idk anymore man this fucking shit is cursed
 	var/replacement_splash_html
 	/// Direct icon path to the main menu image for this gamemode; if any.
 	var/main_menu_image

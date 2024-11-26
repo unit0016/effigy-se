@@ -63,7 +63,11 @@
 		return
 
 	if(href_list["late_join"])
-		GLOB.latejoin_menu.ui_interact(usr)
+		for(var/datum/macrogame_gamemode/found_gamemode in SSmacrogames.running_gamemodes)
+			if(found_gamemode.prevent_latejoins)
+				to_chat(src, span_notice("The gamemode running doesn't allow latejoining!"))
+				continue
+			else GLOB.latejoin_menu.ui_interact(usr)
 
 	if(href_list["title_is_ready"])
 		title_screen_is_ready = TRUE
