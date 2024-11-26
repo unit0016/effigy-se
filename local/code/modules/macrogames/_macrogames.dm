@@ -5,13 +5,8 @@ SUBSYSTEM_DEF(macrogames)
 	var/list/running_gamemodes = list()
 	/// All gamemodes queued for the next round. Representative of the json.
 	var/list/queued_gamemodes = list()
-	/// SHOG TODO: Are we allowing players to vote for gamemodes?
-	var/can_players_vote = FALSE
 	/// Should we run our current gamemode in perpetuity?
 	var/should_perpetually_run = FALSE
-
-	/// Copy of SSjob's joinable_occupations list if a gamemode uses whitelisted_jobs.
-	var/list/joinable_occupations_copy = list()
 
 /datum/controller/subsystem/macrogames/Initialize()
 	if (fexists(QUEUED_GAMEMODES_FILE))

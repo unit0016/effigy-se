@@ -6,9 +6,6 @@
 		/datum/round_event_control/alien_infestation, \
 		/datum/round_event_control/blob, \
 	)
-	whitelisted_jobs = list(
-		/datum/job/assistant, \
-	) // SHOG TEMP - honestly I'm fine with keeping w/e jobs for Murder but I want to test if this method works -- EDIT - IT DOESNT
 	main_menu_image = 'local/icons/runtime/title-murder.png'
 	anull_negative_moodles = TRUE
 	required_players = 2

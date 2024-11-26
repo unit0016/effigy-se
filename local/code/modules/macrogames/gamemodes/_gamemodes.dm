@@ -13,9 +13,6 @@
 	var/blacklisted_events = list()
 
 	/// JOB STUFF ///
-	/// What jobs should we allow?
-	var/whitelisted_jobs = list()
-
 	/// Should we prevent latejoining?
 	var/prevent_latejoins = TRUE // SHOG TODO
 
@@ -84,9 +81,6 @@
 		SSmacrogames.queued_gamemodes += src
 
 /datum/macrogame_gamemode/Destroy(force)
-	if(whitelisted_jobs)
-		SSjob.joinable_occupations = SSmacrogames.joinable_occupations_copy.Copy()
-		SSmacrogames.joinable_occupations_copy = list()
 	if(src in SSmacrogames.running_gamemodes)
 		SSmacrogames.running_gamemodes -= src
 	if(src in SSmacrogames.queued_gamemodes)
@@ -113,13 +107,6 @@
 		for(var/datum/round_event_control/possible_event in blacklisted_events)
 			if(possible_event in SSevents.control)
 				SSevents.control -= possible_event
-
-	if(whitelisted_jobs)
-		SSmacrogames.joinable_occupations_copy = SSjob.joinable_occupations.Copy()
-		for(var/datum/job/found_job in SSjob.joinable_occupations)
-			if(found_job in whitelisted_jobs)
-				continue
-			SSjob.joinable_occupations -= found_job
 
 	if(rulesets_to_force)
 		force_rulesets()
