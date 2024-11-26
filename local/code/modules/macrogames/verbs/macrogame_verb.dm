@@ -12,7 +12,7 @@ ADMIN_VERB(macrogames, R_FUN, "Macrogames Setup", "Set up; add; and remove any m
 				if("Cancel")
 					break
 	/// Next; set up and create a new gamemode.
-	var/datum/macrogame_gamemode/choice = tgui_input_list(
+	var/choice = tgui_input_list(
 		user,
 		"Chose a macrogame gamemode to inject into the queue or the next round.",
 		"Choose Gamemode",
@@ -20,4 +20,4 @@ ADMIN_VERB(macrogames, R_FUN, "Macrogames Setup", "Set up; add; and remove any m
 	)
 	if(!choice || !ispath(choice, /datum/macrogame_gamemode))
 		return
-	choice = new
+	new choice

@@ -22,8 +22,8 @@
 	/// TITLE STUFF ///
 	/// The Splash HTML we want to use for this gamemode, if any. NULL Uses codebase default. COME AS A .TXT. THIS IS AN ATTACK VECTOR. VET WHO HAS CONFIG ACCESS.
 	var/replacement_splash_html
-	/// Possible main menu images for this gamemode.
-	var/main_menu_images = list()
+	/// Direct icon path to the main menu image for this gamemode; if any.
+	var/main_menu_image
 
 
 	/// MAPPING STUFF ///
@@ -106,8 +106,8 @@
 		if(fexists("[global.config.directory]/[initial(replacement_splash_html)].txt"))
 			SStitle.title_html = file2text("[global.config.directory]/[initial(replacement_splash_html)].txt")
 
-	if(main_menu_images)
-		SStitle.change_title_screen(pick(main_menu_images))
+	if(main_menu_image)
+		SStitle.change_title_screen(main_menu_image)
 
 	if(blacklisted_events)
 		for(var/datum/round_event_control/possible_event in blacklisted_events)
