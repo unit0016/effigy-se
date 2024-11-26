@@ -166,6 +166,11 @@ GLOBAL_LIST_INIT(special_roles, list(
 	ROLE_GLITCH = 0,
 	ROLE_PAI = 0,
 	ROLE_SENTIENCE = 0,
+
+	/// EFFIGY EDIT BEGIN ///
+	// Macrogames
+	ROLE_MACROGAMES_ANTAGONIST = 0,
+	/// EFFIGY EDIT END ///
 ))
 
 //Job defines for what happens when you fail to qualify for any job during job selection

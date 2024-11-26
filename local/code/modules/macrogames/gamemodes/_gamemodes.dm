@@ -4,7 +4,7 @@
 	var/description = "A bunch of people on a space station wonder why the round isn't working correctly."
 
 	/// Can we run this gamemode midround?
-	var/can_be_run_midround = TRUE
+	var/can_be_run_midround = FALSE
 
 	/// Should we force any dynamic rulesets?
 	var/list/rulesets_to_force = list()
