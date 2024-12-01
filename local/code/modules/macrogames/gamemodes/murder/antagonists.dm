@@ -14,3 +14,6 @@
 	var/where = H.equip_conspicuous_item(our_knife)
 	if(!where)
 		our_knife.forceMove(H.loc)
+		to_chat(H, span_danger("You've dropped your knife! Better grab it fast..."))
+		return
+	to_chat(H, span_warning("You have a knife in your [where], ready and sharp..."))
