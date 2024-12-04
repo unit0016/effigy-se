@@ -243,6 +243,9 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
 	},
+/obj/effect/turf_decal/trimline/dark_purple/corner{
+	dir = 1
+	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 1
 	},
@@ -897,6 +900,10 @@
 /obj/structure/chair/stool/directional/east,
 /turf/open/floor/iron/dark/diagonal,
 /area/centcom/interlink/venue)
+"fK" = (
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/centcom/interlink/venue)
 "fM" = (
 /turf/open/floor/pod,
 /area/centcom/interlink/transit_line)
@@ -1177,6 +1184,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 9
+	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
 	},
@@ -2178,6 +2188,9 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 10
 	},
+/obj/effect/turf_decal/trimline/dark_purple/corner{
+	dir = 4
+	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 4
 	},
@@ -2725,10 +2738,13 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
 	},
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 8
+	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
-/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/interlink/venue)
 "sH" = (
@@ -3152,6 +3168,9 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 8
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -3680,6 +3699,9 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 8
 	},
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 5
+	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 5
 	},
@@ -3814,6 +3836,9 @@
 /area/centcom/interlink)
 "Bl" = (
 /obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
@@ -4163,6 +4188,8 @@
 	dir = 9
 	},
 /obj/structure/flora/ocean/coral,
+/obj/structure/window/spawner/directional/west,
+/obj/structure/window/spawner/directional/north,
 /turf/open/misc/asteroid,
 /area/centcom/interlink)
 "En" = (
@@ -6044,6 +6071,9 @@
 /turf/open/floor/iron/white,
 /area/centcom/interlink)
 "RK" = (
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 5
+	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
 	dir = 1
 	},
@@ -6073,6 +6103,9 @@
 "Se" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 4
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -6363,6 +6396,9 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
+	},
+/obj/effect/turf_decal/trimline/dark_purple/corner{
+	dir = 1
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 1
@@ -6872,6 +6908,9 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
+	dir = 8
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -40096,7 +40135,7 @@ HK
 HK
 HK
 BY
-BY
+fK
 HK
 HK
 HK
@@ -40353,7 +40392,7 @@ um
 Ai
 BY
 BY
-BY
+fK
 BY
 Ai
 MA
