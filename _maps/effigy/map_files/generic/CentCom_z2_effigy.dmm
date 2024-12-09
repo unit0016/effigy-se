@@ -338,6 +338,16 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating/elevatorshaft,
 /area/centcom/interlink)
+"bJ" = (
+/obj/machinery/light/directional/south,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "bK" = (
 /obj/machinery/vending/dorms,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -571,6 +581,13 @@
 /obj/machinery/duct,
 /turf/open/floor/iron/smooth_large,
 /area/centcom/interlink)
+"dz" = (
+/obj/machinery/light/directional/north,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/catwalk_floor/iron,
+/area/centcom/interlink/venue)
 "dB" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/siding/wood{
@@ -603,6 +620,12 @@
 "dL" = (
 /turf/open/floor/iron/kitchen/herringbone,
 /area/centcom/interlink)
+"dQ" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "dR" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 4
@@ -610,6 +633,13 @@
 /obj/effect/landmark/latejoin_interlink,
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/interlink/transit_line)
+"dS" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "dU" = (
 /obj/machinery/light/directional/south,
 /obj/structure/closet/crate/bin,
@@ -656,6 +686,15 @@
 /obj/machinery/duct,
 /turf/open/floor/iron/smooth_large,
 /area/centcom/interlink)
+"dY" = (
+/obj/structure/disposalpipe/junction/yjunction{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "ec" = (
 /obj/structure/fluff/fake_scrubber,
 /obj/effect/turf_decal/siding/wood{
@@ -890,6 +929,12 @@
 /obj/structure/table,
 /turf/open/floor/iron/cafeteria,
 /area/centcom/interlink)
+"fw" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/centcom/interlink/venue)
 "fx" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -1137,6 +1182,13 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/neon/simple/black,
+/area/centcom/interlink/venue)
+"ha" = (
+/obj/structure/hedge,
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/turf/open/floor/wood/tile,
 /area/centcom/interlink/venue)
 "he" = (
 /obj/structure/chair/wood{
@@ -1461,6 +1513,12 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/circuit,
 /area/centcom/interlink)
+"je" = (
+/obj/structure/disposalpipe/junction/flip{
+	dir = 8
+	},
+/turf/open/floor/catwalk_floor/iron,
+/area/centcom/interlink/venue)
 "jf" = (
 /obj/effect/turf_decal/siding/wideplating_new/corner{
 	dir = 8
@@ -1496,6 +1554,12 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/interlink)
+"jr" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/centcom/interlink/venue)
 "jt" = (
 /obj/structure/chair/sofa/corp,
 /obj/effect/landmark/latejoin_interlink,
@@ -1546,6 +1610,15 @@
 /obj/structure/flora/tree/jungle/small/style_random,
 /turf/open/floor/grass,
 /area/centcom/interlink)
+"jO" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 4
+	},
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/floor/glass/reinforced,
+/area/centcom/interlink/venue)
 "jR" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -1566,6 +1639,14 @@
 "ke" = (
 /turf/closed/indestructible/fakedoor/maintenance,
 /area/centcom/interlink/venue)
+"kg" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/hedge,
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "kn" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
@@ -1585,6 +1666,10 @@
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/large,
+/area/centcom/interlink/venue)
+"kx" = (
+/obj/machinery/status_display/random_message/motivational/directional/south,
+/turf/open/floor/carpet/purple,
 /area/centcom/interlink/venue)
 "kB" = (
 /obj/effect/turf_decal/trimline/dark_green/arrow_cw{
@@ -1692,6 +1777,13 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron/dark/diagonal,
 /area/centcom/interlink)
+"lo" = (
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "lq" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 9
@@ -1768,6 +1860,15 @@
 	},
 /turf/open/floor/iron/large,
 /area/centcom/interlink)
+"lR" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/glass/reinforced,
+/area/centcom/interlink/venue)
 "lW" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -1934,10 +2035,16 @@
 /turf/open/floor/plating,
 /area/centcom/interlink)
 "nf" = (
+/obj/effect/turf_decal/tile/magenta_red/full,
+/obj/effect/turf_decal/bot_white,
 /obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/open/floor/wood/tile,
+/obj/machinery/disposal/bin,
+/turf/open/floor/iron/dark/textured_large,
 /area/centcom/interlink/venue)
 "nk" = (
 /obj/effect/turf_decal/weather/sand{
@@ -2306,6 +2413,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/centcom/interlink)
+"pi" = (
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/iron,
+/area/centcom/interlink/venue)
 "pl" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
@@ -2385,6 +2496,15 @@
 	name = "Door Lock"
 	},
 /turf/open/floor/iron/white/textured_large,
+/area/centcom/interlink/venue)
+"pU" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/glass/reinforced,
 /area/centcom/interlink/venue)
 "pV" = (
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -2607,6 +2727,12 @@
 	},
 /turf/open/floor/iron/textured_large,
 /area/centcom/interlink)
+"qY" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/centcom/interlink/venue)
 "qZ" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -2688,6 +2814,11 @@
 	name = "Stall"
 	},
 /turf/open/floor/iron/smooth_large,
+/area/centcom/interlink/venue)
+"rK" = (
+/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/light/directional/west,
+/turf/open/floor/carpet/purple,
 /area/centcom/interlink/venue)
 "rL" = (
 /obj/machinery/oven,
@@ -2803,6 +2934,12 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/centcom/interlink/venue)
+"sk" = (
+/obj/machinery/conveyor{
+	id = "interlinkgarbage"
+	},
+/turf/open/floor/iron/pool,
+/area/centcom/interlink/venue)
 "so" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/corner{
@@ -2907,6 +3044,13 @@
 	},
 /turf/open/floor/pod,
 /area/centcom/interlink/transit_line)
+"sN" = (
+/obj/machinery/light/directional/south,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/catwalk_floor/iron,
+/area/centcom/interlink/venue)
 "sR" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
@@ -2925,6 +3069,15 @@
 /obj/structure/railing,
 /turf/open/floor/iron/dark/diagonal,
 /area/space)
+"sT" = (
+/obj/structure/chair/stool/directional/west,
+/obj/structure/mirror/directional/west,
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/sign/poster/official/random/directional/south,
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "sV" = (
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/half,
@@ -2959,6 +3112,15 @@
 /obj/structure/fluff/beach_umbrella/science,
 /turf/open/misc/beach/sand,
 /area/centcom/interlink)
+"tl" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "tm" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 9
@@ -3183,7 +3345,7 @@
 /area/centcom/interlink)
 "ux" = (
 /obj/machinery/status_display/random_message/motivational/directional/north,
-/turf/open/floor/carpet/green,
+/turf/open/floor/carpet/purple,
 /area/centcom/interlink/venue)
 "uz" = (
 /turf/open/floor/iron/small,
@@ -3277,6 +3439,13 @@
 /obj/structure/fluff/fake_scrubber,
 /turf/open/floor/iron/diagonal,
 /area/centcom/interlink)
+"vu" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/chair/sofa/bench/right{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
+/area/centcom/interlink/venue)
 "vw" = (
 /obj/effect/turf_decal/siding/wideplating_new/end{
 	dir = 1
@@ -3316,6 +3485,29 @@
 /obj/machinery/duct,
 /turf/open/floor/iron,
 /area/centcom/interlink)
+"vF" = (
+/obj/effect/turf_decal/trimline/magenta_red/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/mid_joiner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/half{
+	dir = 1
+	},
+/area/centcom/interlink/venue)
 "vG" = (
 /obj/structure/fluff/tram_rail{
 	desc = "This probably won't stop a titanium tram from hitting the wall, but it's the thought that counts.";
@@ -3328,6 +3520,26 @@
 "vH" = (
 /obj/structure/bed/dogbed,
 /turf/open/floor/carpet/black,
+/area/centcom/interlink/venue)
+"vJ" = (
+/obj/effect/turf_decal/trimline/magenta_red/warning{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/mid_joiner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/iron/half{
+	dir = 1
+	},
 /area/centcom/interlink/venue)
 "vP" = (
 /obj/structure/dresser,
@@ -3405,6 +3617,26 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/interlink)
+"wm" = (
+/obj/effect/turf_decal/trimline/magenta_red/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/mid_joiner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/iron/half{
+	dir = 1
+	},
+/area/centcom/interlink/venue)
 "wo" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 9
@@ -3424,6 +3656,12 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/smooth_large,
 /area/centcom/interlink)
+"wr" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "ww" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
@@ -3470,6 +3708,13 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/smooth_large,
+/area/centcom/interlink/venue)
+"wL" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
 /area/centcom/interlink/venue)
 "wM" = (
 /obj/machinery/button/door/directional/south{
@@ -3561,6 +3806,11 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/space)
+"xn" = (
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/structure/railing,
+/turf/open/floor/glass/reinforced,
+/area/centcom/interlink/venue)
 "xo" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -3609,6 +3859,14 @@
 	},
 /turf/open/floor/grass,
 /area/centcom/interlink)
+"xI" = (
+/obj/machinery/conveyor/inverted{
+	dir = 9;
+	id = "interlinkgarbage"
+	},
+/obj/structure/drain/big,
+/turf/open/floor/iron/pool,
+/area/centcom/interlink/venue)
 "xJ" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -3780,6 +4038,19 @@
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/grass,
 /area/centcom/interlink)
+"yG" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/machinery/door/airlock/maintenance_hatch,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth_large,
+/area/centcom/interlink/venue)
 "yI" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -3804,6 +4075,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
+/obj/structure/sign/poster/official/random/directional/north,
 /turf/open/floor/wood/tile,
 /area/centcom/interlink/venue)
 "yX" = (
@@ -3833,6 +4105,13 @@
 /area/centcom/interlink/venue)
 "zs" = (
 /turf/open/floor/wood,
+/area/centcom/interlink/venue)
+"zu" = (
+/obj/machinery/conveyor{
+	id = "interlinkgarbage";
+	dir = 4
+	},
+/turf/open/floor/iron/pool,
 /area/centcom/interlink/venue)
 "zv" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -3891,7 +4170,10 @@
 /turf/open/floor/iron/dark/diagonal,
 /area/centcom/interlink)
 "zI" = (
-/turf/open/floor/carpet/green,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/carpet/purple,
 /area/centcom/interlink/venue)
 "zL" = (
 /obj/structure/table/wood,
@@ -3901,6 +4183,15 @@
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/interlink)
+"zO" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/glass/reinforced,
+/area/centcom/interlink/venue)
 "zR" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 8
@@ -3984,6 +4275,12 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/centcom/interlink/venue)
+"AA" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "AB" = (
 /obj/structure/chair/sofa/corp{
 	dir = 1
@@ -4013,6 +4310,16 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/centcom/interlink/transit_line)
+"AU" = (
+/obj/machinery/conveyor{
+	id = "interlinkgarbage"
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/structure/disposaloutlet,
+/turf/open/floor/iron/pool,
+/area/centcom/interlink/venue)
 "AV" = (
 /obj/effect/turf_decal/siding/wideplating_new/corner{
 	dir = 8
@@ -4101,6 +4408,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
+/obj/structure/sign/poster/official/random/directional/north,
 /turf/open/floor/wood/tile,
 /area/centcom/interlink/venue)
 "BD" = (
@@ -4206,6 +4514,15 @@
 /obj/structure/flora/bush/lavendergrass/style_2,
 /turf/open/floor/grass,
 /area/centcom/interlink)
+"Cv" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "Cx" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 8
@@ -4215,6 +4532,15 @@
 	},
 /turf/open/floor/iron/large,
 /area/centcom/interlink)
+"Cy" = (
+/obj/structure/mirror/directional/east,
+/obj/structure/chair/stool/directional/east,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/sign/poster/official/random/directional/south,
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "CC" = (
 /obj/machinery/light/directional/south,
 /obj/structure/chair/sofa/bench/left{
@@ -4226,6 +4552,9 @@
 "CE" = (
 /turf/open/floor/catwalk_floor/titanium,
 /area/centcom/interlink/transit_line)
+"CH" = (
+/turf/open/floor/wood/large,
+/area/centcom/interlink/venue)
 "CJ" = (
 /obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -4396,6 +4725,12 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/interlink)
+"DD" = (
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/turf/open/floor/carpet/purple,
+/area/centcom/interlink/venue)
 "DG" = (
 /obj/structure/closet/crate/trashcart/laundry,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -4445,7 +4780,8 @@
 /area/space)
 "Ek" = (
 /obj/machinery/vending/autodrobe/all_access,
-/turf/open/floor/carpet/green,
+/obj/machinery/light/directional/east,
+/turf/open/floor/carpet/purple,
 /area/centcom/interlink/venue)
 "En" = (
 /obj/item/kirbyplants/random,
@@ -4454,6 +4790,18 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/interlink)
+"Ep" = (
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/centcom/interlink/venue)
+"Er" = (
+/turf/open/floor/iron,
+/area/centcom/interlink/venue)
 "Ev" = (
 /obj/structure/chair/sofa/bench/left{
 	dir = 4
@@ -4573,6 +4921,12 @@
 	dir = 6
 	},
 /turf/open/floor/iron/smooth_large,
+/area/centcom/interlink/venue)
+"Ft" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/turf/open/floor/wood/tile,
 /area/centcom/interlink/venue)
 "Fu" = (
 /turf/closed/indestructible/fakedoor/blast_door,
@@ -4710,6 +5064,29 @@
 /obj/structure/fluff/fake_scrubber,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/interlink/venue)
+"GE" = (
+/obj/effect/turf_decal/trimline/magenta_red/warning{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/magenta_red/mid_joiner{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/dark_purple/filled/mid_joiner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/half{
+	dir = 1
+	},
+/area/centcom/interlink/venue)
 "GF" = (
 /obj/structure/chair/sofa/bench/solo{
 	dir = 8
@@ -4720,6 +5097,18 @@
 /obj/structure/window/spawner/directional/east,
 /turf/open/floor/iron/diagonal,
 /area/centcom/interlink)
+"GG" = (
+/obj/effect/turf_decal/tile/magenta_red/full,
+/obj/effect/turf_decal/bot_white,
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/obj/machinery/disposal/bin,
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/interlink/venue)
 "GH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -4750,6 +5139,11 @@
 /obj/effect/turf_decal/trimline/dark/warning,
 /turf/open/floor/wood/tile,
 /area/centcom/interlink)
+"GW" = (
+/obj/structure/disposalpipe/junction,
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "GZ" = (
 /obj/structure/mirror/directional/east,
 /obj/structure/chair/stool/directional/east,
@@ -4852,6 +5246,24 @@
 /obj/structure/dresser,
 /turf/open/floor/carpet/black,
 /area/centcom/interlink)
+"Hx" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/structure/curtain/bounty,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/smooth_large,
+/area/centcom/interlink/venue)
+"Hy" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/glass/reinforced,
+/area/centcom/interlink/venue)
 "HA" = (
 /turf/open/misc/dirt/station,
 /area/centcom/interlink)
@@ -4981,6 +5393,12 @@
 /obj/effect/turf_decal/bot_blue,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/interlink/venue)
+"Il" = (
+/obj/structure/chair/sofa/bench/left{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
+/area/centcom/interlink/venue)
 "Im" = (
 /obj/effect/turf_decal/siding/wideplating_new/corner{
 	dir = 8
@@ -4998,6 +5416,15 @@
 	dir = 8
 	},
 /area/centcom/interlink)
+"Is" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/iron,
+/area/centcom/interlink/venue)
 "Iw" = (
 /obj/effect/turf_decal/siding/wideplating_new/corner{
 	dir = 8
@@ -5060,6 +5487,13 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/centcom/interlink/transit_line)
+"IU" = (
+/obj/machinery/vending/cigarette,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "IX" = (
 /obj/structure/chair/stool/bar/directional/north,
 /obj/effect/turf_decal/siding/wood,
@@ -5076,6 +5510,10 @@
 	},
 /turf/open/floor/iron/small,
 /area/centcom/interlink)
+"Jf" = (
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/centcom/interlink/venue)
 "Ji" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -5135,6 +5573,12 @@
 "JC" = (
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/interlink)
+"JD" = (
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/carpet/purple,
+/area/centcom/interlink/venue)
 "JE" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -5176,6 +5620,11 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating,
 /area/centcom/interlink)
+"JN" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner,
+/obj/structure/railing/corner,
+/turf/open/floor/glass/reinforced,
+/area/centcom/interlink/venue)
 "JP" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -5254,6 +5703,12 @@
 /obj/item/weldingtool/mini/empty,
 /turf/open/floor/plating/reinforced,
 /area/centcom/interlink)
+"Kw" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/open/floor/iron,
+/area/centcom/interlink/venue)
 "KA" = (
 /obj/machinery/status_display/random_message/motivational/directional/south,
 /turf/open/floor/iron/dark/small,
@@ -5471,6 +5926,15 @@
 "LN" = (
 /turf/open/floor/carpet/black,
 /area/centcom/interlink/venue)
+"LU" = (
+/obj/machinery/recycler{
+	dir = 1
+	},
+/obj/machinery/conveyor{
+	id = "interlinkgarbage"
+	},
+/turf/open/floor/iron/pool,
+/area/centcom/interlink/venue)
 "Mc" = (
 /obj/effect/turf_decal/trimline/dark_green/arrow_cw,
 /obj/effect/turf_decal/trimline/dark_green/mid_joiner,
@@ -5598,6 +6062,15 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/centcom/interlink)
+"MV" = (
+/obj/structure/disposalpipe/junction/flip{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "MZ" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -5734,6 +6207,12 @@
 /obj/structure/closet/secure_closet/event_venue_do_not_use_off_interlink_event_venue,
 /turf/open/floor/iron,
 /area/centcom/interlink/venue)
+"NT" = (
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/carpet/purple,
+/area/centcom/interlink/venue)
 "NV" = (
 /obj/structure/railing{
 	dir = 1
@@ -5770,6 +6249,12 @@
 /obj/structure/chair/sofa/bench/left,
 /turf/open/floor/grass,
 /area/centcom/interlink)
+"Oc" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "Oe" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
@@ -5797,6 +6282,12 @@
 "Om" = (
 /turf/open/floor/light,
 /area/centcom/interlink/venue)
+"On" = (
+/obj/structure/disposalpipe/junction/flip{
+	dir = 4
+	},
+/turf/open/floor/catwalk_floor/iron,
+/area/centcom/interlink/venue)
 "Oq" = (
 /turf/open/misc/beach/sand,
 /area/centcom/interlink)
@@ -5807,6 +6298,15 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron/textured_large,
 /area/centcom/interlink)
+"Os" = (
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/centcom/interlink/venue)
 "Ov" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 9
@@ -5862,6 +6362,9 @@
 /obj/effect/spawner/random/bedsheet/double,
 /turf/open/floor/carpet/black,
 /area/centcom/interlink)
+"OJ" = (
+/turf/open/floor/plating,
+/area/centcom/interlink/venue)
 "OM" = (
 /obj/structure/urinal/directional/east,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -5973,6 +6476,30 @@
 	},
 /turf/open/floor/iron/large,
 /area/centcom/interlink)
+"PA" = (
+/obj/effect/turf_decal/tile/magenta_red/full,
+/obj/effect/turf_decal/bot_white,
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/machinery/disposal/bin,
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/interlink/venue)
+"PD" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/hedge,
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
+"PE" = (
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "PF" = (
 /obj/machinery/shower/directional/west,
 /obj/effect/spawner/liquids_spawner,
@@ -6395,7 +6922,7 @@
 /area/centcom/interlink)
 "RH" = (
 /obj/machinery/vending/clothing,
-/turf/open/floor/carpet/green,
+/turf/open/floor/carpet/purple,
 /area/centcom/interlink/venue)
 "RK" = (
 /obj/effect/turf_decal/trimline/dark_purple/arrow_cw{
@@ -6489,6 +7016,10 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/interlink)
+"Su" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plating,
+/area/centcom/interlink/venue)
 "Sx" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -6748,6 +7279,11 @@
 	},
 /turf/open/floor/plating/elevatorshaft,
 /area/centcom/interlink/transit_line)
+"TV" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/chair/sofa/bench/left,
+/turf/open/floor/wood/large,
+/area/centcom/interlink/venue)
 "TX" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -6977,6 +7513,12 @@
 	},
 /turf/open/floor/mineral/titanium/tiled,
 /area/centcom/interlink/transit_line)
+"Vd" = (
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/iron,
+/area/centcom/interlink/venue)
 "Vf" = (
 /obj/structure/flora/rock/pile,
 /turf/open/misc/beach/sand,
@@ -7127,6 +7669,12 @@
 /obj/machinery/vending/wallmed/directional/north,
 /turf/open/floor/iron,
 /area/centcom/interlink)
+"VZ" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/catwalk_floor/iron,
+/area/centcom/interlink/venue)
 "Wa" = (
 /obj/structure/table,
 /turf/open/floor/iron/cafeteria,
@@ -7205,6 +7753,14 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/kitchen/herringbone,
 /area/centcom/interlink)
+"Wp" = (
+/obj/machinery/light/directional/north,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "Wt" = (
 /obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/lowered,
@@ -7308,6 +7864,13 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/interlink)
+"WX" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating,
+/area/centcom/interlink/venue)
 "WZ" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -7327,6 +7890,13 @@
 	},
 /turf/open/floor/iron/kitchen,
 /area/centcom/interlink)
+"Xp" = (
+/obj/structure/hedge,
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "Xr" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
@@ -7439,10 +8009,16 @@
 /turf/open/floor/carpet/neon/simple/black,
 /area/centcom/interlink/venue)
 "XU" = (
+/obj/effect/turf_decal/tile/magenta_red/full,
+/obj/effect/turf_decal/bot_white,
 /obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/open/floor/wood/tile,
+/obj/machinery/disposal/bin,
+/turf/open/floor/iron/dark/textured_large,
 /area/centcom/interlink/venue)
 "XW" = (
 /obj/machinery/status_display/random_message/motivational/directional/north,
@@ -7507,6 +8083,15 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/kitchen,
 /area/centcom/interlink)
+"YB" = (
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 1
+	},
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/glass/reinforced,
+/area/centcom/interlink/venue)
 "YD" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
@@ -7714,6 +8299,13 @@
 "ZG" = (
 /turf/open/floor/iron/dark/smooth_half,
 /area/centcom/interlink)
+"ZK" = (
+/obj/machinery/vending/dorms,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/centcom/interlink/venue)
 "ZR" = (
 /obj/effect/turf_decal/trimline/dark_green/corner{
 	dir = 8
@@ -7721,6 +8313,10 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron,
 /area/centcom/interlink)
+"ZT" = (
+/obj/structure/chair/sofa/bench/right,
+/turf/open/floor/wood/large,
+/area/centcom/interlink/venue)
 "ZW" = (
 /obj/machinery/computer/security{
 	dir = 8
@@ -39764,11 +40360,11 @@ ju
 ju
 nQ
 mA
-pg
-BY
-BY
-BY
-BY
+HK
+HK
+HK
+HK
+HK
 BY
 BY
 BY
@@ -40018,14 +40614,14 @@ qd
 UX
 UX
 UX
-mA
-mA
-mA
-pg
-BY
-BY
-BY
-BY
+HK
+Wx
+HK
+AU
+sk
+LU
+xI
+HK
 BY
 BY
 BY
@@ -40275,14 +40871,14 @@ zs
 zs
 zs
 UX
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+Vd
+Jf
+WX
+Is
+qY
+Kw
+zu
+HK
 BY
 BY
 BY
@@ -40532,14 +41128,14 @@ zs
 zs
 zs
 UX
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+yG
+UX
+Er
+Er
+OJ
+Su
+zu
+HK
 BY
 BY
 BY
@@ -40788,15 +41384,15 @@ aN
 zs
 zs
 zs
+zs
+jr
 UX
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+Er
+pi
+Su
+zu
+HK
 BY
 BY
 BY
@@ -41042,18 +41638,18 @@ UX
 UX
 UX
 UX
-zs
-zs
-zs
+fw
+fw
+fw
+fw
+Ep
+Os
 UX
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+UX
+UX
+HK
+HK
 BY
 BY
 BY
@@ -41299,16 +41895,16 @@ UX
 yW
 XU
 UX
-zs
-zs
-zs
+PE
+CH
+CH
+CH
+CH
+tl
 UX
-BY
-BY
-BY
-BY
-BY
-BY
+PA
+sT
+UX
 BY
 BY
 BY
@@ -41555,17 +42151,17 @@ BY
 UX
 ux
 zI
-ul
-zs
-zs
-zs
+Hx
+lo
+CH
+AA
+wr
+CH
+MV
+Hx
+JD
+kx
 UX
-BY
-BY
-BY
-BY
-BY
-BY
 BY
 BY
 BY
@@ -41813,16 +42409,16 @@ UX
 RH
 Ek
 UX
-zs
-zs
-zs
+dS
+CH
+dQ
+Ft
+CH
+tl
 UX
-BY
-BY
-BY
-BY
-BY
-BY
+Ek
+RH
+UX
 BY
 BY
 BY
@@ -42070,16 +42666,16 @@ UX
 UX
 UX
 UX
-zs
-zs
-zs
+Wp
+CH
+CH
+CH
+CH
+bJ
 UX
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+UX
+UX
 BY
 BY
 BY
@@ -42325,18 +42921,18 @@ BY
 BY
 UX
 RH
-Ek
+rK
 UX
-zs
-zs
-zs
+GE
+wm
+wm
+wm
+wm
+GE
 UX
-BY
-BY
-BY
-BY
-BY
-BY
+rK
+RH
+UX
 BY
 BY
 BY
@@ -42582,18 +43178,18 @@ BY
 BY
 UX
 ux
-zI
-ul
-zs
-zs
-zs
+NT
+Hx
+On
+JN
+Hy
+Hy
+jO
+je
+Hx
+DD
+kx
 UX
-BY
-BY
-BY
-BY
-BY
-BY
 BY
 BY
 BY
@@ -42841,16 +43437,16 @@ UX
 BC
 nf
 UX
-zs
-zs
-zs
+VZ
+xn
+Wt
+Wt
+zO
+VZ
 UX
-BY
-BY
-BY
-BY
-BY
-BY
+GG
+Cy
+UX
 BY
 BY
 BY
@@ -43098,16 +43694,16 @@ UX
 UX
 UX
 UX
+dz
+xn
+Wt
+Wt
+zO
+sN
 UX
 UX
 UX
 UX
-BY
-BY
-BY
-BY
-BY
-BY
 BY
 BY
 BY
@@ -43351,20 +43947,20 @@ BY
 BY
 BY
 BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+yW
+XU
+UX
+VZ
+xn
+Wt
+Wt
+zO
+VZ
+UX
+PA
+sT
+UX
 BY
 BY
 BY
@@ -43608,20 +44204,20 @@ BY
 BY
 BY
 BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+ux
+zI
+Hx
+On
+pU
+lR
+lR
+YB
+je
+Hx
+JD
+kx
+UX
 BY
 BY
 BY
@@ -43865,20 +44461,20 @@ BY
 BY
 BY
 BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+RH
+Ek
+UX
+vF
+vJ
+vJ
+vJ
+vJ
+vF
+UX
+Ek
+RH
+UX
 BY
 BY
 BY
@@ -44122,20 +44718,20 @@ BY
 BY
 BY
 BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+UX
+UX
+UX
+Wp
+CH
+CH
+CH
+CH
+bJ
+UX
+UX
+UX
+UX
 BY
 BY
 BY
@@ -44379,20 +44975,20 @@ BY
 BY
 BY
 BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+RH
+rK
+UX
+dS
+Il
+Xp
+ha
+ZT
+tl
+UX
+rK
+RH
+UX
 BY
 BY
 BY
@@ -44636,20 +45232,20 @@ BY
 BY
 BY
 BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+ux
+NT
+Hx
+GW
+vu
+kg
+PD
+TV
+dY
+Hx
+DD
+kx
+UX
 BY
 BY
 BY
@@ -44893,20 +45489,20 @@ BY
 BY
 BY
 BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+BC
+nf
+UX
+PE
+CH
+CH
+CH
+CH
+Oc
+UX
+GG
+Cy
+UX
 BY
 BY
 BY
@@ -45150,20 +45746,20 @@ BY
 BY
 BY
 BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+UX
+UX
+UX
+UX
+ZK
+IU
+Cv
+wL
+UX
+UX
+UX
+UX
+UX
 BY
 BY
 BY
@@ -45411,12 +46007,12 @@ BY
 BY
 BY
 BY
-BY
-BY
-BY
-BY
-BY
-BY
+UX
+UX
+UX
+UX
+UX
+UX
 BY
 BY
 BY
