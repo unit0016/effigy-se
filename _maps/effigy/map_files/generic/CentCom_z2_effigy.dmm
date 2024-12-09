@@ -4514,6 +4514,12 @@
 /obj/structure/flora/bush/lavendergrass/style_2,
 /turf/open/floor/grass,
 /area/centcom/interlink)
+"Cs" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/wood/large,
+/area/centcom/interlink/venue)
 "Cv" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -4521,6 +4527,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
+/obj/machinery/disposal/bin,
 /turf/open/floor/wood/tile,
 /area/centcom/interlink/venue)
 "Cx" = (
@@ -6489,7 +6496,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/interlink/venue)
 "PD" = (
-/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/junction/flip,
 /obj/structure/hedge,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -45496,7 +45503,7 @@ UX
 PE
 CH
 CH
-CH
+Cs
 CH
 Oc
 UX
