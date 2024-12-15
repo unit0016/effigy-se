@@ -212,3 +212,61 @@
 
 /obj/effect/turf_decal/siding/orange/end
 	icon_state = "siding_plain_end"
+
+/*
+	Numbered Directions
+*/
+
+/obj/effect/turf_decal/numeric_directions
+	icon = 'local/icons/turf/decals.dmi'
+	icon_state = "directionalarrow"
+
+/obj/effect/turf_decal/numeric_directions/lefthalf
+	icon_state = "directionalarrow_lefthalf"
+
+/obj/effect/turf_decal/numeric_directions/righthalf
+	icon_state = "directionalarrow_righthalf"
+
+/// ONE
+
+/obj/effect/turf_decal/numeric_directions/one
+	icon_state = "one"
+
+/obj/effect/turf_decal/numeric_directions/one/lefthalf
+	icon_state = "one_lefthalf"
+
+/obj/effect/turf_decal/numeric_directions/one/righthalf
+	icon_state = "one_righthalf"
+
+/// TWO
+
+/obj/effect/turf_decal/numeric_directions/two
+	icon_state = "two"
+
+/obj/effect/turf_decal/numeric_directions/two/lefthalf
+	icon_state = "two_lefthalf"
+
+/obj/effect/turf_decal/numeric_directions/two/righthalf
+	icon_state = "two_righthalf"
+
+/// THREE
+
+/obj/effect/turf_decal/numeric_directions/three
+	icon_state = "three"
+
+/obj/effect/turf_decal/numeric_directions/three/lefthalf
+	icon_state = "three_lefthalf"
+
+/obj/effect/turf_decal/numeric_directions/three/righthalf
+	icon_state = "three_righthalf"
+
+/// FOUR
+
+/obj/effect/turf_decal/numeric_directions/four
+	icon_state = "four"
+
+/obj/effect/turf_decal/numeric_directions/four/lefthalf
+	icon_state = "four_lefthalf"
+
+/obj/effect/turf_decal/numeric_directions/four/righthalf
+	icon_state = "four_righthalf"
