@@ -1,10 +1,59 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"am" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/structure/closet/firecloset/full,
+/turf/open/floor/engine,
+/area/space)
+"av" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 9
+	},
+/turf/open/floor/engine,
+/area/space)
 "aC" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 4
 	},
 /obj/machinery/holopad,
 /turf/open/floor/iron/submarine_perf,
+/area/space)
+"aG" = (
+/obj/machinery/power/smes/magical/cybersun,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/space)
+"bd" = (
+/obj/machinery/power/shuttle_engine/heater,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/space)
+"be" = (
+/obj/machinery/power/shuttle_engine/huge{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
+"bv" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/red/corner,
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/machinery/light/warm/dim/directional/south,
+/turf/open/floor/iron/sepia,
 /area/space)
 "cd" = (
 /turf/open/floor/engine,
@@ -23,14 +72,68 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"dz" = (
+/obj/machinery/power/shuttle_engine/large{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
+"dG" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 6
+	},
+/turf/open/floor/iron/sepia,
+/area/space)
+"dW" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/structure/window/reinforced/survival_pod/spawner/directional/south,
+/turf/open/floor/plating/elevatorshaft,
+/area/space)
 "ej" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 6
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/space)
+"eA" = (
+/obj/effect/turf_decal/numeric_directions/lefthalf{
+	dir = 4
+	},
+/obj/effect/turf_decal/numeric_directions/one/lefthalf{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"eI" = (
+/obj/effect/turf_decal/trimline/red/filled/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/iron/sepia,
+/area/space)
 "eX" = (
 /turf/closed/wall/mineral/diamond,
+/area/space)
+"fg" = (
+/turf/open/floor/plating/elevatorshaft,
+/area/space)
+"fk" = (
+/obj/effect/turf_decal/trimline/red/filled/line{
+	dir = 8
+	},
+/turf/open/floor/iron/sepia,
 /area/space)
 "gM" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -40,6 +143,18 @@
 	dir = 4
 	},
 /turf/open/floor/iron/submarine_perf,
+/area/space)
+"gV" = (
+/obj/effect/turf_decal/numeric_directions{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/numeric_directions/two{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_large,
 /area/space)
 "hH" = (
 /obj/effect/turf_decal/trimline/dark/line{
@@ -57,9 +172,27 @@
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"jH" = (
+/obj/effect/turf_decal/numeric_directions/righthalf{
+	dir = 1
+	},
+/obj/effect/turf_decal/numeric_directions/four/righthalf{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "ky" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"lm" = (
+/obj/effect/turf_decal/numeric_directions/lefthalf{
+	dir = 4
+	},
+/obj/effect/turf_decal/numeric_directions/two/lefthalf{
+	dir = 4
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
@@ -76,6 +209,50 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"lI" = (
+/obj/effect/turf_decal/numeric_directions{
+	dir = 8
+	},
+/obj/effect/turf_decal/numeric_directions/four{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 6
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"lZ" = (
+/turf/open/floor/iron/sepia,
+/area/space)
+"mg" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/white/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/structure/railing/corner/end,
+/turf/open/floor/engine,
+/area/space)
+"ml" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 10
+	},
+/turf/open/floor/iron/sepia,
+/area/space)
+"nj" = (
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/iron/sepia,
+/area/space)
 "nz" = (
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 1
@@ -83,15 +260,75 @@
 /obj/structure/hedge,
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"oe" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/power/port_gen/pacman/pre_loaded,
+/turf/open/floor/engine,
+/area/space)
+"ot" = (
+/obj/effect/turf_decal/siding/beige/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/beige{
+	dir = 6
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/space)
+"ou" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/iron/sepia,
+/area/space)
 "ph" = (
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/dark/textured_large,
+/area/space)
+"pZ" = (
+/obj/effect/turf_decal/trimline/red/filled/corner,
+/turf/open/floor/iron/sepia,
+/area/space)
+"qo" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/red/corner,
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/iron/sepia,
 /area/space)
 "qw" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
+/area/space)
+"qQ" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/white/line,
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/engine,
 /area/space)
 "rh" = (
 /obj/effect/turf_decal/numeric_directions/lefthalf{
@@ -127,11 +364,38 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"sX" = (
+/turf/closed/wall/r_wall,
+/area/space)
+"tk" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/iron/sepia,
+/area/space)
 "tU" = (
 /obj/effect/turf_decal/stripes/white/full,
 /obj/effect/turf_decal/siding/wideplating_new/end,
 /obj/machinery/light/dim/directional/south,
 /turf/open/floor/plating/elevatorshaft,
+/area/space)
+"tV" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/iron/sepia,
 /area/space)
 "uf" = (
 /obj/machinery/cryopod{
@@ -159,12 +423,34 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"uB" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/red/corner,
+/turf/open/floor/iron/sepia,
+/area/space)
+"uM" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/iron/sepia,
+/area/space)
 "vC" = (
 /obj/effect/turf_decal/siding/wideplating_new/corner,
 /obj/effect/turf_decal/siding/wideplating_new/corner{
 	dir = 8
 	},
 /turf/open/floor/iron/smooth_large,
+/area/space)
+"vN" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/white/line,
+/obj/machinery/power/rtg/advanced,
+/obj/structure/cable,
+/turf/open/floor/engine,
 /area/space)
 "vS" = (
 /obj/effect/turf_decal/numeric_directions{
@@ -179,19 +465,51 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"wd" = (
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "wF" = (
 /obj/effect/turf_decal/siding/wideplating_new/end{
 	dir = 4
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"wJ" = (
+/obj/effect/turf_decal/numeric_directions/righthalf{
+	dir = 8
+	},
+/obj/effect/turf_decal/numeric_directions/two/righthalf{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"xg" = (
+/obj/effect/turf_decal/numeric_directions/lefthalf,
+/obj/effect/turf_decal/numeric_directions/one/lefthalf,
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "xm" = (
 /turf/open/space/basic,
+/area/space)
+"xu" = (
+/obj/effect/turf_decal/numeric_directions/lefthalf{
+	dir = 1
+	},
+/obj/effect/turf_decal/numeric_directions/four/lefthalf{
+	dir = 1
+	},
+/turf/open/floor/iron/smooth_large,
 /area/space)
 "xN" = (
 /obj/effect/turf_decal/numeric_directions/lefthalf,
 /obj/effect/turf_decal/numeric_directions/three/lefthalf,
 /turf/open/floor/iron/smooth_large,
+/area/space)
+"yi" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/white/corner,
+/obj/structure/cable,
+/turf/open/floor/engine,
 /area/space)
 "yl" = (
 /obj/machinery/cryopod{
@@ -228,6 +546,38 @@
 "yT" = (
 /turf/closed/indestructible/fakedoor/maintenance,
 /area/space)
+"zp" = (
+/obj/effect/turf_decal/numeric_directions/righthalf{
+	dir = 8
+	},
+/obj/effect/turf_decal/numeric_directions/one/righthalf{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"zw" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 9
+	},
+/turf/open/floor/iron/sepia,
+/area/space)
+"zD" = (
+/obj/effect/turf_decal/trimline/red/filled/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/iron/sepia,
+/area/space)
+"Ad" = (
+/obj/effect/turf_decal/siding/beige{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/beige/corner,
+/turf/open/floor/mineral/plastitanium/red,
+/area/space)
 "Ah" = (
 /obj/effect/turf_decal/numeric_directions/righthalf{
 	dir = 4
@@ -238,11 +588,48 @@
 /obj/effect/turf_decal/siding/wideplating_new,
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"AG" = (
+/obj/structure/frame/computer,
+/turf/open/floor/iron/sepia,
+/area/space)
+"Bv" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/white/line,
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/space)
+"BE" = (
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/space)
+"BP" = (
+/obj/effect/turf_decal/trimline/red/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/iron/sepia,
+/area/space)
 "Cb" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 6
 	},
 /turf/open/floor/iron/smooth_large,
+/area/space)
+"Ck" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 5
+	},
+/obj/structure/railing{
+	dir = 10
+	},
+/obj/structure/cable,
+/obj/machinery/power/port_gen/pacman/super,
+/turf/open/floor/engine,
 /area/space)
 "CA" = (
 /obj/effect/turf_decal/numeric_directions/lefthalf{
@@ -256,12 +643,57 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"CB" = (
+/obj/effect/turf_decal/numeric_directions/lefthalf{
+	dir = 8
+	},
+/obj/effect/turf_decal/numeric_directions/one/lefthalf{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"CI" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/red/line,
+/obj/effect/turf_decal/trimline/red/filled/warning{
+	dir = 1
+	},
+/turf/open/floor/iron/textured_large,
+/area/space)
 "CU" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/iron/submarine_vents,
 /area/space)
+"Dd" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/red/corner,
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/sepia,
+/area/space)
 "DQ" = (
 /turf/closed/wall,
+/area/space)
+"DX" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/white/corner{
+	dir = 8
+	},
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/space)
+"Eg" = (
+/turf/open/floor/catwalk_floor/iron,
 /area/space)
 "Eq" = (
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -269,6 +701,57 @@
 	},
 /obj/machinery/light/warm/dim/directional/east,
 /turf/open/floor/iron/submarine_perf,
+/area/space)
+"ET" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
+"EV" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 4;
+	icon_state = "router"
+	},
+/turf/open/floor/engine,
+/area/space)
+"Fq" = (
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/white/corner,
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/space)
+"Fv" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/iron/sepia,
+/area/space)
+"FN" = (
+/obj/effect/turf_decal/numeric_directions{
+	dir = 8
+	},
+/obj/effect/turf_decal/numeric_directions/three{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 4
+	},
+/obj/machinery/light/small/dim/directional/north,
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"Gb" = (
+/obj/effect/turf_decal/siding/beige/end{
+	dir = 8
+	},
+/obj/effect/turf_decal/engine_number,
+/turf/open/floor/mineral/plastitanium/red,
 /area/space)
 "Gl" = (
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -278,6 +761,51 @@
 	dir = 4
 	},
 /turf/open/floor/iron/smooth_large,
+/area/space)
+"Gu" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/white/line,
+/obj/structure/railing/corner/end/flip{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/space)
+"Gy" = (
+/obj/effect/turf_decal/numeric_directions{
+	dir = 8
+	},
+/obj/effect/turf_decal/numeric_directions/three{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 5
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"GF" = (
+/obj/effect/turf_decal/siding/beige{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/beige{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium/red,
+/area/space)
+"Ha" = (
+/obj/effect/turf_decal/numeric_directions/righthalf{
+	dir = 4
+	},
+/obj/effect/turf_decal/numeric_directions/two/righthalf{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth_large,
+/area/space)
+"HL" = (
+/obj/effect/turf_decal/trimline/red/filled/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/sepia,
 /area/space)
 "HM" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
@@ -293,6 +821,34 @@
 	dir = 5
 	},
 /turf/open/floor/iron/dark/textured_large,
+/area/space)
+"IM" = (
+/obj/effect/turf_decal/siding/beige{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/beige{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/space)
+"Jh" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 9
+	},
+/obj/machinery/power/rtg/advanced,
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/space)
+"JB" = (
+/obj/effect/turf_decal/trimline/red/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/machinery/light/warm/dim/directional/south,
+/turf/open/floor/iron/sepia,
 /area/space)
 "Kg" = (
 /obj/machinery/cryopod{
@@ -320,6 +876,13 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"Mw" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/structure/closet/emcloset/anchored,
+/turf/open/floor/engine,
+/area/space)
 "MQ" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -330,6 +893,20 @@
 /obj/effect/turf_decal/numeric_directions/righthalf,
 /obj/effect/turf_decal/numeric_directions/three/righthalf,
 /turf/open/floor/iron/smooth_large,
+/area/space)
+"Nr" = (
+/obj/effect/turf_decal/trimline/red/filled/line,
+/turf/open/floor/iron/sepia,
+/area/space)
+"NS" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 4;
+	icon_state = "router"
+	},
+/obj/effect/turf_decal/siding/wideplating_new/corner{
+	dir = 1
+	},
+/turf/open/floor/engine,
 /area/space)
 "OC" = (
 /obj/effect/turf_decal/numeric_directions{
@@ -359,11 +936,35 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"Pr" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 9
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/sepia,
+/area/space)
+"PC" = (
+/obj/effect/turf_decal/numeric_directions/righthalf,
+/obj/effect/turf_decal/numeric_directions/one/righthalf,
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "Qh" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
 	},
 /turf/open/floor/iron/submarine_vents,
+/area/space)
+"QA" = (
+/obj/effect/turf_decal/numeric_directions/righthalf{
+	dir = 4
+	},
+/obj/effect/turf_decal/numeric_directions/one/righthalf{
+	dir = 4
+	},
+/turf/open/floor/iron/smooth_large,
 /area/space)
 "QN" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -380,6 +981,21 @@
 	dir = 4
 	},
 /turf/open/floor/plating/elevatorshaft,
+/area/space)
+"Rl" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/space)
+"RR" = (
+/obj/effect/turf_decal/numeric_directions/lefthalf{
+	dir = 8
+	},
+/obj/effect/turf_decal/numeric_directions/two/lefthalf{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_large,
 /area/space)
 "SJ" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -405,12 +1021,39 @@
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/plating/elevatorshaft,
 /area/space)
+"Tm" = (
+/obj/effect/turf_decal/siding/beige{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/beige{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/turf/open/floor/mineral/plastitanium/red,
+/area/space)
 "Us" = (
 /turf/open/floor/iron/submarine_perf,
+/area/space)
+"Vy" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/red/corner,
+/turf/open/floor/iron/sepia,
 /area/space)
 "VH" = (
 /obj/effect/turf_decal/siding/wideplating_new/end,
 /turf/open/floor/iron/smooth_large,
+/area/space)
+"VU" = (
+/obj/effect/turf_decal/trimline/red/filled/line{
+	dir = 4
+	},
+/turf/open/floor/iron/sepia,
 /area/space)
 "Wb" = (
 /obj/effect/turf_decal/siding/wideplating_new/corner{
@@ -423,6 +1066,33 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark/textured_large,
+/area/space)
+"WC" = (
+/turf/open/floor/iron/textured_large,
+/area/space)
+"XS" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/space)
+"Ye" = (
+/obj/effect/turf_decal/siding/beige/end{
+	dir = 4
+	},
+/obj/effect/turf_decal/engine_number/three,
+/turf/open/floor/mineral/plastitanium/red,
+/area/space)
+"Yk" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 5
+	},
+/obj/machinery/power/rtg/advanced,
+/obj/structure/cable,
+/turf/open/floor/engine,
 /area/space)
 
 (1,1,1) = {"
@@ -42412,8 +43082,8 @@ xm
 DQ
 DQ
 DQ
-DQ
-DQ
+lm
+Ha
 DQ
 DQ
 DQ
@@ -42455,8 +43125,8 @@ xm
 DQ
 DQ
 DQ
-DQ
-DQ
+eA
+QA
 DQ
 DQ
 DQ
@@ -42668,26 +43338,9 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
 DQ
-lv
-lv
-lv
-lv
-lv
-lv
-lv
-lv
-lv
-lv
+wd
+wd
 DQ
 xm
 xm
@@ -42711,10 +43364,27 @@ xm
 xm
 xm
 xm
+DQ
+lv
+lv
+lv
+lv
+lv
+lv
+lv
+lv
+lv
+lv
+DQ
 xm
 xm
 xm
 xm
+xm
+DQ
+wd
+wd
+DQ
 xm
 xm
 xm
@@ -42924,12 +43594,12 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+DQ
+wd
+wd
+DQ
+DQ
 xm
 xm
 xm
@@ -42967,12 +43637,12 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+DQ
+wd
+wd
+DQ
+DQ
 xm
 xm
 xm
@@ -43181,12 +43851,12 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+SS
+QZ
+QZ
+tU
+DQ
 xm
 xm
 xm
@@ -43224,12 +43894,12 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+SS
+QZ
+QZ
+tU
+DQ
 xm
 xm
 xm
@@ -43438,29 +44108,12 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-DQ
-DQ
-lv
-lv
-lv
-lv
-lv
-lv
-DQ
-DQ
-xm
-xm
+sX
+sX
+wJ
+RR
+sX
+sX
 xm
 xm
 xm
@@ -43483,10 +44136,27 @@ xm
 xm
 xm
 xm
+DQ
+DQ
+lv
+lv
+lv
+lv
+lv
+lv
+DQ
+DQ
 xm
 xm
 xm
 xm
+xm
+DQ
+DQ
+zp
+CB
+DQ
+DQ
 xm
 xm
 xm
@@ -43692,32 +44362,15 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-DQ
-DQ
-DQ
-DQ
-DQ
-DQ
-DQ
-DQ
-xm
-xm
-xm
+sX
+sX
+yT
+sX
+tk
+qo
+tV
+ml
+sX
 xm
 xm
 xm
@@ -43741,12 +44394,29 @@ xm
 xm
 xm
 xm
+DQ
+DQ
+DQ
+DQ
+DQ
+DQ
+DQ
+DQ
 xm
 xm
 xm
 xm
 xm
 xm
+DQ
+lZ
+lZ
+lZ
+lZ
+DQ
+yT
+DQ
+DQ
 xm
 xm
 xm
@@ -43949,6 +44619,15 @@ xm
 xm
 xm
 xm
+sX
+FN
+lI
+dG
+Dd
+zw
+dG
+bv
+sX
 xm
 xm
 xm
@@ -43986,24 +44665,15 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+lZ
+lZ
+lZ
+lZ
+lZ
+Gy
+gV
+DQ
 xm
 xm
 xm
@@ -44205,6 +44875,16 @@ xm
 xm
 xm
 xm
+sX
+sX
+Eg
+mg
+oe
+Ck
+dG
+Vy
+Fv
+sX
 xm
 xm
 xm
@@ -44242,26 +44922,16 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+lZ
+lZ
+lZ
+cd
+cd
+cd
+Eg
+DQ
+DQ
 xm
 xm
 xm
@@ -44462,6 +45132,16 @@ xm
 xm
 xm
 xm
+dW
+CI
+Eg
+XS
+BE
+Gu
+uB
+zw
+ou
+sX
 xm
 xm
 xm
@@ -44499,26 +45179,16 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+lZ
+lZ
+lZ
+cd
+cd
+cd
+Eg
+WC
+fg
 xm
 xm
 xm
@@ -44719,6 +45389,16 @@ xm
 xm
 xm
 xm
+dW
+CI
+Eg
+XS
+yi
+av
+zw
+dG
+uM
+sX
 xm
 xm
 xm
@@ -44756,26 +45436,16 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+lZ
+lZ
+lZ
+cd
+cd
+cd
+Eg
+WC
+fg
 xm
 xm
 xm
@@ -44976,6 +45646,16 @@ xm
 xm
 xm
 xm
+dW
+CI
+Eg
+aG
+qQ
+Pr
+Ad
+IM
+Tm
+PC
 xm
 xm
 xm
@@ -45013,26 +45693,16 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+xu
+lZ
+lZ
+lZ
+lZ
+cd
+cd
+Eg
+WC
+fg
 xm
 xm
 xm
@@ -45233,6 +45903,16 @@ xm
 xm
 xm
 xm
+sX
+KN
+bd
+NS
+Bv
+GF
+ot
+lZ
+nj
+xg
 xm
 xm
 xm
@@ -45270,26 +45950,16 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+jH
+lZ
+lZ
+lZ
+lZ
+cd
+cd
+cd
+DQ
+DQ
 xm
 xm
 xm
@@ -45490,6 +46160,16 @@ xm
 xm
 xm
 xm
+sX
+sX
+sX
+EV
+DX
+Yk
+pZ
+VU
+zD
+sX
 xm
 xm
 xm
@@ -45527,25 +46207,15 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+lZ
+lZ
+lZ
+cd
+cd
+cd
+DQ
+DQ
 xm
 xm
 xm
@@ -45748,6 +46418,15 @@ xm
 xm
 xm
 xm
+dz
+sX
+EV
+Rl
+vN
+Nr
+Gb
+JB
+sX
 xm
 xm
 xm
@@ -45785,23 +46464,14 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+lZ
+lZ
+lZ
+cd
+cd
+cd
+DQ
 xm
 xm
 xm
@@ -46006,6 +46676,14 @@ xm
 xm
 xm
 xm
+sX
+sX
+Fq
+Jh
+Nr
+Ye
+BP
+sX
 xm
 xm
 xm
@@ -46043,22 +46721,14 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+lZ
+lZ
+lZ
+cd
+cd
+DQ
+DQ
 xm
 xm
 xm
@@ -46264,6 +46934,13 @@ xm
 xm
 xm
 xm
+sX
+sX
+AG
+HL
+fk
+eI
+sX
 xm
 xm
 xm
@@ -46301,20 +46978,13 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+lZ
+lZ
+lZ
+lZ
+DQ
+DQ
 xm
 xm
 xm
@@ -46522,6 +47192,12 @@ xm
 xm
 xm
 xm
+sX
+sX
+sX
+Mw
+am
+sX
 xm
 xm
 xm
@@ -46559,18 +47235,12 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+lZ
+lZ
+DQ
+DQ
+DQ
 xm
 xm
 xm
@@ -46780,6 +47450,11 @@ xm
 xm
 xm
 xm
+dz
+sX
+sX
+sX
+sX
 xm
 xm
 xm
@@ -46817,15 +47492,10 @@ xm
 xm
 xm
 xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
-xm
+DQ
+DQ
+DQ
+DQ
 xm
 xm
 xm
@@ -47040,8 +47710,8 @@ xm
 xm
 xm
 xm
-xm
-xm
+be
+ET
 xm
 xm
 xm

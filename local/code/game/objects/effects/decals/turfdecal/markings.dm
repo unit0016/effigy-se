@@ -270,3 +270,19 @@
 
 /obj/effect/turf_decal/numeric_directions/four/righthalf
 	icon_state = "four_righthalf"
+
+/// ENGINE DECALS
+/obj/effect/turf_decal/engine_number
+	icon = 'local/icons/turf/decals.dmi'
+	icon_state = "engine_zero"
+	color = "#CEB689"
+	alpha = 125
+
+/obj/effect/turf_decal/engine_number/one
+	icon_state = "engine_one"
+
+/obj/effect/turf_decal/engine_number/two
+	icon_state = "engine_two"
+
+/obj/effect/turf_decal/engine_number/three
+	icon_state = "engine_three"
