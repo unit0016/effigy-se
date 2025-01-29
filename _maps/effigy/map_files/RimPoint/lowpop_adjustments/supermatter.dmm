@@ -1,0 +1,427 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"b" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
+/obj/effect/turf_decal/bot_purple/left,
+/turf/open/floor/iron/dark,
+/area/station/engineering/supermatter/room)
+"c" = (
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
+"g" = (
+/obj/machinery/atmospherics/components/trinary/filter/flipped/on{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
+"h" = (
+/obj/structure/cable/layer3,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/color_adapter{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/station/engineering/supermatter/room)
+"i" = (
+/obj/machinery/airalarm/directional/west,
+/obj/effect/mapping_helpers/airalarm/engine_access,
+/obj/effect/mapping_helpers/airalarm/unlocked,
+/obj/machinery/atmospherics/pipe/color_adapter,
+/obj/effect/mapping_helpers/airalarm/link{
+	chamber_id = "engine"
+	},
+/obj/effect/mapping_helpers/airalarm/tlv_no_checks,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
+"l" = (
+/obj/machinery/atmospherics/components/binary/valve/digital/on{
+	dir = 4;
+	name = "Waste Release"
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/station/engineering/supermatter/room)
+"o" = (
+/obj/machinery/atmospherics/pipe/color_adapter,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
+"q" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
+/obj/effect/turf_decal/bot_purple/left,
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/dark,
+/area/station/engineering/supermatter/room)
+"r" = (
+/obj/structure/cable,
+/obj/structure/reflector/box/anchored{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
+"t" = (
+/obj/machinery/atmospherics/components/trinary/filter/flipped/on{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
+"u" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
+"v" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/siphoning_and_widenet{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
+"x" = (
+/obj/structure/cable,
+/obj/structure/reflector/double/anchored{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
+"y" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
+"E" = (
+/obj/machinery/power/emitter/welded/autofire{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
+"G" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/binary/valve/digital/on{
+	dir = 4;
+	name = "Cool Gas To Reactor"
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
+"H" = (
+/obj/machinery/atmospherics/pipe/color_adapter,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
+"K" = (
+/obj/structure/cable,
+/obj/structure/reflector/double/anchored{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
+"L" = (
+/obj/structure/cable,
+/obj/machinery/power/emitter/welded/autofire{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
+"M" = (
+/obj/structure/cable,
+/obj/machinery/power/emitter/welded/autofire{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
+"N" = (
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 8;
+	name = "Engine Cooling Bypass"
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
+"Q" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/no_pressure_checks{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
+"T" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
+/obj/effect/turf_decal/bot_purple/right,
+/turf/open/floor/iron/dark,
+/area/station/engineering/supermatter/room)
+"X" = (
+/turf/template_noop,
+/area/template_noop)
+"Z" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/color_adapter{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/station/engineering/supermatter/room)
+
+(1,1,1) = {"
+X
+X
+X
+X
+X
+X
+h
+X
+X
+Z
+X
+X
+X
+X
+X
+X
+"}
+(2,1,1) = {"
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+"}
+(3,1,1) = {"
+X
+X
+X
+X
+X
+X
+X
+X
+o
+X
+X
+X
+X
+X
+X
+y
+"}
+(4,1,1) = {"
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+u
+X
+X
+X
+X
+"}
+(5,1,1) = {"
+X
+X
+t
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+"}
+(6,1,1) = {"
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+g
+X
+X
+X
+X
+"}
+(7,1,1) = {"
+T
+X
+X
+X
+i
+X
+v
+v
+v
+X
+X
+X
+X
+M
+X
+c
+"}
+(8,1,1) = {"
+X
+X
+N
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+r
+E
+X
+"}
+(9,1,1) = {"
+b
+X
+X
+X
+H
+X
+Q
+Q
+Q
+X
+X
+X
+X
+L
+X
+c
+"}
+(10,1,1) = {"
+q
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+g
+X
+X
+X
+X
+"}
+(11,1,1) = {"
+X
+G
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+"}
+(12,1,1) = {"
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+g
+X
+X
+X
+X
+"}
+(13,1,1) = {"
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+x
+K
+"}
+(14,1,1) = {"
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+"}
+(15,1,1) = {"
+X
+X
+X
+X
+X
+X
+X
+X
+X
+l
+X
+X
+X
+X
+X
+X
+"}

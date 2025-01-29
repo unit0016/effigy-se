@@ -19615,6 +19615,7 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/west,
+/obj/effect/lowpop_adjustment/supermatter/rimpoint,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "gTx" = (
