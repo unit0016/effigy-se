@@ -1,11 +1,11 @@
 /datum/mood_event/orgasm
-	description = span_purple("Woah... This pleasant tiredness... I love it.\n")
+	description = span_purple("It's all a pleasant blur...\n")
 	timeout = 5 MINUTES
 
 /datum/mood_event/climaxself
-	description = span_purple("I just came in my own underwear. Messy.\n")
+	description = span_purple("That'd best need a wash...\n")
 	timeout = 4 MINUTES
 
 /datum/mood_event/overgasm
-	description = span_warning("Uhh... I don't want to be horny anymore.\n") //Me too, buddy. Me too.
+	description = span_warning("I can barely think...\n")
 	timeout = 10 MINUTES

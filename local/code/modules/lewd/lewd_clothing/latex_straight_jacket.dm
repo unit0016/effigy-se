@@ -1,6 +1,6 @@
 /obj/item/clothing/suit/straight_jacket/latex_straight_jacket
 	name = "latex straight jacket"
-	desc = "A toy that is unable to actually restrain anyone. Still fun to wear!"
+	desc = "A straight jacket made of latex; with buckles easy to tug back apart."
 	inhand_icon_state = "latex_straight_jacket"
 	icon = 'local/icons/lewd/obj/lewd_clothing/lewd_suits.dmi'
 	worn_icon = 'local/icons/lewd/mob/lewd_clothing/lewd_suit/lewd_suits.dmi'
@@ -31,7 +31,7 @@
 
 /obj/item/clothing/suit/straight_jacket/latex_straight_jacket/reinforced
 	name = "latex straight jacket"
-	desc = "A suit that completely restrains the wearer - in quite an arousing way."
+	desc = "A suit that completely restrains the wearer; arms hugged to their waist."
 	icon_state = "latex_straight_jacket"
 	inhand_icon_state = "latex_straight_jacket"
 	icon = 'local/icons/lewd/obj/lewd_clothing/lewd_suits.dmi'

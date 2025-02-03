@@ -14,7 +14,7 @@
 
 /obj/item/reagent_containers/pill/dopamine
 	name = "dopamine pill (5u)"
-	desc = "Feelings of orgasm, contained in a pill... Weird."
+	desc = "Cheaper than the name-brand \"Afterglow\"."
 	icon = 'local/icons/lewd/obj/lewd_items/lewd_pills.dmi'
 	icon_state = "dopamine"
 	list_reagents = list(/datum/reagent/drug/aphrodisiac/dopamine = 5)

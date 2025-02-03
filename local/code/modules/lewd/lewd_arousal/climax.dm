@@ -22,11 +22,11 @@
 		return
 
 	if(HAS_TRAIT(src, TRAIT_NEVERBONER) || has_status_effect(/datum/status_effect/climax_cooldown) || (!has_vagina() && !has_penis()))
-		visible_message(span_purple("[src] twitches, trying to cum, but with no result."), \
-			span_purple("You can't have an orgasm!"))
+		visible_message(span_purple("[src] twitches, trying to tip over the edge - but can't get off!"), \
+			span_purple("Try as you might; you can't get over the edge!"))
 		return TRUE
 
-	// Reduce pop-ups and make it slightly more frictionless (lewd).
+	/// If we have a penis and a vagina; offer the option to choose between both to climax with before finishing.
 	var/climax_choice = has_penis() ? CLIMAX_PENIS : CLIMAX_VAGINA
 
 	if(manual)
@@ -38,7 +38,7 @@
 				genitals.Add(CLIMAX_BOTH)
 		else if(has_penis())
 			genitals.Add(CLIMAX_PENIS)
-		climax_choice = tgui_alert(src, "You are climaxing, choose which genitalia to climax with.", "Genitalia Preference!", genitals)
+		climax_choice = tgui_alert(src, "You are climaxing, choose which genitalia to climax with.", "Genitalia Preference", genitals) // Choose your path; herr knight, but choose wisely...
 
 	switch(gender)
 		if(MALE)
@@ -55,9 +55,9 @@
 
 	if(climax_choice == CLIMAX_PENIS || climax_choice == CLIMAX_BOTH)
 		var/obj/item/organ/external/genital/penis/penis = get_organ_slot(ORGAN_SLOT_PENIS)
-		if(!get_organ_slot(ORGAN_SLOT_TESTICLES)) //If we have no god damn balls, we can't cum anywhere... GET BALLS!
-			visible_message(span_userlove("[src] orgasms, but nothing comes out of [self_their] penis!"), \
-				span_userlove("You orgasm, it feels great, but nothing comes out of your penis!"))
+		if(!get_organ_slot(ORGAN_SLOT_TESTICLES)) // Using a dick without balls; text should be relatively generic
+			visible_message(span_userlove("[src] twitches as they reach their peak; their member pulsing!"), \
+				span_userlove("You throb as you reach climax, weakness taking you!"))
 
 		else if(is_wearing_condom())
 			var/obj/item/clothing/sextoy/condom/condom = get_item_by_slot(LEWD_SLOT_PENIS)
@@ -65,15 +65,15 @@
 			visible_message(span_userlove("[src] shoots [self_their] load into the [condom], filling it up!"), \
 				span_userlove("You shoot your thick load into the [condom] and it catches it all!"))
 
-		else if(!is_bottomless() && penis.visibility_preference != GENITAL_ALWAYS_SHOW)
-			visible_message(span_userlove("[src] cums inside [self_their] clothes!"), \
-				span_userlove("You shoot your load, but you weren't naked, so you mess up your clothes!"))
+		else if(!is_bottomless() && penis.visibility_preference != GENITAL_ALWAYS_SHOW) // Clothed with an obscured dick
+			visible_message(span_userlove("A shiver rolls through [src] as they shoot inside [self_their] clothes!"), \
+				span_userlove("A chill runs down your spine as you reach your peak; shooting a load into your clothes!"))
 			self_orgasm = TRUE
 
 		else
 			var/list/interactable_inrange_humans = list()
 
-			// Unfortunately prefs can't be checked here, because byond/tgstation moment.
+			/// Unfortunately prefs can't be checked here, because byond/tgstation moment. <---- please god can we factcheck this. having a "whoopsies can't do it teehee" is a little eyebrow-raising
 			for(var/mob/living/carbon/human/iterating_human in (view(1, src) - src))
 				interactable_inrange_humans[iterating_human.name] = iterating_human
 
@@ -81,21 +81,21 @@
 			if(interactable_inrange_humans.len)
 				buttons += CLIMAX_IN_OR_ON
 
-			var/penis_climax_choice = tgui_alert(src, "Choose where to shoot your load.", "Load preference!", buttons)
+			var/penis_climax_choice = tgui_alert(src, "You're angled to shoot...", "Climax Selection", buttons)
 
 			var/create_cum_decal = FALSE
 
 			if(!penis_climax_choice || penis_climax_choice == CLIMAX_ON_FLOOR)
 				create_cum_decal = TRUE
 				visible_message(span_userlove("[src] shoots [self_their] sticky load onto the floor!"), \
-					span_userlove("You shoot string after string of hot cum, hitting the floor!"))
+					span_userlove("You shoot rope after rope of hot cum, hitting the floor!"))
 
 			else
-				var/target_choice = tgui_input_list(src, "Choose a person to cum in or on.", "Choose target!", interactable_inrange_humans)
+				var/target_choice = tgui_input_list(src, "But who?", "Target Selection", interactable_inrange_humans)
 				if(!target_choice)
 					create_cum_decal = TRUE
 					visible_message(span_userlove("[src] shoots [self_their] sticky load onto the floor!"), \
-						span_userlove("You shoot string after string of hot cum, hitting the floor!"))
+						span_userlove("You shoot rope after rope of hot cum, hitting the floor!"))
 				else
 					var/mob/living/carbon/human/target_human = interactable_inrange_humans[target_choice]
 					var/target_human_them = target_human.p_them()
@@ -114,7 +114,7 @@
 							target_buttons += "sheath"
 					target_buttons += "On [target_human_them]"
 
-					var/climax_into_choice = tgui_input_list(src, "Where on or in [target_human] do you wish to cum?", "Final frontier!", target_buttons)
+					var/climax_into_choice = tgui_input_list(src, "And where on - or in - [target_human]?", "Location Selection", target_buttons)
 
 					if(!climax_into_choice)
 						create_cum_decal = TRUE
@@ -130,8 +130,8 @@
 						to_chat(target_human, span_userlove("Your [climax_into_choice] fills with warm cum as [src] shoots [self_their] load into it."))
 
 			var/obj/item/organ/external/genital/testicles/testicles = get_organ_slot(ORGAN_SLOT_TESTICLES)
-			testicles.transfer_internal_fluid(null, testicles.internal_fluid_count * 0.6) // yep. we are sending semen to nullspace
-			if(create_cum_decal)
+			testicles.transfer_internal_fluid(null, testicles.internal_fluid_count * 0.6) // yep. we are sending semen to nullspace.
+			if(create_cum_decal) // real "we're going back in time to the first thanksgiving to get turkey off the menu" energy ^^^
 				add_cum_splatter_floor(get_turf(src))
 
 		try_lewd_autoemote("moan")
@@ -145,11 +145,11 @@
 	if(climax_choice == CLIMAX_VAGINA || climax_choice == CLIMAX_BOTH)
 		var/obj/item/organ/external/genital/vagina/vagina = get_organ_slot(ORGAN_SLOT_VAGINA)
 		if(is_bottomless() || vagina.visibility_preference == GENITAL_ALWAYS_SHOW)
-			visible_message(span_userlove("[src] twitches and moans as [p_they()] climax from their vagina!"), span_userlove("You twitch and moan as you climax from your vagina!"))
+			visible_message(span_userlove("[src] twitches and moans as [p_they()] reach the edge!"), span_userlove("You shudder wildly as your vagina twitches; going over the edge!"))
 			add_cum_splatter_floor(get_turf(src), female = TRUE)
 		else
-			visible_message(span_userlove("[src] cums in [self_their] underwear from [self_their] vagina!"), \
-						span_userlove("You cum in your underwear from your vagina! Eww."))
+			visible_message(span_userlove("[src]'s legs tremble as they rock, getting off underneath [self_their] clothes!"), \
+						span_userlove("Your lips tremble as you veer over the edge, spattering your clothes!"))
 			self_orgasm = TRUE
 
 	apply_status_effect(/datum/status_effect/climax)

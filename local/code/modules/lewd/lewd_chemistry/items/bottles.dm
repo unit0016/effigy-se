@@ -10,7 +10,7 @@
 
 /obj/item/reagent_containers/cup/bottle/dopamine
 	name = "dopamine bottle"
-	desc = "Pure pleasure and happines in a bottle."
+	desc = "Pure pleasure and happiness in a bottle."
 	list_reagents = list(/datum/reagent/drug/aphrodisiac/dopamine = 30)
 
 /obj/item/reagent_containers/cup/bottle/camphor

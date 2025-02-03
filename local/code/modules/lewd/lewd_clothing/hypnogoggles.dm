@@ -19,6 +19,12 @@
 	/// The hypnotic codephrase. Default always required otherwise things break.
 	var/codephrase = "Obey."
 
+/// Incredibly stupid april fool's easter egg. It was this or "attack the dog".
+/obj/item/clothing/glasses/hypno/Initialize(mapload)
+	. = ..()
+	if(check_holidays(APRIL_FOOLS)) // Default phrase will change on April Fool's as a stupid reference.
+		codephrase = "Become... video deliveryman."
+
 /obj/item/clothing/glasses/hypno/equipped(mob/user, slot)//Adding hypnosis on equip
 	. = ..()
 	victim = user

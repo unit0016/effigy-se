@@ -1,6 +1,6 @@
 /obj/item/clothing/suit/straight_jacket/kinky_sleepbag
 	name = "latex sleeping bag"
-	desc = "A tight sleeping bag made of a shiny material. It would be dangerous to put it on yourself."
+	desc = "A tight sleeping bag made of a shiny material. It would be dangerous to wear without someone else..."
 	icon = 'local/icons/lewd/obj/lewd_clothing/lewd_suits.dmi'
 	worn_icon = 'local/icons/lewd/mob/lewd_clothing/lewd_suit/sleepbag_normal.dmi'
 	worn_icon_digi = 'local/icons/lewd/mob/lewd_clothing/lewd_suit/sleepbag_digi.dmi'
@@ -51,7 +51,7 @@
 /obj/item/clothing/suit/straight_jacket/kinky_sleepbag/click_alt(mob/user)
 	var/mob/living/carbon/human/clicking_human = user
 	if(istype(clicking_human.wear_suit, /obj/item/clothing/suit/straight_jacket/kinky_sleepbag))
-		to_chat(user, span_warning("Your hands are stuck, you can't do this!"))
+		to_chat(user, span_warning("You can barely move your hands, you can't do this."))
 		return FALSE
 	switch(color_changed)
 		if(FALSE)

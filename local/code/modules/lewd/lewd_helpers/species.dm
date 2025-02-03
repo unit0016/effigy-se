@@ -52,7 +52,7 @@
 		alert_state = null
 
 	switch(target_human.pain)
-		if(-INFINITY to AROUSAL_MINIMUM_DETECTABLE) //to prevent same thing with pain
+		if(-INFINITY to AROUSAL_MINIMUM_DETECTABLE) // to prevent same thing with pain
 			arousal_alert?.cut_overlay(arousal_alert.pain_overlay)
 			if(target_human.pain < AROUSAL_MINIMUM)
 				target_human.pain = AROUSAL_MINIMUM // To prevent massively negative values that break the lewd system for some.
@@ -69,7 +69,7 @@
 		alert_state = null
 
 	switch(target_human.pleasure)
-		if(-INFINITY to AROUSAL_MINIMUM_DETECTABLE) //to prevent same thing with pleasure
+		if(-INFINITY to AROUSAL_MINIMUM_DETECTABLE) // to prevent same thing with pleasure
 			arousal_alert?.cut_overlay(arousal_alert.pleasure_overlay)
 			if(target_human.pleasure < AROUSAL_MINIMUM)
 				target_human.pleasure = AROUSAL_MINIMUM // To prevent massively negative values that break the lewd system for some.

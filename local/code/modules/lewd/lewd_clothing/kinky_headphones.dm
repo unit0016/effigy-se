@@ -51,7 +51,7 @@
 	. = ..()
 	if(!(istype(user) && (slot & ITEM_SLOT_EARS)))
 		return
-	to_chat(user, span_purple("[!kinky_headphones_on ? "You can barely hear anything! Your other senses have become more apparent..." : "Strange but relaxing music fills your mind. You feel so... Calm."]"))
+	to_chat(user, span_purple("[!kinky_headphones_on ? "You can barely hear anything! Your other senses have become more apparent..." : "Strange but relaxing music fills your mind. You feel so... calm."]"))
 	ADD_TRAIT(user, TRAIT_DEAF, CLOTHING_TRAIT)
 
 //we dropping item so we not deaf now. hurray.

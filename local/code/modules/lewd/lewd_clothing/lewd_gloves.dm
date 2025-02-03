@@ -37,7 +37,7 @@
 //latex gloves
 /obj/item/clothing/gloves/latex_gloves
 	name = "latex gloves"
-	desc = "Awesome looking gloves that are satisfying to the touch."
+	desc = "Midnight-black gloves that are satisfying to the touch."
 	icon_state = "latexgloves"
 	inhand_icon_state = "latex_gloves"
 	w_class = WEIGHT_CLASS_SMALL

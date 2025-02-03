@@ -70,7 +70,7 @@
 	. = ..()
 	var/mob/living/carbon/human/affected_mob = user
 	if(src == affected_mob.wear_suit)
-		to_chat(user, span_purple("The shackles are restraining your body, though the lock appears to be made of... Plastic?"))
+		to_chat(user, span_purple("The shackles are restraining your body; though the release sits close..."))
 	else
 		return
 
@@ -79,7 +79,7 @@
 	. = ..()
 	var/mob/living/carbon/human/affected_mob = user
 	if(src == affected_mob.wear_suit)
-		to_chat(user, span_purple("The shackles are no longer restraining your body. It wasn't too hard, huh?"))
+		to_chat(user, span_purple("The shackles are no longer restraining your body."))
 
 //reinforcing normal version by using handcuffs on it.
 /obj/item/clothing/suit/straight_jacket/shackles/attackby(obj/item/used_item, mob/user, params) //That part allows reinforcing this item with normal straightjacket

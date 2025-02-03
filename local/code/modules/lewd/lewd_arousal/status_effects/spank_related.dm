@@ -1,5 +1,10 @@
-// This name means nothing. What does this even do?
+/*
+	There was originally a comment here about not knowing what Subspace was; and I don't want to take the heat from describing what it is on-repo.
+	If you're confused; too - please just look it up; wikipedia has a good resource for informal BDSM terminology. Alternatively - talk to people in your local scene.
+	Or; you know; if you're some poor schmuck who isn't into this and just has to be here - treat yourself for having to put up with this shit.
+*/
 
+/// Rarely applied when spanked - see leather_whip.dm and spanking_pad.dm
 /datum/status_effect/subspace
 	id = "subspace"
 	tick_interval = 10
@@ -17,10 +22,10 @@
 	target.clear_mood_event("subspace")
 
 /datum/mood_event/subspace
-	description = span_purple("Everything is so woozy... Pain feels so... Awesome.\n")
+	description = span_purple("It stings; and it's hard to think...\n")
 
 
-//Hips are red after spanking
+/// Hips are red after spanking
 /datum/status_effect/spanked
 	id = "spanked"
 	duration = 300 SECONDS
@@ -33,7 +38,7 @@
 
 	. += span_purple("[user.p_their(TRUE)] butt has a red tint to it.") + "\n"
 
-//Mood boost for masochist
+/// Applied every time someone with the masochist quirk or bimbo trait is spanked; see leather_whip.dm and spanking_pad.dm
 /datum/mood_event/perv_spanked
-	description = span_purple("Ah, yes! More! Punish me!\n")
+	description = span_purple("My heart's pumping - it hurts!\n")
 	timeout = 5 MINUTES

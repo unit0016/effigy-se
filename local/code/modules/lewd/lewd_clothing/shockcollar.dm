@@ -10,7 +10,6 @@
 	w_class = WEIGHT_CLASS_SMALL
 	strip_delay = 60
 	obj_flags = parent_type::obj_flags | UNIQUE_RENAME
-	// equip_delay_other = 60
 	custom_materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 3,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT,
@@ -42,9 +41,9 @@
 	if(!signal || signal.data["code"] != code)
 		return
 
-	if(isliving(loc) && on) //the "on" arg is currently useless
+	if(isliving(loc) && on) // the "on" arg is currently useless
 		var/mob/living/carbon/human/affected_mob = loc
-		if(!affected_mob.get_item_by_slot(ITEM_SLOT_NECK)) //**properly** stops pocket shockers
+		if(!affected_mob.get_item_by_slot(ITEM_SLOT_NECK)) // **properly** stops pocket shockers
 			return
 		if(shock_cooldown == TRUE)
 			return

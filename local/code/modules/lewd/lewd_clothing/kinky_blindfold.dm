@@ -1,6 +1,6 @@
 /obj/item/clothing/glasses/blindfold/kinky
 	name = "kinky blindfold"
-	desc = "Covers the eyes, preventing sight. But it looks so nice..."
+	desc = "Covers the eyes, preventing sight."
 	icon_state = "kblindfold_pink"
 	base_icon_state = "kblindfold"
 	inhand_icon_state = "kblindfold_pink"
@@ -57,11 +57,11 @@
 //message when equipping that thing
 /obj/item/clothing/glasses/blindfold/kinky/equipped(mob/living/carbon/user, slot)
 	. = ..()
-	if(src == user.glasses)
+	if(src == user.glasses && !user.is_blind())
 		to_chat(user, span_purple("The blindfold blocks your vision! You can't make out anything on the other side..."))
 
 //message when unequipping that thing
 /obj/item/clothing/glasses/blindfold/kinky/dropped(mob/living/carbon/user)
 	. = ..()
-	if(src == user.glasses)
+	if(src == user.glasses && !user.is_blind_from(list(EYE_DAMAGE, NO_EYES)))
 		to_chat(user, span_purple("The blindfold no longer restricts your vision."))
