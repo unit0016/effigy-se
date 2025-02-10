@@ -19,10 +19,11 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/syndicate,
-/obj/effect/mapping_helpers/airlock/access/all/command/general,
+/obj/effect/mapping_helpers/airlock/access/all/command/captain,
 /obj/effect/mapping_helpers/airlock/autoname,
+/obj/structure/cable,
 /turf/open/floor/iron/smooth_large,
-/area/station/command/bridge)
+/area/station/command/heads_quarters/captain/syndicate)
 "aO" = (
 /turf/open/floor/glass/reinforced,
 /area/space)
@@ -53,6 +54,10 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/bridge)
+"cD" = (
+/obj/structure/cable,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/station/command/heads_quarters/hop/syndicate)
 "cS" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /turf/open/floor/plating,
@@ -93,6 +98,14 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark/small,
 /area/station/command/bridge)
+"ex" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/structure/cable,
+/turf/open/floor/iron/dark/small,
+/area/station/command/heads_quarters/hop/syndicate)
 "eA" = (
 /obj/effect/turf_decal/syndicateemblem/bottom/right,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -102,6 +115,7 @@
 	dir = 6
 	},
 /obj/effect/landmark/battery_spawn,
+/obj/machinery/light/floor,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
 "eW" = (
@@ -110,6 +124,7 @@
 	},
 /obj/effect/turf_decal/siding/dark,
 /obj/item/kirbyplants/random,
+/obj/machinery/light/broken/directional/south,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/meeting_room)
 "fu" = (
@@ -119,8 +134,25 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/herringbone,
 /area/station/command/meeting_room)
+"fy" = (
+/obj/structure/window/reinforced/spawner/directional/north,
+/turf/open/space/basic,
+/area/space)
+"fN" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/obj/item/radio/intercom/command/directional/east,
+/turf/open/floor/iron/dark/textured_half{
+	dir = 1
+	},
+/area/station/command/heads_quarters/captain/syndicate)
 "gt" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
@@ -133,11 +165,46 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/meeting_room)
+"gw" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/textured_half{
+	dir = 1
+	},
+/area/station/command/heads_quarters/captain/syndicate)
 "gy" = (
 /obj/machinery/computer/aifixer,
 /obj/effect/turf_decal/tile/magenta_red/diagonal_edge,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/bridge)
+"ho" = (
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/trimline/dark/line,
+/obj/effect/turf_decal/siding/wideplating{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/cult,
+/area/station/command/meeting_room)
+"hR" = (
+/obj/structure/dresser,
+/obj/effect/turf_decal/trimline/dark/warning{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/station/command/heads_quarters/captain/syndicate)
+"hX" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark,
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/iron/dark/textured_half,
+/area/station/command/heads_quarters/captain/syndicate)
 "ik" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/mineral/plastitanium/red,
@@ -158,6 +225,26 @@
 /obj/machinery/status_display/random_message/syndicate/directional/north,
 /turf/open/floor/cult,
 /area/station/command/meeting_room)
+"jM" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/effect/mapping_helpers/apc/syndicate_access,
+/turf/open/floor/iron/dark/small,
+/area/station/command/heads_quarters/hop/syndicate)
+"jO" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/access/all/command/hop,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "ds3_ci_office"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/station/command/heads_quarters/hop/syndicate)
 "jU" = (
 /obj/structure/chair{
 	dir = 1
@@ -165,10 +252,12 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/herringbone,
 /area/station/command/meeting_room)
 "ks" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/command/bridge)
 "kT" = (
@@ -177,8 +266,25 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/access/all/command/captain,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "ds3_admiral_office"
+	},
 /turf/open/floor/iron/smooth_large,
-/area/space)
+/area/station/command/heads_quarters/captain/syndicate)
+"ld" = (
+/obj/structure/displaycase_chassis,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/effect/mapping_helpers/apc/syndicate_access,
+/obj/structure/cable,
+/turf/open/floor/iron/dark/textured_corner,
+/area/station/command/heads_quarters/captain/syndicate)
+"li" = (
+/obj/machinery/computer/accounting,
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop/syndicate)
 "lm" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
@@ -198,6 +304,9 @@
 /obj/effect/turf_decal/siding/dark,
 /obj/structure/table/dark,
 /obj/effect/landmark/slashco_item_spawn,
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/mapping_helpers/apc/syndicate_access,
+/obj/structure/cable,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/meeting_room)
 "lL" = (
@@ -235,8 +344,12 @@
 "mD" = (
 /obj/effect/turf_decal/syndicateemblem/middle/middle,
 /obj/effect/turf_decal/deep_space_three,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
+"mX" = (
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/hop/syndicate)
 "nt" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/tile/bar{
@@ -244,13 +357,30 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"ny" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/window/brigdoor/left/directional/north{
+	req_access = list("hop");
+	name = "Access Desk"
+	},
+/obj/item/folder/red,
+/turf/open/floor/iron/smooth_large,
+/area/station/command/heads_quarters/hop/syndicate)
+"nJ" = (
+/turf/open/floor/iron/dark/textured_corner,
+/area/station/command/heads_quarters/captain/syndicate)
 "nQ" = (
 /obj/effect/turf_decal/syndicateemblem/top/right,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
 "oo" = (
 /turf/open/floor/catwalk_floor/iron_dark,
-/area/space)
+/area/station/command/heads_quarters/captain/syndicate)
 "oW" = (
 /obj/machinery/modular_computer/preset/engineering,
 /obj/effect/turf_decal/tile/dark_yellow/diagonal_edge,
@@ -289,6 +419,14 @@
 	},
 /turf/open/floor/iron/dark/small,
 /area/station/command/bridge)
+"pM" = (
+/turf/open/floor/iron/dark/herringbone,
+/area/station/command/heads_quarters/hop/syndicate)
+"qi" = (
+/obj/structure/bed/double/pod,
+/obj/item/bedsheet/syndie/double,
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/hop/syndicate)
 "qx" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -330,6 +468,20 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/station/command/meeting_room)
+"qN" = (
+/obj/machinery/status_display/syndie/directional/north,
+/turf/open/floor/iron/dark,
+/area/space)
+"rd" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark{
+	dir = 6
+	},
+/obj/machinery/keycard_auth/wall_mounted/directional/south,
+/turf/open/floor/iron/dark/textured,
+/area/station/command/heads_quarters/captain/syndicate)
 "rn" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -337,6 +489,14 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/bridge)
+"sc" = (
+/obj/machinery/suit_storage_unit/open,
+/obj/effect/turf_decal/tile/dark_red/diagonal_centre,
+/obj/effect/turf_decal/siding/wideplating_new/dark/end{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/captain/syndicate)
 "sj" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -353,6 +513,13 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
 	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/station/command/bridge)
+"so" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/bridge)
 "ss" = (
@@ -397,6 +564,21 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /turf/open/floor/iron/dark/small,
 /area/station/command/bridge)
+"sX" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin/carbon,
+/obj/item/stamp/syndicate,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 6
+	},
+/obj/effect/landmark/fuel_spawn,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop/syndicate)
+"sZ" = (
+/obj/machinery/vending/cart,
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop/syndicate)
 "td" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -409,8 +591,13 @@
 /obj/structure/chair/comfy/shuttle/tactical{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"ud" = (
+/obj/structure/cable,
+/turf/open/floor/iron/dark/textured_corner,
+/area/station/command/heads_quarters/captain/syndicate)
 "uo" = (
 /obj/structure/chair{
 	dir = 1
@@ -452,6 +639,16 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/bridge)
+"uQ" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/smooth_large,
+/area/space)
 "uU" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 8
@@ -470,6 +667,9 @@
 	},
 /turf/open/floor/iron/dark/herringbone,
 /area/station/command/meeting_room)
+"vf" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/station/command/heads_quarters/captain/syndicate)
 "vj" = (
 /obj/machinery/computer/cargo/request,
 /obj/effect/turf_decal/tile/dark_red/anticorner/contrasted{
@@ -477,6 +677,19 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"vr" = (
+/obj/structure/closet/secure_closet/event_code_syndicate/sa_locker,
+/obj/effect/turf_decal/tile/dark_red/diagonal_centre,
+/obj/effect/turf_decal/siding/wideplating_new/dark/end{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/captain/syndicate)
+"vu" = (
+/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/command/heads_quarters/hop/syndicate)
 "vS" = (
 /obj/structure/chair{
 	dir = 1
@@ -487,15 +700,31 @@
 /obj/effect/turf_decal/tile/dark{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
 /area/station/command/meeting_room)
+"vT" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/small,
+/area/station/command/heads_quarters/hop/syndicate)
 "vW" = (
 /obj/structure/chair{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/structure/cable,
 /turf/open/floor/iron/dark/herringbone,
 /area/station/command/meeting_room)
+"wQ" = (
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/station/command/heads_quarters/hop/syndicate)
+"xl" = (
+/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/turf/open/floor/plating,
+/area/station/command/heads_quarters/captain/syndicate)
 "xx" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -504,8 +733,13 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/access/all/command/captain,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "ds3_admiral_office"
+	},
 /turf/open/floor/iron/smooth_large,
-/area/space)
+/area/station/command/heads_quarters/captain/syndicate)
 "xK" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/light/directional/west,
@@ -527,6 +761,37 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
+"yt" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/dark/filled/line,
+/obj/structure/cable,
+/turf/open/floor/cult,
+/area/station/command/meeting_room)
+"yD" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 5
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/machinery/requests_console/auto_name/directional/east,
+/obj/effect/mapping_helpers/requests_console/assistance,
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/information,
+/turf/open/floor/iron/dark/textured_half{
+	dir = 1
+	},
+/area/station/command/heads_quarters/captain/syndicate)
+"yF" = (
+/obj/structure/bed/double/pod,
+/obj/item/bedsheet/syndie/double,
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/captain/syndicate)
 "yI" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -534,6 +799,16 @@
 /obj/effect/turf_decal/siding/dark,
 /obj/structure/table/dark,
 /turf/open/floor/iron/dark/diagonal,
+/area/station/command/meeting_room)
+"yZ" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium,
 /area/station/command/meeting_room)
 "zc" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -552,11 +827,41 @@
 /obj/structure/railing{
 	dir = 10
 	},
+/obj/machinery/light/floor,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
 "Ac" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/space)
+"Az" = (
+/obj/effect/turf_decal/siding/dark{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/iron/dark/textured_half,
+/area/station/command/heads_quarters/captain/syndicate)
+"AI" = (
+/turf/open/floor/plating/airless,
+/area/space)
+"BB" = (
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
+/turf/open/floor/carpet/red,
+/area/station/command/heads_quarters/captain/syndicate)
+"BJ" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/small,
+/area/station/command/heads_quarters/hop/syndicate)
 "BS" = (
 /obj/structure/sign/syndicate/directional/east,
 /turf/open/floor/iron/dark,
@@ -566,8 +871,13 @@
 /obj/effect/turf_decal/tile/dark_red/half/contrasted{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"Cp" = (
+/obj/effect/landmark/slashco_item_spawn,
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/hop/syndicate)
 "CE" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
@@ -610,6 +920,7 @@
 "Ef" = (
 /obj/effect/turf_decal/syndicateemblem/top/middle,
 /obj/effect/landmark/generator_spawn,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
 "EA" = (
@@ -624,6 +935,10 @@
 "EF" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/command/meeting_room)
+"EI" = (
+/obj/machinery/power/turbine/turbine_outlet,
+/turf/open/space/basic,
+/area/space)
 "EQ" = (
 /obj/effect/turf_decal/tile/dark_yellow/diagonal_edge,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -635,6 +950,10 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/bridge)
+"EV" = (
+/obj/machinery/ticket_machine/directional/north,
+/turf/open/floor/iron/dark,
+/area/space)
 "FT" = (
 /obj/effect/turf_decal/syndicateemblem/top/middle{
 	dir = 8
@@ -644,6 +963,13 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
+"Ha" = (
+/obj/structure/closet/secure_closet/event_code_syndicate/cl_locker,
+/obj/effect/turf_decal/siding/wood/end{
+	dir = 8
+	},
+/turf/open/floor/wood/large,
+/area/station/command/heads_quarters/hop/syndicate)
 "Hg" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -662,6 +988,10 @@
 /obj/effect/spawner/random/vending/colavend,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/meeting_room)
+"HT" = (
+/obj/machinery/status_display/random_message/syndicate/directional/north,
+/turf/open/floor/iron/dark,
+/area/space)
 "HU" = (
 /obj/structure/chair{
 	dir = 1
@@ -683,12 +1013,18 @@
 "Ib" = (
 /turf/open/floor/iron/dark,
 /area/space)
+"Ir" = (
+/obj/structure/table/wood,
+/obj/item/pinpointer/nuke/syndicate,
+/obj/effect/landmark/fuel_spawn,
+/turf/open/floor/carpet/red,
+/area/station/command/heads_quarters/captain/syndicate)
 "Iy" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/red/line,
 /obj/machinery/suit_storage_unit/syndicate,
 /turf/open/floor/mineral/plastitanium/red,
-/area/space)
+/area/station/command/heads_quarters/captain/syndicate)
 "Jz" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/effect/turf_decal/trimline/dark/line,
@@ -697,20 +1033,70 @@
 	},
 /turf/open/floor/cult,
 /area/station/command/meeting_room)
+"JJ" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/machinery/door/airlock/grunge,
+/obj/effect/mapping_helpers/airlock/access/all/command/hop,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/open/floor/iron/smooth_large,
+/area/station/command/heads_quarters/hop/syndicate)
 "Ka" = (
 /obj/effect/turf_decal/syndicateemblem/top/left,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/meeting_room)
+"Ks" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/station/command/heads_quarters/hop/syndicate)
+"Ky" = (
+/obj/machinery/pdapainter,
+/turf/open/floor/iron/dark/herringbone,
+/area/station/command/heads_quarters/hop/syndicate)
+"Lz" = (
+/obj/structure/table/wood,
+/obj/item/folder/red,
+/obj/item/stamp/syndicate,
+/turf/open/floor/carpet/red,
+/area/station/command/heads_quarters/captain/syndicate)
 "LM" = (
 /obj/machinery/status_display/syndie/directional/west,
 /turf/open/floor/iron/dark,
 /area/space)
+"LW" = (
+/obj/structure/dresser,
+/obj/effect/turf_decal/siding/wood/end{
+	dir = 4
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/wood/large,
+/area/station/command/heads_quarters/hop/syndicate)
+"LZ" = (
+/obj/machinery/computer/communications{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/station/command/heads_quarters/captain/syndicate)
 "Me" = (
 /obj/effect/turf_decal/syndicateemblem/bottom/middle,
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /obj/structure/railing,
 /obj/machinery/holopad,
+/obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/red,
+/area/station/command/meeting_room)
+"Mn" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/dark,
+/obj/structure/table/dark,
+/obj/effect/landmark/slashco_item_spawn,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/iron/dark/diagonal,
 /area/station/command/meeting_room)
 "Mt" = (
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -721,6 +1107,23 @@
 /obj/item/storage/medkit/tactical_lite,
 /turf/open/floor/iron/dark/small,
 /area/station/command/bridge)
+"Nb" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium,
+/area/station/command/meeting_room)
+"Nc" = (
+/obj/structure/bed/dogbed/ian,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 6
+	},
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop/syndicate)
 "Nf" = (
 /obj/structure/closet/emcloset,
 /obj/effect/landmark/fuel_spawn,
@@ -730,8 +1133,9 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
+/obj/machinery/light/small/broken/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
-/area/space)
+/area/station/command/heads_quarters/captain/syndicate)
 "Nh" = (
 /obj/structure/chair/plastic{
 	dir = 1
@@ -750,6 +1154,14 @@
 /obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/meeting_room)
+"No" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/machinery/keycard_auth/wall_mounted/directional/east,
+/turf/open/floor/iron/dark/small,
+/area/station/command/heads_quarters/hop/syndicate)
 "Nw" = (
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_dark,
@@ -758,7 +1170,7 @@
 /obj/effect/turf_decal/tile/magenta_red/diagonal_edge,
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/structure/table/dark,
-/obj/machinery/light/directional/east,
+/obj/machinery/light/broken/directional/east,
 /obj/effect/landmark/slashco_item_spawn,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/bridge)
@@ -785,10 +1197,86 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/bridge)
+"PA" = (
+/obj/structure/chair/office,
+/obj/machinery/requests_console/auto_name/directional/west,
+/obj/effect/mapping_helpers/requests_console/assistance,
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/information,
+/turf/open/floor/iron/dark/herringbone,
+/area/station/command/heads_quarters/hop/syndicate)
+"PV" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/machinery/door/airlock/syndicate,
+/obj/effect/mapping_helpers/airlock/access/all/command/hop,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/structure/cable,
+/turf/open/floor/iron/smooth_large,
+/area/station/command/heads_quarters/hop/syndicate)
+"Qm" = (
+/obj/structure/closet/firecloset/full,
+/turf/open/floor/iron/dark,
+/area/space)
+"Qy" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium/red,
+/area/station/command/bridge)
+"QT" = (
+/obj/structure/bed/dogbed/renault,
+/turf/open/floor/iron/dark/textured_corner,
+/area/station/command/heads_quarters/captain/syndicate)
+"Rk" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/access/all/command/captain,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/open/floor/iron/smooth_large,
+/area/station/command/heads_quarters/captain/syndicate)
 "Ro" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/mineral/plastitanium,
 /area/station/command/meeting_room)
+"RO" = (
+/obj/machinery/power/turbine/inlet_compressor,
+/turf/open/floor/plating/airless,
+/area/space)
+"Sb" = (
+/obj/structure/table/wood,
+/obj/item/papercutter,
+/obj/item/paper/fluff/ids_for_dummies,
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop/syndicate)
+"Sf" = (
+/obj/structure/table/wood,
+/obj/machinery/fax{
+	fax_name = "Corporate Liaison's Office";
+	name = "Corporate Liaison's Fax Machine"
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner,
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/command/heads_quarters/hop/syndicate)
+"Si" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp/green{
+	pixel_y = 2;
+	pixel_x = 7
+	},
+/turf/open/floor/wood/parquet,
+/area/station/command/heads_quarters/captain/syndicate)
 "Ti" = (
 /obj/structure/closet/emcloset,
 /obj/effect/landmark/slashco_item_spawn,
@@ -798,8 +1286,9 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
+/obj/machinery/light/small/broken/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
-/area/space)
+/area/station/command/heads_quarters/hop/syndicate)
 "Tv" = (
 /obj/structure/chair{
 	dir = 1
@@ -810,12 +1299,19 @@
 /turf/open/floor/mineral/plastitanium,
 /area/station/command/meeting_room)
 "TD" = (
-/turf/open/floor/catwalk_floor/iron_dark,
-/area/station/command/bridge)
+/obj/structure/window/reinforced/spawner/directional/south,
+/turf/open/space/basic,
+/area/space)
 "TR" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /turf/open/floor/plating,
-/area/space)
+/area/station/command/heads_quarters/hop/syndicate)
+"Uh" = (
+/obj/machinery/modular_computer/preset/id{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/herringbone,
+/area/station/command/heads_quarters/hop/syndicate)
 "Um" = (
 /obj/effect/turf_decal/syndicateemblem/middle/left,
 /obj/effect/turf_decal/deep_space_three/left,
@@ -845,6 +1341,21 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
+"UA" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/access/all/command/hop,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "ds3_ci_office"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/station/command/heads_quarters/hop/syndicate)
 "UG" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -852,11 +1363,28 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/red/line,
 /obj/machinery/light/floor,
+/obj/structure/cable,
 /turf/open/floor/iron/dark/herringbone,
 /area/station/command/bridge)
+"UO" = (
+/obj/effect/turf_decal/trimline/dark/warning{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/station/command/heads_quarters/captain/syndicate)
 "Vj" = (
 /turf/cordon,
 /area/misc/cordon)
+"Vk" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/stripes/red/line,
+/obj/machinery/suit_storage_unit/syndicate,
+/turf/open/floor/mineral/plastitanium/red,
+/area/station/command/heads_quarters/hop/syndicate)
+"VZ" = (
+/obj/machinery/power/turbine/core_rotor,
+/turf/open/space/basic,
+/area/space)
 "Wh" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -23113,9 +23641,9 @@ Ac
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -23370,9 +23898,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -23627,9 +24155,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -23862,6 +24390,9 @@ qC
 qC
 qC
 qC
+RO
+VZ
+EI
 qC
 qC
 qC
@@ -23881,12 +24412,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -24119,10 +24647,9 @@ qC
 qC
 qC
 qC
-qC
+AI
 Ac
 Ac
-Ac
 qC
 qC
 qC
@@ -24142,8 +24669,9 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -24376,6 +24904,9 @@ qC
 qC
 qC
 qC
+RO
+VZ
+EI
 qC
 qC
 qC
@@ -24395,12 +24926,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -24655,9 +25183,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -24912,9 +25440,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -25169,9 +25697,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -25425,10 +25953,10 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
+Ac
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -25683,9 +26211,9 @@ Ac
 Ac
 Ac
 Ac
-Ac
-Ac
-Ac
+uQ
+uQ
+uQ
 Ac
 Ac
 Ac
@@ -25939,11 +26467,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 Ac
 Ac
@@ -26196,11 +26724,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -26453,11 +26981,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -26710,11 +27238,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -26967,11 +27495,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -27224,11 +27752,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -27481,11 +28009,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -27738,11 +28266,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -27995,11 +28523,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -28252,10 +28780,10 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
-Ac
-Ac
+aO
+aO
 Ac
 Ac
 Ac
@@ -28510,10 +29038,10 @@ qC
 qC
 qC
 Ac
+uQ
+uQ
+uQ
 Ac
-Ac
-qC
-qC
 qC
 qC
 qC
@@ -28767,9 +29295,9 @@ qC
 qC
 Ac
 Ac
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -29023,10 +29551,10 @@ qC
 qC
 qC
 Ac
-qC
-qC
-qC
-qC
+Qm
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -29277,13 +29805,13 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-Ac
-Ac
-qC
-qC
-qC
+Ks
+TR
+Ks
+Ks
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -29533,14 +30061,14 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-qC
-qC
-Ac
-qC
-qC
-qC
+Ks
+Ks
+Cp
+Ha
+Ks
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -29790,14 +30318,14 @@ qC
 qC
 qC
 qC
-Ac
-qC
-qC
-qC
-Ac
-qC
-qC
-qC
+TR
+qi
+mX
+LW
+Ks
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -30046,15 +30574,15 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-Ac
-qC
-Ac
-Ac
-qC
-qC
-qC
+Ks
+Ks
+Ks
+JJ
+Ks
+Ks
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -30302,16 +30830,16 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-qC
-qC
-qC
-qC
-qC
+Ks
+Ks
+li
+jM
+pM
+PA
+ny
 Ib
 Ib
-qC
+Ib
 qC
 qC
 qC
@@ -30558,17 +31086,17 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-qC
-qC
-qC
-qC
-qC
-Ac
+Ks
+Ks
+Sf
+Nc
+ex
+Ky
+Uh
+Ks
+EV
 Ib
 Ib
-qC
 qC
 qC
 qC
@@ -30815,17 +31343,17 @@ qC
 qC
 qC
 qC
-Ac
-qC
-qC
-qC
-qC
-qC
-qC
-TR
+Ks
+Sb
+sX
+cD
+BJ
+No
+vT
+vu
 Ib
 Ib
-qC
+Ib
 qC
 qC
 qC
@@ -31072,21 +31600,21 @@ qC
 qC
 qC
 qC
-Ac
-qC
-qC
-qC
-Ac
-Ac
-xx
-Ac
+Ks
+sZ
+cD
+cD
+Ks
+Ks
+UA
+Ks
+HT
 Ib
 Ib
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -31329,14 +31857,14 @@ qC
 qC
 qC
 OR
-OR
-OR
-aI
-OR
-OR
-Iy
-oo
-kT
+Ks
+Ks
+PV
+Ks
+Ks
+Vk
+wQ
+jO
 Ib
 Ib
 Ib
@@ -31588,12 +32116,12 @@ qC
 OR
 Yy
 Yh
-TD
+Nw
 lU
-OR
-OR
+Ks
+Ks
 Ti
-Ac
+Ks
 Ib
 Ib
 BS
@@ -31848,9 +32376,9 @@ EQ
 Nw
 uO
 sM
-OR
-EF
-EF
+Ks
+Ks
+Ks
 EF
 cS
 EF
@@ -32372,7 +32900,7 @@ Tv
 Tv
 ar
 YO
-lq
+Mn
 EF
 qC
 qC
@@ -32872,16 +33400,16 @@ qC
 ks
 Cc
 tw
-ik
+Qy
 Nw
-sn
+so
 UG
 ks
 Ef
 mD
 Me
-Jz
-qG
+ho
+Nb
 fu
 vW
 Ro
@@ -33397,9 +33925,9 @@ bh
 lL
 zc
 uo
-uo
+yZ
 vS
-YO
+yt
 lq
 EF
 qC
@@ -33904,9 +34432,9 @@ pp
 Nw
 Wu
 CP
-OR
-EF
-EF
+vf
+vf
+vf
 EF
 cS
 EF
@@ -34158,12 +34686,12 @@ qC
 OR
 gy
 Of
-TD
+Nw
 bC
-OR
-OR
+vf
+vf
 Nf
-Ac
+vf
 Ib
 Ib
 XO
@@ -34413,11 +34941,11 @@ qC
 qC
 qC
 OR
-OR
-OR
+vf
+vf
 aI
-OR
-OR
+vf
+vf
 Iy
 oo
 kT
@@ -34670,21 +35198,21 @@ qC
 qC
 qC
 qC
-Ac
-qC
-qC
-qC
-Ac
-Ac
+vf
+sc
+ud
+QT
+vf
+vf
 xx
-Ac
+vf
+qN
 Ib
 Ib
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -34927,17 +35455,17 @@ qC
 qC
 qC
 qC
-Ac
-qC
-qC
-qC
-qC
-qC
-qC
-Ac
+vf
+vr
+ud
+nJ
+LZ
+Ir
+Az
+vf
 Ib
 Ib
-qC
+Ib
 qC
 qC
 qC
@@ -35184,17 +35712,17 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-qC
-qC
-qC
-qC
-qC
-qC
+vf
+vf
+ld
+nJ
+BB
+Lz
+hX
+vf
 Ib
 Ib
-qC
+Ib
 qC
 qC
 qC
@@ -35442,16 +35970,16 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-qC
-qC
-qC
-qC
-qC
+vf
+vf
+yD
+fN
+gw
+rd
+vf
 Ib
 Ib
-qC
+Ib
 qC
 qC
 qC
@@ -35700,15 +36228,15 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+vf
+vf
+vf
+Rk
+vf
+vf
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -35958,14 +36486,14 @@ qC
 qC
 qC
 qC
-Ac
-qC
-qC
-qC
-qC
-qC
-qC
-qC
+xl
+hR
+UO
+UO
+vf
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -36215,14 +36743,14 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-qC
-qC
-qC
-qC
-qC
-qC
+vf
+vf
+yF
+Si
+vf
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -36473,13 +37001,13 @@ qC
 qC
 qC
 qC
-Ac
-Ac
-Ac
-Ac
-qC
-qC
-qC
+vf
+xl
+vf
+vf
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -36733,10 +37261,10 @@ qC
 qC
 qC
 Ac
-qC
-qC
-qC
-qC
+Qm
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -36991,9 +37519,9 @@ qC
 qC
 Ac
 Ac
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -37248,10 +37776,10 @@ qC
 qC
 qC
 Ac
+uQ
+uQ
+uQ
 Ac
-Ac
-qC
-qC
 qC
 qC
 qC
@@ -37504,10 +38032,10 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
-Ac
-Ac
+aO
+aO
 Ac
 Ac
 Ac
@@ -37761,11 +38289,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -38018,11 +38546,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -38275,11 +38803,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -38532,11 +39060,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -38789,11 +39317,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -39046,11 +39574,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -39303,11 +39831,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -39560,11 +40088,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 qC
 qC
@@ -39817,11 +40345,11 @@ qC
 qC
 qC
 qC
-qC
+TD
 aO
 aO
-qC
-qC
+aO
+fy
 qC
 Ac
 Ac
@@ -40075,9 +40603,9 @@ Ac
 Ac
 Ac
 Ac
-Ac
-Ac
-Ac
+uQ
+uQ
+uQ
 Ac
 Ac
 Ac
@@ -40331,10 +40859,10 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
+Ac
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -40589,9 +41117,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -40846,9 +41374,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -41103,9 +41631,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -41338,6 +41866,9 @@ qC
 qC
 qC
 qC
+RO
+VZ
+EI
 qC
 qC
 qC
@@ -41357,12 +41888,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -41595,10 +42123,9 @@ qC
 qC
 qC
 qC
-qC
+AI
 Ac
 Ac
-Ac
 qC
 qC
 qC
@@ -41618,8 +42145,9 @@ qC
 qC
 qC
 qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -41852,6 +42380,9 @@ qC
 qC
 qC
 qC
+RO
+VZ
+EI
 qC
 qC
 qC
@@ -41871,12 +42402,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -42131,9 +42659,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -42388,9 +42916,9 @@ qC
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
@@ -42645,9 +43173,9 @@ Ac
 qC
 qC
 qC
-qC
-qC
-qC
+Ib
+Ib
+Ib
 qC
 qC
 qC
