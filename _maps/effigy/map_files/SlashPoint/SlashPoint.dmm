@@ -6781,7 +6781,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "cqs" = (
 /obj/machinery/light_switch/directional/east,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
@@ -7228,9 +7228,6 @@
 	pixel_y = -3
 	},
 /obj/item/pen/red,
-/obj/item/stack/sheet/mineral/plasma,
-/obj/item/stack/sheet/mineral/plasma,
-/obj/item/stack/sheet/mineral/plasma,
 /obj/structure/reagent_dispensers/wall/virusfood/directional/south,
 /obj/structure/railing{
 	dir = 8
@@ -7336,7 +7333,7 @@
 /obj/effect/turf_decal/trimline/dark_red/mid_joiner,
 /obj/effect/landmark/slashco_npc_spawn,
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "czd" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
@@ -12446,7 +12443,6 @@
 "ejV" = (
 /obj/structure/closet/crate,
 /obj/item/crowbar/red,
-/obj/item/stack/sheet/mineral/plasma,
 /obj/item/gps/engineering,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
@@ -14721,7 +14717,7 @@
 	dir = 1
 	},
 /turf/open/floor/stone,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "eWt" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
@@ -16663,7 +16659,7 @@
 	dir = 9
 	},
 /turf/open/floor/stone,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "fCr" = (
 /obj/structure/railing{
 	dir = 4
@@ -17904,7 +17900,7 @@
 	dir = 1
 	},
 /turf/open/floor/stone,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "fYy" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line,
@@ -23178,7 +23174,7 @@
 	dir = 8
 	},
 /turf/open/floor/stone,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "hNP" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -24106,7 +24102,7 @@
 	},
 /obj/effect/turf_decal/trimline/dark_red/mid_joiner,
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "ifr" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -32340,7 +32336,6 @@
 	pixel_x = 2;
 	pixel_y = 9
 	},
-/obj/item/stack/sheet/mineral/plasma,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/station/medical/chemistry)
@@ -32687,9 +32682,6 @@
 	},
 /obj/machinery/reagentgrinder{
 	pixel_y = 5
-	},
-/obj/item/stack/sheet/mineral/plasma{
-	amount = 5
 	},
 /obj/item/reagent_containers/dropper{
 	pixel_y = -4
@@ -38793,7 +38785,7 @@
 	},
 /obj/structure/railing,
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "nfc" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
@@ -40488,7 +40480,6 @@
 /obj/machinery/solarlight/camera_installed{
 	c_tag = "Exterior - AI Satellite Connector"
 	},
-/obj/effect/mapping_helpers/damaged_window,
 /turf/open/misc/beach/sand,
 /area/taeloth/nearstation/no_valids_to_hunt/ai_sat_lake)
 "nIC" = (
@@ -42827,7 +42818,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "oBr" = (
 /obj/machinery/computer/telecomms/monitor,
 /obj/effect/mapping_helpers/broken_machine,
@@ -45079,7 +45070,7 @@
 	dir = 1
 	},
 /turf/open/floor/stone,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "poS" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
@@ -50924,7 +50915,7 @@
 	},
 /obj/structure/sign/departments/telecomms/directional/south,
 /turf/open/floor/stone,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "rlt" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -51065,7 +51056,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "rnc" = (
 /obj/effect/landmark/battery_spawn,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -54948,7 +54939,7 @@
 	},
 /obj/effect/landmark/generator_spawn,
 /turf/open/floor/stone,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "sxc" = (
 /obj/effect/turf_decal/trimline/dark_red/warning{
 	dir = 1
@@ -55599,7 +55590,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "sHV" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 4
@@ -56032,7 +56023,7 @@
 /obj/effect/turf_decal/trimline/dark_red/arrow_cw,
 /obj/effect/turf_decal/trimline/dark_red/mid_joiner,
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "sPP" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -56774,7 +56765,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "tbE" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/open/floor/iron,
@@ -57899,7 +57890,7 @@
 	c_tag = "Exterior - Head of Personnel Line"
 	},
 /turf/open/floor/stone,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "txo" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
@@ -65090,7 +65081,7 @@
 /obj/structure/railing,
 /obj/effect/turf_decal/trimline/dark_red/mid_joiner,
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "vTw" = (
 /obj/effect/turf_decal/siding/wideplating_new/corner{
 	dir = 1
@@ -68513,9 +68504,6 @@
 /area/station/command/bridge)
 "xbO" = (
 /obj/structure/table/glass,
-/obj/item/stack/sheet/mineral/plasma{
-	pixel_y = 10
-	},
 /obj/item/reagent_containers/cup/beaker{
 	pixel_x = 8;
 	pixel_y = 2
@@ -71087,7 +71075,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/taeloth/nearstation/hop_line)
+/area/taeloth/nearstation/medsci_crossway)
 "xSH" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6

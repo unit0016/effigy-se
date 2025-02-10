@@ -26,3 +26,11 @@ endmap
 map slashnett
 	votable
 endmap
+
+map slashmaoctantis
+	votable
+endmap
+
+map slashlake
+	votable
+endmap
