@@ -487,6 +487,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
 	},
+/obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
 	},
@@ -508,6 +509,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 6
 	},
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "hA" = (
@@ -525,6 +527,14 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"hJ" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/structure/extinguisher_cabinet/directional/south,
+/turf/open/floor/iron/dark/textured_half,
+/area/station/hallway/secondary/command)
 "hR" = (
 /obj/structure/dresser,
 /obj/effect/turf_decal/trimline/dark/warning{
@@ -797,6 +807,11 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/smooth_large,
 /area/station/command/heads_quarters/captain/syndicate)
+"kU" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/iron/dark/textured_half,
+/area/station/hallway/secondary/command)
 "ld" = (
 /obj/structure/displaycase_chassis,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -841,7 +856,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white,
-/area/space)
+/area/station/medical/medbay/lobby)
 "lL" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/effect/turf_decal/trimline/dark/line,
@@ -1573,6 +1588,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 1
 	},
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "vf" = (
@@ -1670,6 +1686,16 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark/herringbone,
 /area/station/command/meeting_room)
+"wg" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/iron/dark/textured_half,
+/area/station/hallway/secondary/command)
 "wp" = (
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/cable,
@@ -1682,7 +1708,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white,
-/area/space)
+/area/station/medical/medbay/lobby)
 "wE" = (
 /obj/effect/turf_decal/siding/dark_red,
 /obj/effect/turf_decal/trimline/dark_red/warning{
@@ -1796,6 +1822,12 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space)
+"yC" = (
+/obj/structure/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/station/medical/medbay/lobby)
 "yD" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
@@ -2370,7 +2402,7 @@
 "Hm" = (
 /obj/machinery/vending/medical/syndicate_access,
 /turf/open/floor/iron/white,
-/area/space)
+/area/station/medical/medbay/lobby)
 "Hq" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
 	dir = 8
@@ -2781,6 +2813,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
 	},
@@ -2931,7 +2964,7 @@
 "OT" = (
 /obj/machinery/vending/drugs,
 /turf/open/floor/iron/white,
-/area/space)
+/area/station/medical/medbay/lobby)
 "OV" = (
 /obj/structure/closet/wardrobe/pjs,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -2985,14 +3018,13 @@
 	},
 /area/station/hallway/secondary/command)
 "Pn" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 4
+	dir = 1
 	},
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 8
-	},
-/turf/open/floor/iron/smooth_large,
-/area/space)
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/iron/dark/textured_half,
+/area/station/hallway/secondary/command)
 "Pw" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
@@ -3192,6 +3224,15 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark/textured_edge,
 /area/station/hallway/secondary/command)
+"SG" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 6
+	},
+/obj/structure/extinguisher_cabinet/directional/east,
+/turf/open/floor/iron/dark/textured_corner{
+	dir = 1
+	},
+/area/station/hallway/secondary/command)
 "Ti" = (
 /obj/structure/closet/emcloset,
 /obj/effect/landmark/slashco_item_spawn,
@@ -3204,6 +3245,15 @@
 /obj/machinery/light/small/broken/directional/east,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/heads_quarters/hop/syndicate)
+"Tj" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 5
+	},
+/obj/structure/extinguisher_cabinet/directional/east,
+/turf/open/floor/iron/dark/textured_corner{
+	dir = 8
+	},
+/area/station/hallway/secondary/command)
 "Tv" = (
 /obj/structure/chair{
 	dir = 1
@@ -3488,6 +3538,10 @@
 /obj/structure/hedge/opaque,
 /turf/open/floor/iron/dark/textured,
 /area/station/commons/fitness/locker_room)
+"Xd" = (
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/iron/dark/small,
+/area/station/hallway/secondary/command)
 "Xi" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -3582,7 +3636,7 @@
 /area/station/commons/dorms)
 "XQ" = (
 /turf/open/floor/iron/white,
-/area/space)
+/area/station/medical/medbay/lobby)
 "XZ" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
@@ -31537,7 +31591,7 @@ qC
 qC
 dN
 dN
-py
+Xd
 py
 py
 An
@@ -32565,7 +32619,7 @@ qi
 mX
 LW
 Ks
-Gq
+Pn
 oO
 Uv
 lw
@@ -34364,7 +34418,7 @@ Ks
 Ks
 Ti
 Ks
-mH
+Tj
 iu
 BS
 jC
@@ -35915,7 +35969,7 @@ bb
 YO
 yI
 EF
-Hq
+wg
 Xo
 HJ
 Pw
@@ -36945,7 +36999,7 @@ bM
 yd
 as
 YS
-zI
+kU
 dN
 dN
 qC
@@ -37458,7 +37512,7 @@ BG
 Pw
 Zc
 iu
-PP
+SG
 Jf
 mx
 dN
@@ -37713,9 +37767,9 @@ gg
 JR
 Uj
 gg
-dN
-dN
-dN
+gg
+gg
+gg
 dN
 dN
 dN
@@ -37972,7 +38026,7 @@ vw
 gg
 wr
 lI
-Ac
+gg
 qC
 qC
 qC
@@ -38227,10 +38281,10 @@ MT
 Gj
 Lt
 DT
+yC
 XQ
-XQ
-Ac
-Ac
+gg
+gg
 qC
 qC
 qC
@@ -38487,7 +38541,7 @@ DT
 XQ
 XQ
 Hm
-Ac
+gg
 qC
 qC
 qC
@@ -38733,7 +38787,7 @@ hR
 UO
 UO
 vf
-Gq
+Pn
 oO
 Uv
 gg
@@ -38744,7 +38798,7 @@ DT
 XQ
 XQ
 OT
-Ac
+gg
 qC
 qC
 qC
@@ -38992,7 +39046,7 @@ Si
 vf
 Hq
 KD
-HJ
+hJ
 gg
 Pb
 yh
@@ -39000,8 +39054,8 @@ hx
 gg
 XQ
 XQ
-Ac
-Ac
+gg
+gg
 qC
 qC
 qC
@@ -39255,9 +39309,9 @@ gg
 uC
 zm
 gg
-Ac
-Pn
-Ac
+gg
+uC
+gg
 qC
 qC
 qC
@@ -39761,7 +39815,7 @@ qC
 qC
 dN
 dN
-py
+Xd
 py
 py
 dN
