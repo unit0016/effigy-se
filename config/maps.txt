@@ -34,3 +34,7 @@ endmap
 map slashlake
 	votable
 endmap
+
+map dsthree
+	votable
+endmap
