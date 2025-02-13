@@ -274,6 +274,7 @@ SUBSYSTEM_DEF(area_spawn)
 		"Slashnett", \
 		"Slashma Octantis", \
 		"Slashlake", \
+		"DS-3", \
 		)
 	/// If failing to find a suitable area is OK, then this should be TRUE or CI will fail.
 	/// Should probably be true if the target_areas are random, such as ruins.
