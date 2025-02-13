@@ -838,6 +838,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/machinery/light/built/directional/north,
 /turf/open/floor/iron/dark/small,
 /area/station/medical/storage)
 "gN" = (
@@ -944,6 +945,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 6
 	},
+/obj/machinery/light/built/directional/west,
 /turf/open/floor/iron/white/diagonal,
 /area/station/medical/medbay/central)
 "hR" = (
@@ -1089,6 +1091,16 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark/textured_half,
 /area/station/hallway/secondary/command)
+"jg" = (
+/obj/effect/turf_decal/trimline/dark_green/warning{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/thinplating_new/light{
+	dir = 9
+	},
+/obj/machinery/light/broken/directional/north,
+/turf/open/floor/iron/white/herringbone,
+/area/station/medical/medbay/central)
 "jh" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -2416,7 +2428,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
-/obj/machinery/light/very_dim/directional/east,
+/obj/machinery/light/dim/directional/east,
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/medical/surgery/theatre)
@@ -4491,6 +4503,7 @@
 /obj/item/mod/module/disposal_connector{
 	name = "MAPPING PLACEHOLDER"
 	},
+/obj/machinery/light/broken/directional/north,
 /turf/open/floor/iron/white/textured,
 /area/station/medical/pharmacy)
 "Ir" = (
@@ -4514,6 +4527,13 @@
 /obj/machinery/suit_storage_unit/syndicate,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/heads_quarters/captain/syndicate)
+"IC" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line{
+	dir = 8
+	},
+/obj/machinery/light/built/directional/west,
+/turf/open/floor/iron/white/textured,
+/area/station/medical/medbay/central)
 "IF" = (
 /obj/structure/dresser,
 /obj/effect/turf_decal/siding/wood,
@@ -5460,6 +5480,12 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/dark/textured,
 /area/station/hallway/secondary/command)
+"Qn" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/dark/textured_edge{
+	dir = 8
+	},
+/area/station/command/heads_quarters/cmo)
 "Qr" = (
 /obj/structure/cable,
 /turf/open/floor/carpet/red,
@@ -5826,6 +5852,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/light{
 	dir = 5
 	},
+/obj/machinery/light/floor/broken,
 /turf/open/floor/iron/white/herringbone,
 /area/station/medical/medbay/central)
 "Um" = (
@@ -41132,7 +41159,7 @@ Ew
 gT
 uw
 uw
-uw
+Qn
 jH
 Ib
 Ib
@@ -41374,7 +41401,7 @@ Vd
 yk
 Hm
 Gp
-lv
+jg
 NR
 lJ
 ak
@@ -42400,7 +42427,7 @@ ye
 QU
 bj
 se
-se
+IC
 zw
 Ug
 QB
