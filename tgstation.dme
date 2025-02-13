@@ -6851,6 +6851,7 @@
 #include "local\code\modules\culture\location\location_generic.dm"
 #include "local\code\modules\event_code\slashnett\objects\structrues\mannequin.dm"
 #include "local\code\modules\event_code\syndicate_tileset\areas\station\command.dm"
+#include "local\code\modules\event_code\syndicate_tileset\areas\station\security.dm"
 #include "local\code\modules\event_code\syndicate_tileset\structures\tables.dm"
 #include "local\code\modules\event_code\syndicate_tileset\structures\closets\command.dm"
 #include "local\code\modules\event_code\syndicate_tileset\structures\closets\security.dm"
