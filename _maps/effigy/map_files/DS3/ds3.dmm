@@ -139,6 +139,7 @@
 /turf/open/floor/plating/elevatorshaft,
 /area/station/security/gunnery/fore/starboard)
 "aG" = (
+/obj/machinery/light/small/built/directional/south,
 /turf/open/floor/iron/dark/diagonal,
 /area/station/hallway/secondary/command)
 "aI" = (
@@ -1996,6 +1997,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 5
 	},
+/obj/machinery/light/broken/directional/east,
 /turf/open/floor/iron/dark/textured_corner{
 	dir = 8
 	},
@@ -2762,6 +2764,15 @@
 	},
 /turf/open/floor/iron/dark/textured_half,
 /area/station/hallway/secondary/command)
+"qV" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/machinery/light/broken/directional/east,
+/turf/open/floor/iron/dark/textured_half{
+	dir = 1
+	},
+/area/station/hallway/primary/central/fore)
 "ra" = (
 /obj/structure/closet/wardrobe/yellow,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -4850,6 +4861,13 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/bridge)
+"Dc" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 9
+	},
+/obj/machinery/light/built/directional/west,
+/turf/open/floor/iron/dark/textured_corner,
+/area/station/hallway/secondary/command)
 "Dk" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/wideplating_new/dark,
@@ -5088,6 +5106,14 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/plating/reinforced,
 /area/station/security/gunnery/fore/starboard)
+"EM" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/light/built/directional/north,
+/turf/open/floor/iron/dark/textured_half,
+/area/station/hallway/secondary/command)
 "EQ" = (
 /obj/effect/turf_decal/tile/dark_yellow/diagonal_edge,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -5351,6 +5377,7 @@
 /obj/machinery/modular_computer/preset/id,
 /obj/machinery/keycard_auth/wall_mounted/directional/north,
 /obj/effect/turf_decal/tile/dark_green/opposingcorners,
+/obj/machinery/light/small/broken/directional/west,
 /turf/open/floor/iron/dark/textured,
 /area/station/command/heads_quarters/cmo)
 "Gp" = (
@@ -5738,6 +5765,10 @@
 /obj/machinery/suit_storage_unit/syndicate,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/command/heads_quarters/captain/syndicate)
+"Iz" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/dark,
+/area/space)
 "IC" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 8
@@ -6165,6 +6196,10 @@
 "Lv" = (
 /turf/open/floor/iron/dark/small,
 /area/station/security/gunnery/fore/starboard)
+"Lx" = (
+/obj/machinery/light/small/broken/directional/south,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/hallway/secondary/command)
 "Lz" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
@@ -6621,6 +6656,14 @@
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/command/bridge)
+"NA" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/machinery/light/broken/directional/south,
+/turf/open/floor/iron/dark/textured_half,
+/area/station/hallway/secondary/command)
 "ND" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -7296,6 +7339,15 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/iron/dark/small,
 /area/space)
+"Sx" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/machinery/light/broken/directional/west,
+/turf/open/floor/iron/dark/textured_half{
+	dir = 1
+	},
+/area/station/hallway/primary/central/fore)
 "Sy" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -32657,7 +32709,7 @@ ES
 dB
 Qp
 LE
-Ib
+Iz
 Ib
 Ib
 Ac
@@ -37285,7 +37337,7 @@ LW
 Ks
 Pn
 oO
-Uv
+NA
 lw
 Oo
 QD
@@ -38837,7 +38889,7 @@ LV
 Eu
 dO
 nH
-aG
+Lx
 BE
 PL
 kM
@@ -40119,7 +40171,7 @@ bb
 YO
 Nj
 EF
-vt
+EM
 Wt
 HE
 bM
@@ -40127,7 +40179,7 @@ FR
 fP
 SP
 Vt
-PX
+Sx
 fP
 iz
 XK
@@ -40647,7 +40699,7 @@ Ce
 YW
 vN
 iH
-CL
+qV
 kl
 Ce
 LJ
@@ -41403,7 +41455,7 @@ Uu
 EF
 cS
 EF
-Cl
+Dc
 au
 sV
 HJ
@@ -43453,7 +43505,7 @@ UO
 vf
 Pn
 oO
-Uv
+NA
 gg
 ve
 Gj
@@ -48077,7 +48129,7 @@ ju
 QG
 rY
 Rq
-Ib
+Iz
 Ib
 Ib
 Ac
