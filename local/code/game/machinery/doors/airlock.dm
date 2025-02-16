@@ -583,7 +583,8 @@
 
 /// SyndieSec
 /obj/machinery/door/airlock/syndicate/security
-	greyscale_colors = "#954604#4d4d4d"
+	greyscale_config = /datum/greyscale_config/airlock_effigy/security
+	greyscale_colors = "#954604#4d4d4d#ab6329"
 
 /obj/machinery/door/airlock/syndicate/security/glass
 	opacity = FALSE
