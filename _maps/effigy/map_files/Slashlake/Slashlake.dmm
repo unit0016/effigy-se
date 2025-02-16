@@ -33,7 +33,6 @@
 /obj/structure/sign/painting/library{
 	pixel_x = 32
 	},
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
@@ -66,6 +65,15 @@
 /obj/structure/stairs/wood,
 /turf/open/floor/engine/hull/taeloth,
 /area/taeloth)
+"aW" = (
+/obj/effect/turf_decal/tile/beige/half/contrasted{
+	dir = 8
+	},
+/obj/structure/sign/directions/evac/directional/east,
+/turf/open/floor/iron/dark/side{
+	dir = 4
+	},
+/area/station/hallway/primary/central/aft)
 "aZ" = (
 /obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/textured_large,
@@ -255,7 +263,6 @@
 "cH" = (
 /obj/structure/closet/anchored,
 /obj/effect/turf_decal/tile/beige/half/contrasted,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
@@ -339,10 +346,10 @@
 /turf/open/floor/carpet/cyan,
 /area/station/service/theater)
 "dw" = (
-/obj/effect/spawner/random/trash/bin,
+/obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /obj/effect/landmark/fuel_spawn,
-/turf/open/floor/asphalt,
-/area/taeloth)
+/turf/open/floor/iron/white,
+/area/station/commons/fitness/locker_room/female)
 "dx" = (
 /obj/effect/turf_decal/tile/beige/fourcorners,
 /turf/open/floor/iron,
@@ -520,7 +527,6 @@
 /obj/structure/sign/painting/library{
 	pixel_x = 32
 	},
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
@@ -1056,7 +1062,6 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/white,
 /area/station/commons/fitness/locker_room/female)
 "jw" = (
@@ -1077,7 +1082,6 @@
 	dir = 4
 	},
 /obj/structure/closet/anchored,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
@@ -1139,7 +1143,6 @@
 /obj/structure/sign/painting/library{
 	pixel_x = 32
 	},
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
@@ -1496,7 +1499,6 @@
 /obj/structure/sign/painting/library{
 	pixel_x = -32
 	},
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
@@ -1620,7 +1622,6 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/white,
 /area/station/commons/fitness/locker_room/male)
 "oA" = (
@@ -1841,6 +1842,12 @@
 /obj/effect/spawner/random/vending/colavend,
 /turf/open/floor/iron/sepia,
 /area/station/service/cafeteria)
+"qn" = (
+/obj/effect/turf_decal/sand,
+/obj/effect/turf_decal/stripes/asteroid/box,
+/obj/effect/landmark/navigate_destination/dockesc,
+/turf/open/floor/iron,
+/area/taeloth/nearstation/no_valids_to_hunt/departures_landing_zone)
 "qo" = (
 /turf/open/floor/plastic,
 /area/station/commons/toilet/restrooms)
@@ -1934,7 +1941,6 @@
 "rm" = (
 /obj/effect/turf_decal/tile/beige/half/contrasted,
 /obj/structure/closet/anchored,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
@@ -2078,6 +2084,7 @@
 	dir = 1
 	},
 /obj/machinery/light/small/red/directional/south,
+/obj/structure/sign/departments/evac/directional/south,
 /turf/open/floor/iron/dark/side,
 /area/station/hallway/primary/central/aft)
 "sz" = (
@@ -2242,7 +2249,6 @@
 "tL" = (
 /obj/structure/closet/anchored,
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/white,
 /area/station/commons/fitness/locker_room/male)
 "tM" = (
@@ -2353,7 +2359,6 @@
 	dir = 8
 	},
 /obj/structure/closet/anchored,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
@@ -2422,7 +2427,6 @@
 "vi" = (
 /obj/effect/turf_decal/tile/beige/half/contrasted,
 /obj/structure/closet/anchored,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
@@ -2463,7 +2467,6 @@
 /area/station/commons/fitness)
 "vw" = (
 /obj/structure/closet/crate/bin,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/asphalt,
 /area/taeloth)
 "vx" = (
@@ -2569,6 +2572,15 @@
 	},
 /turf/open/floor/asphalt,
 /area/taeloth)
+"wb" = (
+/obj/effect/turf_decal/tile/beige/half/contrasted{
+	dir = 4
+	},
+/obj/structure/sign/directions/evac/directional/west,
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
+/area/station/hallway/primary/central/aft)
 "wd" = (
 /turf/closed/wall/mineral/iron,
 /area/station/medical/pharmacy)
@@ -2776,6 +2788,13 @@
 	dir = 8
 	},
 /area/station/commons/fitness)
+"yp" = (
+/obj/effect/turf_decal/tile/beige/half/contrasted{
+	dir = 1
+	},
+/obj/structure/sign/directions/evac/directional/south,
+/turf/open/floor/iron/dark/side,
+/area/station/hallway/primary/central/fore)
 "ys" = (
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/plating,
@@ -3270,7 +3289,6 @@
 /area/station/commons/fitness/locker_room/female)
 "Dt" = (
 /obj/structure/closet/crate/bin,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/sepia,
 /area/station/service/kitchen)
 "Du" = (
@@ -3349,7 +3367,6 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/white,
 /area/station/commons/fitness/locker_room/female)
 "DT" = (
@@ -3409,6 +3426,11 @@
 /obj/effect/landmark/slashco_item_spawn,
 /turf/open/floor/iron/sepia,
 /area/station/service/kitchen)
+"Ej" = (
+/obj/effect/landmark/start/power_recovery,
+/obj/structure/sign/departments/evac/directional/south,
+/turf/open/floor/asphalt,
+/area/taeloth)
 "Em" = (
 /obj/structure/sign/warning/secure_area/directional/south,
 /turf/open/floor/asphalt,
@@ -3604,7 +3626,6 @@
 /area/station/hallway/secondary/recreation)
 "FN" = (
 /obj/structure/closet/bombcloset/anchored,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/asphalt,
 /area/station/maintenance/department/engine)
 "FS" = (
@@ -3719,7 +3740,6 @@
 /area/station/commons/storage/emergency)
 "GE" = (
 /obj/structure/closet/crate/bin,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/plastic,
 /area/station/commons/toilet/restrooms)
 "GF" = (
@@ -3776,7 +3796,6 @@
 	dir = 4
 	},
 /obj/structure/closet/anchored,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
@@ -4588,7 +4607,6 @@
 /area/station/hallway/secondary/service)
 "Oz" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/sepia,
 /area/station/service/kitchen)
 "OB" = (
@@ -4790,7 +4808,6 @@
 "Qu" = (
 /obj/structure/closet/anchored,
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/white,
 /area/station/commons/fitness/locker_room/female)
 "Qx" = (
@@ -5006,7 +5023,6 @@
 "Sg" = (
 /obj/effect/turf_decal/tile/beige/fourcorners,
 /obj/structure/closet/crate/bin,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
 "Sh" = (
@@ -5097,7 +5113,6 @@
 	dir = 8
 	},
 /obj/structure/closet/anchored,
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
@@ -5336,7 +5351,6 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/white,
 /area/station/commons/fitness/locker_room/male)
 "Vo" = (
@@ -31198,7 +31212,7 @@ wM
 wM
 wM
 QS
-dw
+zw
 TE
 Cw
 Cw
@@ -35315,7 +35329,7 @@ St
 Yk
 ua
 ua
-ua
+Ej
 pm
 Hi
 Hi
@@ -36087,7 +36101,7 @@ ua
 ua
 ua
 ua
-PP
+qn
 Hi
 Hi
 Hi
@@ -38399,7 +38413,7 @@ QS
 Yk
 ua
 ua
-ua
+Ej
 pm
 Hi
 Hi
@@ -44284,7 +44298,7 @@ kG
 kG
 kG
 kG
-kG
+dK
 zW
 kG
 kG
@@ -44531,7 +44545,7 @@ kG
 kG
 FN
 FN
-kG
+dK
 kG
 kG
 kG
@@ -97740,7 +97754,7 @@ uH
 uH
 uH
 ft
-gH
+aW
 fd
 gH
 RC
@@ -97969,7 +97983,7 @@ Er
 XF
 jp
 rL
-Aj
+yp
 XF
 xi
 xi
@@ -106225,7 +106239,7 @@ Jv
 Jt
 zF
 gf
-zF
+wb
 zF
 KC
 En
@@ -106964,7 +106978,7 @@ iq
 XF
 qe
 rL
-Aj
+yp
 ki
 ki
 Qi
@@ -113149,7 +113163,7 @@ fQ
 Lw
 yW
 EL
-me
+dw
 Do
 me
 Qu

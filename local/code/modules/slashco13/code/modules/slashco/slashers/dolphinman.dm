@@ -1,16 +1,17 @@
 /datum/antagonist/slasher/dolphinman
 	name = "Dolphinman"
 	mob_type = /mob/living/basic/slasher/dolphinman
-	fluff = "Yeah... you're man."
+	fluff = "You steam with porpoise."
 	ui_name = "AntagInfoDolphinman"
 	jumpscare_icon = 'local/code/modules/slashco13/icons/ui/jumpscares/dolphinman.dmi'
 	jumpscare_icon_state = "dolphinman"
 	jumpscare_sound = 'local/code/modules/slashco13/sound/slasher/dolphinman/kill.ogg'
+	jumpscare_volume = 50
 	jumpscare_time = 1 SECONDS
 
 	chase_light_range = DEFAULT_SIGHT_DISTANCE
 	chase_color = LIGHT_COLOR_BRIGHT_YELLOW
-	chase_cooldown_length = 28
+	chase_cooldown_length = 35
 
 	/// How much banked time to do we have?
 	var/banked_time = 0
