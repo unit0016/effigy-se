@@ -382,7 +382,7 @@ SUBSYSTEM_DEF(dynamic)
 		/// in a more polished; second version of this gamemode this'd ideally be a string value in the map json. this whole thing is visionary bodging anyways
 		var/map_evac_direction = "good luck lmao"
 		switch(SSmapping.config.map_name)
-			if("Slashpoint")
+			if("SlashPoint")
 				map_evac_direction = "eastwards, through the service department"
 			if("Slashma Octantis")
 				map_evac_direction = "on the center portside of the ship, passing through the cafeteria"
