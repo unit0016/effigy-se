@@ -872,6 +872,14 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/hallway/primary/starboard)
+"gp" = (
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/machinery/door/airlock/maintenance_hatch,
+/turf/open/floor/iron/smooth_large,
+/area/station/maintenance/department/bridge)
 "gr" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -1177,8 +1185,8 @@
 /turf/open/floor/iron/sepia,
 /area/station/service/kitchen)
 "iw" = (
-/turf/closed/indestructible/binary,
-/area/station/command/meeting_room/council)
+/turf/open/floor/catwalk_floor,
+/area/station/maintenance/department/bridge)
 "iz" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/structure/sign/poster/official/corporate_perks_vacation/directional/north,
@@ -1312,7 +1320,8 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/fore)
 "jj" = (
-/turf/closed/indestructible/binary,
+/obj/structure/filingcabinet,
+/turf/open/floor/carpet/cyan,
 /area/station/command/bridge)
 "jk" = (
 /turf/closed/wall/mineral/iron,
@@ -1680,6 +1689,12 @@
 /obj/effect/landmark/generator_spawn,
 /turf/open/floor/iron/half,
 /area/taeloth/nearstation/dormitory_concourse/crew_facilities)
+"lU" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/department/bridge)
 "lV" = (
 /obj/effect/turf_decal/tile/beige/half/contrasted{
 	dir = 8
@@ -2471,6 +2486,9 @@
 /obj/structure/railing,
 /turf/open/floor/glass/reinforced,
 /area/station/command/corporate_suite)
+"rg" = (
+/turf/open/floor/plating,
+/area/station/maintenance/department/bridge)
 "rk" = (
 /obj/effect/turf_decal/tile/beige/fourcorners,
 /turf/open/floor/iron,
@@ -2928,8 +2946,9 @@
 /turf/open/floor/asphalt,
 /area/taeloth)
 "ue" = (
-/turf/closed/indestructible/fakedoor,
-/area/station/command/bridge)
+/obj/effect/spawner/random/structure/grille,
+/turf/open/floor/plating,
+/area/station/maintenance/department/electrical)
 "ug" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -3352,6 +3371,13 @@
 /obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/lowered,
 /area/station/hallway/primary/port)
+"xj" = (
+/obj/effect/spawner/random/structure/closet_maintenance,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/department/bridge)
 "xm" = (
 /obj/structure/fake_stairs/wood/directional/west,
 /turf/open/floor/plating,
@@ -3509,6 +3535,10 @@
 	},
 /obj/structure/sign/directions/evac/directional/south,
 /turf/open/floor/iron/dark/side,
+/area/station/hallway/primary/central/fore)
+"yq" = (
+/obj/effect/spawner/random/structure/grille,
+/turf/open/floor/plating,
 /area/station/hallway/primary/central/fore)
 "ys" = (
 /obj/effect/spawner/structure/window/reinforced/tinted,
@@ -3981,6 +4011,13 @@
 	dir = 4
 	},
 /area/station/hallway/primary/starboard)
+"Cf" = (
+/obj/effect/spawner/random/engineering/atmospherics_portable,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/department/bridge)
 "Cj" = (
 /obj/effect/landmark/fuel_spawn,
 /turf/open/floor/plating,
@@ -4633,6 +4670,9 @@
 /obj/structure/bookcase/random,
 /turf/open/floor/iron/sepia,
 /area/station/commons/storage/emergency/starboard)
+"Gt" = (
+/turf/closed/wall/mineral/iron,
+/area/station/maintenance/department/bridge)
 "Gu" = (
 /obj/effect/landmark/fuel_spawn,
 /turf/open/floor/engine/hull/taeloth,
@@ -5425,6 +5465,10 @@
 /obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/sepia,
 /area/station/commons/storage/emergency)
+"Ms" = (
+/obj/effect/spawner/random/engineering/canister,
+/turf/open/floor/plating,
+/area/station/maintenance/department/bridge)
 "Mu" = (
 /obj/structure/railing{
 	dir = 1
@@ -5798,6 +5842,10 @@
 	},
 /turf/open/floor/engine/hull/taeloth,
 /area/taeloth)
+"Pp" = (
+/obj/structure/curtain/bounty,
+/turf/open/floor/carpet/cyan,
+/area/station/command/bridge)
 "Pv" = (
 /obj/structure/sign/poster/official/report_crimes/directional/east,
 /turf/open/floor/carpet/cyan,
@@ -6625,6 +6673,11 @@
 /obj/machinery/light/small/red/dim/directional/east,
 /turf/open/floor/wood/large,
 /area/station/commons/fitness)
+"US" = (
+/obj/effect/spawner/random/structure/closet_maintenance,
+/obj/structure/grille/broken,
+/turf/open/floor/plating,
+/area/station/maintenance/department/electrical)
 "UU" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 8
@@ -97949,7 +98002,7 @@ iN
 tt
 tZ
 tZ
-ue
+Ym
 tZ
 tZ
 tZ
@@ -98206,9 +98259,9 @@ iN
 tt
 tZ
 jj
-jj
-jj
-jj
+kn
+Pp
+kS
 tZ
 sZ
 Eu
@@ -100774,10 +100827,10 @@ zQ
 xA
 iN
 sD
-wQ
-wQ
-wQ
-wQ
+Gt
+Gt
+Gt
+Gt
 DO
 wQ
 yO
@@ -101031,10 +101084,10 @@ zQ
 xA
 iN
 rK
-wQ
-iw
-iw
-wQ
+Gt
+Ms
+rg
+Gt
 GY
 EZ
 Wf
@@ -101288,10 +101341,10 @@ zQ
 xA
 iN
 rK
-wQ
-iw
-iw
-wQ
+Gt
+Cf
+lU
+Gt
 BU
 DA
 Wf
@@ -101545,10 +101598,10 @@ Kv
 nZ
 nZ
 KC
-wQ
+Gt
 iw
 iw
-wQ
+gp
 Wf
 Wf
 Wf
@@ -101802,10 +101855,10 @@ Kv
 xA
 iN
 tt
-wQ
+gp
 iw
-iw
-wQ
+xj
+Gt
 kB
 EE
 jO
@@ -102059,10 +102112,10 @@ Kv
 xA
 iN
 BJ
-wQ
-wQ
-wQ
-wQ
+Gt
+Gt
+Gt
+Gt
 DO
 DO
 DO
@@ -109219,7 +109272,7 @@ Aq
 Aq
 vD
 vD
-qP
+XF
 XF
 qe
 rL
@@ -109476,7 +109529,7 @@ Aq
 Aq
 Dt
 vD
-qP
+yq
 XF
 jm
 rL
@@ -109733,7 +109786,7 @@ Aq
 Aq
 hi
 vD
-qP
+yq
 XF
 rU
 rL
@@ -110305,7 +110358,7 @@ iV
 eW
 tf
 Kz
-vk
+ue
 Kz
 iD
 Sr
@@ -110562,7 +110615,7 @@ iV
 Kz
 zg
 Kz
-vk
+ue
 Kz
 iD
 Sr
@@ -110819,7 +110872,7 @@ iV
 Kz
 zg
 Kz
-vk
+US
 Kz
 iD
 Sr
@@ -111076,7 +111129,7 @@ iV
 Kz
 zg
 Kz
-vk
+ue
 Kz
 iD
 Sr
@@ -111333,7 +111386,7 @@ iV
 Kz
 zg
 Kz
-vk
+ue
 Kz
 iD
 Sr
@@ -177331,32 +177384,32 @@ Sk
 Sk
 Sk
 ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
-ki
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
 ki
 YP
 YP
@@ -177587,34 +177640,34 @@ YP
 YP
 Sk
 Sk
-QG
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-ih
-QG
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
+ki
 Sk
 Sk
 Sk
@@ -177844,34 +177897,34 @@ YP
 Sk
 Sk
 Sk
-YP
-Sk
-Sk
-Sk
-YP
-Sk
-YP
-Sk
-Sk
-YP
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-Sk
-YP
+QG
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+ih
+QG
 Sk
 Sk
 Sk
@@ -243124,32 +243177,32 @@ iD
 iD
 iD
 YP
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
-iD
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
+YP
 YP
 iD
 iD
@@ -243380,6 +243433,7 @@ iD
 iD
 iD
 iD
+YP
 iD
 iD
 iD
@@ -243406,8 +243460,7 @@ iD
 iD
 iD
 iD
-iD
-iD
+YP
 iD
 iD
 iD
