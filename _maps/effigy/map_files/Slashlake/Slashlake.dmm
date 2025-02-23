@@ -66,13 +66,6 @@
 "aD" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/station/commons/storage/emergency/starboard)
-"aG" = (
-/obj/effect/turf_decal/siding/wideplating_new{
-	dir = 1
-	},
-/obj/effect/landmark/slashco_item_spawn,
-/turf/open/floor/engine/hull/taeloth,
-/area/taeloth)
 "aJ" = (
 /obj/effect/turf_decal/tile/beige/fourcorners,
 /obj/structure/railing,
@@ -125,17 +118,6 @@
 /obj/structure/sign/poster/official/report_crimes/directional/west,
 /turf/open/floor/carpet/cyan,
 /area/station/command/meeting_room)
-"bo" = (
-/obj/effect/spawner/structure/window,
-/turf/open/floor/plating,
-/area/station/cargo/warehouse)
-"bq" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table,
-/obj/effect/landmark/fuel_spawn,
-/obj/machinery/light/small/directional/north,
-/turf/open/floor/plating,
-/area/station/cargo/warehouse)
 "bu" = (
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/sepia,
@@ -232,6 +214,12 @@
 /obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/white/textured_half,
 /area/station/commons/fitness/recreation)
+"cb" = (
+/obj/effect/mapping_helpers/burnt_floor,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/random/structure/closet_maintenance,
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
 "cc" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
@@ -409,6 +397,13 @@
 	dir = 1
 	},
 /area/station/hallway/primary/starboard)
+"cY" = (
+/obj/structure/closet/emcloset,
+/obj/effect/turf_decal/trimline/dark_blue/end{
+	dir = 1
+	},
+/turf/open/floor/asphalt,
+/area/station/maintenance/department/engine)
 "dc" = (
 /obj/structure/railing/corner/end/flip{
 	dir = 8
@@ -628,6 +623,13 @@
 	},
 /turf/open/floor/iron/terracotta,
 /area/station/commons/fitness/recreation)
+"el" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/effect/landmark/slashco_item_spawn,
+/turf/open/floor/engine/hull/taeloth,
+/area/taeloth)
 "en" = (
 /obj/machinery/computer/crew{
 	dir = 4
@@ -789,10 +791,6 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/smooth_large,
 /area/station/hallway/primary/central/aft)
-"fu" = (
-/obj/machinery/firealarm/directional/north,
-/turf/open/floor/asphalt,
-/area/station/maintenance/department/engine)
 "fv" = (
 /obj/structure/musician/piano,
 /turf/open/floor/carpet/cyan,
@@ -904,13 +902,6 @@
 	dir = 10
 	},
 /area/station/hallway/primary/central/aft)
-"gh" = (
-/obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table,
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/iron,
-/area/station/cargo/warehouse)
 "gj" = (
 /obj/effect/turf_decal/tile/beige/half/contrasted{
 	dir = 1
@@ -945,16 +936,17 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/hallway/primary/starboard)
+"gq" = (
+/obj/effect/mapping_helpers/broken_floor,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
 "gr" = (
 /obj/structure/chair/wood{
 	dir = 8
 	},
 /turf/open/floor/carpet/cyan,
 /area/station/service/library)
-"gt" = (
-/obj/effect/spawner/random/engineering/tank,
-/turf/open/floor/asphalt,
-/area/station/maintenance/department/engine)
 "gw" = (
 /turf/closed/wall/mineral/iron,
 /area/station/maintenance/department/bridge)
@@ -1084,6 +1076,10 @@
 	dir = 1
 	},
 /area/station/hallway/primary/central/aft)
+"hn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/station/cargo/warehouse)
 "hq" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -1156,6 +1152,11 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/commons/fitness/locker_room)
+"hK" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
 "hL" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
@@ -1453,16 +1454,6 @@
 	dir = 1
 	},
 /area/station/hallway/primary/central/fore)
-"jq" = (
-/obj/machinery/door/firedoor,
-/obj/effect/turf_decal/siding/wideplating_new{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating_new{
-	dir = 8
-	},
-/turf/open/floor/iron/smooth_large,
-/area/station/maintenance/department/engine)
 "jr" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/landmark/slashco_item_spawn,
@@ -1606,6 +1597,10 @@
 /obj/structure/stairs/east,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
+"ke" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
 "kg" = (
 /obj/effect/turf_decal/tile/beige/half/contrasted{
 	dir = 1
@@ -1658,13 +1653,6 @@
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/iron/sepia,
 /area/station/commons/storage/art)
-"kw" = (
-/obj/structure/closet/emcloset,
-/obj/effect/turf_decal/trimline/dark_blue/end{
-	dir = 1
-	},
-/turf/open/floor/asphalt,
-/area/station/maintenance/department/engine)
 "kA" = (
 /obj/effect/turf_decal/tile/beige/half/contrasted{
 	dir = 4
@@ -2137,11 +2125,6 @@
 	dir = 4
 	},
 /area/station/commons/fitness)
-"nJ" = (
-/obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron,
-/area/station/cargo/warehouse)
 "nL" = (
 /obj/effect/turf_decal/siding/wideplating_new/terracotta{
 	dir = 4
@@ -2903,6 +2886,13 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating/rust,
 /area/station/commons/storage/tools)
+"sK" = (
+/obj/effect/mapping_helpers/broken_floor,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table,
+/obj/effect/landmark/slashco_item_spawn,
+/turf/open/floor/plating,
+/area/station/cargo/warehouse)
 "sM" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
@@ -3065,11 +3055,6 @@
 	dir = 1
 	},
 /area/station/hallway/primary/central/fore)
-"tI" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/reagent_dispensers/water_cooler,
-/turf/open/floor/iron,
-/area/station/cargo/warehouse)
 "tJ" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -3124,6 +3109,9 @@
 /obj/effect/landmark/start/power_recovery,
 /turf/open/floor/asphalt,
 /area/taeloth)
+"ud" = (
+/turf/closed/wall/mineral/iron,
+/area/station/cargo/warehouse)
 "ue" = (
 /turf/open/openspace,
 /area/station/hallway/primary/central/aft)
@@ -3220,6 +3208,11 @@
 /obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/dark/herringbone,
 /area/station/command/corporate_suite)
+"uG" = (
+/obj/effect/mapping_helpers/burnt_floor,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/station/cargo/warehouse)
 "uH" = (
 /obj/effect/turf_decal/tile/beige/half/contrasted{
 	dir = 8
@@ -3270,10 +3263,9 @@
 /turf/open/floor/engine/hull/reinforced/taeloth,
 /area/taeloth)
 "uY" = (
-/obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating,
-/area/station/cargo/warehouse)
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/asphalt,
+/area/station/maintenance/department/engine)
 "uZ" = (
 /obj/structure/closet/emcloset,
 /turf/open/floor/asphalt,
@@ -3481,9 +3473,6 @@
 "wp" = (
 /turf/closed/wall/mineral/iron,
 /area/station/commons/toilet/restrooms)
-"wr" = (
-/turf/closed/wall/mineral/iron,
-/area/station/cargo/warehouse)
 "ws" = (
 /obj/structure/stairs/north,
 /obj/structure/railing{
@@ -3541,13 +3530,6 @@
 "wQ" = (
 /turf/closed/wall/mineral/iron,
 /area/station/command/meeting_room/council)
-"wR" = (
-/obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table,
-/obj/effect/landmark/slashco_item_spawn,
-/turf/open/floor/plating,
-/area/station/cargo/warehouse)
 "wY" = (
 /obj/structure/rack,
 /obj/effect/landmark/fuel_spawn,
@@ -3869,10 +3851,6 @@
 /obj/structure/musician/piano,
 /turf/open/floor/carpet/cyan,
 /area/station/commons/vacant_room/office)
-"zo" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron,
-/area/station/cargo/warehouse)
 "zp" = (
 /obj/structure/chair/sofa/bench/left,
 /turf/open/floor/iron/half,
@@ -3895,6 +3873,15 @@
 "zt" = (
 /turf/closed/wall/mineral/iron,
 /area/station/service/theater)
+"zv" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new,
+/obj/machinery/door/airlock/grunge,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/open/floor/iron/smooth_large,
+/area/station/maintenance/department/engine)
 "zw" = (
 /obj/effect/spawner/random/trash/bin,
 /turf/open/floor/asphalt,
@@ -3919,13 +3906,6 @@
 	dir = 1
 	},
 /area/station/hallway/primary/central/aft)
-"zD" = (
-/obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table,
-/obj/effect/spawner/random/engineering/flashlight,
-/turf/open/floor/plating,
-/area/station/cargo/warehouse)
 "zE" = (
 /obj/effect/turf_decal/tile/beige/fourcorners,
 /obj/effect/spawner/random/vending/snackvend,
@@ -4137,6 +4117,13 @@
 	},
 /turf/open/floor/wood/large,
 /area/station/commons/fitness)
+"Bg" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/random/structure/chair_maintenance{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/cargo/warehouse)
 "Bh" = (
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 8
@@ -4382,6 +4369,10 @@
 	},
 /turf/open/floor/iron/dark/herringbone,
 /area/station/commons/fitness/locker_room)
+"Db" = (
+/obj/effect/spawner/random/engineering/tank,
+/turf/open/floor/asphalt,
+/area/station/maintenance/department/engine)
 "De" = (
 /obj/effect/landmark/carpspawn,
 /turf/open/floor/asphalt,
@@ -4849,18 +4840,6 @@
 /obj/effect/spawner/random/engineering/canister,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
-"Gb" = (
-/obj/effect/turf_decal/siding/wideplating_new{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating_new{
-	dir = 8
-	},
-/obj/machinery/door/airlock/grunge{
-	name = "Storage"
-	},
-/turf/open/floor/iron/smooth_large,
-/area/station/cargo/warehouse)
 "Gc" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -4881,6 +4860,11 @@
 /obj/effect/landmark/slashco_item_spawn,
 /turf/open/floor/iron/sepia,
 /area/station/service/kitchen)
+"Gg" = (
+/obj/effect/mapping_helpers/broken_floor,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/station/cargo/warehouse)
 "Gh" = (
 /turf/open/floor/iron/white,
 /area/station/commons/fitness/locker_room/male)
@@ -5056,6 +5040,28 @@
 /obj/structure/fence/post,
 /turf/open/floor/iron/textured_large,
 /area/taeloth/nearstation/bridge_crossway)
+"Hw" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/machinery/door/airlock/grunge{
+	name = "Storage"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/station/cargo/warehouse)
+"Hz" = (
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/turf/open/floor/iron/smooth_large,
+/area/station/maintenance/department/engine)
 "HD" = (
 /obj/structure/sign/warning/secure_area/directional/west,
 /turf/open/floor/engine/hull/reinforced/taeloth,
@@ -5164,6 +5170,13 @@
 	dir = 4
 	},
 /area/station/hallway/secondary/service)
+"Ik" = (
+/obj/effect/mapping_helpers/broken_floor,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table,
+/obj/effect/spawner/random/engineering/flashlight,
+/turf/open/floor/plating,
+/area/station/cargo/warehouse)
 "Im" = (
 /obj/structure/sign/warning/secure_area/directional/east,
 /turf/open/floor/engine/hull/taeloth,
@@ -5360,19 +5373,6 @@
 	dir = 4
 	},
 /area/station/hallway/primary/central/aft)
-"JP" = (
-/obj/structure/closet/firecloset,
-/obj/effect/turf_decal/trimline/dark_red/end{
-	dir = 1
-	},
-/turf/open/floor/asphalt,
-/area/station/maintenance/department/engine)
-"JS" = (
-/obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/random/structure/closet_maintenance,
-/turf/open/floor/iron,
-/area/station/cargo/warehouse)
 "JW" = (
 /turf/open/floor/asphalt,
 /area/taeloth/nearstation/dormitory_concourse/crew_facilities/roof)
@@ -5514,6 +5514,10 @@
 	},
 /turf/open/floor/wood,
 /area/taeloth)
+"KQ" = (
+/obj/effect/spawner/random/structure/tank_holder,
+/turf/open/floor/asphalt,
+/area/station/maintenance/department/engine)
 "KR" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 10
@@ -5849,10 +5853,6 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/terracotta/small,
 /area/station/commons/fitness/recreation)
-"MG" = (
-/obj/effect/spawner/random/structure/tank_holder,
-/turf/open/floor/asphalt,
-/area/station/maintenance/department/engine)
 "MH" = (
 /obj/structure/table,
 /obj/effect/landmark/fuel_spawn,
@@ -6161,15 +6161,6 @@
 	},
 /turf/open/floor/engine/hull/taeloth,
 /area/taeloth)
-"Pu" = (
-/obj/effect/turf_decal/siding/wideplating_new{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating_new,
-/obj/machinery/door/airlock/grunge,
-/obj/effect/mapping_helpers/airlock/autoname,
-/turf/open/floor/iron/smooth_large,
-/area/station/maintenance/department/engine)
 "Pv" = (
 /obj/structure/sign/poster/official/report_crimes/directional/east,
 /turf/open/floor/carpet/cyan,
@@ -6937,9 +6928,20 @@
 /obj/effect/landmark/slashco_item_spawn,
 /turf/open/floor/iron/dark/herringbone,
 /area/station/command/corporate_suite)
+"TY" = (
+/obj/effect/mapping_helpers/burnt_floor,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
 "TZ" = (
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/department/bridge)
+"Ub" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating,
+/area/station/cargo/warehouse)
 "Uc" = (
 /obj/effect/turf_decal/tile/dark_green/fourcorners,
 /turf/open/floor/iron/sepia,
@@ -6992,10 +6994,6 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/station/command/corporate_suite)
-"Uw" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating,
-/area/station/cargo/warehouse)
 "Uy" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -7322,6 +7320,13 @@
 /obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/sepia,
 /area/station/medical/pharmacy)
+"Xl" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table,
+/obj/effect/landmark/fuel_spawn,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plating,
+/area/station/cargo/warehouse)
 "Xp" = (
 /obj/effect/turf_decal/siding/wideplating_new,
 /obj/effect/turf_decal/siding/wideplating_new{
@@ -7338,11 +7343,6 @@
 /obj/effect/landmark/fuel_spawn,
 /turf/open/floor/iron/sepia,
 /area/station/service/cafeteria)
-"Xs" = (
-/obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating,
-/area/station/cargo/warehouse)
 "Xv" = (
 /turf/open/floor/iron/stairs/medium{
 	dir = 4
@@ -7430,13 +7430,6 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/hallway/primary/central/fore)
-"XY" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/random/structure/chair_maintenance{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/station/cargo/warehouse)
 "Yc" = (
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
@@ -7689,6 +7682,13 @@
 /obj/effect/spawner/random/vending/colavend,
 /turf/open/floor/iron/sepia,
 /area/station/service/cafeteria)
+"ZA" = (
+/obj/structure/closet/firecloset,
+/obj/effect/turf_decal/trimline/dark_red/end{
+	dir = 1
+	},
+/turf/open/floor/asphalt,
+/area/station/maintenance/department/engine)
 "ZB" = (
 /obj/effect/spawner/liquids_spawner,
 /obj/structure/railing/corner/end/flip{
@@ -43632,7 +43632,7 @@ wM
 wM
 wM
 QS
-fu
+uY
 kG
 QS
 wM
@@ -43889,8 +43889,8 @@ wM
 wM
 wM
 QS
-jq
-jq
+Hz
+Hz
 QS
 wM
 wM
@@ -45718,7 +45718,7 @@ wM
 QS
 kG
 kG
-kw
+cY
 QS
 TO
 Hi
@@ -45975,7 +45975,7 @@ QS
 QS
 kG
 kG
-JP
+ZA
 QS
 TO
 Hi
@@ -46232,7 +46232,7 @@ kG
 kG
 kG
 kG
-MG
+KQ
 QS
 TO
 Hi
@@ -46489,7 +46489,7 @@ kG
 kG
 kG
 kG
-gt
+Db
 QS
 TO
 Hi
@@ -46743,11 +46743,11 @@ QS
 QS
 kG
 kG
-wr
-wr
-Gb
-wr
-wr
+ud
+ud
+Hw
+ud
+ud
 TO
 Hi
 Hi
@@ -46998,13 +46998,13 @@ wM
 wM
 wM
 QS
-jq
-jq
-wr
-tI
-Xs
-Uw
-wr
+Hz
+Hz
+ud
+hK
+uG
+hn
+ud
 TO
 Hi
 Hi
@@ -47255,13 +47255,13 @@ wM
 wM
 wM
 QS
-fu
-kG
-wr
-zD
-zo
 uY
-bo
+kG
+ud
+Ik
+ke
+Gg
+Ub
 TO
 Hi
 Hi
@@ -47514,11 +47514,11 @@ wM
 QS
 kG
 kG
-wr
-bq
-XY
-nJ
-bo
+ud
+Xl
+Bg
+gq
+Ub
 TO
 Hi
 Hi
@@ -47771,11 +47771,11 @@ wM
 QS
 kG
 kG
-wr
-gh
-wR
-JS
-wr
+ud
+TY
+sK
+cb
+ud
 TO
 Hi
 Hi
@@ -48028,11 +48028,11 @@ wM
 QS
 kG
 kG
-wr
-wr
-wr
-wr
-wr
+ud
+ud
+ud
+ud
+ud
 pm
 Hi
 Hi
@@ -49313,7 +49313,7 @@ wM
 QS
 kG
 kG
-Pu
+zv
 Cw
 Cw
 Cw
@@ -49568,7 +49568,7 @@ wM
 wM
 wM
 QS
-kG
+dK
 kG
 QS
 Cw
@@ -170820,7 +170820,7 @@ lM
 lM
 lM
 lM
-aG
+el
 CP
 YP
 Sk
