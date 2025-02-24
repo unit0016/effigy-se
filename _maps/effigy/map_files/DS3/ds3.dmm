@@ -1020,7 +1020,8 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "fz" = (
-/turf/open/floor/plating,
+/obj/machinery/vending/dinnerware,
+/turf/open/floor/iron/kitchen,
 /area/station/service/kitchen)
 "fA" = (
 /obj/machinery/chem_master,
@@ -2127,6 +2128,10 @@
 "lw" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/commons/dorms)
+"lz" = (
+/obj/machinery/oven/range,
+/turf/open/floor/iron/kitchen,
+/area/station/service/kitchen)
 "lD" = (
 /obj/structure/cable,
 /turf/open/floor/iron/dark/textured_half{
@@ -2422,6 +2427,10 @@
 	},
 /turf/open/floor/plating/reinforced,
 /area/station/security/gunnery/fore/port)
+"np" = (
+/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/turf/open/floor/plating,
+/area/station/service/kitchen)
 "nq" = (
 /obj/effect/landmark/generator_spawn,
 /turf/open/floor/plating/elevatorshaft,
@@ -4621,6 +4630,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/security/gunnery/fore/port)
+"yO" = (
+/obj/machinery/smartfridge/drying,
+/turf/open/floor/iron/kitchen,
+/area/station/service/kitchen)
 "yP" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -6492,6 +6505,20 @@
 /obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/security/gunnery/fore/starboard)
+"Io" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/structure/displaycase/forsale/kitchen{
+	pixel_y = 8
+	},
+/turf/open/floor/iron/smooth_large,
+/area/station/service/kitchen)
 "Ir" = (
 /obj/structure/table/wood,
 /obj/item/pinpointer/nuke/syndicate,
@@ -7620,6 +7647,10 @@
 /obj/structure/cable,
 /turf/open/floor/iron/smooth_large,
 /area/station/security/gunnery/fore/port)
+"OC" = (
+/obj/machinery/griddle,
+/turf/open/floor/iron/kitchen,
+/area/station/service/kitchen)
 "OE" = (
 /obj/machinery/computer/crew,
 /obj/effect/mapping_helpers/broken_machine,
@@ -7663,6 +7694,9 @@
 "OR" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/station/command/bridge)
+"OS" = (
+/turf/open/floor/iron/kitchen,
+/area/station/service/kitchen)
 "OT" = (
 /obj/machinery/vending/drugs,
 /obj/effect/turf_decal/trimline/orange/warning{
@@ -8810,6 +8844,18 @@
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
 /area/space/nearstation)
+"Vn" = (
+/obj/effect/turf_decal/siding/wideplating_new/dark,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/structure/displaycase/forsale/kitchen{
+	pixel_y = 8
+	},
+/turf/open/floor/iron/smooth_large,
+/area/station/service/bar)
 "Vs" = (
 /obj/structure/railing/corner/end/flip{
 	dir = 8
@@ -35159,7 +35205,7 @@ GQ
 BD
 hP
 sS
-jt
+Vn
 hw
 ZU
 DU
@@ -35677,7 +35723,7 @@ hh
 Py
 XV
 XV
-XV
+Io
 fC
 Bf
 fC
@@ -35931,12 +35977,12 @@ hh
 hh
 wY
 hh
-fz
-fz
-fz
-fz
-fz
-fz
+lz
+OS
+OS
+OS
+OS
+OS
 fz
 fC
 Ib
@@ -36188,14 +36234,14 @@ hh
 gx
 Sj
 hh
-fz
-fz
-fz
-fz
-fz
-fz
-fz
-fC
+lz
+OS
+OS
+OS
+OS
+OS
+yO
+np
 Ib
 aX
 Ib
@@ -36446,13 +36492,13 @@ YA
 VA
 hh
 hh
-fz
-fz
-fz
-fz
-fz
-fz
-fC
+OS
+OC
+OS
+OS
+OS
+OS
+np
 Ib
 aX
 Ib
@@ -36703,13 +36749,13 @@ vx
 OQ
 vx
 WP
-fz
-fz
-fz
-fz
-fz
-fz
-fC
+OS
+OC
+OS
+OS
+OS
+OS
+np
 Ib
 aX
 Ib
@@ -36960,13 +37006,13 @@ OF
 ga
 sh
 hh
-fz
-fz
-fz
-fz
-fz
-fz
-fC
+OS
+OS
+OS
+OS
+OS
+OS
+np
 Ib
 aX
 Ib
@@ -37220,9 +37266,9 @@ hh
 fC
 fC
 fC
-fz
-fz
-fz
+OS
+OS
+OS
 fC
 Ib
 aX
