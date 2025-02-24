@@ -190,7 +190,7 @@ MAYO
 
 /obj/item/pocket_sand
 	name = "pocket sand"
-	desc = "For blinding your enemies and running off mischeviously."
+	desc = "For blinding your enemies and running off mischeviously.<br/>There is a warning printed on the bag: <b>UNDER NO CIRCUMSTANCES TO BE PLACED IN POCKET!</b>"
 	icon = 'icons/obj/toys/dice.dmi'
 	icon_state = "dicebag"
 	gender = PLURAL
