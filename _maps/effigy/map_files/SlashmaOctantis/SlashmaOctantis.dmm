@@ -4562,6 +4562,9 @@
 	},
 /obj/machinery/light/floor,
 /obj/structure/cable,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
 /turf/open/floor/iron/large,
 /area/station/command/bridge)
 "aZe" = (
@@ -9790,6 +9793,12 @@
 	},
 /turf/open/floor/iron/dark/diagonal,
 /area/station/security/prison/mess)
+"cie" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/damaged_window,
+/turf/open/floor/plating,
+/area/station/command/bridge)
 "ciq" = (
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/plating,
@@ -19026,6 +19035,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/duct/waste,
+/obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "enq" = (
@@ -28300,6 +28310,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/duct/waste,
+/obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "gpM" = (
@@ -36536,6 +36547,18 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/station/maintenance/disposal)
+"ikr" = (
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/iron/half{
+	dir = 8
+	},
+/area/station/command/bridge)
 "ikt" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -52394,6 +52417,9 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/duct/waste,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "lPV" = (
@@ -98207,6 +98233,8 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 9
 	},
+/obj/item/disk/holodisk/slashco/slashma_octantis,
+/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "wyp" = (
@@ -101123,6 +101151,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/duct/waste,
+/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "xfx" = (
@@ -158476,7 +158505,7 @@ tYc
 pZq
 pFE
 tjT
-eck
+cie
 eAT
 pFE
 dBx
@@ -159247,7 +159276,7 @@ pFE
 pFE
 pFE
 tjT
-eck
+cie
 etM
 hfc
 pFE
@@ -160015,7 +160044,7 @@ oDd
 kPO
 kMg
 aVU
-nEU
+ikr
 nEU
 cvT
 vwo
@@ -161043,13 +161072,13 @@ mOr
 kMg
 psC
 eck
+cie
+eck
+cie
+cie
 eck
 eck
-eck
-eck
-eck
-eck
-eck
+cie
 eck
 psC
 kVV
